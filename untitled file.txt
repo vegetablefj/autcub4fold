@@ -1,0 +1,982 @@
+## Initial data: Defining the list of maximal and symplectic automorphism groups
+
+# Defining the scalar group
+
+ScalarMat:=[[E(3),0,0,0,0,0],[0,E(3),0,0,0,0],[0,0,E(3),0,0,0],[0,0,0,E(3),0,0],[0,0,0,0,E(3),0],[0,0,0,0,0,E(3)]];
+ScalarGroup:=Group([ScalarMat]);
+
+# Defining the 1st maximal automorphism group
+
+mat1:=[[ 0, 1, 0, 0, 0, 0 ],[ 1, 0, 0, 0, 0, 0],[ 0, 0, 1, 0, 0, 0],[ 0, 0, 0, 1, 0, 0],[ 0, 0, 0, 0, 1, 0],[ 0, 0, 0, 0, 0, 1 ]];
+mat2:=[[ 0, 1, 0, 0, 0, 0 ],[ 0, 0, 1, 0, 0, 0],[ 0, 0, 0, 1, 0, 0],[ 0, 0, 0, 0, 1, 0],[ 0, 0, 0, 0, 0, 1],[ 1, 0, 0, 0, 0, 0]];
+mat3:=[[ 1, 0, 0, 0, 0, 0 ],[ 0, E(3), 0, 0, 0, 0],[ 0, 0, 1, 0, 0, 0],[ 0, 0, 0, 1, 0, 0],[ 0, 0, 0, 0, 1, 0 ],[ 0, 0, 0, 0, 0, 1 ]];
+H1big:=Group([mat1,mat2,mat3]);
+H1:=H1big/ScalarGroup;
+
+# Defining the 2nd maximal automorphism group
+
+mat4:=[[ 0, 1, 0, 0, 0, 0],[ 0, 0, 1, 0, 0, 0],[ 1, 0, 0, 0, 0, 0],[ 0, 0, 0, 0, 1, 0],[ 0, 0, 0, 0, 0, 1 ],[ 0, 0, 0, 1, 0, 0]];;
+mat5:=[[ 1, 0, 0, 0, 0, 0],[ 0, E(3), 0, 0, 0, 0],[ 0, 0, E(3)^2, 0, 0, 0],[ 0, 0, 0,0, 1, 0],[ 0, 0, 0, 1, 0, 0],[ 0, 0, 0, 0, 0, 1 ]];;
+mat6:=(1/Sqrt(3))*[[ 1, 1, 1, 0, 0, 0],[ 1, E(3), E(3)^2, 0, 0, 0],[ 1, E(3)^2, E(3), 0, 0, 0],[ 0, 0, 0, E(3)*Sqrt(3), 0, 0],[ 0, 0, 0, 0, Sqrt(3), 0],[ 0, 0, 0, 0, 0, Sqrt(3) ]];;
+H2big:=Group([mat4,mat5,mat6]);
+H2:=H2big/ScalarGroup;
+
+# Defining the 7th maximal automorphism group
+
+mat7:=[[ 1, 0, 0, 0, 0, 0],[ 0, E(3), 0, 0, 0, 0],[ 0, 0, E(3)^2, 0, 0, 0],[ 0, 0, 0,1, 0, 0],[ 0, 0, 0, 0, 1, 0 ],[ 0, 0, 0, 0, 0, 1 ]];;
+mat8:=(1/Sqrt(3))*[[ 1, 1, 1, 0, 0, 0],[ 1, E(3), E(3)^2, 0, 0, 0],[ 1, E(3)^2, E(3), 0, 0, 0],[ 0, 0, 0, Sqrt(3), 0, 0],[ 0, 0, 0, 0, Sqrt(3), 0 ],[ 0, 0, 0, 0, 0, Sqrt(3) ]];;
+mat9:=[[ 0, 0, 0, 0,  1, 0],[ 0, 0, 0, 0,  0, 1],[ 0, 0, 0, 1, 0, 0],[ 1, 0, 0, 0, 0, 0 ],[ 0, 1 ,0, 0, 0, 0 ],[ 0, 0, 1, 0, 0, 0]];;
+H7big:=Group([mat7,mat8,mat9]);
+H7:=H7big/ScalarGroup;
+
+# Define the list of maximal automorphism groups
+
+MaximalList :=[
+H1,
+H2,
+SmallGroup(144,69),
+DirectProduct(SymmetricGroup(5),SmallGroup(18,3)),
+SmallGroup(48,2),
+SmallGroup(1980,57),
+H7,
+SmallGroup(32,1),
+SmallGroup(126,7),
+SmallGroup(720,765),
+SymmetricGroup(7),
+SmallGroup(32,42),
+SmallGroup(336,208),
+SmallGroup(48,29),
+SmallGroup(216,153)];
+
+MaximalList3 :=[
+Group([[[0,1,0,0,0],[1,0,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1]],[[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1],[1,0,0,0,0]],DiagonalMat([E(3),1,1,1,1])])/Group(E(3)*DiagonalMat([1,1,1,1,1])),
+SmallGroup(648,713),
+SmallGroup(24,2),
+SmallGroup(16,1),
+SmallGroup(660,13),
+SmallGroup(360,119)
+];
+
+ListSurface :=[SmallGroup(1,1),SmallGroup(2,1),SmallGroup(4,1),SmallGroup(8,1),SmallGroup(4,2),SmallGroup(6,1),SmallGroup(12,4),SmallGroup(24,12),SmallGroup(54,13),SmallGroup(108,36),SmallGroup(120,34),SmallGroup(648,704)];
+
+# Define the list of symplectic automorphism groups
+
+G1:=NormalSubgroups(H1)[3];
+SymplecticList:=[
+G1,
+AlternatingGroup(7),
+SmallGroup(1944,3559),
+SmallGroup(720,765),
+SmallGroup(660,13),
+SmallGroup(360,120),
+SmallGroup(972,776),
+SmallGroup(360,118),
+SmallGroup(168,42),
+SmallGroup(120,34),
+SmallGroup(72,41),
+SmallGroup(72,40),
+SmallGroup(48,29),
+SmallGroup(486,249),
+SmallGroup(72,43),
+SmallGroup(60,5),
+SmallGroup(36,9),
+SmallGroup(36,10),
+SmallGroup(21,1),
+SmallGroup(20,3),
+SmallGroup(16,8),
+SmallGroup(24,12),
+SmallGroup(8,4),
+SmallGroup(18,4),
+SmallGroup(12,4),
+SmallGroup(12,3),
+SmallGroup(10,1),
+SmallGroup(8,3),
+SmallGroup(4,1),
+SmallGroup(6,1),
+SmallGroup(4,2),
+SmallGroup(3,1),
+SmallGroup(2,1),
+SmallGroup(1,1)];
+
+## Defining functions
+
+# Function testing whether a positive integer is a power of two
+
+IsPowerOfTwo := function(n)
+	if n < 1 then
+        return false;
+    fi;
+    while n > 1 do
+        if n mod 2 <> 0 then
+            return false;
+        fi;
+        n := n / 2;
+    od;
+    return true;
+end;
+
+# Function generating a list of non-isomorphic subgroups of given group
+
+NonIsomorphicSubgroups := function(G)
+    local conj_classes, reps, result, i, j, found, iso;
+    
+    conj_classes := ConjugacyClassesSubgroups(G);
+    reps := List(conj_classes, Representative);
+    result := [];
+    
+    for i in [1..Length(reps)] do
+        found := false;
+        
+        for j in [1..Length(result)] do
+            iso := IsomorphismGroups(reps[i], result[j]);
+            if iso <> fail then
+                found := true;
+                break;
+            fi;
+        od;
+        
+        if not found then
+            Add(result, reps[i]);
+        fi;
+    od;
+    
+    return result;
+end;
+
+# Function testing whether $G$ is isomorphic to a normal subgroup of $\widetilde{G}$ with quotient group isomorphic to $\mu_m$, where $m$ is a power of two or three times a power of two, for given two groups $G,\widetilde{G}$
+
+IsNormalSubgroupWithCyclicQuotient:= function(G, Gtilde)
+    local normal_subs, H, quotient, m, G_order, Gtilde_order, index;
+    
+    G_order := Size(G);
+    Gtilde_order := Size(Gtilde);
+    
+    if Gtilde_order mod G_order <> 0 then
+        return false;
+    fi;
+    
+    index := Gtilde_order / G_order;
+    
+    if not (IsPowerOfTwo(index) or (index mod 3 = 0 and IsPowerOfTwo(index/3))) then
+        return false;
+    fi;
+    
+    normal_subs := NormalSubgroups(Gtilde);
+    
+    for H in normal_subs do
+        if Size(H) = G_order then
+            if IsomorphismGroups(G, H) <> fail then
+                quotient := FactorGroup(Gtilde, H);
+
+                if IsCyclic(quotient) then
+                    return true;
+                fi;
+            fi;
+        fi;
+    od;
+    
+    return false;
+end;
+
+# Function generating the list of all pairs $(label1,m,\widetilde{G},label2)$ for given two lists of groups List1, List2, where
+# 1) $m$ or $m/3$ is a power of two;
+# 2) $\widetilde{G}$ is a subgroup of $List2[label2]$, and contains a normal subgroup isomorphic to $List1[label1]$ with with quotient group isomorphic to $\mu_m$
+
+GeneratePairsOfFour := function(List1, List2)
+    local result, label1, label2, G, H, H_subs, H_subgroups_cache, 
+          H_index, Gtilde, m, normal_subgroup;
+    
+    result := [];
+    
+    H_subgroups_cache := [];
+    for label2 in [1..Length(List2)] do
+        H_subgroups_cache[label2] := NonIsomorphicSubgroups(List2[label2]);
+    od;
+    
+    for label1 in [1..Length(List1)] do
+        G := List1[label1];
+        
+        for label2 in [1..Length(List2)] do
+            H := List2[label2];
+            H_subs := H_subgroups_cache[label2];
+            
+            for H_index in [1..Length(H_subs)] do
+                Gtilde := H_subs[H_index];
+                
+                if Size(G) > Size(Gtilde) then
+                    continue;
+                fi;
+                
+                m := Size(Gtilde) / Size(G);
+                
+                if not IsInt(m) then
+                    continue;
+                fi;
+                
+                if not (IsPowerOfTwo(m) or (m mod 3 = 0 and IsPowerOfTwo(m/3))) then
+                    continue;
+                fi;
+                
+                if IsNormalSubgroupWithCyclicQuotient(G, Gtilde) then
+                    Add(result, [label1, m, Gtilde, label2]);
+                fi;
+            od;
+        od;
+    od;
+    
+    return result;
+end;
+
+# 函数：CyclicQuotientPairing
+# 输入：List1, List2 - 两个群列表
+# 输出：所有满足条件的三元组 (G1, G2, m) 的列表，其中：
+#       G1 ∈ List1, G2 ∈ List2，且
+#       1. IsNormalSubgroupWithCyclicQuotient(G1, G2) = True
+#       2. 指数 m = [G2:G1] 是 3 乘以 2 的幂（即 m = 3 * 2^k 对某个非负整数 k 成立）
+CyclicQuotientPairing := function(List1, List2)
+    local result, G1, G2, m, t;
+    
+    result := [];  # 存储结果的列表
+    
+    for G1 in List1 do
+        for G2 in List2 do
+            # 检查是否满足正规子群且商群循环
+            if IsNormalSubgroupWithCyclicQuotient(G1, G2) then
+                m := Size(G2) / Size(G1);  # 计算指数
+                # 检查 m 是否为正整数（这里由于是子群，m 自动为正整数）
+                # 判断 m 是否为 3 乘以 2 的幂
+                if m mod 3 = 0 then
+                    t := m / 3;
+                    if IsPowerOfTwo(t) then
+                        Add(result, [G1, G2, m]);
+                    fi;
+                fi;
+            fi;
+        od;
+    od;
+    
+    return result;
+end;
+
+# Functions displaying the result: Given a list of pairs $(label1,m,\widetilde{G})$ and option, if option = 1, for each label1, print the list of all possible $m$ without multiplicity in order; if option = 2, additionally print all possible $\widetilde{G}$ in terms of group ids or descriptions. 
+# !Warning: Note that here we take reduction on strings of group ids or descriptions. The same description may correspond to non-isomorphic groups, so the number of descriptions may be strictly smaller than the number of non-isomorphic groups.
+
+DisplayList := function(triples, option)
+    local label1s, ms_by_label, m, Gtilde, desc, Gtildes_by_label_m, 
+          label1, sorted_label1s, sorted_ms, unique_descs, triples_for_label1,
+          ms_for_label1, key, descs, id, triple, ms;
+    
+    if option = 1 then
+        label1s := Set(List(triples, t -> t[1]));
+        ms_by_label := rec();
+        
+        for triple in triples do
+            label1 := triple[1];
+            m := triple[2];
+            
+            if not IsBound(ms_by_label.(String(label1))) then
+                ms_by_label.(String(label1)) := [];
+            fi;
+            
+            Add(ms_by_label.(String(label1)), m);
+        od;
+        
+        for label1 in SortedList(label1s) do
+            ms := SortedList(Set(ms_by_label.(String(label1))));
+            Print("G_", label1, ", all possible indices: ", ms, "\n");
+        od;
+        
+    elif option = 2 then
+        label1s := Set(List(triples, t -> t[1]));
+        
+        for label1 in SortedList(label1s) do
+            Print("G_", label1, " indices:\n");
+            
+            triples_for_label1 := Filtered(triples, t -> t[1] = label1);
+            ms_for_label1 := Set(List(triples_for_label1, t -> t[2]));
+            
+            for m in SortedList(ms_for_label1) do
+                Print("  ", m, ", all possible groups:\n");
+                
+                descs := [];
+                for triple in triples_for_label1 do
+                    if triple[2] = m then
+                        Gtilde := triple[3];
+                       
+                        if ((Order(Gtilde) <= 2000) and (Order(Gtilde) <> 1024)) then
+			                id := IdGroup(Gtilde);
+                            desc := Concatenation("[", String(id[1]), ",", String(id[2]), "]");
+                        elif StructureDescription(Gtilde) <> fail then
+                            desc := StructureDescription(Gtilde);
+                        else
+                            desc := Concatenation("Order:", String(Size(Gtilde)), " Abelian:", String(IsAbelian(Gtilde)));
+                        fi;
+                        
+                        if not desc in descs then
+                            Add(descs, desc);
+                        fi;
+                    fi;
+                od;
+                
+                for desc in descs do
+                    Print("    ", desc, "\n");
+                od;
+            od;
+        od;
+        
+    else
+        Error("Option must be 1 or 2");
+    fi;
+    
+    return;
+end;
+
+
+ListOfSubgroupProducted := function(List, G)
+    local result, H, sub, h;
+    
+    result := [];  # 存储结果的列表
+    
+    for H in List do
+        if not IsGroup(H) then
+            # 如果列表中的元素不是群，跳过
+            continue;
+        fi;
+        
+        # 获取 H 的所有非同构子群
+        sub := NonIsomorphicSubgroups(H);
+        
+        # 对每个子群构造与 G 的直积
+        for h in sub do
+            Add(result, DirectProduct(h, G));
+        od;
+    od;
+    
+    return result;
+end;
+
+DisplayTriples := function(triples)
+    local sortedByG1, G1desc, pairList, i, j, tempPair, pair, G2desc;
+    
+    if Length(triples) = 0 then
+        Print("No triples found.\n");
+        return;
+    fi;
+    
+    sortedByG1 := rec();
+    
+    for triple in triples do
+        G1desc := StructureDescription(triple[1]);
+        
+        if not IsBound(sortedByG1.(G1desc)) then
+            sortedByG1.(G1desc) := [];
+        fi;
+        
+        Add(sortedByG1.(G1desc), [triple[2], triple[3]]);
+    od;
+    
+    for G1desc in RecNames(sortedByG1) do
+        pairList := sortedByG1.(G1desc);
+        
+        for i in [1..Length(pairList)-1] do
+            for j in [i+1..Length(pairList)] do
+                if pairList[i][2] > pairList[j][2] or 
+                   (pairList[i][2] = pairList[j][2] and 
+                    StructureDescription(pairList[i][1]) > StructureDescription(pairList[j][1])) then
+                    tempPair := pairList[i];
+                    pairList[i] := pairList[j];
+                    pairList[j] := tempPair;
+                fi;
+            od;
+        od;
+    od;
+    
+    for G1desc in RecNames(sortedByG1) do
+        Print(G1desc, ":\n");
+        
+        for pair in sortedByG1.(G1desc) do
+            G2desc := StructureDescription(pair[1]);
+            Print("  (", G2desc, ", ", pair[2], ")\n");
+        od;
+        
+        Print("\n");
+    od;
+end;
+
+## Main function
+
+
+TotalListOfFour := GeneratePairsOfFour(SymplecticList,MaximalList);
+
+IndexPairs := [];
+for label1 in [1..Length(SymplecticList)] do
+	triples_for_label1 := Filtered(TotalListOfFour, t -> t[1] = label1);
+        ms_for_label1 := Set(List(triples_for_label1, t -> t[2]));
+	Add(IndexPairs, [label1, ms_for_label1]);
+	od;
+IndexPairs;
+
+DisplayList(TotalListOfFour,1);
+DisplayList(TotalListOfFour,2);
+
+## Results
+
+gap> IndexPairs;
+[ [ 1, [ 1, 2, 3, 6 ] ], [ 2, [ 1, 2 ] ], [ 3, [ 1, 2, 4 ] ], [ 4, [ 1 ] ], 
+  [ 5, [ 1, 3 ] ], [ 6, [ 1, 2, 3, 6 ] ], [ 7, [ 1, 2, 3, 6 ] ], 
+  [ 8, [ 1, 2 ] ], [ 9, [ 1, 2 ] ], [ 10, [ 1, 2, 3, 6 ] ], [ 11, [ 1, 3 ] ], 
+  [ 12, [ 1, 2, 3, 6 ] ], [ 13, [ 1 ] ], [ 14, [ 1, 2, 3, 4, 6, 12 ] ], 
+  [ 15, [ 1, 2, 3, 6 ] ], [ 16, [ 1, 2, 3, 6 ] ], [ 17, [ 1, 2, 3, 6 ] ], 
+  [ 18, [ 1, 2, 3, 6 ] ], [ 19, [ 1, 2, 3, 6 ] ], [ 20, [ 1, 2, 3, 6 ] ], 
+  [ 21, [ 1, 2 ] ], [ 22, [ 1, 2, 3, 6 ] ], [ 23, [ 1, 2, 3, 4 ] ], 
+  [ 24, [ 1, 2, 3, 4, 6, 12 ] ], [ 25, [ 1, 2, 3, 4, 6, 12 ] ], 
+  [ 26, [ 1, 2, 3, 6 ] ], [ 27, [ 1, 2, 3, 4, 6, 12 ] ], 
+  [ 28, [ 1, 2, 3, 4, 6 ] ], [ 29, [ 1, 2, 3, 4, 6, 8, 12 ] ], 
+  [ 30, [ 1, 2, 3, 4, 6, 8, 12, 24 ] ], [ 31, [ 1, 2, 3, 4, 6, 12 ] ], 
+  [ 32, [ 1, 2, 3, 4, 6, 8, 12, 16, 24 ] ], 
+  [ 33, [ 1, 2, 3, 4, 6, 8, 12, 16, 24 ] ], 
+  [ 34, [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48 ] ] ]
+gap> DisplayList(TotalListOfFour,1);
+G_1, all possible indices: [ 1, 2, 3, 6 ]
+G_2, all possible indices: [ 1, 2 ]
+G_3, all possible indices: [ 1, 2, 4 ]
+G_4, all possible indices: [ 1 ]
+G_5, all possible indices: [ 1, 3 ]
+G_6, all possible indices: [ 1, 2, 3, 6 ]
+G_7, all possible indices: [ 1, 2, 3, 6 ]
+G_8, all possible indices: [ 1, 2 ]
+G_9, all possible indices: [ 1, 2 ]
+G_10, all possible indices: [ 1, 2, 3, 6 ]
+G_11, all possible indices: [ 1, 3 ]
+G_12, all possible indices: [ 1, 2, 3, 6 ]
+G_13, all possible indices: [ 1 ]
+G_14, all possible indices: [ 1, 2, 3, 4, 6, 12 ]
+G_15, all possible indices: [ 1, 2, 3, 6 ]
+G_16, all possible indices: [ 1, 2, 3, 6 ]
+G_17, all possible indices: [ 1, 2, 3, 6 ]
+G_18, all possible indices: [ 1, 2, 3, 6 ]
+G_19, all possible indices: [ 1, 2, 3, 6 ]
+G_20, all possible indices: [ 1, 2, 3, 6 ]
+G_21, all possible indices: [ 1, 2 ]
+G_22, all possible indices: [ 1, 2, 3, 6 ]
+G_23, all possible indices: [ 1, 2, 3, 4 ]
+G_24, all possible indices: [ 1, 2, 3, 4, 6, 12 ]
+G_25, all possible indices: [ 1, 2, 3, 4, 6, 12 ]
+G_26, all possible indices: [ 1, 2, 3, 6 ]
+G_27, all possible indices: [ 1, 2, 3, 4, 6, 12 ]
+G_28, all possible indices: [ 1, 2, 3, 4, 6 ]
+G_29, all possible indices: [ 1, 2, 3, 4, 6, 8, 12 ]
+G_30, all possible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+G_31, all possible indices: [ 1, 2, 3, 4, 6, 12 ]
+G_32, all possible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24 ]
+G_33, all possible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24 ]
+G_34, all possible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48 ]
+gap> DisplayList(TotalListOfFour,2);
+G_1 indices:
+  1, all possible groups:
+    (C3 x C3 x C3 x C3) : A6
+  2, all possible groups:
+    (C3 x C3 x C3 x C3) : S6
+  3, all possible groups:
+    ((C3 x C3 x C3 x C3) : A6) : C3
+  6, all possible groups:
+    ((C3 x C3 x C3 x C3) : A6) : C6
+G_2 indices:
+  1, all possible groups:
+    A7
+  2, all possible groups:
+    S7
+G_3 indices:
+  1, all possible groups:
+    [1944,3559]
+  2, all possible groups:
+    ((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C2) : C2)
+  4, all possible groups:
+    ((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)
+G_4 indices:
+  1, all possible groups:
+    [720,765]
+G_5 indices:
+  1, all possible groups:
+    [660,13]
+  3, all possible groups:
+    [1980,57]
+G_6 indices:
+  1, all possible groups:
+    [360,120]
+  2, all possible groups:
+    [720,767]
+  3, all possible groups:
+    [1080,489]
+  6, all possible groups:
+    C3 x S3 x S5
+G_7 indices:
+  1, all possible groups:
+    [972,776]
+  2, all possible groups:
+    [1944,3536]
+    [1944,3559]
+    [1944,3498]
+  3, all possible groups:
+    ((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4
+  6, all possible groups:
+    ((C3 x ((C3 x C3 x C3) : C3)) : C3) : D8
+G_8 indices:
+  1, all possible groups:
+    [360,118]
+  2, all possible groups:
+    [720,763]
+    [720,765]
+G_9 indices:
+  1, all possible groups:
+    [168,42]
+  2, all possible groups:
+    [336,208]
+G_10 indices:
+  1, all possible groups:
+    [120,34]
+  2, all possible groups:
+    [240,189]
+  3, all possible groups:
+    [360,119]
+  6, all possible groups:
+    [720,769]
+G_11 indices:
+  1, all possible groups:
+    [72,41]
+  3, all possible groups:
+    [216,153]
+G_12 indices:
+  1, all possible groups:
+    [72,40]
+  2, all possible groups:
+    [144,186]
+  3, all possible groups:
+    [216,157]
+  6, all possible groups:
+    [432,754]
+G_13 indices:
+  1, all possible groups:
+    [48,29]
+G_14 indices:
+  1, all possible groups:
+    [486,249]
+  2, all possible groups:
+    [972,812]
+    [972,776]
+    [972,811]
+    [972,777]
+  3, all possible groups:
+    [1458,1179]
+    [1458,1229]
+    [1458,1720]
+  4, all possible groups:
+    [1944,3493]
+    [1944,3478]
+  6, all possible groups:
+    ((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C2 x C2)
+    (((C3 x ((C3 x C3) : C3)) : C3) : C3) : (C2 x C2)
+    ((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4
+  12, all possible groups:
+    ((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)
+G_15 indices:
+  1, all possible groups:
+    [72,43]
+  2, all possible groups:
+    [144,189]
+    [144,183]
+  3, all possible groups:
+    [216,92]
+    [216,164]
+  6, all possible groups:
+    [432,535]
+    [432,745]
+G_16 indices:
+  1, all possible groups:
+    [60,5]
+  2, all possible groups:
+    [120,34]
+    [120,35]
+  3, all possible groups:
+    [180,19]
+  6, all possible groups:
+    [360,119]
+    [360,122]
+G_17 indices:
+  1, all possible groups:
+    [36,9]
+  2, all possible groups:
+    [72,40]
+    [72,45]
+    [72,41]
+  3, all possible groups:
+    [108,36]
+  6, all possible groups:
+    [216,157]
+    [216,168]
+G_18 indices:
+  1, all possible groups:
+    [36,10]
+  2, all possible groups:
+    [72,46]
+    [72,40]
+  3, all possible groups:
+    [108,38]
+  6, all possible groups:
+    [216,157]
+    [216,170]
+G_19 indices:
+  1, all possible groups:
+    [21,1]
+  2, all possible groups:
+    [42,1]
+  3, all possible groups:
+    [63,3]
+  6, all possible groups:
+    [126,7]
+G_20 indices:
+  1, all possible groups:
+    [20,3]
+  2, all possible groups:
+    [40,12]
+  3, all possible groups:
+    [60,6]
+  6, all possible groups:
+    [120,40]
+G_21 indices:
+  1, all possible groups:
+    [16,8]
+  2, all possible groups:
+    [32,42]
+G_22 indices:
+  1, all possible groups:
+    [24,12]
+  2, all possible groups:
+    [48,48]
+  3, all possible groups:
+    [72,42]
+  6, all possible groups:
+    [144,188]
+G_23 indices:
+  1, all possible groups:
+    [8,4]
+  2, all possible groups:
+    [16,13]
+    [16,8]
+    [16,9]
+  3, all possible groups:
+    [24,3]
+  4, all possible groups:
+    [32,11]
+G_24 indices:
+  1, all possible groups:
+    [18,4]
+  2, all possible groups:
+    [36,10]
+    [36,13]
+    [36,9]
+  3, all possible groups:
+    [54,13]
+    [54,5]
+  4, all possible groups:
+    [72,45]
+  6, all possible groups:
+    [108,38]
+    [108,36]
+    [108,43]
+    [108,25]
+  12, all possible groups:
+    [216,168]
+G_25 indices:
+  1, all possible groups:
+    [12,4]
+  2, all possible groups:
+    [24,14]
+    [24,8]
+    [24,5]
+    [24,6]
+  3, all possible groups:
+    [36,12]
+  4, all possible groups:
+    [48,4]
+  6, all possible groups:
+    [72,30]
+    [72,48]
+    [72,28]
+    [72,27]
+  12, all possible groups:
+    [144,69]
+G_26 indices:
+  1, all possible groups:
+    [12,3]
+  2, all possible groups:
+    [24,12]
+    [24,13]
+  3, all possible groups:
+    [36,11]
+  6, all possible groups:
+    [72,47]
+    [72,42]
+G_27 indices:
+  1, all possible groups:
+    [10,1]
+  2, all possible groups:
+    [20,3]
+    [20,4]
+  3, all possible groups:
+    [30,2]
+  4, all possible groups:
+    [40,12]
+  6, all possible groups:
+    [60,6]
+    [60,10]
+  12, all possible groups:
+    [120,40]
+G_28 indices:
+  1, all possible groups:
+    [8,3]
+  2, all possible groups:
+    [16,11]
+    [16,13]
+    [16,8]
+    [16,7]
+  3, all possible groups:
+    [24,10]
+  4, all possible groups:
+    [32,11]
+  6, all possible groups:
+    [48,45]
+G_29 indices:
+  1, all possible groups:
+    [4,1]
+  2, all possible groups:
+    [8,3]
+    [8,2]
+    [8,1]
+    [8,4]
+  3, all possible groups:
+    [12,2]
+  4, all possible groups:
+    [16,5]
+    [16,1]
+    [16,2]
+    [16,6]
+  6, all possible groups:
+    [24,10]
+    [24,9]
+    [24,2]
+  8, all possible groups:
+    [32,1]
+  12, all possible groups:
+    [48,23]
+    [48,2]
+    [48,20]
+G_30 indices:
+  1, all possible groups:
+    [6,1]
+  2, all possible groups:
+    [12,4]
+  3, all possible groups:
+    [18,3]
+  4, all possible groups:
+    [24,5]
+  6, all possible groups:
+    [36,12]
+  8, all possible groups:
+    [48,4]
+  12, all possible groups:
+    [72,27]
+  24, all possible groups:
+    [144,69]
+G_31 indices:
+  1, all possible groups:
+    [4,2]
+  2, all possible groups:
+    [8,5]
+    [8,3]
+    [8,2]
+  3, all possible groups:
+    [12,5]
+    [12,3]
+  4, all possible groups:
+    [16,5]
+    [16,6]
+  6, all possible groups:
+    [24,15]
+    [24,13]
+    [24,10]
+    [24,9]
+  12, all possible groups:
+    [48,23]
+G_32 indices:
+  1, all possible groups:
+    [3,1]
+  2, all possible groups:
+    [6,1]
+    [6,2]
+  3, all possible groups:
+    [9,2]
+    [9,1]
+  4, all possible groups:
+    [12,1]
+    [12,2]
+  6, all possible groups:
+    [18,3]
+    [18,5]
+    [18,2]
+  8, all possible groups:
+    [24,2]
+    [24,1]
+  12, all possible groups:
+    [36,6]
+    [36,8]
+    [36,2]
+  16, all possible groups:
+    [48,2]
+  24, all possible groups:
+    [72,14]
+    [72,12]
+G_33 indices:
+  1, all possible groups:
+    [2,1]
+  2, all possible groups:
+    [4,2]
+    [4,1]
+  3, all possible groups:
+    [6,2]
+  4, all possible groups:
+    [8,2]
+    [8,1]
+  6, all possible groups:
+    [12,5]
+    [12,2]
+  8, all possible groups:
+    [16,5]
+    [16,1]
+  12, all possible groups:
+    [24,9]
+    [24,2]
+  16, all possible groups:
+    [32,1]
+  24, all possible groups:
+    [48,23]
+    [48,2]
+G_34 indices:
+  1, all possible groups:
+    [1,1]
+  2, all possible groups:
+    [2,1]
+  3, all possible groups:
+    [3,1]
+  4, all possible groups:
+    [4,1]
+  6, all possible groups:
+    [6,2]
+  8, all possible groups:
+    [8,1]
+  12, all possible groups:
+    [12,2]
+  16, all possible groups:
+    [16,1]
+  24, all possible groups:
+    [24,2]
+  32, all possible groups:
+    [32,1]
+  48, all possible groups:
+    [48,2]
+
+
+1:
+  (C3, 3)
+  (C6, 6)
+  (C12, 12)
+  (C24, 24)
+  (C48, 48)
+
+C3:
+  (C3 x C3, 3)
+  (C3 x S3, 6)
+  (C6 x C3, 6)
+  (C12 x C3, 12)
+  (C3 x (C3 : C4), 12)
+  (C24 x C3, 24)
+
+S3:
+  (C3 x S3, 3)
+  (C6 x S3, 6)
+  (C12 x S3, 12)
+
+A5:
+  (GL(2,4), 3)
+  (C3 x S5, 6)
+
+S5:
+  (C3 x S5, 3)
+
+PSL(2,11):
+  (C3 x PSL(2,11), 3)
+
+(S3 x S3) : C2:
+  (C3 x ((S3 x S3) : C2), 3)
+
+(C3 x C3) : C4:
+  (C3 x ((C3 x C3) : C4), 3)
+  (C3 x ((C3 x C3) : C4), 3)
+  (C3 x ((S3 x S3) : C2), 6)
+  (C6 x ((C3 x C3) : C4), 6)
+
+S3 x S3:
+  (C3 x S3 x S3, 3)
+  (C3 x ((S3 x S3) : C2), 6)
+
+C5 : C4:
+  (C3 x (C5 : C4), 3)
+
+S4:
+  (C3 x S4, 3)
+
+(C3 x C3) : C2:
+  (C3 x ((C3 x C3) : C2), 3)
+  (C3 x ((C3 x C3) : C2), 3)
+  (C3 x ((C3 x C3) : C4), 6)
+  (C3 x ((C3 x C3) : C4), 6)
+  (C3 x S3 x S3, 6)
+  (C6 x ((C3 x C3) : C2), 6)
+  (C6 x ((C3 x C3) : C4), 12)
+
+D12:
+  (C6 x S3, 3)
+  (C12 x S3, 6)
+  (C3 x ((C6 x C2) : C2), 6)
+
+A4:
+  (C3 x A4, 3)
+  (C3 x S4, 6)
+
+D10:
+  (C3 x D10, 3)
+  (C3 x (C5 : C4), 6)
+  (C3 x (C5 : C4), 6)
+
+D8:
+  (C3 x D8, 3)
+
+C4:
+  (C12, 3)
+  (C12 x C2, 6)
+  (C24, 6)
+  (C3 x D8, 6)
+  (C48, 12)
+
+C2 x C2:
+  (C6 x C2, 3)
+  (C12 x C2, 6)
+  (C3 x D8, 6)
+
+C2:
+  (C6, 3)
+  (C12, 6)
+  (C6 x C2, 6)
+  (C12 x C2, 12)
+  (C24, 12)
+  (C48, 24)

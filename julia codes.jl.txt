@@ -1,0 +1,353 @@
+"""  
+    has_short_root(P::ZZLat) -> Bool  
+  
+检查正定格P中是否存在short root（平方=2的向量）  
+"""  
+function has_short_root(P::ZZLat)  
+    return any(sq == 2 for (v, sq) in short_vectors(P, 2))  
+end 
+
+"""  
+    has_long_root(L1::ZZLat, L2::ZZLat) -> Bool  
+  
+Check if lattice L1 contains a vector of square 6 whose divisibility  
+with respect to L2 is exactly 3 (i.e., <v, L2> = 3Z).  
+  
+# Limitations  
+  
+This function works correctly when L2 is the full ambient space  
+(degree(L2) == rank(L2)). When both L1 and L2 are proper sublattices  
+of their ambient space (rank < degree), the function may fail with  
+dimension errors when computing the embedding matrix.  
+  
+# Arguments  
+- `L1::ZZLat`: The sublattice to search for long roots  
+- `L2::ZZLat`: The containing lattice for divisibility computation  
+  
+# Returns  
+- `Bool`: true if a long root with the required divisibility exists  
+"""
+function has_long_root(L1::ZZLat, L2::ZZLat)  
+    # L1 should be a sublattice of L2  
+    @req rank(L1) <= rank(L2) "L1 must have rank <= L2"  
+      
+    # Get embedding of L1 into L2  
+    embed_L1_in_L2 = solve(basis_matrix(L2), basis_matrix(L1); side=:left)  
+      
+    # Get basis of L2 and its Gram matrix  
+    basis_L2 = basis_matrix(L2)  
+    G2 = gram_matrix(L2)  # Keep as QQMatrix  
+      
+    for (v, sq) in short_vectors(L1, 6)  
+        sq == 6 || continue  
+          
+        # Convert v to QQMatrix and transform to L2 coordinates  
+        v_row = matrix(QQ, 1, length(v), v) * embed_L1_in_L2  
+          
+        # Check divisibility with each basis element of L2  
+        all_divisible = true  
+        has_odd = false  
+          
+        for i in 1:rank(L2)  
+            # Compute <v, basis_element_i>  
+            basis_element = basis_L2[i:i, :]  
+            product = (v_row * G2 * transpose(basis_element))[1,1]  
+              
+            # Check if divisible by 3  
+            if denominator(product) != 1 || numerator(product) % 3 != 0  
+                all_divisible = false  
+                break  
+            end  
+              
+            # Check if odd (not divisible by 6)  
+            if numerator(product) % 6 != 0  
+                has_odd = true  
+            end  
+        end  
+          
+        if all_divisible && has_odd  
+            return true
+        end  
+    end  
+      
+    return false  
+end
+
+
+function has_long_root2(L1::ZZLat, L2::ZZLat)
+  
+    embed = solve(basis_matrix(L2), basis_matrix(L1); side=:left)  
+    G2 = gram_matrix(L2)  
+    n2 = rank(L2)  
+  
+    for (v, _) in short_vectors(L1, 6, 6)  
+        v_row = matrix(QQ, 1, length(v), v) * embed  
+        # (v_row * G2)[1, i] = <v, b_i> for the i-th basis vector of L2  
+        inner_prods = v_row * G2  
+        if all(denominator(inner_prods[1, i]) == 1 &&  
+               numerator(inner_prods[1, i]) % 3 == 0 for i in 1:n2)  
+            return true  
+        end  
+    end  
+    return false  
+end
+
+function has_long_root(L1::ZZLat, L2::ZZLat)  
+    @req rank(L1) <= rank(L2) "L1 must have rank <= L2"  
+  
+    B1 = basis_matrix(L1)  
+    B2 = basis_matrix(L2)  
+    G_amb = gram_matrix(ambient_space(L2))  
+    n2 = rank(L2)  
+  
+    for (v, _) in short_vectors(L1, 6, 6)  
+        # Convert v (L1 coordinates) to ambient-space row vector  
+        v_amb = matrix(QQ, 1, length(v), v) * B1  
+        # <v, b2_i> = v_amb * G_amb * b2_i^T, for all i at once:  
+        inner_prods = v_amb * G_amb * transpose(B2)  
+        if all(denominator(inner_prods[1, i]) == 1 &&  
+               mod(numerator(inner_prods[1, i]), 3) == 0 for i in 1:n2)  
+            return true  
+        end  
+    end  
+    return false  
+end
+
+
+function find_fixed_3_minus_1_generator(Tf::ZZLatWithIsom)  
+	DT, fDT = discriminant_group(Tf)  
+	DT3, emb3 = primary_part(DT, 3)  
+	for x in DT
+		if (( Hecke.quadratic_product(x) == -1//3 ) || ( Hecke.quadratic_product(x) == 2//3 )) && fDT(x) == x  
+			return x
+		end
+	end  
+	return false
+end
+
+
+
+
+
+
+function primitive_extension_3_minus_1(  
+    A::ZZLat, B::ZZLat  ,  gen::TorQuadModuleElem
+)  
+    DA = discriminant_group(A)  
+    DB = discriminant_group(B)  
+      
+      
+    # Step 2: H_A = orthogonal complement of <gen> in DA  
+    H3, emb3 = sub(DA, [gen])  
+    HA, HAinDA = orthogonal_submodule(DA, H3)  
+      
+    # Step 3: anti-isometry HA → DB  
+    ok, gamma = is_anti_isometric_with_anti_isometry(HA, DB)  
+      
+    # Step 4: gluing context  
+    D, DAinD, DBinD, = Oscar._gluing_context(DA, DB, false, false)  
+    HAinD = compose(HAinDA, DAinD)  
+      
+    # Step 5: build overlattice WITHOUT extending isometries  
+    L, _, _ = Oscar._overlattice(gamma, HAinD, DBinD)  
+      
+    # Step 6: get embeddings via _as_sublattices  
+    L_with_isometry = integer_lattice_with_isometry(L, identity_matrix(QQ, rank(L)))  
+    A_sub, B_sub = Oscar._as_sublattices(L_with_isometry, A, B, false)  
+      
+    # Extract embedding matrices  
+    embed_A = solve(basis_matrix(L), basis_matrix(A_sub); side=:left)  
+    embed_B = solve(basis_matrix(L), basis_matrix(B_sub); side=:left)  
+      
+    return L, embed_A, embed_B  
+end
+
+
+function extension_with_root_test(A::ZZLat, B::ZZLatWithIsom)  
+    # Build primitive extension  
+    if abs(discriminant(B)) == 3*abs(discriminant(A))  
+	gen = find_fixed_3_minus_1_generator(B)
+        if gen == false
+            return false   
+        end  
+        L, embed_B, embed_A = primitive_extension_3_minus_1(lattice(B), A, gen)  
+    else  
+	A_with_identity = integer_lattice_with_isometry(A, identity_matrix(QQ, rank(A))) 
+	gen = find_fixed_3_minus_1_generator(A_with_identity)
+        L, embed_A, embed_B = primitive_extension_3_minus_1(A, lattice(B), gen)  
+    end   
+      
+    # Compute C1 and C1_with_isometry directly from B  
+    fB = isometry(B)  
+    m = order_of_isometry(B)  
+    C1 = kernel_lattice(B, cyclotomic_polynomial(m))  
+      
+    # Embedding matrix from C1 to B (identity since C1 ⊂ B)  
+    embed_C1_in_B = solve(basis_matrix(B), basis_matrix(C1); side=:left)
+      
+      
+    # Compute orthogonal complement C2 in L  
+    C2 = orthogonal_submodule(L, embed_C1_in_B*embed_B*basis_matrix(L))  
+      
+    # C1 already has isometry from kernel_lattice  
+    C1_with_isometry = C1  
+      
+    # Test for roots  
+    if has_short_root(C2) || has_long_root(C2,L)  
+        return false  
+    else  
+        return C1_with_isometry, C2  
+    end  
+end
+
+function analyze_lattice_extensions(S::ZZLat, T::ZZLat, indices::Vector{Int})  
+    results = []  
+      
+    for m in indices  
+        # Get lattices with isometry of order m  
+        T_with_isometries = enumerate_classes_of_lattices_with_isometry(T, m; neg_sigs=[(m, 2)])  
+          
+        # Add filtering condition for discriminant ratio 3:1  
+        if abs(discriminant(S)) == 3*abs(discriminant(T))  
+            # In this case, m must be even and we require f^(m/2) = -id  
+            @assert iseven(m) "m must be even when discriminant ratio is 3:1"  
+              
+            # Filter T_with_isometries to only those with f^(m/2) = -id  
+            filtered_T_with_isometries = []  
+            for T_iso in T_with_isometries  
+                f = isometry(T_iso)  
+                f_power = f^Int(m//2)  
+                if f_power == -identity_matrix(QQ, rank(lattice(T_iso)))  
+                    push!(filtered_T_with_isometries, T_iso)  
+                end  
+            end  
+            T_with_isometries = filtered_T_with_isometries  
+        end  
+          
+        for T_iso in T_with_isometries  
+            # Apply extension_with_root_test  
+	    T_iso=to_full_rank_with_isometry(T_iso)
+            result = extension_with_root_test(S, T_iso)  
+              
+            if result != false  
+                C1_with_isometry, C2 = result  
+                  
+                # Calculate dimension  
+                phi_m = euler_phi(m)  
+                rank_C1 = rank(lattice(C1_with_isometry))  
+                  
+                if m == 2  
+                    dim = rank_C1//phi_m - 2  
+                else  
+                    dim = rank_C1//phi_m - 1  
+                end  
+                  
+                # Add to results with T_iso included  
+                push!(results, (m, Int(dim), T_iso, C1_with_isometry, C2))  
+            end  
+        end  
+    end  
+      
+    return results  
+end
+
+
+
+function find_incident_pairs_by_index(family_data::Vector{Tuple{Int, Int, ZZLatWithIsom, ZZLatWithIsom, ZZLat}})  
+    incident_pairs = Tuple{Int, Int}[]  
+      
+    for j1 in 1:length(family_data)  
+        for j2 in 1:length(family_data)  
+            if j1 == j2  
+                continue  
+            end  
+              
+            m1, dim1, T_iso1, C1_1, C2_1 = family_data[j1]  
+            m2, dim2, T_iso2, C1_2, C2_2 = family_data[j2]  
+              
+            # Check if m2/m1 = 2 or 3  
+            ratio = m2 // m1  
+            if ratio in [2, 3]  
+                # Compute T_iso_2^(m2/m1) and compare types  
+                power = Int(ratio)  
+                T_iso2_power = integer_lattice_with_isometry(  
+                    lattice(T_iso2),   
+                    isometry(T_iso2)^power  
+                )  
+                  
+                if is_of_same_type(T_iso1, T_iso2_power)  
+                    push!(incident_pairs, (j1, j2))  
+                end  
+            end  
+        end  
+    end  
+      
+    return incident_pairs  
+end
+
+function find_incident_pairs_by_symplectic(  
+    family::Vector{Vector{Tuple{Int, Int, ZZLatWithIsom, ZZLatWithIsom, ZZLat}}},  
+    symplectic_incident_pairs::Vector{Tuple{Int, Int}}  
+)  
+    incident_4tuples = Vector{Tuple{Int, Int, Int, Int}}()  
+      
+    for (i1, i2) in symplectic_incident_pairs  
+        if i1 > length(family) || i2 > length(family)  
+            continue  
+        end  
+          
+        family1 = family[i1]  
+        family2 = family[i2]  
+          
+        for j1 in 1:length(family1)  
+            for j2 in 1:length(family2)  
+                m1, dim1, T_iso1, C1_1, C2_1 = family1[j1]  
+                m2, dim2, T_iso2, C1_2, C2_2 = family2[j2]  
+                  
+                # Check if they have the same m  
+                if m1 == m2 && is_of_same_type(T_iso1, T_iso2)  
+                    push!(incident_4tuples, (i1, i2, j1, j2))  
+                end  
+            end  
+        end  
+    end  
+      
+    return incident_4tuples  
+end
+		
+function main_lattice_analysis(  
+    cases::Vector{Tuple{ZZLat, ZZLat, Vector{Int}}},  
+    symplectic_incident_pairs::Vector{Tuple{Int, Int}}  
+)  
+    # Step 3: Calculate analyze_lattice_extensions for each case  
+    family = [analyze_lattice_extensions(S, T, indices) for (S, T, indices) in cases]  
+      
+    # Step 4: Find incident pairs by index  
+    possible_incident_family_by_index = [  
+        find_incident_pairs_by_index(family[i]) for i in 1:length(family)  
+    ]  
+      
+    # Step 5: Find incident pairs by symplectic relation  
+    possible_incident_family_by_symplectic = find_incident_pairs_by_symplectic(  
+        family, symplectic_incident_pairs  
+    )  
+      
+    return family, possible_incident_family_by_index, possible_incident_family_by_symplectic  
+end
+
+function to_full_rank_with_isometry(Lf::ZZLatWithIsom)  
+    # Get the Gram matrix and isometry from the original lattice  
+    G = gram_matrix(Lf)  
+    f = isometry(Lf)  
+      
+    # Create a new lattice with the same Gram matrix  
+    L_full = integer_lattice(; gram=G)  
+      
+    # Create the lattice with isometry using the original isometry  
+    return integer_lattice_with_isometry(L_full, f; check=true)  
+end
+
+L_gram= matrix(ZZ,22,22, [ 2,-1,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 2,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,1,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,1,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,1,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,-1, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0,-1, 2,-1, 0, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0,-1, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0,-1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0,-1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 2,-1, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0,-1, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 2, 0, 0, 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,-1, 0, 0, 0, 0, 2])
+
+cases=
+
