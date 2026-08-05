@@ -1,671 +1,500 @@
-# GAP calculation of YYZ bounds
+# GAP calculation of the YYZ group-theoretic bounds
 
-This directory contains a cleaned GAP script and the recorded output of the computation used for the group-theoretic YYZ bounds in the paper:
+This calculation searches the 15 maximal groups of Yang–Yu–Zhu for candidate full groups containing one of the 34 Laza–Zheng symplectic groups as a normal subgroup with cyclic quotient.
 
-- Jie Fu, Shihao Wang, and Zhiwei Zheng, *Non-Symplectic Indices of Automorphism Groups of Smooth Cubic Fourfolds*, arXiv:2606.11754v1 [math.AG], 10 June 2026.
+The admissible index is required to have the form
 
-The calculation is discussed in Section 5.1 of the paper. Proposition 5.1 states that, after fixing the symplectic automorphism group, the non-symplectic index must divide one of the YYZ bounds in Table 3.
+\[m=2^a\quad\text{or}\quad m=3\cdot 2^a.\]
 
-The two classification results used as input are:
+The output is group-theoretic: it gives necessary candidates inside the Yang–Yu–Zhu maximal groups, not a geometric realizability statement for every row.
 
-- Radu Laza and Zhiwei Zheng, *Automorphisms and periods of cubic fourfolds*, Mathematische Zeitschrift 300 (2022), 1455-1507. This gives the 34 possible symplectic automorphism groups.
-- Song Yang, Xun Yu, and Zigang Zhu, *Automorphism groups of cubic fivefolds and fourfolds*, Journal of the London Mathematical Society 110 (2024), Paper e12997. This gives the 15 maximal groups that contain every finite group acting faithfully on a smooth cubic fourfold.
+The group labels and names below follow the terminology of the two source articles: the symplectic groups are ordered as in Table 3 of Fu–Wang–Zheng, while the maximal source groups are ordered as in Theorem 1.2 of Yang–Yu–Zhu.
 
-The paper cites GAP 4.15.1. The script also uses the Small Groups Library.
+## Files and execution
 
-## Purpose of the calculation
+Run:
 
-Let X be a smooth cubic fourfold. Write
-
-```text
-G = Aut^s(X),    G_tilde = Aut(X),    m = [G_tilde : G].
-```
-
-The symplectic group G is normal in the full automorphism group G_tilde, and the quotient G_tilde/G is cyclic of order m. Proposition 4.1 of the paper restricts m to the form
-
-```text
-m = 2^a  or  m = 3 * 2^a,    a >= 0.
-```
-
-For each of the 34 possible groups G, the script performs the following necessary group-theoretic test:
-
-1. Enumerate subgroup isomorphism classes inside each of the 15 Yang-Yu-Zhu maximal groups.
-2. For every candidate group H, test whether H contains a normal subgroup isomorphic to G.
-3. Test whether H/G is cyclic.
-4. Keep the index [H:G] only when it has the allowed form above.
-
-This test gives necessary bounds, not a realizability theorem. A candidate index can survive the GAP calculation without being realized by a smooth cubic fourfold. The paper combines these bounds with lattice theory, GIT calculations, moduli arguments, and explicit geometry.
-
-## Files
-
-- `gap_yyz_bounds.g`: executable GAP code. It contains no pasted terminal output.
-- `gap_yyz_bounds.md`: this explanation and the output recorded in the original source file.
-
-The cleaned script caches subgroup data and computes normal subgroups lazily. This avoids repeating the same expensive `NormalSubgroups` computation for every symplectic group.
-
-## Running the script
-
-From a shell with GAP available:
-
-```text
+```bash
 gap -q gap_yyz_bounds.g
 ```
 
-To save the output:
+Set `YYZ_SHOW_PROGRESS := false;` near the beginning of the script to suppress progress messages.
 
-```text
-gap -q gap_yyz_bounds.g > gap_yyz_bounds.out
+The recorded run found 2,649 successful subgroup occurrences before final deduplication and produced 218 output records.
+
+## Output format
+
+Each entry of `YYZResults` has the form
+
+```gap
+[ "G_i", index, full_group_id, full_group_description, sources ]
 ```
 
-At the beginning of the script, the following flags control the printed output:
+- `G_i` is the Laza–Zheng label of the symplectic group.
+- `full_group_id` is the GAP SmallGroup ID when available; otherwise it is `fail`.
+- `sources` records the Yang–Yu–Zhu maximal groups in which the candidate occurs.
 
-```text
-PRINT_INDEX_SUMMARY := true;
-PRINT_CANDIDATE_GROUPS := true;
-RUN_AUXILIARY_PRODUCT_CALCULATION := false;
+### Article notation for the symplectic groups
+
+The labels `G_i` follow Table 3 of Fu–Wang–Zheng.  Here `G_i` denotes the full symplectic automorphism group $\operatorname{Aut}^s(X)$, and $r(S)$ is the rank of its coinvariant lattice.  We retain the group names used in that table; the GAP descriptions in the result tables give concrete abstract structures when available.
+
+| Label | Article notation | Order | $r(S)$ |
+|---|---|---:|---:|
+| `G_1` | $3^4:A_6$ | 29160 | 20 |
+| `G_2` | $A_7$ | 2520 | 20 |
+| `G_3` | $3^{1+4}:2.2^2$ | 1944 | 20 |
+| `G_4` | $M_{10}$ | 720 | 20 |
+| `G_5` | $L_2(11)$ | 660 | 20 |
+| `G_6` | $A_{3,5}$ | 360 | 20 |
+| `G_7` | $3^{1+4}:2.2$ | 972 | 19 |
+| `G_8` | $A_6$ | 360 | 19 |
+| `G_9` | $L_2(7)$ | 168 | 19 |
+| `G_10` | $S_5$ | 120 | 19 |
+| `G_11` | $M_9$ | 72 | 19 |
+| `G_12` | $N_{72}$ | 72 | 19 |
+| `G_13` | $T_{48}$ | 48 | 19 |
+| `G_14` | $3^{1+4}:2$ | 486 | 18 |
+| `G_15` | $A_{4,3}$ | 72 | 18 |
+| `G_16` | $A_5$ | 60 | 18 |
+| `G_17` | $3^2.4$ | 36 | 18 |
+| `G_18` | $S_{3,3}$ | 36 | 18 |
+| `G_19` | $F_{21}$ | 21 | 18 |
+| `G_20` | $\operatorname{Hol}(5)$ | 20 | 18 |
+| `G_21` | $QD_{16}$ | 16 | 18 |
+| `G_22` | $S_4$ | 24 | 17 |
+| `G_23` | $Q_8$ | 8 | 17 |
+| `G_24` | $A_{3,3}$ | 18 | 16 |
+| `G_25` | $D_{12}$ | 12 | 16 |
+| `G_26` | $A_4$ | 12 | 16 |
+| `G_27` | $D_{10}$ | 10 | 16 |
+| `G_28` | $D_8$ | 8 | 15 |
+| `G_29` | $C_4$ | 4 | 14 |
+| `G_30` | $S_3$ | 6 | 14 |
+| `G_31` | $C_2^2$ | 4 | 12 |
+| `G_32` | $C_3$ | 3 | 12 |
+| `G_33` | $C_2$ | 2 | 8 |
+| `G_34` | $1$ | 1 | 0 |
+
+The notation $L_2(q)$ means $\operatorname{PSL}_2(\mathbf F_q)$.  Symbols such as $A_{3,5}$, $A_{4,3}$, $A_{3,3}$, $S_{3,3}$, $M_9$, $N_{72}$, and $T_{48}$ are the names used in the Laza–Zheng classification and retained in the index paper.
+
+### Special treatment of `G_14`
+
+Here `G_14` is the group $3^{1+4}:2$ of order 486.  Full groups above `G_14` are deliberately not identified, because the corresponding abstract-group identification is comparatively expensive. Successful occurrences are merged only by index, and their source sets are united. Thus a `G_14` row has the form
+
+```gap
+[ "G_14", index, fail, fail, sources ]
 ```
 
-The auxiliary data section also contains:
-
-```text
-AuxiliaryBaseGroups := MaximalCubicThreefoldGroups;
-```
-
-The auxiliary product calculation is disabled by default because the original file contained its output but did not include the exact command that produced it. Both the cubic-threefold list and the cubic-surface list from the original file are retained. Change `AuxiliaryBaseGroups` to select the list before enabling the calculation.
-
-## Labels for the 34 symplectic groups
-
-The label `G_i` is the position of the group in `SymplecticGroups`. It follows the order used in Table 3 of the paper.
-
-| Label | Group | rank(S) | Order | GAP representation |
-|---:|---|---:|---:|---|
-| G_1 | `3^4 : A6` | 20 | 29160 | `matrix quotient (G1)` |
-| G_2 | `A7` | 20 | 2520 | `AlternatingGroup(7)` |
-| G_3 | `3^(1+4) : 2.2^2` | 20 | 1944 | `[1944,3559]` |
-| G_4 | `M10` | 20 | 720 | `[720,765]` |
-| G_5 | `L2(11)` | 20 | 660 | `[660,13]` |
-| G_6 | `A3,5` | 20 | 360 | `[360,120]` |
-| G_7 | `3^(1+4) : 2.2` | 19 | 972 | `[972,776]` |
-| G_8 | `A6` | 19 | 360 | `[360,118]` |
-| G_9 | `L2(7)` | 19 | 168 | `[168,42]` |
-| G_10 | `S5` | 19 | 120 | `[120,34]` |
-| G_11 | `M9` | 19 | 72 | `[72,41]` |
-| G_12 | `N72` | 19 | 72 | `[72,40]` |
-| G_13 | `T48` | 19 | 48 | `[48,29]` |
-| G_14 | `3^(1+4) : 2` | 18 | 486 | `[486,249]` |
-| G_15 | `A4,3` | 18 | 72 | `[72,43]` |
-| G_16 | `A5` | 18 | 60 | `[60,5]` |
-| G_17 | `3^2.4` | 18 | 36 | `[36,9]` |
-| G_18 | `S3,3` | 18 | 36 | `[36,10]` |
-| G_19 | `F21` | 18 | 21 | `[21,1]` |
-| G_20 | `Hol(5)` | 18 | 20 | `[20,3]` |
-| G_21 | `QD16` | 18 | 16 | `[16,8]` |
-| G_22 | `S4` | 17 | 24 | `[24,12]` |
-| G_23 | `Q8` | 17 | 8 | `[8,4]` |
-| G_24 | `A3,3` | 16 | 18 | `[18,4]` |
-| G_25 | `D12` | 16 | 12 | `[12,4]` |
-| G_26 | `A4` | 16 | 12 | `[12,3]` |
-| G_27 | `D10` | 16 | 10 | `[10,1]` |
-| G_28 | `D8` | 15 | 8 | `[8,3]` |
-| G_29 | `C4` | 14 | 4 | `[4,1]` |
-| G_30 | `S3` | 14 | 6 | `[6,1]` |
-| G_31 | `C2^2` | 12 | 4 | `[4,2]` |
-| G_32 | `C3` | 12 | 3 | `[3,1]` |
-| G_33 | `C2` | 8 | 2 | `[2,1]` |
-| G_34 | `1` | 0 | 1 | `[1,1]` |
-
-## Summary of candidate indices and YYZ bounds
-
-The candidate-index column lists every index that survives the GAP test. The YYZ-bound column keeps only the divisibility-maximal values. Thus every candidate index divides at least one value in the YYZ-bound column.
-
-| Label | Group | Candidate indices | YYZ bound(s) |
-|---:|---|---|---|
-| G_1 | `3^4 : A6` | 1, 2, 3, 6 | 6 |
-| G_2 | `A7` | 1, 2 | 2 |
-| G_3 | `3^(1+4) : 2.2^2` | 1, 2, 4 | 4 |
-| G_4 | `M10` | 1 | 1 |
-| G_5 | `L2(11)` | 1, 3 | 3 |
-| G_6 | `A3,5` | 1, 2, 3, 6 | 6 |
-| G_7 | `3^(1+4) : 2.2` | 1, 2, 3, 6 | 6 |
-| G_8 | `A6` | 1, 2 | 2 |
-| G_9 | `L2(7)` | 1, 2 | 2 |
-| G_10 | `S5` | 1, 2, 3, 6 | 6 |
-| G_11 | `M9` | 1, 3 | 3 |
-| G_12 | `N72` | 1, 2, 3, 6 | 6 |
-| G_13 | `T48` | 1 | 1 |
-| G_14 | `3^(1+4) : 2` | 1, 2, 3, 4, 6, 12 | 12 |
-| G_15 | `A4,3` | 1, 2, 3, 6 | 6 |
-| G_16 | `A5` | 1, 2, 3, 6 | 6 |
-| G_17 | `3^2.4` | 1, 2, 3, 6 | 6 |
-| G_18 | `S3,3` | 1, 2, 3, 6 | 6 |
-| G_19 | `F21` | 1, 2, 3, 6 | 6 |
-| G_20 | `Hol(5)` | 1, 2, 3, 6 | 6 |
-| G_21 | `QD16` | 1, 2 | 2 |
-| G_22 | `S4` | 1, 2, 3, 6 | 6 |
-| G_23 | `Q8` | 1, 2, 3, 4 | 3, 4 |
-| G_24 | `A3,3` | 1, 2, 3, 4, 6, 12 | 12 |
-| G_25 | `D12` | 1, 2, 3, 4, 6, 12 | 12 |
-| G_26 | `A4` | 1, 2, 3, 6 | 6 |
-| G_27 | `D10` | 1, 2, 3, 4, 6, 12 | 12 |
-| G_28 | `D8` | 1, 2, 3, 4, 6 | 4, 6 |
-| G_29 | `C4` | 1, 2, 3, 4, 6, 8, 12 | 8, 12 |
-| G_30 | `S3` | 1, 2, 3, 4, 6, 8, 12, 24 | 24 |
-| G_31 | `C2^2` | 1, 2, 3, 4, 6, 12 | 12 |
-| G_32 | `C3` | 1, 2, 3, 4, 6, 8, 12, 16, 24 | 16, 24 |
-| G_33 | `C2` | 1, 2, 3, 4, 6, 8, 12, 16, 24 | 16, 24 |
-| G_34 | `1` | 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48 | 32, 48 |
-
-## Candidate full groups
-
-The following is the detailed output corresponding to `DisplayList(TotalListOfFour, 2)` in the original file. For groups of order at most 2000, except order 1024, the output uses the SmallGroup identifier `[order,id]`. Otherwise it uses `StructureDescription`.
-
-A warning from the original code remains relevant: two non-isomorphic groups can have the same `StructureDescription`, so deduplication by description can hide multiplicity.
-
-### G_1 = 3^4 : A6
-
-- Index 1: `(C3 x C3 x C3 x C3) : A6`
-- Index 2: `(C3 x C3 x C3 x C3) : S6`
-- Index 3: `((C3 x C3 x C3 x C3) : A6) : C3`
-- Index 6: `((C3 x C3 x C3 x C3) : A6) : C6`
-
-### G_2 = A7
-
-- Index 1: `A7`
-- Index 2: `S7`
-
-### G_3 = 3^(1+4) : 2.2^2
-
-- Index 1: `[1944,3559]`
-- Index 2: `((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C2) : C2)`
-- Index 4: `((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)`
-
-### G_4 = M10
-
-- Index 1: `[720,765]`
-
-### G_5 = L2(11)
-
-- Index 1: `[660,13]`
-- Index 3: `[1980,57]`
-
-### G_6 = A3,5
-
-- Index 1: `[360,120]`
-- Index 2: `[720,767]`
-- Index 3: `[1080,489]`
-- Index 6: `C3 x S3 x S5`
-
-### G_7 = 3^(1+4) : 2.2
-
-- Index 1: `[972,776]`
-- Index 2:
-  - `[1944,3536]`
-  - `[1944,3559]`
-  - `[1944,3498]`
-- Index 3: `((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4`
-- Index 6: `((C3 x ((C3 x C3 x C3) : C3)) : C3) : D8`
-
-### G_8 = A6
-
-- Index 1: `[360,118]`
-- Index 2:
-  - `[720,763]`
-  - `[720,765]`
-
-### G_9 = L2(7)
-
-- Index 1: `[168,42]`
-- Index 2: `[336,208]`
-
-### G_10 = S5
-
-- Index 1: `[120,34]`
-- Index 2: `[240,189]`
-- Index 3: `[360,119]`
-- Index 6: `[720,769]`
-
-### G_11 = M9
-
-- Index 1: `[72,41]`
-- Index 3: `[216,153]`
-
-### G_12 = N72
-
-- Index 1: `[72,40]`
-- Index 2: `[144,186]`
-- Index 3: `[216,157]`
-- Index 6: `[432,754]`
-
-### G_13 = T48
-
-- Index 1: `[48,29]`
-
-### G_14 = 3^(1+4) : 2
-
-- Index 1: `[486,249]`
-- Index 2:
-  - `[972,812]`
-  - `[972,776]`
-  - `[972,811]`
-  - `[972,777]`
-- Index 3:
-  - `[1458,1179]`
-  - `[1458,1229]`
-  - `[1458,1720]`
-- Index 4:
-  - `[1944,3493]`
-  - `[1944,3478]`
-- Index 6:
-  - `((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C2 x C2)`
-  - `(((C3 x ((C3 x C3) : C3)) : C3) : C3) : (C2 x C2)`
-  - `((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4`
-- Index 12: `((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)`
-
-### G_15 = A4,3
-
-- Index 1: `[72,43]`
-- Index 2:
-  - `[144,189]`
-  - `[144,183]`
-- Index 3:
-  - `[216,92]`
-  - `[216,164]`
-- Index 6:
-  - `[432,535]`
-  - `[432,745]`
-
-### G_16 = A5
-
-- Index 1: `[60,5]`
-- Index 2:
-  - `[120,34]`
-  - `[120,35]`
-- Index 3: `[180,19]`
-- Index 6:
-  - `[360,119]`
-  - `[360,122]`
-
-### G_17 = 3^2.4
-
-- Index 1: `[36,9]`
-- Index 2:
-  - `[72,40]`
-  - `[72,45]`
-  - `[72,41]`
-- Index 3: `[108,36]`
-- Index 6:
-  - `[216,157]`
-  - `[216,168]`
-
-### G_18 = S3,3
-
-- Index 1: `[36,10]`
-- Index 2:
-  - `[72,46]`
-  - `[72,40]`
-- Index 3: `[108,38]`
-- Index 6:
-  - `[216,157]`
-  - `[216,170]`
-
-### G_19 = F21
-
-- Index 1: `[21,1]`
-- Index 2: `[42,1]`
-- Index 3: `[63,3]`
-- Index 6: `[126,7]`
-
-### G_20 = Hol(5)
-
-- Index 1: `[20,3]`
-- Index 2: `[40,12]`
-- Index 3: `[60,6]`
-- Index 6: `[120,40]`
-
-### G_21 = QD16
-
-- Index 1: `[16,8]`
-- Index 2: `[32,42]`
-
-### G_22 = S4
-
-- Index 1: `[24,12]`
-- Index 2: `[48,48]`
-- Index 3: `[72,42]`
-- Index 6: `[144,188]`
-
-### G_23 = Q8
-
-- Index 1: `[8,4]`
-- Index 2:
-  - `[16,13]`
-  - `[16,8]`
-  - `[16,9]`
-- Index 3: `[24,3]`
-- Index 4: `[32,11]`
-
-### G_24 = A3,3
-
-- Index 1: `[18,4]`
-- Index 2:
-  - `[36,10]`
-  - `[36,13]`
-  - `[36,9]`
-- Index 3:
-  - `[54,13]`
-  - `[54,5]`
-- Index 4: `[72,45]`
-- Index 6:
-  - `[108,38]`
-  - `[108,36]`
-  - `[108,43]`
-  - `[108,25]`
-- Index 12: `[216,168]`
-
-### G_25 = D12
-
-- Index 1: `[12,4]`
-- Index 2:
-  - `[24,14]`
-  - `[24,8]`
-  - `[24,5]`
-  - `[24,6]`
-- Index 3: `[36,12]`
-- Index 4: `[48,4]`
-- Index 6:
-  - `[72,30]`
-  - `[72,48]`
-  - `[72,28]`
-  - `[72,27]`
-- Index 12: `[144,69]`
-
-### G_26 = A4
-
-- Index 1: `[12,3]`
-- Index 2:
-  - `[24,12]`
-  - `[24,13]`
-- Index 3: `[36,11]`
-- Index 6:
-  - `[72,47]`
-  - `[72,42]`
-
-### G_27 = D10
-
-- Index 1: `[10,1]`
-- Index 2:
-  - `[20,3]`
-  - `[20,4]`
-- Index 3: `[30,2]`
-- Index 4: `[40,12]`
-- Index 6:
-  - `[60,6]`
-  - `[60,10]`
-- Index 12: `[120,40]`
-
-### G_28 = D8
-
-- Index 1: `[8,3]`
-- Index 2:
-  - `[16,11]`
-  - `[16,13]`
-  - `[16,8]`
-  - `[16,7]`
-- Index 3: `[24,10]`
-- Index 4: `[32,11]`
-- Index 6: `[48,45]`
-
-### G_29 = C4
-
-- Index 1: `[4,1]`
-- Index 2:
-  - `[8,3]`
-  - `[8,2]`
-  - `[8,1]`
-  - `[8,4]`
-- Index 3: `[12,2]`
-- Index 4:
-  - `[16,5]`
-  - `[16,1]`
-  - `[16,2]`
-  - `[16,6]`
-- Index 6:
-  - `[24,10]`
-  - `[24,9]`
-  - `[24,2]`
-- Index 8: `[32,1]`
-- Index 12:
-  - `[48,23]`
-  - `[48,2]`
-  - `[48,20]`
-
-### G_30 = S3
-
-- Index 1: `[6,1]`
-- Index 2: `[12,4]`
-- Index 3: `[18,3]`
-- Index 4: `[24,5]`
-- Index 6: `[36,12]`
-- Index 8: `[48,4]`
-- Index 12: `[72,27]`
-- Index 24: `[144,69]`
-
-### G_31 = C2^2
-
-- Index 1: `[4,2]`
-- Index 2:
-  - `[8,5]`
-  - `[8,3]`
-  - `[8,2]`
-- Index 3:
-  - `[12,5]`
-  - `[12,3]`
-- Index 4:
-  - `[16,5]`
-  - `[16,6]`
-- Index 6:
-  - `[24,15]`
-  - `[24,13]`
-  - `[24,10]`
-  - `[24,9]`
-- Index 12: `[48,23]`
-
-### G_32 = C3
-
-- Index 1: `[3,1]`
-- Index 2:
-  - `[6,1]`
-  - `[6,2]`
-- Index 3:
-  - `[9,2]`
-  - `[9,1]`
-- Index 4:
-  - `[12,1]`
-  - `[12,2]`
-- Index 6:
-  - `[18,3]`
-  - `[18,5]`
-  - `[18,2]`
-- Index 8:
-  - `[24,2]`
-  - `[24,1]`
-- Index 12:
-  - `[36,6]`
-  - `[36,8]`
-  - `[36,2]`
-- Index 16: `[48,2]`
-- Index 24:
-  - `[72,14]`
-  - `[72,12]`
-
-### G_33 = C2
-
-- Index 1: `[2,1]`
-- Index 2:
-  - `[4,2]`
-  - `[4,1]`
-- Index 3: `[6,2]`
-- Index 4:
-  - `[8,2]`
-  - `[8,1]`
-- Index 6:
-  - `[12,5]`
-  - `[12,2]`
-- Index 8:
-  - `[16,5]`
-  - `[16,1]`
-- Index 12:
-  - `[24,9]`
-  - `[24,2]`
-- Index 16: `[32,1]`
-- Index 24:
-  - `[48,23]`
-  - `[48,2]`
-
-### G_34 = 1
-
-- Index 1: `[1,1]`
-- Index 2: `[2,1]`
-- Index 3: `[3,1]`
-- Index 4: `[4,1]`
-- Index 6: `[6,2]`
-- Index 8: `[8,1]`
-- Index 12: `[12,2]`
-- Index 16: `[16,1]`
-- Index 24: `[24,2]`
-- Index 32: `[32,1]`
-- Index 48: `[48,2]`
-
-## Supplementary output preserved from the original file
-
-The final block of the original `.g` file was not part of the main call shown there. It appears to come from the auxiliary functions `CyclicQuotientPairing`, `ListOfSubgroupProducted`, and `DisplayTriples`, and concerns cyclic quotients whose order is divisible by 3. The exact invocation was absent, so this block should be treated as supplementary recorded output rather than part of Proposition 5.1.
-
-Repeated identical pairs in the pasted output have been collapsed below.
-
-### 1
-
-- `(C3, 3)`
-- `(C6, 6)`
-- `(C12, 12)`
-- `(C24, 24)`
-- `(C48, 48)`
-
-### C3
-
-- `(C3 x C3, 3)`
-- `(C3 x S3, 6)`
-- `(C6 x C3, 6)`
-- `(C12 x C3, 12)`
-- `(C3 x (C3 : C4), 12)`
-- `(C24 x C3, 24)`
-
-### S3
-
-- `(C3 x S3, 3)`
-- `(C6 x S3, 6)`
-- `(C12 x S3, 12)`
-
-### A5
-
-- `(GL(2,4), 3)`
-- `(C3 x S5, 6)`
-
-### S5
-
-- `(C3 x S5, 3)`
-
-### PSL(2,11)
-
-- `(C3 x PSL(2,11), 3)`
-
-### (S3 x S3) : C2
-
-- `(C3 x ((S3 x S3) : C2), 3)`
-
-### (C3 x C3) : C4
-
-- `(C3 x ((C3 x C3) : C4), 3)`
-- `(C3 x ((S3 x S3) : C2), 6)`
-- `(C6 x ((C3 x C3) : C4), 6)`
-
-### S3 x S3
-
-- `(C3 x S3 x S3, 3)`
-- `(C3 x ((S3 x S3) : C2), 6)`
-
-### C5 : C4
-
-- `(C3 x (C5 : C4), 3)`
-
-### S4
-
-- `(C3 x S4, 3)`
-
-### (C3 x C3) : C2
-
-- `(C3 x ((C3 x C3) : C2), 3)`
-- `(C3 x ((C3 x C3) : C4), 6)`
-- `(C3 x S3 x S3, 6)`
-- `(C6 x ((C3 x C3) : C2), 6)`
-- `(C6 x ((C3 x C3) : C4), 12)`
-
-### D12
-
-- `(C6 x S3, 3)`
-- `(C12 x S3, 6)`
-- `(C3 x ((C6 x C2) : C2), 6)`
-
-### A4
-
-- `(C3 x A4, 3)`
-- `(C3 x S4, 6)`
-
-### D10
-
-- `(C3 x D10, 3)`
-- `(C3 x (C5 : C4), 6)`
-
-### D8
-
-- `(C3 x D8, 3)`
-
-### C4
-
-- `(C12, 3)`
-- `(C12 x C2, 6)`
-- `(C24, 6)`
-- `(C3 x D8, 6)`
-- `(C48, 12)`
-
-### C2 x C2
-
-- `(C6 x C2, 3)`
-- `(C12 x C2, 6)`
-- `(C3 x D8, 6)`
-
-### C2
-
-- `(C6, 3)`
-- `(C12, 6)`
-- `(C6 x C2, 6)`
-- `(C12 x C2, 12)`
-- `(C24, 12)`
-- `(C48, 24)`
-
-## Interpretation and limitations
-
-- The calculation is purely group-theoretic. It does not test whether a candidate action preserves a smooth cubic equation.
-- It does not determine the embedding of a group into `PGL(6,C)`, the character on the defining cubic, or the action on the cubic lattice.
-- Different candidate full groups can have the same index.
-- The compact YYZ bounds are divisibility bounds. They should not be read as a list of realized indices.
-- The more precise conclusions in the paper require the additional arguments developed in Sections 3-8.
-
-## Changes from the original mixed code/output file
-
-- Removed all pasted GAP prompts and terminal output from the `.g` file.
-- Moved the recorded results to this Markdown file.
-- Replaced the repeated index test by one named predicate, `IsAllowedYYZIndex`.
-- Cached subgroup representatives and lazily cached normal subgroups.
-- Separated the main YYZ-bound calculation from auxiliary product calculations.
-- Renamed the main lists and functions to make their roles explicit.
-- Changed the phrase “all possible indices” in the presentation to “candidate indices” where appropriate, because the GAP test gives necessary conditions only.
+A single such row may therefore represent more than one non-isomorphic full group with the same index.
+
+## Yang–Yu–Zhu maximal-group sources
+
+The labels `M_i` follow Theorem 1.2 of Yang–Yu–Zhu.  Their theorem says that a finite group acts faithfully on a smooth cubic fourfold if and only if it is isomorphic to a subgroup of one of these 15 groups.  The “YYZ notation” column follows the article; the last column is GAP's `StructureDescription`, which can look different even for an isomorphic group.
+
+| Source | YYZ notation | Order | GAP ID | GAP structure description |
+|---|---|---:|---:|---|
+| `M_1` | $C_3^5 \rtimes S_6$ | 174960 | — | `((C3 x C3 x C3 x C3) : A6) : C6` |
+| `M_2` | $((C_3\times(C_3^3\rtimes C_3))\rtimes C_3)\rtimes(C_4\times C_2)$ | 5832 | — | `((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)` |
+| `M_3` | $C_8\times(C_3^2\rtimes C_2)$ | 144 | `[144,69]` | `C24 x S3` |
+| `M_4` | $S_5\times(C_3^2\rtimes C_2)$ | 2160 | — | `C3 x S3 x S5` |
+| `M_5` | $C_{48}$ | 48 | `[48,2]` | `C48` |
+| `M_6` | $\operatorname{PSL}(2,11)\times C_3$ | 1980 | `[1980,57]` | `C3 x PSL(2,11)` |
+| `M_7` | $((C_3\times(C_3^2\rtimes C_3))\rtimes C_3)\rtimes(C_4^2\rtimes C_2)$ | 7776 | — | `((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)` |
+| `M_8` | $C_{32}$ | 32 | `[32,1]` | `C32` |
+| `M_9` | $C_{21}\rtimes C_6$ | 126 | `[126,7]` | `C3 x (C7 : C6)` |
+| `M_10` | $M_{10}$ | 720 | `[720,765]` | `A6 . C2` |
+| `M_11` | $S_7$ | 5040 | — | `S7` |
+| `M_12` | $(C_8\times C_2)\rtimes C_2$ | 32 | `[32,42]` | `(C8 x C2) : C2` |
+| `M_13` | $\operatorname{PSL}(3,2)\rtimes C_2$ | 336 | `[336,208]` | `PSL(3,2) : C2` |
+| `M_14` | $\operatorname{GL}(2,3)$ | 48 | `[48,29]` | `GL(2,3)` |
+| `M_15` | $(C_3^2\rtimes Q_8)\rtimes C_3$ | 216 | `[216,153]` | `((C3 x C3) : Q8) : C3` |
+
+## Results
+
+### `G_1`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | — | `(C3 x C3 x C3 x C3) : A6` | `M_1` |
+| 2 | — | `(C3 x C3 x C3 x C3) : S6` | `M_1` |
+| 3 | — | `((C3 x C3 x C3 x C3) : A6) : C3` | `M_1` |
+| 6 | — | `((C3 x C3 x C3 x C3) : A6) : C6` | `M_1` |
+
+### `G_2`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | — | `A7` | `M_11` |
+| 2 | — | `S7` | `M_11` |
+
+### `G_3`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[1944,3559]` | `((C3 x ((C3 x C3) : C3)) : C3) : Q8` | `M_7` |
+| 2 | — | `((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C2) : C2)` | `M_7` |
+| 4 | — | `((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)` | `M_7` |
+
+### `G_4`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[720,765]` | `A6 . C2` | `M_10` |
+
+### `G_5`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[660,13]` | `PSL(2,11)` | `M_6` |
+| 3 | `[1980,57]` | `C3 x PSL(2,11)` | `M_6` |
+
+### `G_6`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[360,120]` | `A5 : S3` | `M_4` |
+| 2 | `[720,767]` | `S5 x S3` | `M_4` |
+| 3 | `[1080,489]` | `C3 x (A5 : S3)` | `M_4` |
+| 6 | — | `C3 x S3 x S5` | `M_4` |
+
+### `G_7`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[972,776]` | `((C3 x ((C3 x C3) : C3)) : C3) : C4` | `M_1`, `M_7` |
+| 2 | `[1944,3498]` | `((C3 x ((C3 x C3) : C3)) : C3) : (C4 x C2)` | `M_7` |
+| 2 | `[1944,3536]` | `((C3 x ((C3 x C3) : C3)) : C3) : D8` | `M_1`, `M_7` |
+| 2 | `[1944,3559]` | `((C3 x ((C3 x C3) : C3)) : C3) : Q8` | `M_7` |
+| 3 | — | `((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4` | `M_1` |
+| 6 | — | `((C3 x ((C3 x C3 x C3) : C3)) : C3) : D8` | `M_1` |
+
+### `G_8`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[360,118]` | `A6` | `M_1`, `M_10`, `M_11` |
+| 2 | `[720,763]` | `S6` | `M_1`, `M_11` |
+| 2 | `[720,765]` | `A6 . C2` | `M_10` |
+
+### `G_9`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[168,42]` | `PSL(3,2)` | `M_11`, `M_13` |
+| 2 | `[336,208]` | `PSL(3,2) : C2` | `M_13` |
+
+### `G_10`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[120,34]` | `S5` | `M_1`, `M_4`, `M_11` |
+| 2 | `[240,189]` | `C2 x S5` | `M_4`, `M_11` |
+| 3 | `[360,119]` | `C3 x S5` | `M_1`, `M_4` |
+| 6 | `[720,769]` | `C6 x S5` | `M_4` |
+
+### `G_11`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[72,41]` | `(C3 x C3) : Q8` | `M_7`, `M_10`, `M_15` |
+| 3 | `[216,153]` | `((C3 x C3) : Q8) : C3` | `M_15` |
+
+### `G_12`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[72,40]` | `(S3 x S3) : C2` | `M_1`, `M_7`, `M_11` |
+| 2 | `[144,186]` | `C2 x ((S3 x S3) : C2)` | `M_1` |
+| 3 | `[216,157]` | `C3 x ((S3 x S3) : C2)` | `M_1` |
+| 6 | `[432,754]` | `C6 x ((S3 x S3) : C2)` | `M_1` |
+
+### `G_13`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[48,29]` | `GL(2,3)` | `M_14` |
+
+### `G_14`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | — | — | `M_1`, `M_2`, `M_7` |
+| 2 | — | — | `M_1`, `M_2`, `M_7` |
+| 3 | — | — | `M_1`, `M_2` |
+| 4 | — | — | `M_2`, `M_7` |
+| 6 | — | — | `M_1`, `M_2` |
+| 12 | — | — | `M_2` |
+
+### `G_15`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[72,43]` | `(C3 x A4) : C2` | `M_1`, `M_4`, `M_11` |
+| 2 | `[144,183]` | `S3 x S4` | `M_1`, `M_4`, `M_11` |
+| 2 | `[144,189]` | `C2 x ((C3 x A4) : C2)` | `M_1` |
+| 3 | `[216,92]` | `((C3 x A4) : C2) : C3` | `M_1` |
+| 3 | `[216,164]` | `C3 x ((C3 x A4) : C2)` | `M_1`, `M_4` |
+| 6 | `[432,535]` | `C2 x (((C3 x A4) : C2) : C3)` | `M_1` |
+| 6 | `[432,745]` | `C3 x S3 x S4` | `M_1`, `M_4` |
+
+### `G_16`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[60,5]` | `A5` | `M_1`, `M_4`, `M_6`, `M_10`, `M_11` |
+| 2 | `[120,34]` | `S5` | `M_1`, `M_4`, `M_11` |
+| 2 | `[120,35]` | `C2 x A5` | `M_4`, `M_11` |
+| 3 | `[180,19]` | `GL(2,4)` | `M_1`, `M_4`, `M_6` |
+| 6 | `[360,119]` | `C3 x S5` | `M_1`, `M_4` |
+| 6 | `[360,122]` | `C6 x A5` | `M_4` |
+
+### `G_17`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[36,9]` | `(C3 x C3) : C4` | `M_1`, `M_7`, `M_10`, `M_11`, `M_15` |
+| 2 | `[72,40]` | `(S3 x S3) : C2` | `M_1`, `M_7`, `M_11` |
+| 2 | `[72,41]` | `(C3 x C3) : Q8` | `M_7`, `M_10`, `M_15` |
+| 2 | `[72,45]` | `C2 x ((C3 x C3) : C4)` | `M_1`, `M_7` |
+| 3 | `[108,36]` | `C3 x ((C3 x C3) : C4)` | `M_1`, `M_7` |
+| 6 | `[216,157]` | `C3 x ((S3 x S3) : C2)` | `M_1` |
+| 6 | `[216,168]` | `C6 x ((C3 x C3) : C4)` | `M_1` |
+
+### `G_18`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[36,10]` | `S3 x S3` | `M_1`, `M_2`, `M_4`, `M_7`, `M_11` |
+| 2 | `[72,40]` | `(S3 x S3) : C2` | `M_1`, `M_7`, `M_11` |
+| 2 | `[72,46]` | `C2 x S3 x S3` | `M_1`, `M_4` |
+| 3 | `[108,38]` | `C3 x S3 x S3` | `M_1`, `M_2`, `M_4`, `M_7` |
+| 6 | `[216,157]` | `C3 x ((S3 x S3) : C2)` | `M_1` |
+| 6 | `[216,170]` | `C6 x S3 x S3` | `M_1`, `M_4` |
+
+### `G_19`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[21,1]` | `C7 : C3` | `M_9`, `M_11`, `M_13` |
+| 2 | `[42,1]` | `C7 : C6` | `M_9`, `M_11`, `M_13` |
+| 3 | `[63,3]` | `C3 x (C7 : C3)` | `M_9` |
+| 6 | `[126,7]` | `C3 x (C7 : C6)` | `M_9` |
+
+### `G_20`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[20,3]` | `C5 : C4` | `M_1`, `M_4`, `M_10`, `M_11` |
+| 2 | `[40,12]` | `C2 x (C5 : C4)` | `M_4`, `M_11` |
+| 3 | `[60,6]` | `C3 x (C5 : C4)` | `M_1`, `M_4` |
+| 6 | `[120,40]` | `C6 x (C5 : C4)` | `M_4` |
+
+### `G_21`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[16,8]` | `QD16` | `M_10`, `M_12`, `M_14` |
+| 2 | `[32,42]` | `(C8 x C2) : C2` | `M_12` |
+
+### `G_22`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[24,12]` | `S4` | `M_1`, `M_4`, `M_10`, `M_11`, `M_13` |
+| 2 | `[48,48]` | `C2 x S4` | `M_1`, `M_4`, `M_11` |
+| 3 | `[72,42]` | `C3 x S4` | `M_1`, `M_4`, `M_11` |
+| 6 | `[144,188]` | `C6 x S4` | `M_1`, `M_4` |
+
+### `G_23`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[8,4]` | `Q8` | `M_7`, `M_10`, `M_12`, `M_14`, `M_15` |
+| 2 | `[16,8]` | `QD16` | `M_10`, `M_12`, `M_14` |
+| 2 | `[16,9]` | `Q16` | `M_12` |
+| 2 | `[16,13]` | `(C4 x C2) : C2` | `M_7`, `M_12` |
+| 3 | `[24,3]` | `SL(2,3)` | `M_14`, `M_15` |
+| 4 | `[32,11]` | `(C4 x C4) : C2` | `M_7` |
+
+### `G_24`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[18,4]` | `(C3 x C3) : C2` | `M_1`, `M_2`, `M_4`, `M_7`, `M_10`, `M_11`, `M_15` |
+| 2 | `[36,9]` | `(C3 x C3) : C4` | `M_1`, `M_7`, `M_10`, `M_11`, `M_15` |
+| 2 | `[36,10]` | `S3 x S3` | `M_1`, `M_2`, `M_4`, `M_7`, `M_11` |
+| 2 | `[36,13]` | `C2 x ((C3 x C3) : C2)` | `M_1`, `M_4`, `M_7` |
+| 3 | `[54,5]` | `(C3 x C3) : C6` | `M_1`, `M_7`, `M_15` |
+| 3 | `[54,13]` | `C3 x ((C3 x C3) : C2)` | `M_1`, `M_2`, `M_4`, `M_7` |
+| 4 | `[72,45]` | `C2 x ((C3 x C3) : C4)` | `M_1`, `M_7` |
+| 6 | `[108,25]` | `C2 x ((C3 x C3) : C6)` | `M_1` |
+| 6 | `[108,36]` | `C3 x ((C3 x C3) : C4)` | `M_1`, `M_7` |
+| 6 | `[108,38]` | `C3 x S3 x S3` | `M_1`, `M_2`, `M_4`, `M_7` |
+| 6 | `[108,43]` | `C6 x ((C3 x C3) : C2)` | `M_1`, `M_4` |
+| 12 | `[216,168]` | `C6 x ((C3 x C3) : C4)` | `M_1` |
+
+### `G_25`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[12,4]` | `D12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11`, `M_13`, `M_14` |
+| 2 | `[24,5]` | `C4 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11` |
+| 2 | `[24,6]` | `D24` | `M_1`, `M_4`, `M_7`, `M_11` |
+| 2 | `[24,8]` | `(C6 x C2) : C2` | `M_1`, `M_4`, `M_7`, `M_11` |
+| 2 | `[24,14]` | `C2 x C2 x S3` | `M_1`, `M_4`, `M_11` |
+| 3 | `[36,12]` | `C6 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7` |
+| 4 | `[48,4]` | `C8 x S3` | `M_3` |
+| 6 | `[72,27]` | `C12 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 6 | `[72,28]` | `C3 x D24` | `M_1`, `M_4` |
+| 6 | `[72,30]` | `C3 x ((C6 x C2) : C2)` | `M_1`, `M_4` |
+| 6 | `[72,48]` | `C2 x C6 x S3` | `M_1`, `M_4` |
+| 12 | `[144,69]` | `C24 x S3` | `M_3` |
+
+### `G_26`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[12,3]` | `A4` | `M_1`, `M_4`, `M_6`, `M_10`, `M_11`, `M_13` |
+| 2 | `[24,12]` | `S4` | `M_1`, `M_4`, `M_10`, `M_11`, `M_13` |
+| 2 | `[24,13]` | `C2 x A4` | `M_1`, `M_4`, `M_11` |
+| 3 | `[36,11]` | `C3 x A4` | `M_1`, `M_4`, `M_6`, `M_11` |
+| 6 | `[72,42]` | `C3 x S4` | `M_1`, `M_4`, `M_11` |
+| 6 | `[72,47]` | `C6 x A4` | `M_1`, `M_4` |
+
+### `G_27`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[10,1]` | `D10` | `M_1`, `M_4`, `M_6`, `M_10`, `M_11` |
+| 2 | `[20,3]` | `C5 : C4` | `M_1`, `M_4`, `M_10`, `M_11` |
+| 2 | `[20,4]` | `D20` | `M_4`, `M_11` |
+| 3 | `[30,2]` | `C3 x D10` | `M_1`, `M_4`, `M_6` |
+| 4 | `[40,12]` | `C2 x (C5 : C4)` | `M_4`, `M_11` |
+| 6 | `[60,6]` | `C3 x (C5 : C4)` | `M_1`, `M_4` |
+| 6 | `[60,10]` | `C6 x D10` | `M_4` |
+| 12 | `[120,40]` | `C6 x (C5 : C4)` | `M_4` |
+
+### `G_28`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[8,3]` | `D8` | `M_1`, `M_4`, `M_7`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14` |
+| 2 | `[16,7]` | `D16` | `M_12`, `M_13` |
+| 2 | `[16,8]` | `QD16` | `M_10`, `M_12`, `M_14` |
+| 2 | `[16,11]` | `C2 x D8` | `M_1`, `M_4`, `M_11` |
+| 2 | `[16,13]` | `(C4 x C2) : C2` | `M_7`, `M_12` |
+| 3 | `[24,10]` | `C3 x D8` | `M_1`, `M_4`, `M_11` |
+| 4 | `[32,11]` | `(C4 x C4) : C2` | `M_7` |
+| 6 | `[48,45]` | `C6 x D8` | `M_1`, `M_4` |
+
+### `G_29`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[4,1]` | `C4` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_8`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 2 | `[8,1]` | `C8` | `M_3`, `M_5`, `M_7`, `M_8`, `M_10`, `M_12`, `M_13`, `M_14` |
+| 2 | `[8,2]` | `C4 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11`, `M_12` |
+| 2 | `[8,3]` | `D8` | `M_1`, `M_4`, `M_7`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14` |
+| 2 | `[8,4]` | `Q8` | `M_7`, `M_10`, `M_12`, `M_14`, `M_15` |
+| 3 | `[12,2]` | `C12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_11` |
+| 4 | `[16,1]` | `C16` | `M_5`, `M_8` |
+| 4 | `[16,2]` | `C4 x C4` | `M_7` |
+| 4 | `[16,5]` | `C8 x C2` | `M_3`, `M_12` |
+| 4 | `[16,6]` | `C8 : C2` | `M_7` |
+| 6 | `[24,2]` | `C24` | `M_3`, `M_5` |
+| 6 | `[24,9]` | `C12 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 6 | `[24,10]` | `C3 x D8` | `M_1`, `M_4`, `M_11` |
+| 8 | `[32,1]` | `C32` | `M_8` |
+| 12 | `[48,2]` | `C48` | `M_5` |
+| 12 | `[48,20]` | `C12 x C4` | `M_7` |
+| 12 | `[48,23]` | `C24 x C2` | `M_3` |
+
+### `G_30`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[6,1]` | `S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_10`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 2 | `[12,4]` | `D12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11`, `M_13`, `M_14` |
+| 3 | `[18,3]` | `C3 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11`, `M_15` |
+| 4 | `[24,5]` | `C4 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11` |
+| 6 | `[36,12]` | `C6 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7` |
+| 8 | `[48,4]` | `C8 x S3` | `M_3` |
+| 12 | `[72,27]` | `C12 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 24 | `[144,69]` | `C24 x S3` | `M_3` |
+
+### `G_31`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[4,2]` | `C2 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14` |
+| 2 | `[8,2]` | `C4 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11`, `M_12` |
+| 2 | `[8,3]` | `D8` | `M_1`, `M_4`, `M_7`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14` |
+| 2 | `[8,5]` | `C2 x C2 x C2` | `M_1`, `M_4`, `M_11` |
+| 3 | `[12,3]` | `A4` | `M_1`, `M_4`, `M_6`, `M_10`, `M_11`, `M_13` |
+| 3 | `[12,5]` | `C6 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11` |
+| 4 | `[16,5]` | `C8 x C2` | `M_3`, `M_12` |
+| 4 | `[16,6]` | `C8 : C2` | `M_7` |
+| 6 | `[24,9]` | `C12 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 6 | `[24,10]` | `C3 x D8` | `M_1`, `M_4`, `M_11` |
+| 6 | `[24,13]` | `C2 x A4` | `M_1`, `M_4`, `M_11` |
+| 6 | `[24,15]` | `C6 x C2 x C2` | `M_1`, `M_4` |
+| 12 | `[48,23]` | `C24 x C2` | `M_3` |
+
+### `G_32`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[3,1]` | `C3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_9`, `M_10`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 2 | `[6,1]` | `S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_10`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 2 | `[6,2]` | `C6` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_9`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 3 | `[9,1]` | `C9` | `M_1`, `M_2` |
+| 3 | `[9,2]` | `C3 x C3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_9`, `M_10`, `M_11`, `M_15` |
+| 4 | `[12,1]` | `C3 : C4` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11` |
+| 4 | `[12,2]` | `C12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_11` |
+| 6 | `[18,2]` | `C18` | `M_1`, `M_2` |
+| 6 | `[18,3]` | `C3 x S3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11`, `M_15` |
+| 6 | `[18,5]` | `C6 x C3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_9` |
+| 8 | `[24,1]` | `C3 : C8` | `M_3`, `M_7` |
+| 8 | `[24,2]` | `C24` | `M_3`, `M_5` |
+| 12 | `[36,2]` | `C36` | `M_2` |
+| 12 | `[36,6]` | `C3 x (C3 : C4)` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 12 | `[36,8]` | `C12 x C3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 16 | `[48,2]` | `C48` | `M_5` |
+| 24 | `[72,12]` | `C3 x (C3 : C8)` | `M_3` |
+| 24 | `[72,14]` | `C24 x C3` | `M_3` |
+
+### `G_33`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[2,1]` | `C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_8`, `M_9`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 2 | `[4,1]` | `C4` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_8`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 2 | `[4,2]` | `C2 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14` |
+| 3 | `[6,2]` | `C6` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_9`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 4 | `[8,1]` | `C8` | `M_3`, `M_5`, `M_7`, `M_8`, `M_10`, `M_12`, `M_13`, `M_14` |
+| 4 | `[8,2]` | `C4 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7`, `M_11`, `M_12` |
+| 6 | `[12,2]` | `C12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_11` |
+| 6 | `[12,5]` | `C6 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_6`, `M_7`, `M_11` |
+| 8 | `[16,1]` | `C16` | `M_5`, `M_8` |
+| 8 | `[16,5]` | `C8 x C2` | `M_3`, `M_12` |
+| 12 | `[24,2]` | `C24` | `M_3`, `M_5` |
+| 12 | `[24,9]` | `C12 x C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_7` |
+| 16 | `[32,1]` | `C32` | `M_8` |
+| 24 | `[48,2]` | `C48` | `M_5` |
+| 24 | `[48,23]` | `C24 x C2` | `M_3` |
+
+### `G_34`
+
+| Index | Full group ID | Full group description | Sources |
+|---:|---:|---|---|
+| 1 | `[1,1]` | `1` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_8`, `M_9`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 2 | `[2,1]` | `C2` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_8`, `M_9`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 3 | `[3,1]` | `C3` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_9`, `M_10`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 4 | `[4,1]` | `C4` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_8`, `M_10`, `M_11`, `M_12`, `M_13`, `M_14`, `M_15` |
+| 6 | `[6,2]` | `C6` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_6`, `M_7`, `M_9`, `M_11`, `M_13`, `M_14`, `M_15` |
+| 8 | `[8,1]` | `C8` | `M_3`, `M_5`, `M_7`, `M_8`, `M_10`, `M_12`, `M_13`, `M_14` |
+| 12 | `[12,2]` | `C12` | `M_1`, `M_2`, `M_3`, `M_4`, `M_5`, `M_7`, `M_11` |
+| 16 | `[16,1]` | `C16` | `M_5`, `M_8` |
+| 24 | `[24,2]` | `C24` | `M_3`, `M_5` |
+| 32 | `[32,1]` | `C32` | `M_8` |
+| 48 | `[48,2]` | `C48` | `M_5` |
