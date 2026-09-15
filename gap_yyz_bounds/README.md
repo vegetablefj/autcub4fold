@@ -4,8 +4,8 @@ This module compares the 34 symplectic groups with the 15 maximal fourfold
 groups of Yang–Yu–Zhu. A retained abstract full group has the prescribed
 normal symplectic subgroup and cyclic quotient of an admissible order.
 This is a necessary group-theoretic bound, not a list of realized matrix
-actions or saturated geometric families. The mathematical references and
-interpretation are given in the accompanying article.
+actions or saturated geometric families. Mathematical sources are listed in
+the [references](../REFERENCES.md).
 
 ## Files
 

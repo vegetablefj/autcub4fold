@@ -54,8 +54,8 @@ CF_FM_Run := function()
     markdown := OutputTextFile("result/gap_fourfold_cross_dimension_result.md", false);
     SetPrintFormattingStatus(markdown, false);
     AppendTo(markdown, "# Containment of cubic-fourfold families\n\n",
-        "The 156 families are numbered in the order of the classification ",
-        "table. Their groups are the representatives in ",
+        "The 156 families are numbered in stored catalogue order. ",
+        "Their groups are the representatives in ",
         "[the family catalogue](../../gap_manuscript_validation/gap_family_catalogue.g). ",
         "All rows are saturated. This calculation determines containment ",
         "between families of different dimensions and the action-maximal rows.\n\n",
@@ -79,8 +79,8 @@ CF_FM_Run := function()
         "calculation; the cover relation recovers the complete positive ",
         "relation by transitive closure.\n\n",
         "## Action-maximal families\n\n",
-        "These are the dagger-marked rows of the classification table. ",
-        "Maximality refers to the matrix action, not only to the abstract group.\n\n",
+        "These rows are maximal for strict matrix-group containment, ",
+        "not only for abstract-group containment.\n\n",
         "| No. | Dimension | Symplectic part | Index | GL ID | PGL ID |\n",
         "| ---: | ---: | --- | ---: | --- | --- |\n");
     for number in poset.maximalNumbers do

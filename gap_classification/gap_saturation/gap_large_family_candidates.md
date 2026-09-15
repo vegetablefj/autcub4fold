@@ -1,18 +1,17 @@
-# Large-family correspondence and saturation input
+# Large-family candidates and saturation input
 
 ## Purpose
 
-This note matches the 76 explicit rank-at-least-15 families in
-`gap_large_koike_families.g` with the corresponding part of the main table
-in the accompanying lattice classification manuscript. It also records the
-other four classes entering the unified saturation input. References are
-collected in [`../../REFERENCES.md`](../../REFERENCES.md). The order here
-follows the lattice table; use source keys, not these row positions, to
-compare it with the canonical 156-family order.
+This note describes the 76 explicit rank-at-least-15 families in
+`gap_large_koike_families.g` and the other four classes entering the common
+saturation input. References are collected in
+[`../../REFERENCES.md`](../../REFERENCES.md). The order here follows the
+lattice case list; use source keys, not these row positions, to compare it
+with the 156-family catalogue.
 
-The main table of the second paper is obtained lattice-theoretically. Its
-rows are separated by connected symplectic family and record the possible
-non-symplectic index, generic full automorphism group, and family dimension.
+The large-family list is obtained from lattice-theoretic constraints. Its
+records are separated by connected symplectic family and give the possible
+non-symplectic index, generic automorphism group, and family dimension.
 The explicit projective models have two sources:
 
 - 40 connected symplectic families read from Koike's classification and its
@@ -79,7 +78,7 @@ only identifies the two possible type-IV components as one equation family.
 Each item below has the form `index / dimension, full projective group
 [GAP ID]`. The word `symplectic` marks the connected symplectic-family row.
 
-## Correspondence with the main table
+## Ordered large-family records
 
 ### Rank 15
 
@@ -164,8 +163,7 @@ ambiguous group types:
   `[72,40]`, with respective index-6 subfamilies `[216,170]` and
   `[216,157]`;
 - the generic-index-2 `C3^2.C4` component has projective symplectic group `[36,9]`,
-  full group `[72,40]`, and dimension 2. The corresponding entry in the
-  second-paper table has been corrected accordingly.
+  full group `[72,40]`, and dimension 2.
 
 ## Explicit smoothness verification
 

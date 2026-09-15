@@ -1,6 +1,6 @@
 # Containment of cubic-fourfold families
 
-The 156 families are numbered in the order of the classification table. Their groups are the representatives in [the family catalogue](../../gap_manuscript_validation/gap_family_catalogue.g). All rows are saturated. This calculation determines containment between families of different dimensions and the action-maximal rows.
+The 156 families are numbered in stored catalogue order. Their groups are the representatives in [the family catalogue](../../gap_manuscript_validation/gap_family_catalogue.g). All rows are saturated. This calculation determines containment between families of different dimensions and the action-maximal rows.
 
 A relation `i -> j` means that `H_i` is linearly conjugate to a subgroup of `H_j`. The corresponding geometric inclusion is `Z_j subset Z_i`: family `j` is a specialization inside family `i`. An action-maximal family has no outgoing strict group-containment relation. It is not a geometrically maximal family.
 
@@ -20,7 +20,7 @@ The complete saved decisions are retained without repeating an embedding search.
 
 ## Action-maximal families
 
-These are the dagger-marked rows of the classification table. Maximality refers to the matrix action, not only to the abstract group.
+These rows are maximal for strict matrix-group containment, not only for abstract-group containment.
 
 | No. | Dimension | Symplectic part | Index | GL ID | PGL ID |
 | ---: | ---: | --- | ---: | --- | --- |

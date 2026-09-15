@@ -59,16 +59,15 @@ certificate record to `gap_self_conjugacy.out`, and a readable summary to
 
 The saved run contains 56 theoretical exemptions and 100 successful exact
 family tests. The exemption counts overlap, and exempt rows are not
-additional computational certificates. Their geometric justification belongs
-to the accompanying classification paper, using the
+additional computational certificates. The theoretical cases rely on the
 [symplectic and maximal-group results](../../REFERENCES.md#symplectic-actions-and-maximal-groups)
 and [additive-splitting input](../../REFERENCES.md#additive-splittings).
 
 This batch checks every non-exempt survivor, not only index-two families.
-For the large-family classification, the index-two checks are the ones
+For the large families, the index-two checks are the ones
 needed to identify the two conjugate period-domain components. The saved
-`run no.` follows the saturation-survivor order, not the final canonical
-table order. Use `sourceKey` to compare the two catalogues.
+`run no.` follows the saturation-survivor order, not the numbered catalogue
+order. Use `sourceKey` to compare the two catalogues.
 
 The final coordinate catalogue is
 [`gap_family_catalogue.g`](../gap_manuscript_validation/gap_family_catalogue.g).

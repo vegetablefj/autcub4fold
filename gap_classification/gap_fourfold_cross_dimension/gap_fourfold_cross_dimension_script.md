@@ -5,7 +5,7 @@
 Each numbered row consists of a finite strict linear group `H_i` in
 `GL(6)` and the dimension `d_i` of its saturated invariant family `Z_i`.
 The cubic scalar matrices are included. Numbers are always those of the
-156-row classification table; small-row positions are only working indices.
+stored 156-family catalogue; small-row positions are only working indices.
 
 The comparison asks whether some invertible matrix `P` satisfies
 `P^-1 * H_i * P <= H_j`. This gives `Z_j subset Z_i`, up to the same

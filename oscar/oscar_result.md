@@ -1,6 +1,6 @@
-# OSCAR Results for Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory
+# OSCAR lattice results for cubic fourfolds
 
-This file records the outputs of the refined OSCAR lattice search for *Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory*. The stable fitting refinement is applied before the final group identification. See [`README.md`](README.md) for the role of each source and data file.
+This file records the outputs of the OSCAR lattice search. The stable fitting refinement is applied before the final group identification. See [`README.md`](README.md) for the role of each source and data file.
 
 `Any[]` means that no datum survived for the supplied candidate orders. It does not make a statement about orders not supplied to the search. For a nonempty output, `number_of_data` is the number of surviving primitive-extension data for the fixed conjugacy-class representative on `T`; it is not automatically the number of connected geometric families.
 

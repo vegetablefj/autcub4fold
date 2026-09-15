@@ -1,6 +1,6 @@
-# OSCAR Code for Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory
+# OSCAR lattice computations for cubic fourfolds
 
-This document presents the OSCAR implementation for *Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory*. A concise file guide is given in [`README.md`](README.md). The executable source is [`oscar_script.jl`](oscar_script.jl), the input data are in [`input.jl`](input.jl), and [`oscar_run_search.jl`](oscar_run_search.jl) manages the ordered search and serialization. The complete saved search objects are in [`oscar_script_data.mrdi`](oscar_script_data.mrdi), while [`oscar_result.md`](oscar_result.md) gives a human-readable record.
+This document describes the OSCAR lattice search. A concise file guide is given in [`README.md`](README.md). The executable source is [`oscar_script.jl`](oscar_script.jl), the input data are in [`input.jl`](input.jl), and [`oscar_run_search.jl`](oscar_run_search.jl) manages the ordered search and serialization. The complete saved search objects are in [`oscar_script_data.mrdi`](oscar_script_data.mrdi), while [`oscar_result.md`](oscar_result.md) gives a human-readable record.
 
 The input is a pair of lattices `S`, `T` and a list of candidate orders. The search enumerates the relevant actions on `T`, constructs equivariant primitive extensions, applies the cubic-fourfold root and symplectic-saturatedness tests, refines the exceptional generic-index-two fitting isometry when needed, and appends a practical GAP identifier for the resulting full automorphism group.
 

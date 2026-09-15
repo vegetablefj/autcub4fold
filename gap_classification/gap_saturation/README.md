@@ -59,21 +59,21 @@ processes the remaining comparison sources from smaller to larger group
 order. Targets are drawn from the complete representative list, so a removed
 intermediate family can still certify a direct containment. Every direct
 edge, final target, and full containment path is retained in
-`gap_equal_dimension_saturation.out` for later construction of the final
-family table. The corresponding incremental transcript is
+`gap_equal_dimension_saturation.out` for the ordered family catalogue. The
+corresponding incremental transcript is
 `gap_equal_dimension_saturation.log`. A deliberate rerun replaces both
 files.
 
 The completed run has 156 smooth survivors. This equal-dimensional reduction
 is distinct from the separate cross-dimensional containment calculation. The
-seven computationally unresolved records are handled by the singular-family
-appendix of the classification manuscript and remain excluded here.
+seven computationally unresolved records require separate mathematical
+singularity arguments and remain excluded here.
 
 The final numbered presentations are stored in
 [`gap_family_catalogue.g`](../gap_manuscript_validation/gap_family_catalogue.g).
 The [coordinate correspondence](../gap_manuscript_validation/gap_family_correspondence.md)
 verifies that these representatives are linearly equivalent to the computed
-survivors, in the numbered table order. Conjugating matrices and the original
+survivors, in catalogue order. Conjugating matrices and the original
 survivor numbering are stored in the GAP output.
 Coordinate verification does not rerun this saturation calculation.
 

@@ -1,8 +1,8 @@
 # Containment of cubic-fourfold families
 
 This folder determines containment between the 156 saturated cubic-fourfold
-families of different dimensions. Family numbers agree with the
-classification table, in the order 1–156.
+families of different dimensions. Family numbers follow the stored catalogue,
+in the order 1–156.
 
 The final relation uses the groups in
 [the family catalogue](../gap_manuscript_validation/gap_family_catalogue.g).

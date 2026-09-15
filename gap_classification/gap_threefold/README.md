@@ -1,9 +1,8 @@
 # Cubic threefolds
 
-This directory gives the 40 saturated cubic-threefold families obtained by
-removing one Fermat summand from the complete cubic-fourfold classification.
-The families are numbered by increasing source fourfold number, as in the
-accompanying tables and coordinate presentations.
+This directory records 40 saturated cubic-threefold families obtained by
+removing one Fermat summand from the saved cubic-fourfold families. They are
+numbered by increasing source-fourfold number.
 
 The saved extraction examines 63 fourfold families whose non-symplectic
 index is divisible by three. Forty have a Fermat summand; the remaining 23

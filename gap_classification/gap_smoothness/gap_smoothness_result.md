@@ -135,10 +135,9 @@ The unresolved records are:
 | 139 | `S3` | 1 | `[24,5]` | `[72,27]` |
 | 200 | `S3` | 0 | `[72,27]` | `[216,136]` |
 
-These records remain `unknown` in the machine-readable output. All seven
-systems are proved singular by the exact arguments in
-the accompanying paper's Appendix A; these arguments do not change the automatic
-counts. The dimensions of singular and unresolved
+These records remain `unknown` in the machine-readable output. Separate
+mathematical arguments establish that all seven are singular; these arguments
+do not change the automatic counts. The dimensions of singular and unresolved
 invariant spaces are expected dimensions, not dimensions of nonempty
 smooth moduli families.
 

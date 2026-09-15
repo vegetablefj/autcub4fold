@@ -69,7 +69,7 @@ following order within each case.
 | `S3`, Koike (3.6) | 1 | `[6,1]`, `[12,4]`, `[18,3]`, `[24,5]`, `[36,12]`, `[48,4]`, `[72,27]` |
 | `S3`, corrigendum component | 2 | `[12,4]`, `[24,5]`, `[36,12]`, `[48,4]`, `[72,27]` |
 
-The projective group `[72,12]` in the `C3` case is omitted by the separate exclusion argument in the paper. For `S3`, no `n=16` or `n=24` branch is enumerated. The case `[72,27] = S3 x C12` uses the preserved exact weight enumeration. The known Yang–Yu–Zhu `S3 x C24` action is appended as one direct case; its projective and strict linear IDs are `[144,69]` and `[432,464]`.
+The projective group `[72,12]` in the `C3` case is omitted by a separate mathematical exclusion, not by this enumeration. For `S3`, no `n=16` or `n=24` branch is enumerated. The case `[72,27] = S3 x C12` uses the preserved exact weight enumeration. The known Yang–Yu–Zhu `S3 x C24` action is appended as one direct case; its projective and strict linear IDs are `[144,69]` and `[432,464]`.
 
 ## Representation enumeration
 

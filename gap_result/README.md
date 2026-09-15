@@ -1,6 +1,6 @@
-# Final classification results
+# Cubic-fourfold and threefold results
 
-This directory displays the final 156 cubic-fourfold and 40 cubic-threefold families. The fourfold rows use the final order 1–156; the threefold rows use increasing source fourfold number. The classification programs do not read these exports.
+This directory displays 156 cubic-fourfold and 40 cubic-threefold families. The fourfold rows use the stored order 1–156; the threefold rows use increasing source-fourfold number. The computation programs do not read these exports.
 
 ## Files
 

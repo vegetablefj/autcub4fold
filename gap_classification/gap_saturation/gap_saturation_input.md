@@ -59,8 +59,8 @@ containment program. The sources are listed in the
 - the three proper `3^{1+4}:2` rows follow from
   [uniqueness of maximal additive splitting](../../REFERENCES.md#additive-splittings)
   and Yang–Yu–Zhu's plane-cubic stabilizer classification;
-- `C32`, `C48`, and `S3 x C24` are the explicit full groups computed in the
-  first non-symplectic-index paper from the Yang–Yu–Zhu examples.
+- `C32`, `C48`, and `S3 x C24` are recorded explicit full-group actions
+  obtained from the Yang–Yu–Zhu examples.
 
 The equal-dimensional search was completed before the separate
 self-conjugacy audit. This does not affect the saturation result. Complex

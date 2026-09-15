@@ -1,7 +1,7 @@
 # OSCAR computations
 
-This directory contains the lattice computations for *Automorphism Groups of
-Smooth Cubic Fourfolds through Lattice Theory*.
+This directory contains lattice computations concerning automorphism groups
+of smooth cubic fourfolds.
 
 ## Files
 
@@ -52,7 +52,6 @@ alternative output path as its second argument.
 MRDI is OSCAR's native serialization format and should be read in a compatible OSCAR environment. The Markdown files provide stable human-readable summaries; the MRDI files retain the objects needed for computational inspection.
 
 The auxiliary class counts resolve the indicated lattice equivalences.
-Passing from the lattice table to geometric families also uses the period
-argument, explicit smooth realizations, and the relevant self-conjugacy
-checks. These are not consequences of MRDI serialization or class counts
-alone. See the [reference guide](../REFERENCES.md#classification-papers).
+These saved objects do not by themselves establish smooth geometric
+realizations or identify conjugate period-domain components. See the
+[references](../REFERENCES.md) for the mathematical literature.

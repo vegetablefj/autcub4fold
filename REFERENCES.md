@@ -4,7 +4,7 @@
 
 - <a id="classification-papers"></a>Jie Fu, Shihao Wang, and Zhiwei Zheng, *Non-symplectic Indices of Automorphism Groups of Smooth Cubic Fourfolds*, [arXiv:2606.11754](https://arxiv.org/abs/2606.11754).
 - Jie Fu and Zhiwei Zheng, *Automorphism groups of smooth cubic fourfolds through lattice theory*, [arXiv:2609.06683](https://arxiv.org/abs/2609.06683).
-- Jie Fu, Shihao Wang, and Zhiwei Zheng, *Classification of Automorphism Groups of Smooth Cubic Threefolds and Fourfolds*, accompanying manuscript.
+- Jie Fu, Shihao Wang, and Zhiwei Zheng, *Classification of Automorphism Groups of Smooth Cubic Threefolds and Fourfolds*, manuscript.
 - <a id="symplectic-actions-and-maximal-groups"></a>Radu Laza and Zhiwei Zheng, *Automorphisms and periods of cubic fourfolds*, Mathematische Zeitschrift **300** (2022), 1455–1507, [doi:10.1007/s00209-021-02810-x](https://doi.org/10.1007/s00209-021-02810-x).
 - Kenji Koike, *Cubic fourfolds with symplectic automorphisms*, Journal of Algebra **680** (2025), 12–57, [doi:10.1016/j.jalgebra.2025.04.037](https://doi.org/10.1016/j.jalgebra.2025.04.037); [corrigendum](https://doi.org/10.1016/j.jalgebra.2026.05.021).
 - Song Yang, Xun Yu, and Zigang Zhu, *Automorphism groups of cubic fivefolds and fourfolds*, Journal of the London Mathematical Society **110** (2024), e12997, [doi:10.1112/jlms.12997](https://doi.org/10.1112/jlms.12997); [arXiv:2308.07186](https://arxiv.org/abs/2308.07186).

@@ -11,8 +11,8 @@ with the ordered IDs recorded in
 non-abelian target lists, the generic-index divisibility condition, the exact
 strict generic-full-group containment condition, and the invariant version of
 the González--Aguilera--Liendo necessary restriction. The projective group
-`[72,12]` in the `C3` case was omitted by the separate exclusion argument in
-the paper. Smoothness and saturation were not tested in this run.
+`[72,12]` in the `C3` case was omitted by a separate mathematical exclusion,
+not by this enumeration. Smoothness and saturation were not tested in this run.
 
 The four cases were processed in the order `C3`, `C2^2`, `C4`, `S3`. The
 enumeration produced 201 families. The known `S3 x C24` action was then
