@@ -16,7 +16,10 @@ The explicit projective models have two sources:
 
 - 40 connected symplectic families read from Koike's classification and its
   corrigendum;
-- 36 proper subfamilies constructed using representation calculations.
+- 36 proper subfamilies with explicit linear actions. Twenty-nine are the
+  retained families of the
+  [large-group representation calculation](../gap_large_group_enumeration/README.md);
+  the remaining seven have separate rank-19, additive, or order-7 models.
 
 The 40 connected-family records store the full stabilizer of a general
 member, not only its symplectic kernel, and are therefore already saturated.

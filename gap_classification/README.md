@@ -17,6 +17,7 @@ versions, dimension conventions, and regression checks for future changes.
 - [`gap_liftable_abelian/`](gap_liftable_abelian/README.md): the unchanged diagonal core, its wrapper, and 53 saved candidates.
 - [`gap_nonliftable_abelian/`](gap_nonliftable_abelian/README.md): two theoretically classified actions, supplied as exact data.
 - [`gap_small_nonabelian/`](gap_small_nonabelian/README.md): multiplier audit and complete current non-abelian target enumeration, including liftable but non-F-liftable actions; 182 candidates survive the prime-order restriction. The audit proves that no additional non-liftable branch is needed for these targets.
+- [`gap_large_group_enumeration/`](gap_large_group_enumeration/README.md): representation calculations producing explicit rank-at-least-15 equation candidates, with task inputs and their saved correspondence to the large-family catalogue.
 - [`gap_smoothness/`](gap_smoothness/README.md): smooth-member verification and family-wide singularity certificates.
 - [`gap_saturation/`](gap_saturation/README.md): unified candidates and the completed equal-dimensional reduction from 177 smooth records to 156 representatives.
 - [`gap_uniformization/`](gap_uniformization/README.md): fixed symplectic coordinates and simpler extra generators.
