@@ -1,0 +1,24 @@
+# Licenses for this repository
+
+Copyright (c) 2026 Jie Fu and Shihao Wang. Both authors hold the copyright
+jointly and contributed equally.
+
+This repository uses two licenses, according to the material's purpose:
+
+- Original source programs, functions, and executable scripts are licensed
+  under the MIT License. See [LICENSE-CODE](LICENSE-CODE).
+- Saved computational results and records, generated data, catalogues, and
+  explanatory documentation are licensed under Creative Commons Attribution
+  4.0 International (CC BY 4.0). See [LICENSE-RESULTS](LICENSE-RESULTS).
+
+For example, a GAP file whose purpose is to hold a saved family list or
+relation data is a result file, not a source program merely because its
+extension is `.g`. Conversely, source code embedded in a program file remains
+under MIT. Third-party software and cited works are not relicensed here.
+
+Both licenses allow reuse and redistribution, including modification and
+commercial use. Retain the applicable license notice and credit Jie Fu and
+Shihao Wang. For CC BY 4.0 material, also identify changes when sharing an
+adaptation and link to the license. See [CITATION.cff](CITATION.cff) for the
+recommended repository citation. A version-specific DOI should be used once
+one has been assigned to a released archive.

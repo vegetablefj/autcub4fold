@@ -1,0 +1,16 @@
+input_families=156
+eligible_cross_dimension_pairs=6568
+classified_pairs=6568
+embedded_pairs=1793
+no_embedding_pairs=4775
+undecided_pairs=0
+direct_positive_pairs=1387
+transitive_positive_pairs=406
+verified_positive_witnesses=1793
+group_embedding_cover_edges=433
+geometric_cover_edges=433
+geometric_maximal_family_count=1
+geometric_minimal_family_count=21
+pair_coverage=complete
+displayed_coordinates_audit=passed
+transitive_closure_audit=passed

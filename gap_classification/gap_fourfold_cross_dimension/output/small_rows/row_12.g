@@ -1,0 +1,17 @@
+SmallRowResults := [ rec(
+P := fail,
+classification := "direct",
+direct := true,
+method := "filter",
+ok := false,
+reason := "element_order_multiset",
+sourceDimension := 1,
+sourceNumber := 26,
+sourceOrder := 432,
+sourcePosition := 12,
+status := "no_embedding",
+targetDimension := 0,
+targetNumber := 96,
+targetOrder := 432,
+targetPosition := 82,
+viaNumber := fail ) ];

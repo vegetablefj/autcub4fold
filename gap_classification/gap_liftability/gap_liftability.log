@@ -1,0 +1,170 @@
+Liftability audit for the final 156 families
+GAP version: 4.15.1
+Catalogue: gap_classification/gap_manuscript_validation/gap_family_catalogue.g
+Started runtime counter: 1562 ms
+
+1/156: 3^4:A_6, PGL [ 174960, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 266 ms
+2/156: A_7, PGL [ 2520, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 484 ms
+3/156: A_7, PGL [ 5040, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 609 ms
+4/156: 3^{1+4}:2.2^2, PGL [ 7776, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 1188 ms
+5/156: M_10, PGL [ 720, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 1781 ms
+6/156: M_10, PGL [ 720, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 2063 ms
+7/156: L_2(11), PGL [ 1980, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 29109 ms
+8/156: A_3,5, PGL [ 2160, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 29219 ms
+9/156: 3^{1+4}:2.2, PGL [ 1944, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 29359 ms
+10/156: A_6, PGL [ 360, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 29547 ms
+11/156: A_6, PGL [ 720, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 29672 ms
+12/156: PSL(2,7), PGL [ 168, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 29797 ms
+13/156: PSL(2,7), PGL [ 336, 0 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 29969 ms
+14/156: PSL(2,7), PGL [ 336, 0 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 30203 ms
+15/156: S_5, PGL [ 120, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 30250 ms
+16/156: S_5, PGL [ 240, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 30359 ms
+17/156: M_9, PGL [ 72, 41 ], method = reference, liftable = false, F-liftable = false, elapsed = 30547 ms
+18/156: M_9, PGL [ 216, 0 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 31203 ms
+19/156: N_72, PGL [ 144, 186 ], method = reference, liftable = true, F-liftable = true, elapsed = 31266 ms
+20/156: T_48, PGL [ 48, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 31688 ms
+21/156: 3^{1+4}:2, PGL [ 972, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 31813 ms
+22/156: 3^{1+4}:2, PGL [ 1944, 3493 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 32109 ms
+23/156: 3^{1+4}:2, PGL [ 2916, 0 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 32516 ms
+24/156: 3^{1+4}:2, PGL [ 5832, 0 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 32922 ms
+25/156: A_4,3, PGL [ 72, 43 ], method = reference, liftable = false, F-liftable = false, elapsed = 33000 ms
+26/156: A_4,3, PGL [ 144, 189 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 33203 ms
+27/156: A_4,3, PGL [ 144, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 33328 ms
+28/156: A_4,3, PGL [ 432, 745 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 34375 ms
+29/156: A_5, PGL [ 60, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 34453 ms
+30/156: A_5, PGL [ 180, 19 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 34656 ms
+31/156: A_5, PGL [ 120, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 34781 ms
+32/156: A_5, PGL [ 360, 119 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 34969 ms
+33/156: 3^2.4, PGL [ 36, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 35109 ms
+34/156: 3^2.4, PGL [ 72, 40 ], method = reference, liftable = true, F-liftable = true, elapsed = 35281 ms
+35/156: S_3,3, PGL [ 72, 46 ], method = reference, liftable = true, F-liftable = true, elapsed = 35359 ms
+36/156: S_3,3, PGL [ 216, 170 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 36469 ms
+37/156: S_3,3, PGL [ 72, 40 ], method = reference, liftable = true, F-liftable = true, elapsed = 36578 ms
+38/156: S_3,3, PGL [ 216, 157 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 37078 ms
+39/156: F_21, PGL [ 21, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 37359 ms
+40/156: F_21, PGL [ 42, 0 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 37859 ms
+41/156: F_21, PGL [ 126, 0 ], method = small 3-subgroups, liftable = false, F-liftable = false, elapsed = 45625 ms
+42/156: Hol_5, PGL [ 20, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 45766 ms
+43/156: QD_16, PGL [ 16, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 46031 ms
+44/156: QD_16, PGL [ 32, 42 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 46641 ms
+45/156: S_4, PGL [ 24, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 46734 ms
+46/156: S_4, PGL [ 48, 48 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 46953 ms
+47/156: S_4, PGL [ 48, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 47078 ms
+48/156: Q_8, PGL [ 8, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 47203 ms
+49/156: Q_8, PGL [ 16, 13 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 47375 ms
+50/156: Q_8, PGL [ 24, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 47641 ms
+51/156: Q_8, PGL [ 32, 11 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 47844 ms
+52/156: A_3,3, PGL [ 18, 0 ], method = reference, liftable = false, F-liftable = false, elapsed = 47922 ms
+53/156: A_3,3, PGL [ 36, 13 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 48078 ms
+54/156: A_3,3, PGL [ 54, 5 ], method = inherited obstruction, liftable = false, F-liftable = false, elapsed = 48281 ms
+55/156: A_3,3, PGL [ 36, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 48406 ms
+56/156: A_3,3, PGL [ 108, 38 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 49109 ms
+57/156: A_3,3, PGL [ 108, 38 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 49672 ms
+58/156: D_12, PGL [ 12, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 49781 ms
+59/156: D_12, PGL [ 24, 8 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 49938 ms
+60/156: D_12, PGL [ 24, 14 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 50109 ms
+61/156: D_12, PGL [ 36, 12 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 50313 ms
+62/156: D_12, PGL [ 72, 30 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 50578 ms
+63/156: D_12, PGL [ 24, 14 ], method = reference, liftable = true, F-liftable = true, elapsed = 50688 ms
+64/156: D_12, PGL [ 72, 48 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 51016 ms
+65/156: A_4, PGL [ 12, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 51125 ms
+66/156: A_4, PGL [ 24, 13 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 51266 ms
+67/156: A_4, PGL [ 36, 11 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 51469 ms
+68/156: A_4, PGL [ 24, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 51516 ms
+69/156: A_4, PGL [ 72, 42 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 51719 ms
+70/156: D_10, PGL [ 10, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 51984 ms
+71/156: D_10, PGL [ 20, 4 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 52469 ms
+72/156: D_10, PGL [ 30, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 52938 ms
+73/156: D_8, PGL [ 8, 0 ], method = reference, liftable = true, F-liftable = true, elapsed = 53078 ms
+74/156: D_8, PGL [ 16, 11 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 53250 ms
+75/156: D_8, PGL [ 16, 13 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 53469 ms
+76/156: D_8, PGL [ 16, 7 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 53984 ms
+77/156: C4, PGL [ 4, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 54047 ms
+78/156: C4, PGL [ 8, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 54172 ms
+79/156: C4, PGL [ 8, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 54344 ms
+80/156: C4, PGL [ 8, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 54422 ms
+81/156: C4, PGL [ 16, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 54594 ms
+82/156: C4, PGL [ 16, 6 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 55031 ms
+83/156: S3, PGL [ 6, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 55125 ms
+84/156: S3, PGL [ 12, 4 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 55328 ms
+85/156: S3, PGL [ 12, 4 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 55469 ms
+86/156: S3, PGL [ 18, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 55641 ms
+87/156: S3, PGL [ 18, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 55766 ms
+88/156: S3, PGL [ 12, 4 ], method = reference, liftable = true, F-liftable = true, elapsed = 55875 ms
+89/156: S3, PGL [ 24, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 56016 ms
+90/156: S3, PGL [ 36, 12 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 56234 ms
+91/156: S3, PGL [ 36, 12 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 56406 ms
+92/156: S3, PGL [ 36, 12 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 56641 ms
+93/156: S3, PGL [ 48, 4 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 57094 ms
+94/156: S3, PGL [ 72, 27 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 57422 ms
+95/156: S3, PGL [ 72, 27 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 57703 ms
+96/156: S3, PGL [ 144, 69 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 58719 ms
+97/156: C2^2, PGL [ 4, 2 ], method = reference, liftable = true, F-liftable = true, elapsed = 58828 ms
+98/156: C2^2, PGL [ 8, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 58891 ms
+99/156: C2^2, PGL [ 8, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 58969 ms
+100/156: C2^2, PGL [ 8, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 59094 ms
+101/156: C2^2, PGL [ 12, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 59172 ms
+102/156: C2^2, PGL [ 12, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 59250 ms
+103/156: C2^2, PGL [ 24, 10 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 59422 ms
+104/156: C2^2, PGL [ 24, 13 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 59578 ms
+105/156: C2^2, PGL [ 24, 13 ], method = small 3-subgroups, liftable = true, F-liftable = false, elapsed = 59828 ms
+106/156: C3, PGL [ 3, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 59859 ms
+107/156: C3, PGL [ 6, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60000 ms
+108/156: C3, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60078 ms
+109/156: C3, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60203 ms
+110/156: C3, PGL [ 9, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60328 ms
+111/156: C3, PGL [ 9, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60422 ms
+112/156: C3, PGL [ 9, 2 ], method = small 3-subgroups, liftable = false, F-liftable = false, elapsed = 60703 ms
+113/156: C3, PGL [ 18, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 60828 ms
+114/156: C3, PGL [ 18, 5 ], method = small 3-subgroups, liftable = false, F-liftable = false, elapsed = 61125 ms
+115/156: C3, PGL [ 6, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 61172 ms
+116/156: C3, PGL [ 18, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61281 ms
+117/156: C3, PGL [ 18, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61406 ms
+118/156: C3, PGL [ 18, 3 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61578 ms
+119/156: C2, PGL [ 2, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 61625 ms
+120/156: C2, PGL [ 4, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61734 ms
+121/156: C2, PGL [ 4, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61844 ms
+122/156: C2, PGL [ 4, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 61984 ms
+123/156: C2, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62094 ms
+124/156: C2, PGL [ 8, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62188 ms
+125/156: C2, PGL [ 12, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62313 ms
+126/156: C2, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62438 ms
+127/156: C2, PGL [ 8, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62547 ms
+128/156: C2, PGL [ 12, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 62688 ms
+129/156: C2, PGL [ 16, 5 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63078 ms
+130/156: C2, PGL [ 24, 9 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63203 ms
+131/156: C2, PGL [ 24, 9 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63359 ms
+132/156: 1, PGL [ 1, 1 ], method = reference, liftable = true, F-liftable = true, elapsed = 63406 ms
+133/156: 1, PGL [ 2, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63438 ms
+134/156: 1, PGL [ 2, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63563 ms
+135/156: 1, PGL [ 3, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63609 ms
+136/156: 1, PGL [ 3, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63672 ms
+137/156: 1, PGL [ 4, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63813 ms
+138/156: 1, PGL [ 4, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 63891 ms
+139/156: 1, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 64016 ms
+140/156: 1, PGL [ 3, 1 ], method = small 3-subgroups, liftable = true, F-liftable = false, elapsed = 64141 ms
+141/156: 1, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 64250 ms
+142/156: 1, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 64281 ms
+143/156: 1, PGL [ 6, 2 ], method = small 3-subgroups, liftable = true, F-liftable = false, elapsed = 64438 ms
+144/156: 1, PGL [ 8, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 64734 ms
+145/156: 1, PGL [ 8, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 64984 ms
+146/156: 1, PGL [ 8, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 65297 ms
+147/156: 1, PGL [ 12, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 65406 ms
+148/156: 1, PGL [ 12, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 65547 ms
+149/156: 1, PGL [ 12, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 65656 ms
+150/156: 1, PGL [ 12, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 65750 ms
+151/156: 1, PGL [ 16, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 66984 ms
+152/156: 1, PGL [ 16, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 68234 ms
+153/156: 1, PGL [ 24, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 68547 ms
+154/156: 1, PGL [ 24, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 68875 ms
+155/156: 1, PGL [ 32, 1 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 78281 ms
+156/156: 1, PGL [ 48, 2 ], method = small 3-subgroups, liftable = true, F-liftable = true, elapsed = 79766 ms
+
+Completed.
+Families = 156
+Liftable = 134
+F-liftable = 131
+Runtime = 79781 ms
+Output = gap_classification/gap_liftability/gap_liftability.out
+Markdown = gap_classification/gap_liftability/gap_liftability_result.md
+LIFTABILITY_COMPLETED

@@ -1,0 +1,8 @@
+small_families=142
+eligible_pairs=5131
+completed_pairs=5131
+positive_edges=1322
+negative_edges=3809
+undecided_edges=0
+verified_positive_witnesses=1322
+transitive_closure_audit=passed

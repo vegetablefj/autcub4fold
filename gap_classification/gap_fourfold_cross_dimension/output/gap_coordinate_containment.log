@@ -1,0 +1,31 @@
+Fourfold containment in the displayed coordinates
+GAP 4.15.1
+
+1. Coordinate groups verified: 20/156; elapsed 1672 ms
+2. Coordinate groups verified: 40/156; elapsed 3265 ms
+3. Coordinate groups verified: 60/156; elapsed 4250 ms
+4. Coordinate groups verified: 80/156; elapsed 5859 ms
+5. Coordinate groups verified: 100/156; elapsed 6500 ms
+6. Coordinate groups verified: 120/156; elapsed 7437 ms
+7. Coordinate groups verified: 140/156; elapsed 7953 ms
+8. Coordinate groups verified: 156/156; elapsed 8437 ms
+9. Containment matrices verified: 100/1793; elapsed 13140 ms
+10. Containment matrices verified: 200/1793; elapsed 14172 ms
+11. Containment matrices verified: 300/1793; elapsed 15078 ms
+12. Containment matrices verified: 400/1793; elapsed 16422 ms
+13. Containment matrices verified: 500/1793; elapsed 16687 ms
+14. Containment matrices verified: 600/1793; elapsed 18468 ms
+15. Containment matrices verified: 700/1793; elapsed 18859 ms
+16. Containment matrices verified: 800/1793; elapsed 19250 ms
+17. Containment matrices verified: 900/1793; elapsed 19437 ms
+18. Containment matrices verified: 1000/1793; elapsed 19437 ms
+19. Containment matrices verified: 1100/1793; elapsed 24218 ms
+20. Containment matrices verified: 1200/1793; elapsed 25000 ms
+21. Containment matrices verified: 1300/1793; elapsed 26890 ms
+22. Containment matrices verified: 1400/1793; elapsed 28015 ms
+23. Containment matrices verified: 1500/1793; elapsed 68062 ms
+24. Containment matrices verified: 1600/1793; elapsed 68453 ms
+25. Containment matrices verified: 1700/1793; elapsed 70062 ms
+26. Containment matrices verified: 1793/1793; elapsed 70328 ms
+27. Completed: 1793 witnesses verified; 4775 negative decisions retained; 433 covers unchanged; elapsed 71828 ms
+FOURFOLD_COORDINATE_CONTAINMENT_COMPLETED

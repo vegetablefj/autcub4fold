@@ -1,0 +1,33 @@
+Small nonabelian multiplier audit
+GAP version: 4.15.1
+Current distinct target count: 16
+1/16 current target [ 18, 3 ]
+2/16 current target [ 6, 1 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+3/16 current target [ 12, 1 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+4/16 current target [ 36, 6 ]
+5/16 current target [ 24, 1 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+6/16 current target [ 12, 3 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+7/16 current target [ 8, 3 ]
+8/16 current target [ 16, 6 ]
+9/16 current target [ 24, 13 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+10/16 current target [ 24, 10 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+11/16 current target [ 8, 4 ]
+12/16 current target [ 12, 4 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+13/16 current target [ 24, 5 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+14/16 current target [ 36, 12 ]
+15/16 current target [ 48, 4 ]
+The Sylow p-subgroup of the group is cyclic - so the multiplier is trivial.
+16/16 current target [ 72, 27 ]
+All current multiplier 3-parts trivial: true
+Direct S3 x C24 multiplier 3-part trivial: true
+All universal-coefficient dimension checks passed: true
+Output: gap_multiplier_audit.out
+Readable report: gap_multiplier_audit.md

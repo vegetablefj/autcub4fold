@@ -1,0 +1,8 @@
+source=input/fourfold_search_catalogue.g
+families=156
+small_order_threshold=2000
+small_families=142
+large_families=14
+eligible_cross_dimension_pairs=6568
+eligible_small_pairs=5131
+large_target_numbers=[ 21, 11, 9, 22, 23, 5, 6, 7, 8, 2, 3, 24, 4, 1 ]

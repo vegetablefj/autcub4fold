@@ -1,0 +1,108 @@
+GAP version: 4.15.1
+Computed catalogue entries: 156
+Canonical presentation entries: 156
+
+Coarse metadata blocks: 140
+Repeated coarse blocks: 15
+
+Repeated block 5: signature=[ 20, "M_10", 1, 1, 0, [ 720, 0 ] ]; computed=[ 5, 6 ]; canonical=[ 5, 6 ]
+  computed 5 vs canonical 5: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 5 vs canonical 6: not_equivalent; method=A_strict; reason=exhausted_no_verified_candidate
+  computed 6 vs canonical 5: not_equivalent; method=A_strict; reason=exhausted_no_verified_candidate
+  computed 6 vs canonical 6: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 12: signature=[ 19, "PSL(2,7)", 1, 2, 0, [ 336, 0 ] ]; computed=[ 13, 14 ]; canonical=[ 13, 14 ]
+  computed 13 vs canonical 13: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 13 vs canonical 14: not_equivalent; method=A_strict; reason=exhausted_no_verified_candidate
+  computed 14 vs canonical 13: not_equivalent; method=A_strict; reason=exhausted_no_verified_candidate
+  computed 14 vs canonical 14: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 54: signature=[ 16, "A_3,3", 2, 6, 2, [ 108, 38 ] ]; computed=[ 56, 57 ]; canonical=[ 56, 57 ]
+  computed 56 vs canonical 56: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 56 vs canonical 57: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 57 vs canonical 56: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 57 vs canonical 57: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 81: signature=[ 14, "S3", 1, 2, 3, [ 12, 4 ] ]; computed=[ 84, 85 ]; canonical=[ 84, 85 ]
+  computed 84 vs canonical 84: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 84 vs canonical 85: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 85 vs canonical 84: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 85 vs canonical 85: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 86: signature=[ 14, "S3", 2, 6, 3, [ 36, 12 ] ]; computed=[ 90, 91 ]; canonical=[ 90, 91 ]
+  computed 90 vs canonical 90: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 90 vs canonical 91: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 91 vs canonical 90: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 91 vs canonical 91: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 89: signature=[ 14, "S3", 2, 12, 1, [ 72, 27 ] ]; computed=[ 94, 95 ]; canonical=[ 94, 95 ]
+  computed 94 vs canonical 94: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 94 vs canonical 95: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 95 vs canonical 94: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 95 vs canonical 95: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 98: signature=[ 12, "C2^2", 1, 6, 2, [ 24, 13 ] ]; computed=[ 104, 105 ]; canonical=[ 104, 105 ]
+  computed 104 vs canonical 104: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 104 vs canonical 105: not_equivalent; method=filter; reason=element_order_multiset
+  computed 105 vs canonical 104: not_equivalent; method=filter; reason=exponent
+  computed 105 vs canonical 105: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 101: signature=[ 12, "C3", 1, 2, 4, [ 6, 2 ] ]; computed=[ 108, 109 ]; canonical=[ 108, 109 ]
+  computed 108 vs canonical 108: equivalent; method=recorded_coordinate_witness; reason=generic_full_coordinate_permutation_inclusion
+  computed 108 vs canonical 109: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 109 vs canonical 108: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 109 vs canonical 109: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 108: signature=[ 12, "C3", 2, 6, 4, [ 18, 3 ] ]; computed=[ 116, 117 ]; canonical=[ 116, 117 ]
+  computed 116 vs canonical 116: equivalent; method=recorded_coordinate_witness; reason=generic_full_linear_embedding
+  computed 116 vs canonical 117: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 117 vs canonical 116: not_equivalent; method=filter; reason=weak_fingerprint
+  computed 117 vs canonical 117: equivalent; method=recorded_coordinate_witness; reason=generic_full_linear_embedding
+
+Repeated block 128: signature=[ 0, "1", 1, 4, 7, [ 4, 1 ] ]; computed=[ 137, 138 ]; canonical=[ 137, 138 ]
+  computed 137 vs canonical 137: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 137 vs canonical 138: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 138 vs canonical 137: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 138 vs canonical 138: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 134: signature=[ 0, "1", 1, 8, 3, [ 8, 1 ] ]; computed=[ 144, 145, 146 ]; canonical=[ 144, 145, 146 ]
+  computed 144 vs canonical 144: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 144 vs canonical 145: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 144 vs canonical 146: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 145 vs canonical 144: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 145 vs canonical 145: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 145 vs canonical 146: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 146 vs canonical 144: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 146 vs canonical 145: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 146 vs canonical 146: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 135: signature=[ 0, "1", 1, 12, 3, [ 12, 2 ] ]; computed=[ 147, 148 ]; canonical=[ 147, 148 ]
+  computed 147 vs canonical 147: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 147 vs canonical 148: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 148 vs canonical 147: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 148 vs canonical 148: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 136: signature=[ 0, "1", 1, 12, 2, [ 12, 2 ] ]; computed=[ 149, 150 ]; canonical=[ 149, 150 ]
+  computed 149 vs canonical 149: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 149 vs canonical 150: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 150 vs canonical 149: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 150 vs canonical 150: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 137: signature=[ 0, "1", 1, 16, 1, [ 16, 1 ] ]; computed=[ 151, 152 ]; canonical=[ 151, 152 ]
+  computed 151 vs canonical 151: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 151 vs canonical 152: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 152 vs canonical 151: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 152 vs canonical 152: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Repeated block 138: signature=[ 0, "1", 1, 24, 1, [ 24, 2 ] ]; computed=[ 153, 154 ]; canonical=[ 153, 154 ]
+  computed 153 vs canonical 153: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+  computed 153 vs canonical 154: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 154 vs canonical 153: not_equivalent; method=diagonal_coordinate_permutations; reason=exhausted_coordinate_permutations
+  computed 154 vs canonical 154: equivalent; method=literal_matrix_equality; reason=equal_matrix_groups
+
+Status: verified_unique
+Pairs tested: 190; equivalent=156; non-equivalent=34; undecided=0
+Ambiguous computed entries: 0
+Output: gap_classification/gap_coordinate_presentation/gap_coordinate_presentation.out
+Summary: gap_classification/gap_coordinate_presentation/gap_coordinate_presentation_res\
+ult.md

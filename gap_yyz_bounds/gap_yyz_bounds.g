@@ -20,8 +20,27 @@
 ##
 #############################################################################
 
-# Set to false for clean output containing only YYZResults.
+# Set to false to suppress progress messages on stdout.
 YYZ_SHOW_PROGRESS := true;
+
+# Human-readable audit report written after the calculation.
+# Bare filenames are relative to GAP's current working directory.
+YYZ_OUTPUT_FILE := "gap_yyz_bounds_output.txt";
+
+# Lightweight execution log, also written to the current working directory.
+YYZ_LOG_FILE := "gap_yyz_bounds_log.txt";
+YYZ_RUN_START_MS := Runtime();
+PrintTo(YYZ_LOG_FILE,
+    "YYZ bounds calculation log\n",
+    "==========================\n",
+    "GAP version: ", GAPInfo.Version, "\n",
+    "Output file: ", YYZ_OUTPUT_FILE, "\n",
+    "Log file: ", YYZ_LOG_FILE, "\n\n"
+);;
+
+# Filled by GenerateYYZResults.  It records enough run-level information to
+# make the output auditable without changing the mathematical search.
+YYZRunSummary := fail;
 
 if LoadPackage("smallgrp") = fail then
     Error("The GAP package smallgrp is required.");
@@ -189,6 +208,8 @@ ExpectedSymplecticOrders := [
 #############################################################################
 
 YYZ_Progress := function(message)
+    # Always record progress in the log; optionally mirror it to stdout.
+    AppendTo(YYZ_LOG_FILE, "# [YYZ] ", message, "\n");
     if YYZ_SHOW_PROGRESS then
         Print("# [YYZ] ", message, "\n");
     fi;
@@ -458,12 +479,13 @@ end;
 # Enumerate subgroup conjugacy-class representatives in each maximal group,
 # test the normal cyclic quotient condition, and deduplicate only at the end.
 GenerateYYZResults := function(symplecticGroups, maximalGroups)
-    local rawResults, sourceIndex, sourceStart, maximalGroup,
+    local rawResults, sourceIndex, sourceStart, sourceElapsedMs, maximalGroup,
           subgroupClasses, class, subgroup, candidate,
           symplecticIndex, symplecticGroup, symplecticOrder, index,
-          successfulCount, internalResults, formatted;
+          successfulCount, internalResults, formatted, sourceStats;
 
     rawResults := [];
+    sourceStats := [];
 
     YYZ_Progress(Concatenation(
         "starting with ", String(Length(maximalGroups)),
@@ -525,11 +547,21 @@ GenerateYYZResults := function(symplecticGroups, maximalGroups)
             od;
         od;
 
+        sourceElapsedMs := Runtime() - sourceStart;
+        Add(sourceStats, rec(
+            sourceIndex := sourceIndex,
+            label := MaximalGroupLabels[sourceIndex],
+            order := Size(maximalGroup),
+            subgroupClassCount := Length(subgroupClasses),
+            successfulOccurrences := successfulCount,
+            runtimeMilliseconds := sourceElapsedMs
+        ));
+
         YYZ_Progress(Concatenation(
             MaximalGroupLabels[sourceIndex], ": ",
             String(Length(subgroupClasses)), " subgroup classes; ",
             String(successfulCount), " successful occurrences; ",
-            String(QuoInt(Runtime() - sourceStart, 1000)), " s."
+            String(QuoInt(sourceElapsedMs, 1000)), " s."
         ));
     od;
 
@@ -553,6 +585,12 @@ GenerateYYZResults := function(symplecticGroups, maximalGroups)
         "finished: ", String(Length(formatted)), " output records."
     ));
 
+    YYZRunSummary := rec(
+        rawSuccessfulOccurrences := Length(rawResults),
+        outputRecordCount := Length(formatted),
+        sourceStats := sourceStats
+    );
+
     return formatted;
 end;
 
@@ -562,8 +600,229 @@ end;
 
 
 #############################################################################
-##  4. Run
+##  4. Audit-report helpers
+#############################################################################
+
+YYZ_StringOrDash := function(obj)
+    if obj = fail then
+        return "-";
+    fi;
+    return String(obj);
+end;
+
+# These are only display names.  They do not enter the calculation.
+SymplecticArticleNames := [
+    "3^4:A6", "A7", "3^(1+4):2.2^2", "M10", "L2(11)", "A_{3,5}",
+    "3^(1+4):2.2", "A6", "L2(7)", "S5", "M9", "N72", "T48",
+    "3^(1+4):2", "A_{4,3}", "A5", "3^2.4", "S_{3,3}", "F21",
+    "Hol(5)", "QD16", "S4", "Q8", "A_{3,3}", "D12", "A4", "D10",
+    "D8", "C4", "S3", "C2^2", "C3", "C2", "1"
+];;
+
+YYZMaximalArticleNames := [
+    "C3^5 : S6",
+    "((C3 x (C3^3 : C3)) : C3) : (C4 x C2)",
+    "C8 x (C3^2 : C2)",
+    "S5 x (C3^2 : C2)",
+    "C48",
+    "PSL(2,11) x C3",
+    "((C3 x (C3^2 : C3)) : C3) : (C4^2 : C2)",
+    "C32",
+    "C21 : C6",
+    "M10",
+    "S7",
+    "(C8 x C2) : C2",
+    "PSL(3,2) : C2",
+    "GL(2,3)",
+    "(C3^2 : Q8) : C3"
+];;
+
+# If H is a subgroup of a YYZ maximal group M, then |H| divides |M|.
+# Thus the following finite list contains every index that can possibly occur
+# for a fixed symplectic group, before subgroup structure is tested.
+YYZ_OrderAdmissibleIndices := function(symplecticGroup)
+    local indices, maximalGroup, quotientOrder, d;
+
+    indices := [];
+    for maximalGroup in MaximalGroups do
+        if Size(maximalGroup) mod Size(symplecticGroup) = 0 then
+            quotientOrder := Size(maximalGroup) / Size(symplecticGroup);
+            for d in DivisorsInt(quotientOrder) do
+                if YYZ_IsAllowedIndex(d) then
+                    AddSet(indices, d);
+                fi;
+            od;
+        fi;
+    od;
+    return indices;
+end;
+
+YYZ_ResultSourcesAsLabels := function(resultRecord)
+    return List(resultRecord[5], descriptor -> descriptor[1]);
+end;
+
+YYZ_WriteAuditReport := function(filename, results)
+    local i, id, description, stat, label, indices, m, matches, r,
+          sourceLabels, smallIndices;
+
+    PrintTo(filename,
+        "YYZ / Laza--Zheng group-theoretic audit for cubic fourfold automorphisms\n",
+        "======================================================================\n\n",
+        "Background (brief).\n",
+        "Yang--Yu--Zhu classify finite groups acting faithfully on smooth cubic\n",
+        "fourfolds by showing that every such group is isomorphic to a subgroup\n",
+        "of one of 15 maximal groups.  Laza--Zheng classify the 34 possible\n",
+        "symplectic automorphism groups.  In the index calculation used here,\n",
+        "Aut^s(X) is normal in Aut(X), the quotient is cyclic, and the admissible\n",
+        "index m is required to be 2^a or 3*2^a.\n\n",
+        "The calculation below is group-theoretic: a listed group is a necessary\n",
+        "candidate inside the YYZ maximal groups, not by itself a geometric\n",
+        "realizability statement.  Conversely, a zero count below means that the\n",
+        "script searched all subgroup conjugacy classes of all 15 YYZ maximal\n",
+        "groups and found no subgroup satisfying the stated normal/cyclic-quotient\n",
+        "conditions for that index.\n\n",
+        "GAP version: ", GAPInfo.Version, "\n",
+        "Output file: ", filename, "\n\n"
+    );
+
+    AppendTo(filename, "INPUT A: 15 Yang--Yu--Zhu maximal groups\n");
+    AppendTo(filename, "------------------------------------------\n");
+    for i in [1 .. Length(MaximalGroups)] do
+        id := YYZ_GroupId(MaximalGroups[i]);
+        description := YYZ_GroupDescription(MaximalGroups[i], id);
+        AppendTo(filename,
+            MaximalGroupLabels[i],
+            " | article notation: ", YYZMaximalArticleNames[i],
+            " | order: ", Size(MaximalGroups[i]),
+            " | GAP id: ", YYZ_StringOrDash(id),
+            " | GAP description: ", description, "\n"
+        );
+    od;
+
+    AppendTo(filename, "\nINPUT B: 34 Laza--Zheng symplectic groups\n");
+    AppendTo(filename, "------------------------------------------\n");
+    for i in [1 .. Length(SymplecticGroups)] do
+        id := YYZ_GroupId(SymplecticGroups[i]);
+        description := YYZ_GroupDescription(SymplecticGroups[i], id);
+        AppendTo(filename,
+            SymplecticGroupLabels[i],
+            " | article notation: ", SymplecticArticleNames[i],
+            " | order: ", Size(SymplecticGroups[i]),
+            " | GAP id: ", YYZ_StringOrDash(id),
+            " | GAP description: ", description, "\n"
+        );
+    od;
+
+    AppendTo(filename, "\nRUN SUMMARY\n");
+    AppendTo(filename, "-----------\n");
+    if YYZRunSummary = fail then
+        AppendTo(filename, "Run summary unavailable.\n");
+    else
+        AppendTo(filename,
+            "Raw successful subgroup occurrences before final deduplication: ",
+            YYZRunSummary.rawSuccessfulOccurrences, "\n",
+            "Final output records: ", YYZRunSummary.outputRecordCount, "\n\n",
+            "Per YYZ maximal group:\n"
+        );
+        for stat in YYZRunSummary.sourceStats do
+            AppendTo(filename,
+                "  ", stat.label,
+                " | order ", stat.order,
+                " | subgroup conjugacy classes ", stat.subgroupClassCount,
+                " | successful occurrences ", stat.successfulOccurrences,
+                " | runtime(ms) ", stat.runtimeMilliseconds, "\n"
+            );
+        od;
+    fi;
+
+    AppendTo(filename,
+        "\nCOMPLETE INDEX/CANDIDATE AUDIT\n",
+        "------------------------------\n",
+        "For each G_i, 'order-admissible indices' are all allowed m for which\n",
+        "|G_i|*m divides the order of at least one YYZ maximal group.  Every\n",
+        "such m is printed, including those for which the search finds 0\n",
+        "candidate full groups.\n\n"
+    );
+
+    for i in [1 .. Length(SymplecticGroups)] do
+        label := SymplecticGroupLabels[i];
+        indices := YYZ_OrderAdmissibleIndices(SymplecticGroups[i]);
+        AppendTo(filename,
+            "[", label, "] ", SymplecticArticleNames[i],
+            " | order ", Size(SymplecticGroups[i]), "\n",
+            "order-admissible indices: ", indices, "\n"
+        );
+
+        for m in indices do
+            matches := Filtered(
+                results,
+                r -> r[1] = label and r[2] = m
+            );
+            AppendTo(filename,
+                "  m = ", m, " : ", Length(matches), " output record(s)\n"
+            );
+
+            if Length(matches) = 0 then
+                AppendTo(filename, "    NONE\n");
+            else
+                for r in matches do
+                    sourceLabels := YYZ_ResultSourcesAsLabels(r);
+                    AppendTo(filename,
+                        "    id = ", YYZ_StringOrDash(r[3]),
+                        " | description = ", YYZ_StringOrDash(r[4]),
+                        " | sources = ", sourceLabels, "\n"
+                    );
+                od;
+            fi;
+        od;
+        AppendTo(filename, "\n");
+    od;
+
+    # The low-rank cases are the ones used most directly in the later
+    # representation enumeration, so print a compact pointer to them.
+    AppendTo(filename,
+        "LOW-RANK POINTER\n",
+        "----------------\n",
+        "The small symplectic groups relevant for the later low-rank analysis are:\n",
+        "  G_29 = C4, G_30 = S3, G_31 = C2^2, G_32 = C3.\n",
+        "Their complete index/candidate rows appear above; zero rows are explicit.\n\n"
+    );
+
+    AppendTo(filename,
+        "SPECIAL CONVENTION FOR G_14\n",
+        "---------------------------\n",
+        "For G_14 = 3^(1+4):2, full groups are deliberately not identified.\n",
+        "Occurrences are merged only by index and source.  Thus one G_14 row\n",
+        "may stand for more than one non-isomorphic full group.\n\n"
+    );
+
+    AppendTo(filename,
+        "MACHINE-READABLE GAP OBJECT\n",
+        "---------------------------\n",
+        "YYZResults := ", results, ";\n"
+    );
+end;
+
+
+#############################################################################
+##  5. Run
 #############################################################################
 
 YYZResults := GenerateYYZResults(SymplecticGroups, MaximalGroups);;
 PrintYYZResults(YYZResults);
+YYZ_WriteAuditReport(YYZ_OUTPUT_FILE, YYZResults);;
+YYZ_Progress(Concatenation(
+    "audit report written to ", YYZ_OUTPUT_FILE
+));;
+AppendTo(YYZ_LOG_FILE,
+    "\nFINAL SUMMARY\n",
+    "-------------\n",
+    "Raw successful subgroup occurrences: ",
+    YYZRunSummary.rawSuccessfulOccurrences, "\n",
+    "Final output records: ", YYZRunSummary.outputRecordCount, "\n",
+    "Total runtime(ms): ", Runtime() - YYZ_RUN_START_MS, "\n",
+    "Audit output: ", YYZ_OUTPUT_FILE, "\n",
+    "Log output: ", YYZ_LOG_FILE, "\n"
+);;
+Print("# [YYZ] audit report written to ", YYZ_OUTPUT_FILE, "\n");
+Print("# [YYZ] log written to ", YYZ_LOG_FILE, "\n");

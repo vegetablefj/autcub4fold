@@ -1,0 +1,329 @@
+============================================================
+Self-conjugacy audit for the final 156 families
+============================================================
+1/156 liftable-abelian-1-PGL-32-1-index-32-dimension-0: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=8969 ms
+2/156 liftable-abelian-1-PGL-48-2-index-48-dimension-0: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=2000 ms
+3/156 rank-at-least-15-F_21-PGL-126-0-index-6-dimension-0: started
+    theoretical exemption: projective group order divisible by 7
+4/156 small-nonabelian-S3-PGL-144-69-index-24-dimension-0: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=672 ms
+5/156 rank-at-least-15-M_9-PGL-216-0-index-3-dimension-0: started
+    theoretical exemption: rank(S) at least 19
+6/156 rank-at-least-15-PSL(2,7)-PGL-336-0-index-2-dimension-0: started
+    theoretical exemption: rank(S) at least 19; projective group order divisible by 7
+7/156 rank-at-least-15-PSL(2,7)-PGL-336-0-index-2-dimension-0-representation-2: started
+    theoretical exemption: rank(S) at least 19; projective group order divisible by 7
+8/156 rank-at-least-15-M_10-PGL-720-0-index-1-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+9/156 rank-at-least-15-M_10-PGL-720-0-index-1-dimension-0-representation-2: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+10/156 rank-at-least-15-L_2(11)-PGL-1980-0-index-3-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+11/156 rank-at-least-15-A_3,5-PGL-2160-0-index-6-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+12/156 rank-at-least-15-A_7-PGL-2520-0-index-1-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19; projective group order divis\
+ible by 7
+13/156 rank-at-least-15-A_7-PGL-5040-0-index-2-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19; projective group order divis\
+ible by 7
+14/156 rank-at-least-15-3^{1+4}:2-PGL-5832-0-index-12-dimension-0: started
+    theoretical exemption: symplectic part 3^{1+4}:2
+15/156 rank-at-least-15-3^{1+4}:2.2^2-PGL-7776-0-index-4-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+16/156 rank-at-least-15-3^4:A_6-PGL-174960-0-index-6-dimension-0: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+17/156 liftable-abelian-1-PGL-16-1-index-16-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=2078 ms
+18/156 liftable-abelian-1-PGL-16-1-index-16-dimension-1-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=1953 ms
+19/156 nonliftable-abelian-C3-PGL-18-5-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=218 ms
+20/156 rank-at-least-15-Q_8-PGL-24-3-index-3-dimension-1: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=828 ms
+21/156 liftable-abelian-C2-PGL-24-9-index-12-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=234 ms
+22/156 liftable-abelian-1-PGL-24-2-index-24-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=594 ms
+23/156 liftable-abelian-1-PGL-24-2-index-24-dimension-1-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=594 ms
+24/156 rank-at-least-15-Q_8-PGL-32-11-index-4-dimension-1: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=1265 ms
+25/156 rank-at-least-15-QD_16-PGL-32-42-index-2-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=719 ms
+26/156 rank-at-least-15-F_21-PGL-42-0-index-2-dimension-1: started
+    theoretical exemption: projective group order divisible by 7
+27/156 rank-at-least-15-T_48-PGL-48-0-index-1-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+28/156 small-nonabelian-S3-PGL-48-4-index-8-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=1187 ms
+29/156 rank-at-least-15-A_3,3-PGL-54-5-index-3-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=391 ms
+30/156 rank-at-least-15-D_12-PGL-72-30-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=391 ms
+31/156 rank-at-least-15-M_9-PGL-72-41-index-1-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+32/156 small-nonabelian-S3-PGL-72-27-index-12-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=390 ms
+33/156 small-nonabelian-S3-PGL-72-27-index-12-dimension-1-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=406 ms
+34/156 rank-at-least-15-S_5-PGL-120-0-index-1-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+35/156 rank-at-least-15-A_4,3-PGL-144-189-index-2-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=406 ms
+36/156 rank-at-least-15-N_72-PGL-144-186-index-2-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+37/156 rank-at-least-15-PSL(2,7)-PGL-168-0-index-1-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19; projective group order divis\
+ible by 7
+38/156 rank-at-least-15-A_5-PGL-180-19-index-3-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=718 ms
+39/156 rank-at-least-15-S_3,3-PGL-216-170-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=281 ms
+40/156 rank-at-least-15-S_3,3-PGL-216-157-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=281 ms
+41/156 rank-at-least-15-S_5-PGL-240-0-index-2-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+42/156 rank-at-least-15-A_5-PGL-360-119-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=500 ms
+43/156 rank-at-least-15-A_6-PGL-360-0-index-1-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+44/156 rank-at-least-15-A_4,3-PGL-432-745-index-6-dimension-1: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=359 ms
+45/156 rank-at-least-15-A_6-PGL-720-0-index-2-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+46/156 rank-at-least-15-3^{1+4}:2-PGL-1944-3493-index-4-dimension-1: started
+    theoretical exemption: symplectic part 3^{1+4}:2
+47/156 rank-at-least-15-3^{1+4}:2.2-PGL-1944-0-index-2-dimension-1: started
+    theoretical exemption: connected symplectic family; rank(S) at least 19
+48/156 rank-at-least-15-3^{1+4}:2-PGL-2916-0-index-6-dimension-1: started
+    theoretical exemption: symplectic part 3^{1+4}:2
+49/156 nonliftable-abelian-C3-PGL-9-2-index-3-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=141 ms
+50/156 liftable-abelian-1-PGL-12-2-index-12-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=234 ms
+51/156 liftable-abelian-1-PGL-12-2-index-12-dimension-2-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=203 ms
+52/156 rank-at-least-15-D_8-PGL-16-7-index-2-dimension-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=4422 ms
+53/156 rank-at-least-15-Q_8-PGL-16-13-index-2-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=297 ms
+54/156 rank-at-least-15-QD_16-PGL-16-0-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family
+55/156 liftable-abelian-C4-PGL-16-2-index-4-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=265 ms
+56/156 liftable-abelian-C2-PGL-16-5-index-8-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=578 ms
+57/156 small-nonabelian-C4-PGL-16-6-index-4-dimension-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=1000 ms
+58/156 liftable-abelian-C3-PGL-18-5-index-6-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=328 ms
+59/156 small-nonabelian-S3-PGL-18-3-index-3-dimension-2-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=172 ms
+60/156 rank-at-least-15-D_10-PGL-20-4-index-2-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=438 ms
+61/156 rank-at-least-15-Hol_5-PGL-20-0-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family
+62/156 rank-at-least-15-F_21-PGL-21-0-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family; projective group order divisible by 7
+63/156 rank-at-least-15-D_12-PGL-24-14-index-2-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=438 ms
+64/156 rank-at-least-15-D_12-PGL-24-8-index-2-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=344 ms
+65/156 liftable-abelian-C2-PGL-24-9-index-12-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=282 ms
+66/156 small-nonabelian-C2^2-PGL-24-13-index-6-dimension-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=516 ms
+67/156 small-nonabelian-C2^2-PGL-24-13-index-6-dimension-2-representation-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=1704 ms
+68/156 rank-at-least-15-D_10-PGL-30-2-index-3-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=547 ms
+69/156 rank-at-least-15-A_4-PGL-36-11-index-3-dimension-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=953 ms
+70/156 rank-at-least-15-D_12-PGL-36-12-index-3-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=454 ms
+71/156 rank-at-least-15-A_3,3-PGL-36-13-index-2-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=625 ms
+72/156 rank-at-least-15-3^2.4-PGL-36-0-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family
+73/156 small-nonabelian-S3-PGL-36-12-index-6-dimension-2-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=406 ms
+74/156 rank-at-least-15-S_4-PGL-48-48-index-2-dimension-2: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=766 ms
+75/156 rank-at-least-15-A_5-PGL-60-0-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family
+76/156 rank-at-least-15-A_4-PGL-72-42-index-6-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=328 ms
+77/156 rank-at-least-15-D_12-PGL-72-48-index-6-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=344 ms
+78/156 rank-at-least-15-S_3,3-PGL-72-46-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family
+79/156 rank-at-least-15-S_3,3-PGL-72-40-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family
+80/156 rank-at-least-15-3^2.4-PGL-72-40-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family
+81/156 rank-at-least-15-A_4,3-PGL-72-43-index-1-dimension-2: started
+    theoretical exemption: connected symplectic family
+82/156 rank-at-least-15-A_3,3-PGL-108-38-index-6-dimension-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=234 ms
+83/156 rank-at-least-15-A_3,3-PGL-108-38-index-6-dimension-2-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=297 ms
+84/156 rank-at-least-15-A_5-PGL-120-0-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family
+85/156 rank-at-least-15-A_4,3-PGL-144-0-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family
+86/156 rank-at-least-15-3^{1+4}:2-PGL-972-0-index-2-dimension-2: started
+    theoretical exemption: connected symplectic family; symplectic part 3^{1+4}:2
+87/156 liftable-abelian-1-PGL-6-2-index-6-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+88/156 rank-at-least-15-Q_8-PGL-8-0-index-1-dimension-3: started
+    theoretical exemption: connected symplectic family
+89/156 liftable-abelian-1-PGL-8-1-index-8-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=593 ms
+90/156 liftable-abelian-1-PGL-8-1-index-8-dimension-3-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=641 ms
+91/156 liftable-abelian-1-PGL-8-1-index-8-dimension-3-representation-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=485 ms
+92/156 small-nonabelian-C4-PGL-8-3-index-2-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=360 ms
+93/156 liftable-abelian-C3-PGL-9-2-index-3-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=203 ms
+94/156 liftable-abelian-1-PGL-12-2-index-12-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+95/156 liftable-abelian-1-PGL-12-2-index-12-dimension-3-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=218 ms
+96/156 liftable-abelian-C2-PGL-12-5-index-6-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=297 ms
+97/156 small-nonabelian-C2^2-PGL-12-3-index-3-dimension-3: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=391 ms
+98/156 small-nonabelian-S3-PGL-12-4-index-2-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=531 ms
+99/156 small-nonabelian-S3-PGL-12-4-index-2-dimension-3-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=187 ms
+100/156 rank-at-least-15-D_8-PGL-16-13-index-2-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=297 ms
+101/156 small-nonabelian-C3-PGL-18-3-index-6-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=265 ms
+102/156 small-nonabelian-S3-PGL-18-3-index-3-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=281 ms
+103/156 rank-at-least-15-A_4-PGL-24-13-index-2-dimension-3: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=734 ms
+104/156 rank-at-least-15-S_4-PGL-24-0-index-1-dimension-3: started
+    theoretical exemption: connected symplectic family
+105/156 small-nonabelian-C2^2-PGL-24-10-index-6-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=234 ms
+106/156 small-nonabelian-S3-PGL-24-5-index-4-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=375 ms
+107/156 small-nonabelian-S3-PGL-36-12-index-6-dimension-3: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+108/156 small-nonabelian-S3-PGL-36-12-index-6-dimension-3-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=328 ms
+109/156 rank-at-least-15-S_4-PGL-48-0-index-2-dimension-3: started
+    theoretical exemption: connected symplectic family
+110/156 liftable-abelian-1-PGL-6-2-index-6-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=266 ms
+111/156 liftable-abelian-C3-PGL-6-2-index-2-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=188 ms
+112/156 liftable-abelian-C2-PGL-6-2-index-3-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=235 ms
+113/156 liftable-abelian-C3-PGL-6-2-index-2-dimension-4-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+114/156 small-nonabelian-C3-PGL-6-1-index-2-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=204 ms
+115/156 liftable-abelian-C2-PGL-8-2-index-4-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=203 ms
+116/156 liftable-abelian-C4-PGL-8-2-index-2-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+117/156 liftable-abelian-C3-PGL-9-2-index-3-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=187 ms
+118/156 rank-at-least-15-D_10-PGL-10-0-index-1-dimension-4: started
+    theoretical exemption: connected symplectic family
+119/156 rank-at-least-15-A_4-PGL-12-0-index-1-dimension-4: started
+    theoretical exemption: connected symplectic family
+120/156 rank-at-least-15-D_12-PGL-12-0-index-1-dimension-4: started
+    theoretical exemption: connected symplectic family
+121/156 liftable-abelian-C2^2-PGL-12-5-index-3-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=218 ms
+122/156 rank-at-least-15-D_8-PGL-16-11-index-2-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=359 ms
+123/156 rank-at-least-15-A_3,3-PGL-18-0-index-1-dimension-4: started
+    theoretical exemption: connected symplectic family
+124/156 small-nonabelian-C3-PGL-18-3-index-6-dimension-4: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=172 ms
+125/156 small-nonabelian-C3-PGL-18-3-index-6-dimension-4-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=265 ms
+126/156 rank-at-least-15-A_4-PGL-24-0-index-2-dimension-4: started
+    theoretical exemption: connected symplectic family
+127/156 rank-at-least-15-D_12-PGL-24-14-index-2-dimension-4: started
+    theoretical exemption: connected symplectic family
+128/156 rank-at-least-15-A_3,3-PGL-36-0-index-2-dimension-4: started
+    theoretical exemption: connected symplectic family
+129/156 liftable-abelian-1-PGL-6-2-index-6-dimension-5: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=203 ms
+130/156 rank-at-least-15-D_8-PGL-8-0-index-1-dimension-5: started
+    theoretical exemption: connected symplectic family
+131/156 liftable-abelian-C2-PGL-8-2-index-4-dimension-5: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=281 ms
+132/156 liftable-abelian-C2^2-PGL-8-5-index-2-dimension-5: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=265 ms
+133/156 small-nonabelian-C4-PGL-8-3-index-2-dimension-5: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=282 ms
+134/156 liftable-abelian-C2-PGL-12-5-index-6-dimension-5: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=313 ms
+135/156 liftable-abelian-1-PGL-3-1-index-3-dimension-6: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=203 ms
+136/156 liftable-abelian-C4-PGL-4-1-index-1-dimension-6: started
+    theoretical exemption: connected symplectic family
+137/156 liftable-abelian-C2-PGL-4-2-index-2-dimension-6: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=312 ms
+138/156 liftable-abelian-C2-PGL-6-2-index-3-dimension-6: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=328 ms
+139/156 small-nonabelian-S3-PGL-6-1-index-1-dimension-6: started
+    theoretical exemption: connected symplectic family
+140/156 small-nonabelian-C2^2-PGL-8-3-index-2-dimension-6: started
+    status=self_conjugate; proof=complete abstract-automorphism character match with exact intertwiner; runtime=547 ms
+141/156 small-nonabelian-S3-PGL-12-4-index-2-dimension-6: started
+    theoretical exemption: connected symplectic family
+142/156 liftable-abelian-1-PGL-3-1-index-3-dimension-7: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=187 ms
+143/156 liftable-abelian-1-PGL-4-1-index-4-dimension-7: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=234 ms
+144/156 liftable-abelian-1-PGL-4-1-index-4-dimension-7-representation-2: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=219 ms
+145/156 liftable-abelian-1-PGL-6-2-index-6-dimension-7: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=250 ms
+146/156 liftable-abelian-C2^2-PGL-8-5-index-2-dimension-7: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=328 ms
+147/156 liftable-abelian-C3-PGL-3-1-index-1-dimension-8: started
+    theoretical exemption: connected symplectic family
+148/156 liftable-abelian-C2-PGL-4-2-index-2-dimension-8: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=219 ms
+149/156 liftable-abelian-C2^2-PGL-4-2-index-1-dimension-8: started
+    theoretical exemption: connected symplectic family
+150/156 small-nonabelian-C3-PGL-6-1-index-2-dimension-8: started
+    theoretical exemption: connected symplectic family
+151/156 liftable-abelian-1-PGL-2-1-index-2-dimension-10: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=312 ms
+152/156 liftable-abelian-1-PGL-3-1-index-3-dimension-10: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=140 ms
+153/156 liftable-abelian-C2-PGL-4-2-index-2-dimension-10: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=344 ms
+154/156 liftable-abelian-C2-PGL-2-1-index-1-dimension-12: started
+    theoretical exemption: connected symplectic family
+155/156 liftable-abelian-1-PGL-2-1-index-2-dimension-14: started
+    status=self_conjugate; proof=source group equals its conjugate in the stored coordinates; runtime=157 ms
+156/156 liftable-abelian-1-PGL-1-1-index-1-dimension-20: started
+    theoretical exemption: connected symplectic family
+
+============================================================
+Self-conjugacy audit completed
+============================================================
+Theoretical exemptions: 56
+Exact computations: 100
+Exact computations passed: 100
+Accepted total: 156/156
+Runtime: 58203 ms
+Output: gap_classification/gap_self_conjugacy/gap_self_conjugacy.out
+Markdown: gap_classification/gap_self_conjugacy/gap_self_conjugacy.md

@@ -1,8 +1,10 @@
-# OSCAR Script for the Cubic-Fourfold Lattice Search
+# OSCAR Code for Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory
 
-This file presents the code used for the lattice calculations in *Full Automorphism Groups of Smooth Cubic Fourfolds II*. The executable version is [`oscar_script.jl`](oscar_script.jl), and the recorded outputs are in [`oscar_result.md`](oscar_result.md).
+This document presents the OSCAR implementation for *Automorphism Groups of Smooth Cubic Fourfolds through Lattice Theory*. A concise file guide is given in [`README.md`](README.md). The executable source is [`oscar_script.jl`](oscar_script.jl), the input data are in [`input.jl`](input.jl), and [`oscar_run_search.jl`](oscar_run_search.jl) manages the ordered search and serialization. The complete saved search objects are in [`oscar_script_data.mrdi`](oscar_script_data.mrdi), while [`oscar_result.md`](oscar_result.md) gives a human-readable record.
 
 The input is a pair of lattices `S`, `T` and a list of candidate orders. The search enumerates the relevant actions on `T`, constructs equivariant primitive extensions, applies the cubic-fourfold root and symplectic-saturatedness tests, refines the exceptional generic-index-two fitting isometry when needed, and appends a practical GAP identifier for the resulting full automorphism group.
+
+The cases in [`input.jl`](input.jl), the saved case records, the summary table in [`oscar_result.md`](oscar_result.md), and the numbered raw-output subsections appear in the same order. Cases settled independently and therefore not run are listed separately.
 
 `group_gap_id` is a GAP SmallGroup ID `(order, id)` when available for a group of order at most `2000`. For larger groups, the code records the order and `StructureDescription`.
 
@@ -20,7 +22,33 @@ Threads            1
 
 ## Compatibility note
 
-The one-marked-side primitive-extension wrapper implements the correction associated with OSCAR issue #6071 for the tested OSCAR 1.7.x environment. It calls internal OSCAR/Hecke functions and is not intended as a general replacement for the public interface.
+The one-marked-side primitive-extension wrapper is the local workaround
+associated with [OSCAR issue 6071](https://github.com/oscar-system/Oscar.jl/issues/6071)
+for the tested OSCAR 1.7.x environment. It calls internal OSCAR/Hecke
+functions and is not intended as a general replacement for the public
+interface. Its presence does not assert that the public interface has been
+patched in every later OSCAR release.
+
+## Auxiliary equivalence audit
+
+The field `number_of_data` counts retained primitive extensions for one fixed action on `T`. It is not automatically the number of connected families. Two cases therefore require an additional comparison: $M_9$ at generic index $1$ and $A_{3,3}$ at generic index $2$.
+
+The script [`oscar_auxiliary_equivalence_check.jl`](oscar_auxiliary_equivalence_check.jl) reads the saved OSCAR objects rather than repeating the full search. It first compares the stored lattices $K$ and the actions $(P,f_P)$. It then applies the same primitive-extension, root, and stable-fitting routines to the fixed pair $(K,(P,f_P))$. In this fixed-pair calculation the equal-rank branch makes the saturatedness comparison automatic.
+
+The auxiliary extension objects, comparison data, and conclusions are saved in [`oscar_auxiliary_equivalence_data.mrdi`](oscar_auxiliary_equivalence_data.mrdi). The script reloads the saved file and verifies the decisive class counts and traces before reporting success.
+
+From this directory, run the audit with the tested OSCAR installation in
+the default Julia environment:
+
+```text
+julia oscar_auxiliary_equivalence_check.jl
+```
+
+For a separate existing environment, add `--project=/path/to/environment`.
+This directory does not contain its own Julia project or dependency lockfile;
+see [`README.md`](README.md).
+
+An alternative main-search MRDI path and auxiliary-data MRDI path may be supplied as the first and second command-line arguments. The audit does not treat the two $S_{3,3}$ outputs: their nonisomorphic full automorphism groups already distinguish the two families, as explained in [`oscar_result.md`](oscar_result.md).
 
 ## Setup and basic lattice helpers
 
@@ -217,7 +245,7 @@ end
 #   M is a lattice with isometry; N is a plain definite lattice.
 # Only N's full orthogonal group is computed.  This is essential because M may
 # be indefinite of rank greater than 2, where a full finite orthogonal-group
-# computation is not available in this workflow.
+# computation is not available in the present calculation.
 #
 # Version note:
 #   This method mirrors the PR #6004 fix by disabling the discriminant-
@@ -646,7 +674,7 @@ function discriminant_kernel_order(L::ZZLat)
     rank(L) == 0 && return ZZ(1)
 
     @req is_definite(L) || rank(L) <= 2 """
-    Expected O(L) to be finite. In this workflow L should be positive definite.
+    Expected O(L) to be finite. In the present calculation, L is positive definite.
     """
 
     G = orthogonal_group(L)
@@ -671,7 +699,7 @@ function cached_discriminant_kernel_order!(cache::Dict, L::ZZLat)
     end
 end
 
-# Compute the period-domain dimension used in the article:
+# Compute the period-domain dimension of the prescribed action:
 # rank(P)/phi(m)-2 for m=1,2 and rank(P)/phi(m)-1 for m>=3.
 # The caller must ensure that P is the relevant Phi_m-kernel and that rank(P) is
 # divisible by phi(m); div is intentionally used without an extra check.
@@ -739,7 +767,7 @@ function lattice_data_after_root_and_symplectic_tests(
         )
     end
 
-    # Equal rank triggers the workflow-specific automatic equality case.
+    # Equal rank triggers the automatic equality case used here.
     if rank(K) == rank(S)
         return (
             ok=true,
@@ -784,7 +812,7 @@ function passes_root_and_symplectic_test(
     )
 end
 
-# Compute the article's calL(S,T,f_T) data for one fixed conjugacy-class
+# Compute the calL(S, T, f_T) data for one fixed conjugacy-class
 # representative f_T.
 #
 # The expensive index-two refinement is deliberately delayed until the
@@ -889,7 +917,7 @@ function empty_proper_divisor(
 end
 
 # Run the search over the caller-supplied candidate orders.  Each output record
-# has the previous NamedTuple fields, followed by group_gap_id.
+# has the lattice-data fields returned above, followed by group_gap_id.
 #
 # The value of group_gap_id is:
 #   * a pair (order, id) when GAP's SmallGroups identification is available and
@@ -992,7 +1020,7 @@ function cubic_fourfold_search(
     end
 
     # Preserve the order supplied by the caller.  Repeated entries in orders
-    # reproduce the corresponding output, matching the old loop semantics.
+    # reproduce the corresponding output, matching the original loop semantics.
     results = Any[]
     for m in orders
         append!(results, results_by_order[m])
@@ -1084,8 +1112,8 @@ function practical_group_gap_id(
     return result
 end
 
-# Backward-compatible name.  Unlike the earlier version, this now returns only
-# the practical identifier stored in cubic_fourfold_search.
+# Compatibility alias returning the practical identifier stored in
+# cubic_fourfold_search.
 
 function tilde_and_isometry_gap_ids(
     Sf::ZZLatWithIsom;

@@ -1,0 +1,153 @@
+Large and abelian smoothness verification log
+
+Environment: WSL (Ubuntu)
+GAP version: 4.12.1
+Rank-at-least-15 candidates: 76
+Large candidates checked computationally: 76
+Liftable abelian candidates: 53
+Non-liftable abelian candidates: 2
+Maximum exact members per family: 12
+Timeout per member: 120 s
+Singular: /usr/bin/Singular
+GNU timeout: /usr/bin/timeout
+
+Progress
+1. rank_at_least_15 large-1: smooth; exact computation; dimensions = 12/7/5; elapsed 17 ms
+2. rank_at_least_15 large-2: smooth; exact computation; dimensions = 11/7/4; elapsed 65 ms
+3. rank_at_least_15 large-3: smooth; exact computation; dimensions = 10/7/3; elapsed 31 ms
+4. rank_at_least_15 large-4: smooth; exact computation; dimensions = 6/4/2; elapsed 27 ms
+5. rank_at_least_15 large-5: smooth; exact computation; dimensions = 10/6/4; elapsed 14 ms
+6. rank_at_least_15 large-6: smooth; exact computation; dimensions = 6/4/2; elapsed 31 ms
+7. rank_at_least_15 large-7: smooth; exact computation; dimensions = 6/4/2; elapsed 49 ms
+8. rank_at_least_15 large-8: smooth; exact computation; dimensions = 14/10/4; elapsed 28 ms
+9. rank_at_least_15 large-9: smooth; exact computation; dimensions = 8/4/4; elapsed 25 ms
+10. rank_at_least_15 large-10: smooth; exact computation; dimensions = 7/4/3; elapsed 39 ms
+11. rank_at_least_15 large-11: smooth; exact computation; dimensions = 6/4/2; elapsed 31 ms
+12. rank_at_least_15 large-12: smooth; exact computation; dimensions = 8/6/2; elapsed 57 ms
+13. rank_at_least_15 large-13: smooth; exact computation; dimensions = 11/7/4; elapsed 20 ms
+14. rank_at_least_15 large-14: smooth; exact computation; dimensions = 10/6/4; elapsed 17 ms
+15. rank_at_least_15 large-15: smooth; exact computation; dimensions = 6/4/2; elapsed 27 ms
+16. rank_at_least_15 large-16: smooth; exact computation; dimensions = 8/6/2; elapsed 34 ms
+17. rank_at_least_15 large-17: smooth; exact computation; dimensions = 6/4/2; elapsed 37 ms
+18. rank_at_least_15 large-18: smooth; exact computation; dimensions = 9/7/2; elapsed 38 ms
+19. rank_at_least_15 large-19: smooth; exact computation; dimensions = 5/4/1; elapsed 36 ms
+20. rank_at_least_15 large-20: smooth; exact computation; dimensions = 8/4/4; elapsed 17 ms
+21. rank_at_least_15 large-21: smooth; exact computation; dimensions = 10/6/4; elapsed 44 ms
+22. rank_at_least_15 large-22: smooth; exact computation; dimensions = 4/2/2; elapsed 34 ms
+23. rank_at_least_15 large-23: smooth; exact computation; dimensions = 3/2/1; elapsed 37 ms
+24. rank_at_least_15 large-24: smooth; exact computation; dimensions = 8/5/3; elapsed 13 ms
+25. rank_at_least_15 large-25: smooth; exact computation; dimensions = 7/5/2; elapsed 46 ms
+26. rank_at_least_15 large-26: smooth; exact computation; dimensions = 4/3/1; elapsed 36 ms
+27. rank_at_least_15 large-27: smooth; exact computation; dimensions = 5/4/1; elapsed 24 ms
+28. rank_at_least_15 large-28: smooth; exact computation; dimensions = 9/6/3; elapsed 25 ms
+29. rank_at_least_15 large-29: smooth; exact computation; dimensions = 6/3/3; elapsed 28 ms
+30. rank_at_least_15 large-30: smooth; exact computation; dimensions = 5/3/2; elapsed 51 ms
+31. rank_at_least_15 large-31: smooth; exact computation; dimensions = 6/4/2; elapsed 20 ms
+32. rank_at_least_15 large-32: smooth; exact computation; dimensions = 5/4/1; elapsed 35 ms
+33. rank_at_least_15 large-33: smooth; exact computation; dimensions = 5/3/2; elapsed 26 ms
+34. rank_at_least_15 large-34: smooth; exact computation; dimensions = 4/2/2; elapsed 21 ms
+35. rank_at_least_15 large-35: smooth; exact computation; dimensions = 2/1/1; elapsed 19 ms
+36. rank_at_least_15 large-36: smooth; exact computation; dimensions = 1/1/0; elapsed 31 ms
+37. rank_at_least_15 large-37: smooth; exact computation; dimensions = 8/6/2; elapsed 47 ms
+38. rank_at_least_15 large-38: smooth; exact computation; dimensions = 6/4/2; elapsed 54 ms
+39. rank_at_least_15 large-39: smooth; exact computation; dimensions = 6/4/2; elapsed 35 ms
+40. rank_at_least_15 large-40: smooth; exact computation; dimensions = 7/5/2; elapsed 27 ms
+41. rank_at_least_15 large-41: smooth; exact computation; dimensions = 5/4/1; elapsed 53 ms
+42. rank_at_least_15 large-42: smooth; exact computation; dimensions = 4/2/2; elapsed 39 ms
+43. rank_at_least_15 large-43: smooth; exact computation; dimensions = 5/3/2; elapsed 31 ms
+44. rank_at_least_15 large-44: smooth; exact computation; dimensions = 4/3/1; elapsed 41 ms
+45. rank_at_least_15 large-45: smooth; exact computation; dimensions = 7/5/2; elapsed 23 ms
+46. rank_at_least_15 large-46: smooth; exact computation; dimensions = 4/2/2; elapsed 20 ms
+47. rank_at_least_15 large-47: smooth; exact computation; dimensions = 3/2/1; elapsed 293 ms
+48. rank_at_least_15 large-48: smooth; exact computation; dimensions = 4/3/1; elapsed 27 ms
+49. rank_at_least_15 large-49: smooth; exact computation; dimensions = 5/3/2; elapsed 44 ms
+50. rank_at_least_15 large-50: smooth; exact computation; dimensions = 4/2/2; elapsed 80 ms
+51. rank_at_least_15 large-51: smooth; exact computation; dimensions = 3/2/1; elapsed 64 ms
+52. rank_at_least_15 large-52: smooth; exact computation; dimensions = 4/3/1; elapsed 65 ms
+53. rank_at_least_15 large-53: smooth; exact computation; dimensions = 4/2/2; elapsed 35 ms
+54. rank_at_least_15 large-54: smooth; exact computation; dimensions = 3/2/1; elapsed 53 ms
+55. rank_at_least_15 large-55: smooth; exact computation; dimensions = 3/2/1; elapsed 22 ms
+56. rank_at_least_15 large-56: smooth; exact computation; dimensions = 2/2/0; elapsed 30 ms
+57. rank_at_least_15 large-57: smooth; exact computation; dimensions = 4/3/1; elapsed 17 ms
+58. rank_at_least_15 large-58: smooth; exact computation; dimensions = 4/3/1; elapsed 60 ms
+59. rank_at_least_15 large-59: smooth; exact computation; dimensions = 2/1/1; elapsed 43 ms
+60. rank_at_least_15 large-60: smooth; exact computation; dimensions = 1/1/0; elapsed 76 ms
+61. rank_at_least_15 large-61: smooth; exact computation; dimensions = 4/3/1; elapsed 27 ms
+62. rank_at_least_15 large-62: smooth; exact computation; dimensions = 3/2/1; elapsed 38 ms
+63. rank_at_least_15 large-63: smooth; exact computation; dimensions = 2/1/1; elapsed 27 ms
+64. rank_at_least_15 large-64: smooth; exact computation; dimensions = 1/1/0; elapsed 42 ms
+65. rank_at_least_15 large-65: smooth; exact computation; dimensions = 1/1/0; elapsed 33 ms
+66. rank_at_least_15 large-66: smooth; exact computation; dimensions = 3/2/1; elapsed 29 ms
+67. rank_at_least_15 large-67: smooth; exact computation; dimensions = 2/1/1; elapsed 121 ms
+68. rank_at_least_15 large-68: smooth; exact computation; dimensions = 2/1/1; elapsed 32 ms
+69. rank_at_least_15 large-69: smooth; exact computation; dimensions = 2/2/0; elapsed 39 ms
+70. rank_at_least_15 large-70: smooth; exact computation; dimensions = 2/2/0; elapsed 5526 ms
+71. rank_at_least_15 large-71: smooth; exact computation; dimensions = 1/1/0; elapsed 66 ms
+72. rank_at_least_15 large-72: smooth; exact computation; dimensions = 1/1/0; elapsed 56 ms
+73. rank_at_least_15 large-73: smooth; exact computation; dimensions = 1/1/0; elapsed 27 ms
+74. rank_at_least_15 large-74: smooth; exact computation; dimensions = 1/1/0; elapsed 24 ms
+75. rank_at_least_15 large-75: smooth; exact computation; dimensions = 1/1/0; elapsed 26 ms
+76. rank_at_least_15 large-76: smooth; exact computation; dimensions = 1/1/0; elapsed 42 ms
+77. liftable_abelian LA-001: smooth; exact computation; dimensions = 6/6/0; elapsed 11 ms
+78. liftable_abelian LA-002: smooth; exact computation; dimensions = 6/6/0; elapsed 11 ms
+79. liftable_abelian LA-003: smooth; exact computation; dimensions = 56/36/20; elapsed 2 ms
+80. liftable_abelian LA-004: smooth; exact computation; dimensions = 40/26/14; elapsed 16 ms
+81. liftable_abelian LA-005: smooth; exact computation; dimensions = 32/20/12; elapsed 18 ms
+82. liftable_abelian LA-006: smooth; exact computation; dimensions = 28/18/10; elapsed 20 ms
+83. liftable_abelian LA-007: smooth; exact computation; dimensions = 36/26/10; elapsed 12 ms
+84. liftable_abelian LA-008: smooth; exact computation; dimensions = 28/18/10; elapsed 14 ms
+85. liftable_abelian LA-009: smooth; exact computation; dimensions = 22/14/8; elapsed 20 ms
+86. liftable_abelian LA-010: smooth; exact computation; dimensions = 20/12/8; elapsed 16 ms
+87. liftable_abelian LA-011: smooth; exact computation; dimensions = 20/12/8; elapsed 13 ms
+88. liftable_abelian LA-012: smooth; exact computation; dimensions = 19/12/7; elapsed 26 ms
+89. liftable_abelian LA-013: smooth; exact computation; dimensions = 25/18/7; elapsed 19 ms
+90. liftable_abelian LA-014: smooth; exact computation; dimensions = 25/18/7; elapsed 14 ms
+91. liftable_abelian LA-015: smooth; exact computation; dimensions = 21/14/7; elapsed 18 ms
+92. liftable_abelian LA-016: smooth; exact computation; dimensions = 21/14/7; elapsed 16 ms
+93. liftable_abelian LA-017: smooth; exact computation; dimensions = 20/14/6; elapsed 26 ms
+94. liftable_abelian LA-018: smooth; exact computation; dimensions = 16/10/6; elapsed 15 ms
+95. liftable_abelian LA-019: smooth; exact computation; dimensions = 16/10/6; elapsed 18 ms
+96. liftable_abelian LA-020: smooth; exact computation; dimensions = 18/12/6; elapsed 13 ms
+97. liftable_abelian LA-021: smooth; exact computation; dimensions = 17/12/5; elapsed 25 ms
+98. liftable_abelian LA-022: smooth; exact computation; dimensions = 17/12/5; elapsed 24 ms
+99. liftable_abelian LA-023: smooth; exact computation; dimensions = 13/8/5; elapsed 23 ms
+100. liftable_abelian LA-024: smooth; exact computation; dimensions = 15/10/5; elapsed 16 ms
+101. liftable_abelian LA-025: smooth; exact computation; dimensions = 12/8/4; elapsed 26 ms
+102. liftable_abelian LA-026: smooth; exact computation; dimensions = 14/10/4; elapsed 17 ms
+103. liftable_abelian LA-027: smooth; exact computation; dimensions = 12/8/4; elapsed 27 ms
+104. liftable_abelian LA-028: smooth; exact computation; dimensions = 14/10/4; elapsed 15 ms
+105. liftable_abelian LA-029: smooth; exact computation; dimensions = 16/12/4; elapsed 27 ms
+106. liftable_abelian LA-030: smooth; exact computation; dimensions = 14/10/4; elapsed 17 ms
+107. liftable_abelian LA-031: smooth; exact computation; dimensions = 12/8/4; elapsed 18 ms
+108. liftable_abelian LA-032: smooth; exact computation; dimensions = 10/6/4; elapsed 21 ms
+109. liftable_abelian LA-033: smooth; exact computation; dimensions = 16/12/4; elapsed 19 ms
+110. liftable_abelian LA-034: smooth; exact computation; dimensions = 15/12/3; elapsed 17 ms
+111. liftable_abelian LA-035: smooth; exact computation; dimensions = 13/10/3; elapsed 21 ms
+112. liftable_abelian LA-036: smooth; exact computation; dimensions = 11/8/3; elapsed 22 ms
+113. liftable_abelian LA-037: smooth; exact computation; dimensions = 9/6/3; elapsed 17 ms
+114. liftable_abelian LA-038: smooth; exact computation; dimensions = 15/12/3; elapsed 17 ms
+115. liftable_abelian LA-039: smooth; exact computation; dimensions = 13/10/3; elapsed 25 ms
+116. liftable_abelian LA-040: smooth; exact computation; dimensions = 11/8/3; elapsed 13 ms
+117. liftable_abelian LA-041: smooth; exact computation; dimensions = 9/6/3; elapsed 16 ms
+118. liftable_abelian LA-042: smooth; exact computation; dimensions = 10/8/2; elapsed 39 ms
+119. liftable_abelian LA-043: smooth; exact computation; dimensions = 10/8/2; elapsed 23 ms
+120. liftable_abelian LA-044: smooth; exact computation; dimensions = 10/8/2; elapsed 22 ms
+121. liftable_abelian LA-045: smooth; exact computation; dimensions = 10/8/2; elapsed 39 ms
+122. liftable_abelian LA-046: smooth; exact computation; dimensions = 10/8/2; elapsed 19 ms
+123. liftable_abelian LA-047: smooth; exact computation; dimensions = 8/6/2; elapsed 19 ms
+124. liftable_abelian LA-048: smooth; exact computation; dimensions = 8/6/2; elapsed 24 ms
+125. liftable_abelian LA-049: smooth; exact computation; dimensions = 7/6/1; elapsed 36 ms
+126. liftable_abelian LA-050: smooth; exact computation; dimensions = 9/8/1; elapsed 32 ms
+127. liftable_abelian LA-051: smooth; exact computation; dimensions = 7/6/1; elapsed 29 ms
+128. liftable_abelian LA-052: smooth; exact computation; dimensions = 9/8/1; elapsed 33 ms
+129. liftable_abelian LA-053: smooth; exact computation; dimensions = 7/6/1; elapsed 39 ms
+130. nonliftable_abelian NLA-001: smooth; exact computation; dimensions = 6/4/2; elapsed 25 ms
+131. nonliftable_abelian NLA-002: smooth; exact computation; dimensions = 3/2/1; elapsed 19 ms
+
+Summary
+dimension audits passed = 131/131 computational checks
+smooth = 131/131
+  exact computational certificates = 131
+unknown = 0
+runtime = 9866 ms
+output = gap_large_abelian_smoothness.out

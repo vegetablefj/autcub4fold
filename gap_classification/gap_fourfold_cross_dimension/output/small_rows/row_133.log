@@ -1,0 +1,4 @@
+Syntax warning: Unbound global variable in gap_run_small_row.g:43
+        generator -> generator in target.generators
+                                  ^^^^^^
+SMALL_ROW_DONE position=133 family=147 tested=50 embedded=6 undecided=0

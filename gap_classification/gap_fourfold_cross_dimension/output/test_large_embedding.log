@@ -1,0 +1,7 @@
+PASS: nonliteral conjugacy with an explicit witness
+PASS: negative example has matching generator traces
+PASS: all class traces and all twists reject inequivalent faithful representations
+PASS: automorphism cap is undecided, not a negative result
+PASS: literal containment uses the identity witness
+PASS: order divisibility is a strict necessary condition
+LARGE_EMBEDDING_TESTS_DONE

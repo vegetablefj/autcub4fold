@@ -1,0 +1,7 @@
+#I  The group tested requires many generators. `IsomorphicSubgroups' often
+#I  does not perform well for such groups -- see the documentation.
+#I  The group tested requires many generators. `IsomorphicSubgroups' often
+#I  does not perform well for such groups -- see the documentation.
+#I  The group tested requires many generators. `IsomorphicSubgroups' often
+#I  does not perform well for such groups -- see the documentation.
+SMALL_ROW_DONE position=53 family=67 tested=14 embedded=2 undecided=0

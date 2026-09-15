@@ -1,0 +1,143 @@
+============================================================
+Cubic-threefold extraction from index-three sources
+============================================================
+Final cubic-fourfold catalogue: 156 families
+Selected non-symplectic sources with 3 dividing the index: 63
+Invariant bases: true
+
+1/63: source family 1, dimension 0, index 6
+    extracted: r=6 -> 5, strict/projective orders=29160/9720, dimension=0, verified=true, method=permutation_conjugacy_classes, elapsed=1109 ms
+2/63: source family 7, dimension 0, index 3
+    extracted: r=1 -> 0, strict/projective orders=1980/660, dimension=0, verified=true, method=central_Fermat_generator, elapsed=51485 ms
+3/63: source family 8, dimension 0, index 6
+    extracted: r=2 -> 1, strict/projective orders=1080/360, dimension=0, verified=true, method=permutation_conjugacy_classes, elapsed=906 ms
+4/63: source family 18, dimension 0, index 3
+    skipped: no Fermat summand, elapsed=1000 ms, method=permutation_conjugacy_classes
+5/63: source family 23, dimension 1, index 6
+    extracted: r=3 -> 2, strict/projective orders=972/324, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=562 ms
+6/63: source family 24, dimension 0, index 12
+    extracted: r=3 -> 2, strict/projective orders=1944/648, dimension=0, verified=true, method=permutation_conjugacy_classes, elapsed=922 ms
+7/63: source family 28, dimension 1, index 6
+    extracted: r=2 -> 1, strict/projective orders=216/72, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=547 ms
+8/63: source family 30, dimension 1, index 3
+    extracted: r=1 -> 0, strict/projective orders=180/60, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=453 ms
+9/63: source family 32, dimension 1, index 6
+    extracted: r=1 -> 0, strict/projective orders=360/120, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=515 ms
+10/63: source family 36, dimension 1, index 6
+    extracted: r=2 -> 1, strict/projective orders=108/36, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=781 ms
+11/63: source family 38, dimension 1, index 6
+    extracted: r=1 -> 0, strict/projective orders=216/72, dimension=1, verified=true, method=permutation_conjugacy_classes, elapsed=375 ms
+12/63: source family 41, dimension 0, index 6
+    skipped: no Fermat summand, elapsed=1734 ms, method=direct_element_enumeration
+13/63: source family 50, dimension 1, index 3
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+14/63: source family 54, dimension 1, index 3
+    skipped: no Fermat summand, elapsed=125 ms, method=direct_element_enumeration
+15/63: source family 56, dimension 2, index 6
+    extracted: r=2 -> 1, strict/projective orders=54/18, dimension=2, verified=true, method=direct_element_enumeration, elapsed=5515 ms
+16/63: source family 57, dimension 2, index 6
+    extracted: r=1 -> 0, strict/projective orders=108/36, dimension=2, verified=true, method=direct_element_enumeration, elapsed=32594 ms
+17/63: source family 61, dimension 2, index 3
+    extracted: r=1 -> 0, strict/projective orders=36/12, dimension=2, verified=true, method=direct_element_enumeration, elapsed=2844 ms
+18/63: source family 62, dimension 1, index 6
+    extracted: r=1 -> 0, strict/projective orders=72/24, dimension=1, verified=true, method=direct_element_enumeration, elapsed=11375 ms
+19/63: source family 64, dimension 2, index 6
+    extracted: r=2 -> 1, strict/projective orders=36/12, dimension=2, verified=true, method=direct_element_enumeration, elapsed=2219 ms
+20/63: source family 67, dimension 2, index 3
+    extracted: r=1 -> 0, strict/projective orders=36/12, dimension=2, verified=true, method=direct_element_enumeration, elapsed=1953 ms
+21/63: source family 69, dimension 2, index 6
+    extracted: r=1 -> 0, strict/projective orders=72/24, dimension=2, verified=true, method=direct_element_enumeration, elapsed=11641 ms
+22/63: source family 72, dimension 2, index 3
+    extracted: r=1 -> 0, strict/projective orders=30/10, dimension=2, verified=true, method=direct_element_enumeration, elapsed=5546 ms
+23/63: source family 86, dimension 3, index 3
+    extracted: r=1 -> 0, strict/projective orders=18/6, dimension=3, verified=true, method=direct_element_enumeration, elapsed=703 ms
+24/63: source family 87, dimension 2, index 3
+    skipped: no Fermat summand, elapsed=63 ms, method=direct_element_enumeration
+25/63: source family 90, dimension 3, index 6
+    extracted: r=2 -> 1, strict/projective orders=18/6, dimension=3, verified=true, method=direct_element_enumeration, elapsed=781 ms
+26/63: source family 91, dimension 3, index 6
+    extracted: r=1 -> 0, strict/projective orders=36/12, dimension=3, verified=true, method=direct_element_enumeration, elapsed=3359 ms
+27/63: source family 92, dimension 2, index 6
+    skipped: no Fermat summand, elapsed=109 ms, method=direct_element_enumeration
+28/63: source family 94, dimension 1, index 12
+    extracted: r=2 -> 1, strict/projective orders=36/12, dimension=1, verified=true, method=direct_element_enumeration, elapsed=4657 ms
+29/63: source family 95, dimension 1, index 12
+    extracted: r=1 -> 0, strict/projective orders=72/24, dimension=1, verified=true, method=direct_element_enumeration, elapsed=20563 ms
+30/63: source family 96, dimension 0, index 24
+    extracted: r=2 -> 1, strict/projective orders=72/24, dimension=0, verified=true, method=permutation_conjugacy_classes, elapsed=5078 ms
+31/63: source family 101, dimension 4, index 3
+    extracted: r=1 -> 0, strict/projective orders=12/4, dimension=4, verified=true, method=central_Fermat_generator, elapsed=63 ms
+32/63: source family 102, dimension 3, index 3
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+33/63: source family 103, dimension 3, index 6
+    extracted: r=1 -> 0, strict/projective orders=24/8, dimension=3, verified=true, method=direct_element_enumeration, elapsed=1578 ms
+34/63: source family 104, dimension 2, index 6
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+35/63: source family 105, dimension 2, index 6
+    skipped: no Fermat summand, elapsed=94 ms, method=direct_element_enumeration
+36/63: source family 110, dimension 4, index 3
+    extracted: r=1 -> 0, strict/projective orders=9/3, dimension=4, verified=true, method=central_Fermat_generator, elapsed=141 ms
+37/63: source family 111, dimension 3, index 3
+    skipped: no Fermat summand, elapsed=16 ms, method=direct_element_enumeration
+38/63: source family 112, dimension 2, index 3
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+39/63: source family 113, dimension 2, index 6
+    extracted: r=1 -> 0, strict/projective orders=18/6, dimension=2, verified=true, method=direct_element_enumeration, elapsed=532 ms
+40/63: source family 114, dimension 1, index 6
+    skipped: no Fermat summand, elapsed=94 ms, method=direct_element_enumeration
+41/63: source family 116, dimension 4, index 6
+    extracted: r=2 -> 1, strict/projective orders=9/3, dimension=4, verified=true, method=direct_element_enumeration, elapsed=266 ms
+42/63: source family 117, dimension 4, index 6
+    extracted: r=1 -> 0, strict/projective orders=18/6, dimension=4, verified=true, method=direct_element_enumeration, elapsed=781 ms
+43/63: source family 118, dimension 3, index 6
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+44/63: source family 123, dimension 6, index 3
+    extracted: r=1 -> 0, strict/projective orders=6/2, dimension=6, verified=true, method=central_Fermat_generator, elapsed=63 ms
+45/63: source family 125, dimension 5, index 6
+    extracted: r=1 -> 0, strict/projective orders=12/4, dimension=5, verified=true, method=direct_element_enumeration, elapsed=328 ms
+46/63: source family 126, dimension 4, index 3
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+47/63: source family 128, dimension 3, index 6
+    skipped: no Fermat summand, elapsed=110 ms, method=direct_element_enumeration
+48/63: source family 130, dimension 2, index 12
+    extracted: r=1 -> 0, strict/projective orders=24/8, dimension=2, verified=true, method=direct_element_enumeration, elapsed=2046 ms
+49/63: source family 131, dimension 1, index 12
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+50/63: source family 135, dimension 10, index 3
+    extracted: r=1 -> 0, strict/projective orders=3/1, dimension=10, verified=true, method=central_Fermat_generator, elapsed=47 ms
+51/63: source family 136, dimension 7, index 3
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+52/63: source family 139, dimension 7, index 6
+    extracted: r=1 -> 0, strict/projective orders=6/2, dimension=7, verified=true, method=direct_element_enumeration, elapsed=219 ms
+53/63: source family 140, dimension 6, index 3
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+54/63: source family 141, dimension 5, index 6
+    skipped: no Fermat summand, elapsed=31 ms, method=direct_element_enumeration
+55/63: source family 142, dimension 4, index 6
+    skipped: no Fermat summand, elapsed=62 ms, method=direct_element_enumeration
+56/63: source family 143, dimension 3, index 6
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+57/63: source family 147, dimension 3, index 12
+    extracted: r=1 -> 0, strict/projective orders=12/4, dimension=3, verified=true, method=direct_element_enumeration, elapsed=578 ms
+58/63: source family 148, dimension 3, index 12
+    extracted: r=1 -> 0, strict/projective orders=12/4, dimension=3, verified=true, method=direct_element_enumeration, elapsed=641 ms
+59/63: source family 149, dimension 2, index 12
+    skipped: no Fermat summand, elapsed=47 ms, method=direct_element_enumeration
+60/63: source family 150, dimension 2, index 12
+    skipped: no Fermat summand, elapsed=46 ms, method=direct_element_enumeration
+61/63: source family 153, dimension 1, index 24
+    extracted: r=1 -> 0, strict/projective orders=24/8, dimension=1, verified=true, method=direct_element_enumeration, elapsed=5281 ms
+62/63: source family 154, dimension 1, index 24
+    extracted: r=1 -> 0, strict/projective orders=24/8, dimension=1, verified=true, method=direct_element_enumeration, elapsed=5110 ms
+63/63: source family 156, dimension 0, index 48
+    extracted: r=1 -> 0, strict/projective orders=48/16, dimension=0, verified=true, method=direct_element_enumeration, elapsed=55875 ms
+
+Completed.
+Extracted sources: 40
+Skipped sources: 23
+Verified inherited dimensions: 40/40
+Runtime: 244281 ms
+GAP-readable result: gap_classification/gap_threefold/gap_threefold_index_three_result.g
+Markdown result: gap_classification/gap_threefold/gap_threefold_index_three_result.md
+    skipped: no Fermat summand, elapsed=6276156 ms
+13/63: source family 50, dimension 1, index 3

@@ -1,0 +1,93 @@
+LARGE_TARGET_PREPARE layer=1 family=21
+LARGE_TARGET_PREPARED family=21 cpu_ms=187
+LARGE_TARGET_START layer=1 family=21 candidates=47 frontier=18
+LARGE_PAIR_START source=52 target=21 classified=0/47
+LARGE_PAIR_DONE source=52 target=21 status=embedded method=literal_matrix_subgroup reason=literal_matrix_subgroup cpu_ms=172
+LARGE_PAIR_START source=55 target=21 classified=5/47
+LARGE_PAIR_DONE source=55 target=21 status=embedded method=literal_matrix_subgroup reason=literal_matrix_subgroup cpu_ms=125
+LARGE_PAIR_START source=58 target=21 classified=10/47
+LARGE_PAIR_DONE source=58 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_PAIR_START source=65 target=21 classified=11/47
+LARGE_PAIR_DONE source=65 target=21 status=no_embedding method=filter reason=derived_series cpu_ms=172
+LARGE_PAIR_START source=77 target=21 classified=12/47
+LARGE_PAIR_DONE source=77 target=21 status=no_embedding method=filter reason=exponent cpu_ms=235
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=5 classified=13/47
+LARGE_PAIR_START source=84 target=21 classified=13/47
+LARGE_PAIR_DONE source=84 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=85 target=21 classified=14/47
+LARGE_PAIR_DONE source=85 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=86 target=21 classified=15/47
+LARGE_PAIR_DONE source=86 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=281
+LARGE_PAIR_START source=90 target=21 classified=16/47
+LARGE_PAIR_DONE source=90 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_PAIR_START source=91 target=21 classified=17/47
+LARGE_PAIR_DONE source=91 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=10 classified=18/47
+LARGE_PAIR_START source=101 target=21 classified=18/47
+LARGE_PAIR_DONE source=101 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=102 target=21 classified=19/47
+LARGE_PAIR_DONE source=102 target=21 status=no_embedding method=filter reason=derived_series cpu_ms=156
+LARGE_PAIR_START source=111 target=21 classified=20/47
+LARGE_PAIR_DONE source=111 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_PAIR_START source=118 target=21 classified=21/47
+LARGE_PAIR_DONE source=118 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=128 target=21 classified=22/47
+LARGE_PAIR_DONE source=128 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=187
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=15 classified=23/47
+LARGE_PAIR_START source=143 target=21 classified=23/47
+LARGE_PAIR_DONE source=143 target=21 status=no_embedding method=filter reason=exponent cpu_ms=1188
+LARGE_PAIR_START source=147 target=21 classified=24/47
+LARGE_PAIR_DONE source=147 target=21 status=no_embedding method=filter reason=exponent cpu_ms=422
+LARGE_PAIR_START source=148 target=21 classified=25/47
+LARGE_PAIR_DONE source=148 target=21 status=no_embedding method=filter reason=exponent cpu_ms=500
+LARGE_PAIR_START source=97 target=21 classified=26/47
+  subgroup classes: started
+  subgroup classes: completed; count=1591; cpu_ms=4078
+  isomorphic subgroup classes=4; cpu_ms=0
+  source automorphisms=12; cpu_ms=0
+LARGE_PAIR_DONE source=97 target=21 status=no_embedding method=subgroup_classes_full_aut reason=exhausted_subgroup_classes_and_twists cpu_ms=4250
+LARGE_PAIR_START source=107 target=21 classified=27/47
+LARGE_PAIR_DONE source=107 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=20 classified=28/47
+LARGE_PAIR_START source=109 target=21 classified=28/47
+LARGE_PAIR_DONE source=109 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=297
+LARGE_PAIR_START source=122 target=21 classified=29/47
+LARGE_PAIR_DONE source=122 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_PAIR_START source=134 target=21 classified=30/47
+LARGE_PAIR_DONE source=134 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=125
+LARGE_PAIR_START source=108 target=21 classified=31/47
+LARGE_PAIR_DONE source=108 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=121 target=21 classified=32/47
+LARGE_PAIR_DONE source=121 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=25 classified=33/47
+LARGE_PAIR_START source=110 target=21 classified=33/47
+LARGE_PAIR_DONE source=110 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=123 target=21 classified=34/47
+LARGE_PAIR_DONE source=123 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=78
+LARGE_PAIR_START source=135 target=21 classified=35/47
+LARGE_PAIR_DONE source=135 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=109
+LARGE_PAIR_START source=136 target=21 classified=36/47
+LARGE_PAIR_DONE source=136 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_PAIR_START source=116 target=21 classified=37/47
+LARGE_PAIR_DONE source=116 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=30 classified=38/47
+LARGE_PAIR_START source=139 target=21 classified=38/47
+LARGE_PAIR_DONE source=139 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=117 target=21 classified=39/47
+LARGE_PAIR_DONE source=117 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=218
+LARGE_PAIR_START source=125 target=21 classified=40/47
+LARGE_PAIR_DONE source=125 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=188
+LARGE_PAIR_START source=141 target=21 classified=41/47
+LARGE_PAIR_DONE source=141 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=126 target=21 classified=42/47
+LARGE_PAIR_DONE source=126 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=125
+LARGE_TARGET_PROGRESS layer=1 family=21 direct=35 classified=43/47
+LARGE_PAIR_START source=142 target=21 classified=43/47
+LARGE_PAIR_DONE source=142 target=21 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_PAIR_START source=140 target=21 classified=44/47
+LARGE_PAIR_DONE source=140 target=21 status=no_embedding method=filter reason=exponent cpu_ms=719
+LARGE_PAIR_START source=137 target=21 classified=45/47
+LARGE_PAIR_DONE source=137 target=21 status=no_embedding method=filter reason=exponent cpu_ms=265
+LARGE_PAIR_START source=138 target=21 classified=46/47
+LARGE_PAIR_DONE source=138 target=21 status=no_embedding method=filter reason=exponent cpu_ms=219
+LARGE_TARGET_DONE layer=1 family=21 candidates=47 direct=39 inferred=8 embedded=10 no_embedding=37 cpu_ms=13953 undecided=0 coverage=complete

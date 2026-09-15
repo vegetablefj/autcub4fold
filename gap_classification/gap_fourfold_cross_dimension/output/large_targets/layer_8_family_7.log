@@ -1,0 +1,114 @@
+LARGE_TARGET_PREPARE layer=8 family=7
+LARGE_TARGET_PREPARED family=7 cpu_ms=165375
+LARGE_TARGET_START layer=8 family=7 candidates=64 frontier=18
+LARGE_PAIR_START source=30 target=7 classified=0/64
+  subgroup classes: started
+  subgroup classes: completed; count=128; cpu_ms=1204
+  isomorphic subgroup classes=2; cpu_ms=11500
+  source automorphisms=5760; cpu_ms=0
+LARGE_PAIR_DONE source=30 target=7 status=embedded method=subgroup_classes_full_aut reason=found cpu_ms=38875
+LARGE_PAIR_START source=33 target=7 classified=18/64
+LARGE_PAIR_DONE source=33 target=7 status=no_embedding method=filter reason=exponent cpu_ms=390
+LARGE_PAIR_START source=42 target=7 classified=19/64
+LARGE_PAIR_DONE source=42 target=7 status=no_embedding method=filter reason=exponent cpu_ms=313
+LARGE_PAIR_START source=53 target=7 classified=20/64
+LARGE_PAIR_DONE source=53 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=359
+LARGE_PAIR_START source=55 target=7 classified=21/64
+LARGE_PAIR_DONE source=55 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=266
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=5 classified=22/64
+LARGE_PAIR_START source=61 target=7 classified=22/64
+  isomorphic subgroup classes=1; cpu_ms=0
+  source automorphisms=576; cpu_ms=78
+LARGE_PAIR_DONE source=61 target=7 status=embedded method=subgroup_classes_full_aut reason=found cpu_ms=9172
+LARGE_PAIR_START source=71 target=7 classified=25/64
+LARGE_PAIR_DONE source=71 target=7 status=no_embedding method=filter reason=element_order_multiset cpu_ms=4265
+LARGE_PAIR_START source=85 target=7 classified=26/64
+LARGE_PAIR_DONE source=85 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=235
+LARGE_PAIR_START source=87 target=7 classified=27/64
+  isomorphic subgroup classes=2; cpu_ms=16
+  source automorphisms=288; cpu_ms=47
+LARGE_PAIR_DONE source=87 target=7 status=no_embedding method=subgroup_classes_full_aut reason=exhausted_subgroup_classes_and_twists cpu_ms=625
+LARGE_PAIR_START source=90 target=7 classified=28/64
+LARGE_PAIR_DONE source=90 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=328
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=10 classified=29/64
+LARGE_PAIR_START source=91 target=7 classified=29/64
+LARGE_PAIR_DONE source=91 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=375
+LARGE_PAIR_START source=92 target=7 classified=30/64
+LARGE_PAIR_DONE source=92 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=312
+LARGE_PAIR_START source=113 target=7 classified=31/64
+LARGE_PAIR_DONE source=113 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=344
+LARGE_PAIR_START source=114 target=7 classified=32/64
+LARGE_PAIR_DONE source=114 target=7 status=no_embedding method=filter reason=exponent cpu_ms=1844
+LARGE_PAIR_START source=147 target=7 classified=33/64
+LARGE_PAIR_DONE source=147 target=7 status=no_embedding method=filter reason=exponent cpu_ms=406
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=15 classified=34/64
+LARGE_PAIR_START source=148 target=7 classified=34/64
+LARGE_PAIR_DONE source=148 target=7 status=no_embedding method=filter reason=exponent cpu_ms=375
+LARGE_PAIR_START source=149 target=7 classified=35/64
+LARGE_PAIR_DONE source=149 target=7 status=no_embedding method=filter reason=exponent cpu_ms=469
+LARGE_PAIR_START source=150 target=7 classified=36/64
+LARGE_PAIR_DONE source=150 target=7 status=no_embedding method=filter reason=exponent cpu_ms=656
+LARGE_PAIR_START source=52 target=7 classified=37/64
+  isomorphic subgroup classes=0; cpu_ms=0
+LARGE_PAIR_DONE source=52 target=7 status=no_embedding method=subgroup_classes_full_aut reason=no_abstract_subgroup cpu_ms=297
+LARGE_PAIR_START source=77 target=7 classified=38/64
+LARGE_PAIR_DONE source=77 target=7 status=no_embedding method=filter reason=exponent cpu_ms=281
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=20 classified=39/64
+LARGE_PAIR_START source=84 target=7 classified=39/64
+LARGE_PAIR_DONE source=84 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=344
+LARGE_PAIR_START source=107 target=7 classified=40/64
+LARGE_PAIR_DONE source=107 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=235
+LARGE_PAIR_START source=109 target=7 classified=41/64
+LARGE_PAIR_DONE source=109 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=122 target=7 classified=42/64
+LARGE_PAIR_DONE source=122 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=134 target=7 classified=43/64
+LARGE_PAIR_DONE source=134 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=25 classified=44/64
+LARGE_PAIR_START source=88 target=7 classified=44/64
+LARGE_PAIR_DONE source=88 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=344
+LARGE_PAIR_START source=115 target=7 classified=45/64
+LARGE_PAIR_DONE source=115 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=218
+LARGE_PAIR_START source=120 target=7 classified=46/64
+LARGE_PAIR_DONE source=120 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=188
+LARGE_PAIR_START source=133 target=7 classified=47/64
+LARGE_PAIR_DONE source=133 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_PAIR_START source=121 target=7 classified=48/64
+LARGE_PAIR_DONE source=121 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=297
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=30 classified=49/64
+LARGE_PAIR_START source=108 target=7 classified=49/64
+LARGE_PAIR_DONE source=108 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=296
+LARGE_PAIR_START source=111 target=7 classified=50/64
+  isomorphic subgroup classes=1; cpu_ms=0
+  source automorphisms=11232; cpu_ms=0
+LARGE_PAIR_DONE source=111 target=7 status=no_embedding method=subgroup_classes_full_aut reason=exhausted_subgroup_classes_and_twists cpu_ms=2969
+LARGE_PAIR_START source=116 target=7 classified=51/64
+LARGE_PAIR_DONE source=116 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_PAIR_START source=139 target=7 classified=52/64
+LARGE_PAIR_DONE source=139 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=375
+LARGE_PAIR_START source=117 target=7 classified=53/64
+LARGE_PAIR_DONE source=117 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=35 classified=54/64
+LARGE_PAIR_START source=125 target=7 classified=54/64
+LARGE_PAIR_DONE source=125 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=297
+LARGE_PAIR_START source=141 target=7 classified=55/64
+LARGE_PAIR_DONE source=141 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=118 target=7 classified=56/64
+LARGE_PAIR_DONE source=118 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=281
+LARGE_PAIR_START source=128 target=7 classified=57/64
+LARGE_PAIR_DONE source=128 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_PAIR_START source=142 target=7 classified=58/64
+LARGE_PAIR_DONE source=142 target=7 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=235
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=40 classified=59/64
+LARGE_PAIR_START source=112 target=7 classified=59/64
+LARGE_PAIR_DONE source=112 target=7 status=no_embedding method=filter reason=exponent cpu_ms=718
+LARGE_PAIR_START source=140 target=7 classified=60/64
+LARGE_PAIR_DONE source=140 target=7 status=no_embedding method=filter reason=exponent cpu_ms=641
+LARGE_PAIR_START source=143 target=7 classified=61/64
+LARGE_PAIR_DONE source=143 target=7 status=no_embedding method=filter reason=exponent cpu_ms=1125
+LARGE_PAIR_START source=137 target=7 classified=62/64
+LARGE_PAIR_DONE source=137 target=7 status=no_embedding method=filter reason=exponent cpu_ms=250
+LARGE_PAIR_START source=138 target=7 classified=63/64
+LARGE_PAIR_DONE source=138 target=7 status=no_embedding method=filter reason=exponent cpu_ms=359
+LARGE_TARGET_PROGRESS layer=8 family=7 direct=45 classified=64/64
+LARGE_TARGET_DONE layer=8 family=7 candidates=64 direct=45 inferred=19 embedded=21 no_embedding=43 cpu_ms=246750 undecided=0 coverage=complete

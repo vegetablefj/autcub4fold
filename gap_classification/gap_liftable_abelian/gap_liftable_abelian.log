@@ -1,0 +1,23 @@
+Liftable abelian calculation log
+=================================
+GAP version: 4.15.1
+Computational core: gap_liftable_abelian_original.g
+Output file: gap_liftable_abelian.out
+Data file: gap_liftable_abelian_data.g
+Log file: gap_liftable_abelian.log
+
+[8579 ms] old-core enumeration started
+[69563 ms] order-filtered pool complete: 1216
+[87641 ms] equivalence deduplication complete: 110
+[87704 ms] final restrictions complete: 51
+
+FINAL SUMMARY
+-------------
+Ordinary candidates: 51
+Special YYZ candidates: 2
+Total candidates: 53
+Ordinary reference count matched: true
+Total reference count matched: true
+Runtime(ms): 121563
+[121563 ms] output written to gap_liftable_abelian.out
+[121563 ms] machine data written to gap_liftable_abelian_data.g

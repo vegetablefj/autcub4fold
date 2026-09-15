@@ -1,0 +1,592 @@
+Current 156/40 basis replay; GAP 4.15.1
+6 variables, row 1/156: started; elapsed 0 ms
+6 variables, row 1: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 2/156: started; elapsed 31 ms
+6 variables, row 2: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 3/156: started; elapsed 63 ms
+6 variables, row 3: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 4/156: started; elapsed 94 ms
+6 variables, row 4: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 5/156: started; elapsed 125 ms
+6 variables, row 5: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 6/156: started; elapsed 203 ms
+6 variables, row 6: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 7/156: started; elapsed 297 ms
+6 variables, row 7: passed = true; dim W = 2; dim C = 2; m = 
+0; failed checks = [  ]
+6 variables, row 8/156: started; elapsed 1078 ms
+6 variables, row 8: passed = true; dim W = 2; dim C = 2; m = 
+0; failed checks = [  ]
+6 variables, row 9/156: started; elapsed 1125 ms
+6 variables, row 9: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+6 variables, row 10/156: started; elapsed 1156 ms
+6 variables, row 10: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+6 variables, row 11/156: started; elapsed 1266 ms
+6 variables, row 11: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 12/156: started; elapsed 1297 ms
+6 variables, row 12: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+6 variables, row 13/156: started; elapsed 1328 ms
+6 variables, row 13: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 14/156: started; elapsed 1359 ms
+6 variables, row 14: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 15/156: started; elapsed 1391 ms
+6 variables, row 15: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 16/156: started; elapsed 1453 ms
+6 variables, row 16: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 17/156: started; elapsed 1484 ms
+6 variables, row 17: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+6 variables, row 18/156: started; elapsed 1531 ms
+6 variables, row 18: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 19/156: started; elapsed 1594 ms
+6 variables, row 19: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 20/156: started; elapsed 1688 ms
+6 variables, row 20: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 21/156: started; elapsed 1719 ms
+6 variables, row 21: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 22/156: started; elapsed 1781 ms
+6 variables, row 22: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 23/156: started; elapsed 1844 ms
+6 variables, row 23: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 24/156: started; elapsed 1891 ms
+6 variables, row 24: passed = true; dim W = 2; dim C = 2; m = 
+0; failed checks = [  ]
+6 variables, row 25/156: started; elapsed 1938 ms
+6 variables, row 25: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 26/156: started; elapsed 2078 ms
+6 variables, row 26: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 27/156: started; elapsed 2156 ms
+6 variables, row 27: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+6 variables, row 28/156: started; elapsed 2250 ms
+6 variables, row 28: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 29/156: started; elapsed 2313 ms
+6 variables, row 29: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 30/156: started; elapsed 2359 ms
+6 variables, row 30: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 31/156: started; elapsed 2453 ms
+6 variables, row 31: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+6 variables, row 32/156: started; elapsed 2516 ms
+6 variables, row 32: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 33/156: started; elapsed 2531 ms
+6 variables, row 33: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 34/156: started; elapsed 2578 ms
+6 variables, row 34: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+6 variables, row 35/156: started; elapsed 2609 ms
+6 variables, row 35: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 36/156: started; elapsed 2719 ms
+6 variables, row 36: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+6 variables, row 37/156: started; elapsed 2750 ms
+6 variables, row 37: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+6 variables, row 38/156: started; elapsed 2844 ms
+6 variables, row 38: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 39/156: started; elapsed 2906 ms
+6 variables, row 39: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 40/156: started; elapsed 2938 ms
+6 variables, row 40: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+6 variables, row 41/156: started; elapsed 2984 ms
+6 variables, row 41: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+6 variables, row 42/156: started; elapsed 3016 ms
+6 variables, row 42: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+6 variables, row 43/156: started; elapsed 3047 ms
+6 variables, row 43: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 44/156: started; elapsed 3094 ms
+6 variables, row 44: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+6 variables, row 45/156: started; elapsed 3141 ms
+6 variables, row 45: passed = true; dim W = 6; dim C = 3; m = 
+3; failed checks = [  ]
+6 variables, row 46/156: started; elapsed 3188 ms
+6 variables, row 46: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+6 variables, row 47/156: started; elapsed 3219 ms
+6 variables, row 47: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 48/156: started; elapsed 3281 ms
+6 variables, row 48: passed = true; dim W = 8; dim C = 5; m = 
+3; failed checks = [  ]
+6 variables, row 49/156: started; elapsed 3313 ms
+6 variables, row 49: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+6 variables, row 50/156: started; elapsed 3344 ms
+6 variables, row 50: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+6 variables, row 51/156: started; elapsed 3375 ms
+6 variables, row 51: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+6 variables, row 52/156: started; elapsed 3422 ms
+6 variables, row 52: passed = true; dim W = 8; dim C = 4; m = 
+4; failed checks = [  ]
+6 variables, row 53/156: started; elapsed 3484 ms
+6 variables, row 53: passed = true; dim W = 4; dim C = 2; m = 
+2; failed checks = [  ]
+6 variables, row 54/156: started; elapsed 3547 ms
+6 variables, row 54: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 55/156: started; elapsed 3594 ms
+6 variables, row 55: passed = true; dim W = 10; dim C = 6; m = 
+4; failed checks = [  ]
+6 variables, row 56/156: started; elapsed 3672 ms
+6 variables, row 56: passed = true; dim W = 8; dim C = 6; m = 
+2; failed checks = [  ]
+6 variables, row 57/156: started; elapsed 3734 ms
+6 variables, row 57: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 58/156: started; elapsed 3797 ms
+6 variables, row 58: passed = true; dim W = 10; dim C = 6; m = 
+4; failed checks = [  ]
+6 variables, row 59/156: started; elapsed 3844 ms
+6 variables, row 59: passed = true; dim W = 8; dim C = 6; m = 
+2; failed checks = [  ]
+6 variables, row 60/156: started; elapsed 3891 ms
+6 variables, row 60: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 61/156: started; elapsed 3938 ms
+6 variables, row 61: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 62/156: started; elapsed 3969 ms
+6 variables, row 62: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+6 variables, row 63/156: started; elapsed 4016 ms
+6 variables, row 63: passed = true; dim W = 11; dim C = 7; m = 
+4; failed checks = [  ]
+6 variables, row 64/156: started; elapsed 4078 ms
+6 variables, row 64: passed = true; dim W = 9; dim C = 7; m = 
+2; failed checks = [  ]
+6 variables, row 65/156: started; elapsed 4109 ms
+6 variables, row 65: passed = true; dim W = 8; dim C = 4; m = 
+4; failed checks = [  ]
+6 variables, row 66/156: started; elapsed 4172 ms
+6 variables, row 66: passed = true; dim W = 7; dim C = 4; m = 
+3; failed checks = [  ]
+6 variables, row 67/156: started; elapsed 4219 ms
+6 variables, row 67: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 68/156: started; elapsed 4281 ms
+6 variables, row 68: passed = true; dim W = 14; dim C = 10; m = 
+4; failed checks = [  ]
+6 variables, row 69/156: started; elapsed 4344 ms
+6 variables, row 69: passed = true; dim W = 8; dim C = 6; m = 
+2; failed checks = [  ]
+6 variables, row 70/156: started; elapsed 4375 ms
+6 variables, row 70: passed = true; dim W = 10; dim C = 6; m = 
+4; failed checks = [  ]
+6 variables, row 71/156: started; elapsed 4438 ms
+6 variables, row 71: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 72/156: started; elapsed 4484 ms
+6 variables, row 72: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 73/156: started; elapsed 4516 ms
+6 variables, row 73: passed = true; dim W = 12; dim C = 7; m = 
+5; failed checks = [  ]
+6 variables, row 74/156: started; elapsed 4563 ms
+6 variables, row 74: passed = true; dim W = 11; dim C = 7; m = 
+4; failed checks = [  ]
+6 variables, row 75/156: started; elapsed 4609 ms
+6 variables, row 75: passed = true; dim W = 10; dim C = 7; m = 
+3; failed checks = [  ]
+6 variables, row 76/156: started; elapsed 4656 ms
+6 variables, row 76: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 77/156: started; elapsed 4703 ms
+6 variables, row 77: passed = true; dim W = 16; dim C = 10; m = 
+6; failed checks = [  ]
+6 variables, row 78/156: started; elapsed 4734 ms
+6 variables, row 78: passed = true; dim W = 14; dim C = 9; m = 
+5; failed checks = [  ]
+6 variables, row 79/156: started; elapsed 4781 ms
+6 variables, row 79: passed = true; dim W = 14; dim C = 10; m = 
+4; failed checks = [  ]
+6 variables, row 80/156: started; elapsed 4797 ms
+6 variables, row 80: passed = true; dim W = 8; dim C = 5; m = 
+3; failed checks = [  ]
+6 variables, row 81/156: started; elapsed 4828 ms
+6 variables, row 81: passed = true; dim W = 10; dim C = 8; m = 
+2; failed checks = [  ]
+6 variables, row 82/156: started; elapsed 4875 ms
+6 variables, row 82: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+6 variables, row 83/156: started; elapsed 4906 ms
+6 variables, row 83: passed = true; dim W = 14; dim C = 8; m = 
+6; failed checks = [  ]
+6 variables, row 84/156: started; elapsed 4969 ms
+6 variables, row 84: passed = true; dim W = 7; dim C = 4; m = 
+3; failed checks = [  ]
+6 variables, row 85/156: started; elapsed 5016 ms
+6 variables, row 85: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 86/156: started; elapsed 5078 ms
+6 variables, row 86: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 87/156: started; elapsed 5141 ms
+6 variables, row 87: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 88/156: started; elapsed 5203 ms
+6 variables, row 88: passed = true; dim W = 17; dim C = 11; m = 
+6; failed checks = [  ]
+6 variables, row 89/156: started; elapsed 5281 ms
+6 variables, row 89: passed = true; dim W = 10; dim C = 7; m = 
+3; failed checks = [  ]
+6 variables, row 90/156: started; elapsed 5344 ms
+6 variables, row 90: passed = true; dim W = 14; dim C = 11; m = 
+3; failed checks = [  ]
+6 variables, row 91/156: started; elapsed 5375 ms
+6 variables, row 91: passed = true; dim W = 10; dim C = 7; m = 
+3; failed checks = [  ]
+6 variables, row 92/156: started; elapsed 5438 ms
+6 variables, row 92: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+6 variables, row 93/156: started; elapsed 5484 ms
+6 variables, row 93: passed = true; dim W = 6; dim C = 5; m = 
+1; failed checks = [  ]
+6 variables, row 94/156: started; elapsed 5531 ms
+6 variables, row 94: passed = true; dim W = 8; dim C = 7; m = 
+1; failed checks = [  ]
+6 variables, row 95/156: started; elapsed 5578 ms
+6 variables, row 95: passed = true; dim W = 6; dim C = 5; m = 
+1; failed checks = [  ]
+6 variables, row 96/156: started; elapsed 5594 ms
+6 variables, row 96: passed = true; dim W = 5; dim C = 5; m = 
+0; failed checks = [  ]
+6 variables, row 97/156: started; elapsed 5641 ms
+6 variables, row 97: passed = true; dim W = 20; dim C = 12; m = 
+8; failed checks = [  ]
+6 variables, row 98/156: started; elapsed 5688 ms
+6 variables, row 98: passed = true; dim W = 19; dim C = 12; m = 
+7; failed checks = [  ]
+6 variables, row 99/156: started; elapsed 5734 ms
+6 variables, row 99: passed = true; dim W = 17; dim C = 11; m = 
+6; failed checks = [  ]
+6 variables, row 100/156: started; elapsed 5766 ms
+6 variables, row 100: passed = true; dim W = 13; dim C = 8; m = 
+5; failed checks = [  ]
+6 variables, row 101/156: started; elapsed 5828 ms
+6 variables, row 101: passed = true; dim W = 12; dim C = 8; m = 
+4; failed checks = [  ]
+6 variables, row 102/156: started; elapsed 5875 ms
+6 variables, row 102: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 103/156: started; elapsed 5906 ms
+6 variables, row 103: passed = true; dim W = 10; dim C = 7; m = 
+3; failed checks = [  ]
+6 variables, row 104/156: started; elapsed 5953 ms
+6 variables, row 104: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 105/156: started; elapsed 6000 ms
+6 variables, row 105: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 106/156: started; elapsed 6047 ms
+6 variables, row 106: passed = true; dim W = 20; dim C = 12; m = 
+8; failed checks = [  ]
+6 variables, row 107/156: started; elapsed 6094 ms
+6 variables, row 107: passed = true; dim W = 10; dim C = 6; m = 
+4; failed checks = [  ]
+6 variables, row 108/156: started; elapsed 6125 ms
+6 variables, row 108: passed = true; dim W = 14; dim C = 10; m = 
+4; failed checks = [  ]
+6 variables, row 109/156: started; elapsed 6141 ms
+6 variables, row 109: passed = true; dim W = 10; dim C = 6; m = 
+4; failed checks = [  ]
+6 variables, row 110/156: started; elapsed 6172 ms
+6 variables, row 110: passed = true; dim W = 14; dim C = 10; m = 
+4; failed checks = [  ]
+6 variables, row 111/156: started; elapsed 6219 ms
+6 variables, row 111: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 112/156: started; elapsed 6250 ms
+6 variables, row 112: passed = true; dim W = 6; dim C = 4; m = 
+2; failed checks = [  ]
+6 variables, row 113/156: started; elapsed 6266 ms
+6 variables, row 113: passed = true; dim W = 10; dim C = 8; m = 
+2; failed checks = [  ]
+6 variables, row 114/156: started; elapsed 6297 ms
+6 variables, row 114: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+6 variables, row 115/156: started; elapsed 6344 ms
+6 variables, row 115: passed = true; dim W = 25; dim C = 17; m = 
+8; failed checks = [  ]
+6 variables, row 116/156: started; elapsed 6406 ms
+6 variables, row 116: passed = true; dim W = 21; dim C = 17; m = 
+4; failed checks = [  ]
+6 variables, row 117/156: started; elapsed 6453 ms
+6 variables, row 117: passed = true; dim W = 15; dim C = 11; m = 
+4; failed checks = [  ]
+6 variables, row 118/156: started; elapsed 6484 ms
+6 variables, row 118: passed = true; dim W = 10; dim C = 7; m = 
+3; failed checks = [  ]
+6 variables, row 119/156: started; elapsed 6516 ms
+6 variables, row 119: passed = true; dim W = 32; dim C = 20; m = 
+12; failed checks = [  ]
+6 variables, row 120/156: started; elapsed 6563 ms
+6 variables, row 120: passed = true; dim W = 28; dim C = 18; m = 
+10; failed checks = [  ]
+6 variables, row 121/156: started; elapsed 6609 ms
+6 variables, row 121: passed = true; dim W = 22; dim C = 14; m = 
+8; failed checks = [  ]
+6 variables, row 122/156: started; elapsed 6625 ms
+6 variables, row 122: passed = true; dim W = 16; dim C = 10; m = 
+6; failed checks = [  ]
+6 variables, row 123/156: started; elapsed 6656 ms
+6 variables, row 123: passed = true; dim W = 20; dim C = 14; m = 
+6; failed checks = [  ]
+6 variables, row 124/156: started; elapsed 6703 ms
+6 variables, row 124: passed = true; dim W = 17; dim C = 12; m = 
+5; failed checks = [  ]
+6 variables, row 125/156: started; elapsed 6750 ms
+6 variables, row 125: passed = true; dim W = 17; dim C = 12; m = 
+5; failed checks = [  ]
+6 variables, row 126/156: started; elapsed 6781 ms
+6 variables, row 126: passed = true; dim W = 12; dim C = 8; m = 
+4; failed checks = [  ]
+6 variables, row 127/156: started; elapsed 6813 ms
+6 variables, row 127: passed = true; dim W = 12; dim C = 8; m = 
+4; failed checks = [  ]
+6 variables, row 128/156: started; elapsed 6844 ms
+6 variables, row 128: passed = true; dim W = 11; dim C = 8; m = 
+3; failed checks = [  ]
+6 variables, row 129/156: started; elapsed 6875 ms
+6 variables, row 129: passed = true; dim W = 10; dim C = 8; m = 
+2; failed checks = [  ]
+6 variables, row 130/156: started; elapsed 6906 ms
+6 variables, row 130: passed = true; dim W = 10; dim C = 8; m = 
+2; failed checks = [  ]
+6 variables, row 131/156: started; elapsed 6938 ms
+6 variables, row 131: passed = true; dim W = 7; dim C = 6; m = 
+1; failed checks = [  ]
+6 variables, row 132/156: started; elapsed 6984 ms
+6 variables, row 132: passed = true; dim W = 56; dim C = 36; m = 
+20; failed checks = [  ]
+6 variables, row 133/156: started; elapsed 7031 ms
+6 variables, row 133: passed = true; dim W = 40; dim C = 26; m = 
+14; failed checks = [  ]
+6 variables, row 134/156: started; elapsed 7063 ms
+6 variables, row 134: passed = true; dim W = 28; dim C = 18; m = 
+10; failed checks = [  ]
+6 variables, row 135/156: started; elapsed 7094 ms
+6 variables, row 135: passed = true; dim W = 36; dim C = 26; m = 
+10; failed checks = [  ]
+6 variables, row 136/156: started; elapsed 7141 ms
+6 variables, row 136: passed = true; dim W = 21; dim C = 14; m = 
+7; failed checks = [  ]
+6 variables, row 137/156: started; elapsed 7188 ms
+6 variables, row 137: passed = true; dim W = 25; dim C = 18; m = 
+7; failed checks = [  ]
+6 variables, row 138/156: started; elapsed 7234 ms
+6 variables, row 138: passed = true; dim W = 21; dim C = 14; m = 
+7; failed checks = [  ]
+6 variables, row 139/156: started; elapsed 7266 ms
+6 variables, row 139: passed = true; dim W = 25; dim C = 18; m = 
+7; failed checks = [  ]
+6 variables, row 140/156: started; elapsed 7313 ms
+6 variables, row 140: passed = true; dim W = 18; dim C = 12; m = 
+6; failed checks = [  ]
+6 variables, row 141/156: started; elapsed 7344 ms
+6 variables, row 141: passed = true; dim W = 15; dim C = 10; m = 
+5; failed checks = [  ]
+6 variables, row 142/156: started; elapsed 7375 ms
+6 variables, row 142: passed = true; dim W = 16; dim C = 12; m = 
+4; failed checks = [  ]
+6 variables, row 143/156: started; elapsed 7406 ms
+6 variables, row 143: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+6 variables, row 144/156: started; elapsed 7422 ms
+6 variables, row 144: passed = true; dim W = 15; dim C = 12; m = 
+3; failed checks = [  ]
+6 variables, row 145/156: started; elapsed 7469 ms
+6 variables, row 145: passed = true; dim W = 13; dim C = 10; m = 
+3; failed checks = [  ]
+6 variables, row 146/156: started; elapsed 7484 ms
+6 variables, row 146: passed = true; dim W = 11; dim C = 8; m = 
+3; failed checks = [  ]
+6 variables, row 147/156: started; elapsed 7500 ms
+6 variables, row 147: passed = true; dim W = 15; dim C = 12; m = 
+3; failed checks = [  ]
+6 variables, row 148/156: started; elapsed 7531 ms
+6 variables, row 148: passed = true; dim W = 13; dim C = 10; m = 
+3; failed checks = [  ]
+6 variables, row 149/156: started; elapsed 7563 ms
+6 variables, row 149: passed = true; dim W = 10; dim C = 8; m = 
+2; failed checks = [  ]
+6 variables, row 150/156: started; elapsed 7609 ms
+6 variables, row 150: passed = true; dim W = 8; dim C = 6; m = 
+2; failed checks = [  ]
+6 variables, row 151/156: started; elapsed 7625 ms
+6 variables, row 151: passed = true; dim W = 9; dim C = 8; m = 
+1; failed checks = [  ]
+6 variables, row 152/156: started; elapsed 7641 ms
+6 variables, row 152: passed = true; dim W = 7; dim C = 6; m = 
+1; failed checks = [  ]
+6 variables, row 153/156: started; elapsed 7688 ms
+6 variables, row 153: passed = true; dim W = 9; dim C = 8; m = 
+1; failed checks = [  ]
+6 variables, row 154/156: started; elapsed 7719 ms
+6 variables, row 154: passed = true; dim W = 7; dim C = 6; m = 
+1; failed checks = [  ]
+6 variables, row 155/156: started; elapsed 7766 ms
+6 variables, row 155: passed = true; dim W = 6; dim C = 6; m = 
+0; failed checks = [  ]
+6 variables, row 156/156: started; elapsed 7797 ms
+6 variables, row 156: passed = true; dim W = 6; dim C = 6; m = 
+0; failed checks = [  ]
+5 variables, row 1/40: started; elapsed 7828 ms
+5 variables, row 1: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+5 variables, row 2/40: started; elapsed 7859 ms
+5 variables, row 2: passed = true; dim W = 1; dim C = 1; m = 
+0; failed checks = [  ]
+5 variables, row 3/40: started; elapsed 8000 ms
+5 variables, row 3: passed = true; dim W = 2; dim C = 2; m = 
+0; failed checks = [  ]
+5 variables, row 4/40: started; elapsed 8031 ms
+5 variables, row 4: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+5 variables, row 5/40: started; elapsed 8063 ms
+5 variables, row 5: passed = true; dim W = 2; dim C = 2; m = 
+0; failed checks = [  ]
+5 variables, row 6/40: started; elapsed 8109 ms
+5 variables, row 6: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+5 variables, row 7/40: started; elapsed 8141 ms
+5 variables, row 7: passed = true; dim W = 2; dim C = 1; m = 
+1; failed checks = [  ]
+5 variables, row 8/40: started; elapsed 8172 ms
+5 variables, row 8: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+5 variables, row 9/40: started; elapsed 8188 ms
+5 variables, row 9: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+5 variables, row 10/40: started; elapsed 8219 ms
+5 variables, row 10: passed = true; dim W = 3; dim C = 2; m = 
+1; failed checks = [  ]
+5 variables, row 11/40: started; elapsed 8250 ms
+5 variables, row 11: passed = true; dim W = 8; dim C = 6; m = 
+2; failed checks = [  ]
+5 variables, row 12/40: started; elapsed 8281 ms
+5 variables, row 12: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+5 variables, row 13/40: started; elapsed 8297 ms
+5 variables, row 13: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+5 variables, row 14/40: started; elapsed 8328 ms
+5 variables, row 14: passed = true; dim W = 4; dim C = 3; m = 
+1; failed checks = [  ]
+5 variables, row 15/40: started; elapsed 8328 ms
+5 variables, row 15: passed = true; dim W = 9; dim C = 7; m = 
+2; failed checks = [  ]
+5 variables, row 16/40: started; elapsed 8359 ms
+5 variables, row 16: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+5 variables, row 17/40: started; elapsed 8375 ms
+5 variables, row 17: passed = true; dim W = 7; dim C = 5; m = 
+2; failed checks = [  ]
+5 variables, row 18/40: started; elapsed 8375 ms
+5 variables, row 18: passed = true; dim W = 5; dim C = 3; m = 
+2; failed checks = [  ]
+5 variables, row 19/40: started; elapsed 8422 ms
+5 variables, row 19: passed = true; dim W = 8; dim C = 5; m = 
+3; failed checks = [  ]
+5 variables, row 20/40: started; elapsed 8453 ms
+5 variables, row 20: passed = true; dim W = 14; dim C = 11; m = 
+3; failed checks = [  ]
+5 variables, row 21/40: started; elapsed 8453 ms
+5 variables, row 21: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+5 variables, row 22/40: started; elapsed 8484 ms
+5 variables, row 22: passed = true; dim W = 8; dim C = 7; m = 
+1; failed checks = [  ]
+5 variables, row 23/40: started; elapsed 8500 ms
+5 variables, row 23: passed = true; dim W = 5; dim C = 4; m = 
+1; failed checks = [  ]
+5 variables, row 24/40: started; elapsed 8531 ms
+5 variables, row 24: passed = true; dim W = 5; dim C = 5; m = 
+0; failed checks = [  ]
+5 variables, row 25/40: started; elapsed 8547 ms
+5 variables, row 25: passed = true; dim W = 11; dim C = 7; m = 
+4; failed checks = [  ]
+5 variables, row 26/40: started; elapsed 8563 ms
+5 variables, row 26: passed = true; dim W = 9; dim C = 6; m = 
+3; failed checks = [  ]
+5 variables, row 27/40: started; elapsed 8594 ms
+5 variables, row 27: passed = true; dim W = 13; dim C = 9; m = 
+4; failed checks = [  ]
+5 variables, row 28/40: started; elapsed 8594 ms
+5 variables, row 28: passed = true; dim W = 9; dim C = 7; m = 
+2; failed checks = [  ]
+5 variables, row 29/40: started; elapsed 8625 ms
+5 variables, row 29: passed = true; dim W = 21; dim C = 17; m = 
+4; failed checks = [  ]
+5 variables, row 30/40: started; elapsed 8656 ms
+5 variables, row 30: passed = true; dim W = 14; dim C = 10; m = 
+4; failed checks = [  ]
+5 variables, row 31/40: started; elapsed 8672 ms
+5 variables, row 31: passed = true; dim W = 19; dim C = 13; m = 
+6; failed checks = [  ]
+5 variables, row 32/40: started; elapsed 8672 ms
+5 variables, row 32: passed = true; dim W = 16; dim C = 11; m = 
+5; failed checks = [  ]
+5 variables, row 33/40: started; elapsed 8719 ms
+5 variables, row 33: passed = true; dim W = 9; dim C = 7; m = 
+2; failed checks = [  ]
+5 variables, row 34/40: started; elapsed 8719 ms
+5 variables, row 34: passed = true; dim W = 35; dim C = 25; m = 
+10; failed checks = [  ]
+5 variables, row 35/40: started; elapsed 8750 ms
+5 variables, row 35: passed = true; dim W = 24; dim C = 17; m = 
+7; failed checks = [  ]
+5 variables, row 36/40: started; elapsed 8781 ms
+5 variables, row 36: passed = true; dim W = 14; dim C = 11; m = 
+3; failed checks = [  ]
+5 variables, row 37/40: started; elapsed 8797 ms
+5 variables, row 37: passed = true; dim W = 12; dim C = 9; m = 
+3; failed checks = [  ]
+5 variables, row 38/40: started; elapsed 8828 ms
+5 variables, row 38: passed = true; dim W = 8; dim C = 7; m = 
+1; failed checks = [  ]
+5 variables, row 39/40: started; elapsed 8859 ms
+5 variables, row 39: passed = true; dim W = 6; dim C = 5; m = 
+1; failed checks = [  ]
+5 variables, row 40/40: started; elapsed 8891 ms
+5 variables, row 40: passed = true; dim W = 5; dim C = 5; m = 
+0; failed checks = [  ]
+Completed: fourfold failures = [  ]; threefold failures = [  ]; runtime = 
+8922 ms
+DISPLAY_BASIS_AUDIT_SUCCESS

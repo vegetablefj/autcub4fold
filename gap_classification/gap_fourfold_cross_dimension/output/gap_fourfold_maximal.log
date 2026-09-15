@@ -1,0 +1,6 @@
+Maximal full cubic-fourfold actions
+GAP 4.15.1
+
+1. Input verified: 156 families, 6568 pair decisions; elapsed 3313 ms
+2. Completed: maximal actions = 21; covers = 433; elapsed 3375 ms
+FOURFOLD_MAXIMAL_COMPLETED

@@ -1,0 +1,5 @@
+script = special_coordinate_audit.g
+invocation = GAP 4.15.1 -r -q -b gap_classification/gap_manuscript_validation/special_coordinate_audit.g
+command = [historical local absolute paths redacted]
+exit_code = 0
+elapsed_seconds = 7.807

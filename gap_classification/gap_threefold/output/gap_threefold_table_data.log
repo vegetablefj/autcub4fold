@@ -1,0 +1,45 @@
+Final cubic-threefold group and table checks
+GAP 4.15.1
+Numbering: increasing source fourfold number
+
+1/40: source 1, projective group ID fail; elapsed 250 ms
+2/40: source 7, projective group ID [ 660, 13 ]; elapsed 6328 ms
+3/40: source 8, projective group ID [ 360, 119 ]; elapsed 6469 ms
+4/40: source 23, projective group ID [ 324, 122 ]; elapsed 6532 ms
+5/40: source 24, projective group ID [ 648, 541 ]; elapsed 6672 ms
+6/40: source 28, projective group ID [ 72, 42 ]; elapsed 6719 ms
+7/40: source 30, projective group ID [ 60, 5 ]; elapsed 6766 ms
+8/40: source 32, projective group ID [ 120, 34 ]; elapsed 6797 ms
+9/40: source 36, projective group ID [ 36, 12 ]; elapsed 6844 ms
+10/40: source 38, projective group ID [ 72, 40 ]; elapsed 6875 ms
+11/40: source 56, projective group ID [ 18, 3 ]; elapsed 6907 ms
+12/40: source 57, projective group ID [ 36, 10 ]; elapsed 6953 ms
+13/40: source 61, projective group ID [ 12, 4 ]; elapsed 7000 ms
+14/40: source 62, projective group ID [ 24, 8 ]; elapsed 7032 ms
+15/40: source 64, projective group ID [ 12, 5 ]; elapsed 7078 ms
+16/40: source 67, projective group ID [ 12, 3 ]; elapsed 7094 ms
+17/40: source 69, projective group ID [ 24, 12 ]; elapsed 7141 ms
+18/40: source 72, projective group ID [ 10, 1 ]; elapsed 7250 ms
+19/40: source 86, projective group ID [ 6, 1 ]; elapsed 7282 ms
+20/40: source 90, projective group ID [ 6, 2 ]; elapsed 7313 ms
+21/40: source 91, projective group ID [ 12, 4 ]; elapsed 7344 ms
+22/40: source 94, projective group ID [ 12, 2 ]; elapsed 7407 ms
+23/40: source 95, projective group ID [ 24, 5 ]; elapsed 7453 ms
+24/40: source 96, projective group ID [ 24, 2 ]; elapsed 7578 ms
+25/40: source 101, projective group ID [ 4, 2 ]; elapsed 7625 ms
+26/40: source 103, projective group ID [ 8, 3 ]; elapsed 7657 ms
+27/40: source 110, projective group ID [ 3, 1 ]; elapsed 7688 ms
+28/40: source 113, projective group ID [ 6, 2 ]; elapsed 7703 ms
+29/40: source 116, projective group ID [ 3, 1 ]; elapsed 7735 ms
+30/40: source 117, projective group ID [ 6, 1 ]; elapsed 7766 ms
+31/40: source 123, projective group ID [ 2, 1 ]; elapsed 7797 ms
+32/40: source 125, projective group ID [ 4, 2 ]; elapsed 7828 ms
+33/40: source 130, projective group ID [ 8, 2 ]; elapsed 7891 ms
+34/40: source 135, projective group ID [ 1, 1 ]; elapsed 7907 ms
+35/40: source 139, projective group ID [ 2, 1 ]; elapsed 7938 ms
+36/40: source 147, projective group ID [ 4, 1 ]; elapsed 7985 ms
+37/40: source 148, projective group ID [ 4, 1 ]; elapsed 8032 ms
+38/40: source 153, projective group ID [ 8, 1 ]; elapsed 8157 ms
+39/40: source 154, projective group ID [ 8, 1 ]; elapsed 8250 ms
+40/40: source 156, projective group ID [ 16, 1 ]; elapsed 8703 ms
+THREEFOLD_TABLE_DATA_COMPLETED

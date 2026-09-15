@@ -1,0 +1,7 @@
+Five-dimensional embedding regression checks
+GAP 4.15.1
+
+1. Non-literal positive: invertible 5 x 5 P verified on all source generators.
+2. Negative: exhaustive subgroup/character test without spectral fingerprints.
+3. Dimension exclusion: not compared, not an abstract nonembedding claim.
+THREEFOLD_CROSS_DIMENSION_SELF_TEST_COMPLETED

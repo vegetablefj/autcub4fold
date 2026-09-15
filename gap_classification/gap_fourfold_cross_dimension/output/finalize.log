@@ -1,0 +1,19 @@
+FOURFOLD_CROSS_DIMENSION_DONE
+input_families=156
+eligible_cross_dimension_pairs=6568
+classified_pairs=6568
+embedded_pairs=1793
+no_embedding_pairs=4775
+undecided_pairs=0
+direct_positive_pairs=1387
+transitive_positive_pairs=406
+verified_positive_witnesses=1793
+group_embedding_cover_edges=433
+geometric_cover_edges=433
+maximal_family_count=1
+minimal_family_count=21
+pair_coverage=complete
+catalogue_metadata_audit=passed
+canonical_positions_audit=passed
+transitive_closure_audit=passed
+maximal_family_numbers=[ 132 ]

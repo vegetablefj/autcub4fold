@@ -1,0 +1,83 @@
+1. Threefold 1; fourfold source 1: started; elapsed 1125 ms
+2. Threefold 1: verified; elapsed 1484 ms
+3. Threefold 2; fourfold source 7: started; elapsed 1484 ms
+4. Threefold 2: verified; elapsed 140468 ms
+5. Threefold 3; fourfold source 8: started; elapsed 140468 ms
+6. Threefold 3: verified; elapsed 140843 ms
+7. Threefold 4; fourfold source 23: started; elapsed 140843 ms
+8. Threefold 4: verified; elapsed 141062 ms
+9. Threefold 5; fourfold source 24: started; elapsed 141062 ms
+10. Threefold 5: verified; elapsed 141328 ms
+11. Threefold 6; fourfold source 28: started; elapsed 141328 ms
+12. Threefold 6: verified; elapsed 141547 ms
+13. Threefold 7; fourfold source 30: started; elapsed 141547 ms
+14. Threefold 7: verified; elapsed 141859 ms
+15. Threefold 8; fourfold source 32: started; elapsed 141859 ms
+16. Threefold 8: verified; elapsed 142172 ms
+17. Threefold 9; fourfold source 36: started; elapsed 142172 ms
+18. Threefold 9: verified; elapsed 142531 ms
+19. Threefold 10; fourfold source 38: started; elapsed 142531 ms
+20. Threefold 10: verified; elapsed 142672 ms
+21. Threefold 11; fourfold source 56: started; elapsed 142672 ms
+22. Threefold 11: verified; elapsed 144218 ms
+23. Threefold 12; fourfold source 57: started; elapsed 144218 ms
+24. Threefold 12: verified; elapsed 151531 ms
+25. Threefold 13; fourfold source 61: started; elapsed 151531 ms
+26. Threefold 13: verified; elapsed 152578 ms
+27. Threefold 14; fourfold source 62: started; elapsed 152578 ms
+28. Threefold 14: verified; elapsed 156797 ms
+29. Threefold 15; fourfold source 64: started; elapsed 156797 ms
+30. Threefold 15: verified; elapsed 157781 ms
+31. Threefold 16; fourfold source 67: started; elapsed 157781 ms
+32. Threefold 16: verified; elapsed 158547 ms
+33. Threefold 17; fourfold source 69: started; elapsed 158547 ms
+34. Threefold 17: verified; elapsed 161265 ms
+35. Threefold 18; fourfold source 72: started; elapsed 161265 ms
+36. Threefold 18: verified; elapsed 164750 ms
+37. Threefold 19; fourfold source 86: started; elapsed 164750 ms
+38. Threefold 19: verified; elapsed 165125 ms
+39. Threefold 20; fourfold source 90: started; elapsed 165125 ms
+40. Threefold 20: verified; elapsed 165437 ms
+41. Threefold 21; fourfold source 91: started; elapsed 165437 ms
+42. Threefold 21: verified; elapsed 166406 ms
+43. Threefold 22; fourfold source 94: started; elapsed 166406 ms
+44. Threefold 22: verified; elapsed 168109 ms
+45. Threefold 23; fourfold source 95: started; elapsed 168109 ms
+46. Threefold 23: verified; elapsed 174593 ms
+47. Threefold 24; fourfold source 96: started; elapsed 174593 ms
+48. Threefold 24: verified; elapsed 175281 ms
+49. Threefold 25; fourfold source 101: started; elapsed 175281 ms
+50. Threefold 25: verified; elapsed 175343 ms
+51. Threefold 26; fourfold source 103: started; elapsed 175343 ms
+52. Threefold 26: verified; elapsed 176031 ms
+53. Threefold 27; fourfold source 110: started; elapsed 176031 ms
+54. Threefold 27: verified; elapsed 176093 ms
+55. Threefold 28; fourfold source 113: started; elapsed 176093 ms
+56. Threefold 28: verified; elapsed 176406 ms
+57. Threefold 29; fourfold source 116: started; elapsed 176406 ms
+58. Threefold 29: verified; elapsed 176547 ms
+59. Threefold 30; fourfold source 117: started; elapsed 176547 ms
+60. Threefold 30: verified; elapsed 176828 ms
+61. Threefold 31; fourfold source 123: started; elapsed 176828 ms
+62. Threefold 31: verified; elapsed 176953 ms
+63. Threefold 32; fourfold source 125: started; elapsed 176953 ms
+64. Threefold 32: verified; elapsed 177156 ms
+65. Threefold 33; fourfold source 130: started; elapsed 177156 ms
+66. Threefold 33: verified; elapsed 178109 ms
+67. Threefold 34; fourfold source 135: started; elapsed 178109 ms
+68. Threefold 34: verified; elapsed 178218 ms
+69. Threefold 35; fourfold source 139: started; elapsed 178218 ms
+70. Threefold 35: verified; elapsed 178328 ms
+71. Threefold 36; fourfold source 147: started; elapsed 178328 ms
+72. Threefold 36: verified; elapsed 178672 ms
+73. Threefold 37; fourfold source 148: started; elapsed 178672 ms
+74. Threefold 37: verified; elapsed 179015 ms
+75. Threefold 38; fourfold source 153: started; elapsed 179015 ms
+76. Threefold 38: verified; elapsed 181812 ms
+77. Threefold 39; fourfold source 154: started; elapsed 181812 ms
+78. Threefold 39: verified; elapsed 184656 ms
+79. Threefold 40; fourfold source 156: started; elapsed 184656 ms
+80. Threefold 40: verified; elapsed 217328 ms
+81. Completed: all 40 groups, cubic spaces, splits, dimensions and IDs verifie\
+d; elapsed 217359 ms
+THREEFOLD_COORDINATES_VERIFIED

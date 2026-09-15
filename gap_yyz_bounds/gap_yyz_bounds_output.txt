@@ -1,0 +1,1354 @@
+YYZ / Laza--Zheng group-theoretic audit for cubic fourfold automorphisms
+======================================================================
+
+Background (brief).
+Yang--Yu--Zhu classify finite groups acting faithfully on smooth cubic
+fourfolds by showing that every such group is isomorphic to a subgroup
+of one of 15 maximal groups.  Laza--Zheng classify the 34 possible
+symplectic automorphism groups.  In the index calculation used here,
+Aut^s(X) is normal in Aut(X), the quotient is cyclic, and the admissible
+index m is required to be 2^a or 3*2^a.
+
+The calculation below is group-theoretic: a listed group is a necessary
+candidate inside the YYZ maximal groups, not by itself a geometric
+realizability statement.  Conversely, a zero count below means that the
+script searched all subgroup conjugacy classes of all 15 YYZ maximal
+groups and found no subgroup satisfying the stated normal/cyclic-quotient
+conditions for that index.
+
+GAP version: 4.15.1
+Output file: gap_yyz_bounds_output.txt
+
+INPUT A: 15 Yang--Yu--Zhu maximal groups
+------------------------------------------
+M_1 | article notation: C3^5 : S6 | order: 174960 | GAP id: - | GAP description: ((C3 x C3 x C3 x C3) : A6) : C6
+M_2 | article notation: ((C3 x (C3^3 : C3)) : C3) : (C4 x C2) | order: 
+5832 | GAP id: - | GAP description: ((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)
+M_3 | article notation: C8 x (C3^2 : C2) | order: 144 | GAP id: [ 144, 69 ] | GAP description: C24 x S3
+M_4 | article notation: S5 x (C3^2 : C2) | order: 2160 | GAP id: - | GAP description: C3 x S3 x S5
+M_5 | article notation: C48 | order: 48 | GAP id: [ 48, 2 ] | GAP description: C48
+M_6 | article notation: PSL(2,11) x C3 | order: 1980 | GAP id: [ 1980, 57 ] | GAP description: C3 x PSL(2,11)
+M_7 | article notation: ((C3 x (C3^2 : C3)) : C3) : (C4^2 : C2) | order: 
+7776 | GAP id: - | GAP description: ((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)
+M_8 | article notation: C32 | order: 32 | GAP id: [ 32, 1 ] | GAP description: C32
+M_9 | article notation: C21 : C6 | order: 126 | GAP id: [ 126, 7 ] | GAP description: C3 x (C7 : C6)
+M_10 | article notation: M10 | order: 720 | GAP id: [ 720, 765 ] | GAP description: A6 . C2
+M_11 | article notation: S7 | order: 5040 | GAP id: - | GAP description: S7
+M_12 | article notation: (C8 x C2) : C2 | order: 32 | GAP id: [ 32, 42 ] | GAP description: (C8 x C2) : C2
+M_13 | article notation: PSL(3,2) : C2 | order: 336 | GAP id: [ 336, 208 ] | GAP description: PSL(3,2) : C2
+M_14 | article notation: GL(2,3) | order: 48 | GAP id: [ 48, 29 ] | GAP description: GL(2,3)
+M_15 | article notation: (C3^2 : Q8) : C3 | order: 216 | GAP id: [ 216, 153 ] | GAP description: ((C3 x C3) : Q8) : C3
+
+INPUT B: 34 Laza--Zheng symplectic groups
+------------------------------------------
+G_1 | article notation: 3^4:A6 | order: 29160 | GAP id: - | GAP description: (C3 x C3 x C3 x C3) : A6
+G_2 | article notation: A7 | order: 2520 | GAP id: - | GAP description: A7
+G_3 | article notation: 3^(1+4):2.2^2 | order: 
+1944 | GAP id: [ 1944, 3559 ] | GAP description: ((C3 x ((C3 x C3) : C3)) : C3) : Q8
+G_4 | article notation: M10 | order: 720 | GAP id: [ 720, 765 ] | GAP description: A6 . C2
+G_5 | article notation: L2(11) | order: 660 | GAP id: [ 660, 13 ] | GAP description: PSL(2,11)
+G_6 | article notation: A_{3,5} | order: 360 | GAP id: [ 360, 120 ] | GAP description: A5 : S3
+G_7 | article notation: 3^(1+4):2.2 | order: 
+972 | GAP id: [ 972, 776 ] | GAP description: ((C3 x ((C3 x C3) : C3)) : C3) : C4
+G_8 | article notation: A6 | order: 360 | GAP id: [ 360, 118 ] | GAP description: A6
+G_9 | article notation: L2(7) | order: 168 | GAP id: [ 168, 42 ] | GAP description: PSL(3,2)
+G_10 | article notation: S5 | order: 120 | GAP id: [ 120, 34 ] | GAP description: S5
+G_11 | article notation: M9 | order: 72 | GAP id: [ 72, 41 ] | GAP description: (C3 x C3) : Q8
+G_12 | article notation: N72 | order: 72 | GAP id: [ 72, 40 ] | GAP description: (S3 x S3) : C2
+G_13 | article notation: T48 | order: 48 | GAP id: [ 48, 29 ] | GAP description: GL(2,3)
+G_14 | article notation: 3^(1+4):2 | order: 
+486 | GAP id: [ 486, 249 ] | GAP description: ((C3 x ((C3 x C3) : C3)) : C3) : C2
+G_15 | article notation: A_{4,3} | order: 72 | GAP id: [ 72, 43 ] | GAP description: (C3 x A4) : C2
+G_16 | article notation: A5 | order: 60 | GAP id: [ 60, 5 ] | GAP description: A5
+G_17 | article notation: 3^2.4 | order: 36 | GAP id: [ 36, 9 ] | GAP description: (C3 x C3) : C4
+G_18 | article notation: S_{3,3} | order: 36 | GAP id: [ 36, 10 ] | GAP description: S3 x S3
+G_19 | article notation: F21 | order: 21 | GAP id: [ 21, 1 ] | GAP description: C7 : C3
+G_20 | article notation: Hol(5) | order: 20 | GAP id: [ 20, 3 ] | GAP description: C5 : C4
+G_21 | article notation: QD16 | order: 16 | GAP id: [ 16, 8 ] | GAP description: QD16
+G_22 | article notation: S4 | order: 24 | GAP id: [ 24, 12 ] | GAP description: S4
+G_23 | article notation: Q8 | order: 8 | GAP id: [ 8, 4 ] | GAP description: Q8
+G_24 | article notation: A_{3,3} | order: 18 | GAP id: [ 18, 4 ] | GAP description: (C3 x C3) : C2
+G_25 | article notation: D12 | order: 12 | GAP id: [ 12, 4 ] | GAP description: D12
+G_26 | article notation: A4 | order: 12 | GAP id: [ 12, 3 ] | GAP description: A4
+G_27 | article notation: D10 | order: 10 | GAP id: [ 10, 1 ] | GAP description: D10
+G_28 | article notation: D8 | order: 8 | GAP id: [ 8, 3 ] | GAP description: D8
+G_29 | article notation: C4 | order: 4 | GAP id: [ 4, 1 ] | GAP description: C4
+G_30 | article notation: S3 | order: 6 | GAP id: [ 6, 1 ] | GAP description: S3
+G_31 | article notation: C2^2 | order: 4 | GAP id: [ 4, 2 ] | GAP description: C2 x C2
+G_32 | article notation: C3 | order: 3 | GAP id: [ 3, 1 ] | GAP description: C3
+G_33 | article notation: C2 | order: 2 | GAP id: [ 2, 1 ] | GAP description: C2
+G_34 | article notation: 1 | order: 1 | GAP id: [ 1, 1 ] | GAP description: 1
+
+RUN SUMMARY
+-----------
+Raw successful subgroup occurrences before final deduplication: 2649
+Final output records: 218
+
+Per YYZ maximal group:
+  M_1 | order 174960 | subgroup conjugacy classes 1229 | successful occurrences 829 | runtime(ms) 28578
+  M_2 | order 5832 | subgroup conjugacy classes 504 | successful occurrences 447 | runtime(ms) 5032
+  M_3 | order 144 | subgroup conjugacy classes 48 | successful occurrences 116 | runtime(ms) 359
+  M_4 | order 2160 | subgroup conjugacy classes 281 | successful occurrences 437 | runtime(ms) 119203
+  M_5 | order 48 | subgroup conjugacy classes 10 | successful occurrences 29 | runtime(ms) 47
+  M_6 | order 1980 | subgroup conjugacy classes 36 | successful occurrences 51 | runtime(ms) 562
+  M_7 | order 7776 | subgroup conjugacy classes 269 | successful occurrences 301 | runtime(ms) 4219
+  M_8 | order 32 | subgroup conjugacy classes 6 | successful occurrences 15 | runtime(ms) 15
+  M_9 | order 126 | subgroup conjugacy classes 24 | successful occurrences 33 | runtime(ms) 94
+  M_10 | order 720 | subgroup conjugacy classes 25 | successful occurrences 47 | runtime(ms) 328
+  M_11 | order 5040 | subgroup conjugacy classes 96 | successful occurrences 163 | runtime(ms) 2078
+  M_12 | order 32 | subgroup conjugacy classes 31 | successful occurrences 74 | runtime(ms) 235
+  M_13 | order 336 | subgroup conjugacy classes 23 | successful occurrences 41 | runtime(ms) 203
+  M_14 | order 48 | subgroup conjugacy classes 16 | successful occurrences 34 | runtime(ms) 125
+  M_15 | order 216 | subgroup conjugacy classes 20 | successful occurrences 32 | runtime(ms) 125
+
+COMPLETE INDEX/CANDIDATE AUDIT
+------------------------------
+For each G_i, 'order-admissible indices' are all allowed m for which
+|G_i|*m divides the order of at least one YYZ maximal group.  Every
+such m is printed, including those for which the search finds 0
+candidate full groups.
+
+[G_1] 3^4:A6 | order 29160
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = - | description = (C3 x C3 x C3 x C3) : A6 | sources = [ "M_1" ]
+  m = 2 : 1 output record(s)
+    id = - | description = (C3 x C3 x C3 x C3) : S6 | sources = [ "M_1" ]
+  m = 3 : 1 output record(s)
+    id = - | description = ((C3 x C3 x C3 x C3) : A6) : C3 | sources = [ "M_1" ]
+  m = 6 : 1 output record(s)
+    id = - | description = ((C3 x C3 x C3 x C3) : A6) : C6 | sources = [ "M_1" ]
+
+[G_2] A7 | order 2520
+order-admissible indices: [ 1, 2 ]
+  m = 1 : 1 output record(s)
+    id = - | description = A7 | sources = [ "M_11" ]
+  m = 2 : 1 output record(s)
+    id = - | description = S7 | sources = [ "M_11" ]
+
+[G_3] 3^(1+4):2.2^2 | order 1944
+order-admissible indices: [ 1, 2, 3, 4, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 1944, 3559 ] | description = ((C3 x ((C3 x C3) : C3)) : C3) : Q8 | sources = [ "M_7" ]
+  m = 2 : 1 output record(s)
+    id = - | description = ((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C2) : C2) | sources = [ "M_7" ]
+  m = 3 : 0 output record(s)
+    NONE
+  m = 4 : 1 output record(s)
+    id = - | description = ((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2) | sources = [ "M_7" ]
+  m = 6 : 0 output record(s)
+    NONE
+
+[G_4] M10 | order 720
+order-admissible indices: [ 1, 3 ]
+  m = 1 : 1 output record(s)
+    id = [ 720, 765 ] | description = A6 . C2 | sources = [ "M_10" ]
+  m = 3 : 0 output record(s)
+    NONE
+
+[G_5] L2(11) | order 660
+order-admissible indices: [ 1, 3 ]
+  m = 1 : 1 output record(s)
+    id = [ 660, 13 ] | description = PSL(2,11) | sources = [ "M_6" ]
+  m = 3 : 1 output record(s)
+    id = [ 1980, 57 ] | description = C3 x PSL(2,11) | sources = [ "M_6" ]
+
+[G_6] A_{3,5} | order 360
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 360, 120 ] | description = A5 : S3 | sources = [ "M_4" ]
+  m = 2 : 1 output record(s)
+    id = [ 720, 767 ] | description = S5 x S3 | sources = [ "M_4" ]
+  m = 3 : 1 output record(s)
+    id = [ 1080, 489 ] | description = C3 x (A5 : S3) | sources = [ "M_4" ]
+  m = 6 : 1 output record(s)
+    id = - | description = C3 x S3 x S5 | sources = [ "M_4" ]
+
+[G_7] 3^(1+4):2.2 | order 972
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 972, 776 ] | description = ((C3 x ((C3 x C3) : C3)) : C3) : C4 | sources = [ "M_1", "M_7" ]
+  m = 2 : 3 output record(s)
+    id = [ 1944, 3498 ] | description = ((C3 x ((C3 x C3) : C3)) : C3) : (C4 x C2) | sources = [ "M_7" ]
+    id = [ 1944, 3536 ] | description = ((C3 x ((C3 x C3) : C3)) : C3) : D8 | sources = [ "M_1", "M_7" ]
+    id = [ 1944, 3559 ] | description = ((C3 x ((C3 x C3) : C3)) : C3) : Q8 | sources = [ "M_7" ]
+  m = 3 : 1 output record(s)
+    id = - | description = ((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4 | sources = [ "M_1" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 1 output record(s)
+    id = - | description = ((C3 x ((C3 x C3 x C3) : C3)) : C3) : D8 | sources = [ "M_1" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_8] A6 | order 360
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 360, 118 ] | description = A6 | sources = [ "M_1", "M_10", "M_11" ]
+  m = 2 : 2 output record(s)
+    id = [ 720, 763 ] | description = S6 | sources = [ "M_1", "M_11" ]
+    id = [ 720, 765 ] | description = A6 . C2 | sources = [ "M_10" ]
+  m = 3 : 0 output record(s)
+    NONE
+  m = 6 : 0 output record(s)
+    NONE
+
+[G_9] L2(7) | order 168
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 168, 42 ] | description = PSL(3,2) | sources = [ "M_11", "M_13" ]
+  m = 2 : 1 output record(s)
+    id = [ 336, 208 ] | description = PSL(3,2) : C2 | sources = [ "M_13" ]
+  m = 3 : 0 output record(s)
+    NONE
+  m = 6 : 0 output record(s)
+    NONE
+
+[G_10] S5 | order 120
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 120, 34 ] | description = S5 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 2 : 1 output record(s)
+    id = [ 240, 189 ] | description = C2 x S5 | sources = [ "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 360, 119 ] | description = C3 x S5 | sources = [ "M_1", "M_4" ]
+  m = 6 : 1 output record(s)
+    id = [ 720, 769 ] | description = C6 x S5 | sources = [ "M_4" ]
+
+[G_11] M9 | order 72
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 72, 41 ] | description = (C3 x C3) : Q8 | sources = [ "M_7", "M_10", "M_15" ]
+  m = 2 : 0 output record(s)
+    NONE
+  m = 3 : 1 output record(s)
+    id = [ 216, 153 ] | description = ((C3 x C3) : Q8) : C3 | sources = [ "M_15" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_12] N72 | order 72
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 72, 40 ] | description = (S3 x S3) : C2 | sources = [ "M_1", "M_7", "M_11" ]
+  m = 2 : 1 output record(s)
+    id = [ 144, 186 ] | description = C2 x ((S3 x S3) : C2) | sources = [ "M_1" ]
+  m = 3 : 1 output record(s)
+    id = [ 216, 157 ] | description = C3 x ((S3 x S3) : C2) | sources = [ "M_1" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 1 output record(s)
+    id = [ 432, 754 ] | description = C6 x ((S3 x S3) : C2) | sources = [ "M_1" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_13] T48 | order 48
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 48, 29 ] | description = GL(2,3) | sources = [ "M_14" ]
+  m = 2 : 0 output record(s)
+    NONE
+  m = 3 : 0 output record(s)
+    NONE
+  m = 6 : 0 output record(s)
+    NONE
+
+[G_14] 3^(1+4):2 | order 486
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24 ]
+  m = 1 : 1 output record(s)
+    id = - | description = - | sources = [ "M_1", "M_2", "M_7" ]
+  m = 2 : 1 output record(s)
+    id = - | description = - | sources = [ "M_1", "M_2", "M_7" ]
+  m = 3 : 1 output record(s)
+    id = - | description = - | sources = [ "M_1", "M_2" ]
+  m = 4 : 1 output record(s)
+    id = - | description = - | sources = [ "M_2", "M_7" ]
+  m = 6 : 1 output record(s)
+    id = - | description = - | sources = [ "M_1", "M_2" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 1 output record(s)
+    id = - | description = - | sources = [ "M_2" ]
+  m = 16 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_15] A_{4,3} | order 72
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 72, 43 ] | description = (C3 x A4) : C2 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 2 : 2 output record(s)
+    id = [ 144, 183 ] | description = S3 x S4 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 144, 189 ] | description = C2 x ((C3 x A4) : C2) | sources = [ "M_1" ]
+  m = 3 : 2 output record(s)
+    id = [ 216, 92 ] | description = ((C3 x A4) : C2) : C3 | sources = [ "M_1" ]
+    id = [ 216, 164 ] | description = C3 x ((C3 x A4) : C2) | sources = [ "M_1", "M_4" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 2 output record(s)
+    id = [ 432, 535 ] | description = C2 x (((C3 x A4) : C2) : C3) | sources = [ "M_1" ]
+    id = [ 432, 745 ] | description = C3 x S3 x S4 | sources = [ "M_1", "M_4" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_16] A5 | order 60
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 60, 5 ] | description = A5 | sources = [ "M_1", "M_4", "M_6", "M_10", "M_11" ]
+  m = 2 : 2 output record(s)
+    id = [ 120, 34 ] | description = S5 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 120, 35 ] | description = C2 x A5 | sources = [ "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 180, 19 ] | description = GL(2,4) | sources = [ "M_1", "M_4", "M_6" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 2 output record(s)
+    id = [ 360, 119 ] | description = C3 x S5 | sources = [ "M_1", "M_4" ]
+    id = [ 360, 122 ] | description = C6 x A5 | sources = [ "M_4" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_17] 3^2.4 | order 36
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 36, 9 ] | description = (C3 x C3) : C4 | sources = [ "M_1", "M_7", "M_10", "M_11", "M_15" ]
+  m = 2 : 3 output record(s)
+    id = [ 72, 40 ] | description = (S3 x S3) : C2 | sources = [ "M_1", "M_7", "M_11" ]
+    id = [ 72, 41 ] | description = (C3 x C3) : Q8 | sources = [ "M_7", "M_10", "M_15" ]
+    id = [ 72, 45 ] | description = C2 x ((C3 x C3) : C4) | sources = [ "M_1", "M_7" ]
+  m = 3 : 1 output record(s)
+    id = [ 108, 36 ] | description = C3 x ((C3 x C3) : C4) | sources = [ "M_1", "M_7" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 2 output record(s)
+    id = [ 216, 157 ] | description = C3 x ((S3 x S3) : C2) | sources = [ "M_1" ]
+    id = [ 216, 168 ] | description = C6 x ((C3 x C3) : C4) | sources = [ "M_1" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_18] S_{3,3} | order 36
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 36, 10 ] | description = S3 x S3 | sources = [ "M_1", "M_2", "M_4", "M_7", "M_11" ]
+  m = 2 : 2 output record(s)
+    id = [ 72, 40 ] | description = (S3 x S3) : C2 | sources = [ "M_1", "M_7", "M_11" ]
+    id = [ 72, 46 ] | description = C2 x S3 x S3 | sources = [ "M_1", "M_4" ]
+  m = 3 : 1 output record(s)
+    id = [ 108, 38 ] | description = C3 x S3 x S3 | sources = [ "M_1", "M_2", "M_4", "M_7" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 2 output record(s)
+    id = [ 216, 157 ] | description = C3 x ((S3 x S3) : C2) | sources = [ "M_1" ]
+    id = [ 216, 170 ] | description = C6 x S3 x S3 | sources = [ "M_1", "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_19] F21 | order 21
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 ]
+  m = 1 : 1 output record(s)
+    id = [ 21, 1 ] | description = C7 : C3 | sources = [ "M_9", "M_11", "M_13" ]
+  m = 2 : 1 output record(s)
+    id = [ 42, 1 ] | description = C7 : C6 | sources = [ "M_9", "M_11", "M_13" ]
+  m = 3 : 1 output record(s)
+    id = [ 63, 3 ] | description = C3 x (C7 : C3) | sources = [ "M_9" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 1 output record(s)
+    id = [ 126, 7 ] | description = C3 x (C7 : C6) | sources = [ "M_9" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+  m = 16 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+  m = 48 : 0 output record(s)
+    NONE
+
+[G_20] Hol(5) | order 20
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 20, 3 ] | description = C5 : C4 | sources = [ "M_1", "M_4", "M_10", "M_11" ]
+  m = 2 : 1 output record(s)
+    id = [ 40, 12 ] | description = C2 x (C5 : C4) | sources = [ "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 60, 6 ] | description = C3 x (C5 : C4) | sources = [ "M_1", "M_4" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 1 output record(s)
+    id = [ 120, 40 ] | description = C6 x (C5 : C4) | sources = [ "M_4" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_21] QD16 | order 16
+order-admissible indices: [ 1, 2, 3, 6 ]
+  m = 1 : 1 output record(s)
+    id = [ 16, 8 ] | description = QD16 | sources = [ "M_10", "M_12", "M_14" ]
+  m = 2 : 1 output record(s)
+    id = [ 32, 42 ] | description = (C8 x C2) : C2 | sources = [ "M_12" ]
+  m = 3 : 0 output record(s)
+    NONE
+  m = 6 : 0 output record(s)
+    NONE
+
+[G_22] S4 | order 24
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 24, 12 ] | description = S4 | sources = [ "M_1", "M_4", "M_10", "M_11", "M_13" ]
+  m = 2 : 1 output record(s)
+    id = [ 48, 48 ] | description = C2 x S4 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 72, 42 ] | description = C3 x S4 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 1 output record(s)
+    id = [ 144, 188 ] | description = C6 x S4 | sources = [ "M_1", "M_4" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_23] Q8 | order 8
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 8, 4 ] | description = Q8 | sources = [ "M_7", "M_10", "M_12", "M_14", "M_15" ]
+  m = 2 : 3 output record(s)
+    id = [ 16, 8 ] | description = QD16 | sources = [ "M_10", "M_12", "M_14" ]
+    id = [ 16, 9 ] | description = Q16 | sources = [ "M_12" ]
+    id = [ 16, 13 ] | description = (C4 x C2) : C2 | sources = [ "M_7", "M_12" ]
+  m = 3 : 1 output record(s)
+    id = [ 24, 3 ] | description = SL(2,3) | sources = [ "M_14", "M_15" ]
+  m = 4 : 1 output record(s)
+    id = [ 32, 11 ] | description = (C4 x C4) : C2 | sources = [ "M_7" ]
+  m = 6 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_24] A_{3,3} | order 18
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 ]
+  m = 1 : 1 output record(s)
+    id = [ 18, 4 ] | description = (C3 x C3) : C2 | sources = [ "M_1", "M_2", "M_4", "M_7", "M_10", "M_11", "M_15" ]
+  m = 2 : 3 output record(s)
+    id = [ 36, 9 ] | description = (C3 x C3) : C4 | sources = [ "M_1", "M_7", "M_10", "M_11", "M_15" ]
+    id = [ 36, 10 ] | description = S3 x S3 | sources = [ "M_1", "M_2", "M_4", "M_7", "M_11" ]
+    id = [ 36, 13 ] | description = C2 x ((C3 x C3) : C2) | sources = [ "M_1", "M_4", "M_7" ]
+  m = 3 : 2 output record(s)
+    id = [ 54, 5 ] | description = (C3 x C3) : C6 | sources = [ "M_1", "M_7", "M_15" ]
+    id = [ 54, 13 ] | description = C3 x ((C3 x C3) : C2) | sources = [ "M_1", "M_2", "M_4", "M_7" ]
+  m = 4 : 1 output record(s)
+    id = [ 72, 45 ] | description = C2 x ((C3 x C3) : C4) | sources = [ "M_1", "M_7" ]
+  m = 6 : 4 output record(s)
+    id = [ 108, 25 ] | description = C2 x ((C3 x C3) : C6) | sources = [ "M_1" ]
+    id = [ 108, 36 ] | description = C3 x ((C3 x C3) : C4) | sources = [ "M_1", "M_7" ]
+    id = [ 108, 38 ] | description = C3 x S3 x S3 | sources = [ "M_1", "M_2", "M_4", "M_7" ]
+    id = [ 108, 43 ] | description = C6 x ((C3 x C3) : C2) | sources = [ "M_1", "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 1 output record(s)
+    id = [ 216, 168 ] | description = C6 x ((C3 x C3) : C4) | sources = [ "M_1" ]
+  m = 16 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+  m = 48 : 0 output record(s)
+    NONE
+
+[G_25] D12 | order 12
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 12, 4 ] | description = D12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11", "M_13", "M_14" 
+ ]
+  m = 2 : 4 output record(s)
+    id = [ 24, 5 ] | description = C4 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11" ]
+    id = [ 24, 6 ] | description = D24 | sources = [ "M_1", "M_4", "M_7", "M_11" ]
+    id = [ 24, 8 ] | description = (C6 x C2) : C2 | sources = [ "M_1", "M_4", "M_7", "M_11" ]
+    id = [ 24, 14 ] | description = C2 x C2 x S3 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 36, 12 ] | description = C6 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7" ]
+  m = 4 : 1 output record(s)
+    id = [ 48, 4 ] | description = C8 x S3 | sources = [ "M_3" ]
+  m = 6 : 4 output record(s)
+    id = [ 72, 27 ] | description = C12 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+    id = [ 72, 28 ] | description = C3 x D24 | sources = [ "M_1", "M_4" ]
+    id = [ 72, 30 ] | description = C3 x ((C6 x C2) : C2) | sources = [ "M_1", "M_4" ]
+    id = [ 72, 48 ] | description = C2 x C6 x S3 | sources = [ "M_1", "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 1 output record(s)
+    id = [ 144, 69 ] | description = C24 x S3 | sources = [ "M_3" ]
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_26] A4 | order 12
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 12, 3 ] | description = A4 | sources = [ "M_1", "M_4", "M_6", "M_10", "M_11", "M_13" ]
+  m = 2 : 2 output record(s)
+    id = [ 24, 12 ] | description = S4 | sources = [ "M_1", "M_4", "M_10", "M_11", "M_13" ]
+    id = [ 24, 13 ] | description = C2 x A4 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 36, 11 ] | description = C3 x A4 | sources = [ "M_1", "M_4", "M_6", "M_11" ]
+  m = 4 : 0 output record(s)
+    NONE
+  m = 6 : 2 output record(s)
+    id = [ 72, 42 ] | description = C3 x S4 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 72, 47 ] | description = C6 x A4 | sources = [ "M_1", "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 0 output record(s)
+    NONE
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_27] D10 | order 10
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 10, 1 ] | description = D10 | sources = [ "M_1", "M_4", "M_6", "M_10", "M_11" ]
+  m = 2 : 2 output record(s)
+    id = [ 20, 3 ] | description = C5 : C4 | sources = [ "M_1", "M_4", "M_10", "M_11" ]
+    id = [ 20, 4 ] | description = D20 | sources = [ "M_4", "M_11" ]
+  m = 3 : 1 output record(s)
+    id = [ 30, 2 ] | description = C3 x D10 | sources = [ "M_1", "M_4", "M_6" ]
+  m = 4 : 1 output record(s)
+    id = [ 40, 12 ] | description = C2 x (C5 : C4) | sources = [ "M_4", "M_11" ]
+  m = 6 : 2 output record(s)
+    id = [ 60, 6 ] | description = C3 x (C5 : C4) | sources = [ "M_1", "M_4" ]
+    id = [ 60, 10 ] | description = C6 x D10 | sources = [ "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 1 output record(s)
+    id = [ 120, 40 ] | description = C6 x (C5 : C4) | sources = [ "M_4" ]
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_28] D8 | order 8
+order-admissible indices: [ 1, 2, 3, 4, 6, 12 ]
+  m = 1 : 1 output record(s)
+    id = [ 8, 3 ] | description = D8 | sources = [ "M_1", "M_4", "M_7", "M_10", "M_11", "M_12", "M_13", "M_14" ]
+  m = 2 : 4 output record(s)
+    id = [ 16, 7 ] | description = D16 | sources = [ "M_12", "M_13" ]
+    id = [ 16, 8 ] | description = QD16 | sources = [ "M_10", "M_12", "M_14" ]
+    id = [ 16, 11 ] | description = C2 x D8 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 16, 13 ] | description = (C4 x C2) : C2 | sources = [ "M_7", "M_12" ]
+  m = 3 : 1 output record(s)
+    id = [ 24, 10 ] | description = C3 x D8 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 4 : 1 output record(s)
+    id = [ 32, 11 ] | description = (C4 x C4) : C2 | sources = [ "M_7" ]
+  m = 6 : 1 output record(s)
+    id = [ 48, 45 ] | description = C6 x D8 | sources = [ "M_1", "M_4" ]
+  m = 12 : 0 output record(s)
+    NONE
+
+[G_29] C4 | order 4
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 4, 1 ] | description = C4 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_8", "M_10", "M_11", 
+  "M_12", "M_13", "M_14", "M_15" ]
+  m = 2 : 4 output record(s)
+    id = [ 8, 1 ] | description = C8 | sources = [ "M_3", "M_5", "M_7", "M_8", "M_10", "M_12", "M_13", "M_14" ]
+    id = [ 8, 2 ] | description = C4 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11", "M_12" ]
+    id = [ 8, 3 ] | description = D8 | sources = [ "M_1", "M_4", "M_7", "M_10", "M_11", "M_12", "M_13", "M_14" ]
+    id = [ 8, 4 ] | description = Q8 | sources = [ "M_7", "M_10", "M_12", "M_14", "M_15" ]
+  m = 3 : 1 output record(s)
+    id = [ 12, 2 ] | description = C12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_11" ]
+  m = 4 : 4 output record(s)
+    id = [ 16, 1 ] | description = C16 | sources = [ "M_5", "M_8" ]
+    id = [ 16, 2 ] | description = C4 x C4 | sources = [ "M_7" ]
+    id = [ 16, 5 ] | description = C8 x C2 | sources = [ "M_3", "M_12" ]
+    id = [ 16, 6 ] | description = C8 : C2 | sources = [ "M_7" ]
+  m = 6 : 3 output record(s)
+    id = [ 24, 2 ] | description = C24 | sources = [ "M_3", "M_5" ]
+    id = [ 24, 9 ] | description = C12 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+    id = [ 24, 10 ] | description = C3 x D8 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 8 : 1 output record(s)
+    id = [ 32, 1 ] | description = C32 | sources = [ "M_8" ]
+  m = 12 : 3 output record(s)
+    id = [ 48, 2 ] | description = C48 | sources = [ "M_5" ]
+    id = [ 48, 20 ] | description = C12 x C4 | sources = [ "M_7" ]
+    id = [ 48, 23 ] | description = C24 x C2 | sources = [ "M_3" ]
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_30] S3 | order 6
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 ]
+  m = 1 : 1 output record(s)
+    id = [ 6, 1 ] | description = S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_10", "M_11", "M_13", 
+  "M_14", "M_15" ]
+  m = 2 : 1 output record(s)
+    id = [ 12, 4 ] | description = D12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11", "M_13", "M_14" 
+ ]
+  m = 3 : 1 output record(s)
+    id = [ 18, 3 ] | description = C3 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11", "M_15" ]
+  m = 4 : 1 output record(s)
+    id = [ 24, 5 ] | description = C4 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11" ]
+  m = 6 : 1 output record(s)
+    id = [ 36, 12 ] | description = C6 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7" ]
+  m = 8 : 1 output record(s)
+    id = [ 48, 4 ] | description = C8 x S3 | sources = [ "M_3" ]
+  m = 12 : 1 output record(s)
+    id = [ 72, 27 ] | description = C12 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+  m = 16 : 0 output record(s)
+    NONE
+  m = 24 : 1 output record(s)
+    id = [ 144, 69 ] | description = C24 x S3 | sources = [ "M_3" ]
+  m = 48 : 0 output record(s)
+    NONE
+
+[G_31] C2^2 | order 4
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 24 ]
+  m = 1 : 1 output record(s)
+    id = [ 4, 2 ] | description = C2 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_10", "M_11", 
+  "M_12", "M_13", "M_14" ]
+  m = 2 : 3 output record(s)
+    id = [ 8, 2 ] | description = C4 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11", "M_12" ]
+    id = [ 8, 3 ] | description = D8 | sources = [ "M_1", "M_4", "M_7", "M_10", "M_11", "M_12", "M_13", "M_14" ]
+    id = [ 8, 5 ] | description = C2 x C2 x C2 | sources = [ "M_1", "M_4", "M_11" ]
+  m = 3 : 2 output record(s)
+    id = [ 12, 3 ] | description = A4 | sources = [ "M_1", "M_4", "M_6", "M_10", "M_11", "M_13" ]
+    id = [ 12, 5 ] | description = C6 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11" ]
+  m = 4 : 2 output record(s)
+    id = [ 16, 5 ] | description = C8 x C2 | sources = [ "M_3", "M_12" ]
+    id = [ 16, 6 ] | description = C8 : C2 | sources = [ "M_7" ]
+  m = 6 : 4 output record(s)
+    id = [ 24, 9 ] | description = C12 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+    id = [ 24, 10 ] | description = C3 x D8 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 24, 13 ] | description = C2 x A4 | sources = [ "M_1", "M_4", "M_11" ]
+    id = [ 24, 15 ] | description = C6 x C2 x C2 | sources = [ "M_1", "M_4" ]
+  m = 8 : 0 output record(s)
+    NONE
+  m = 12 : 1 output record(s)
+    id = [ 48, 23 ] | description = C24 x C2 | sources = [ "M_3" ]
+  m = 24 : 0 output record(s)
+    NONE
+
+[G_32] C3 | order 3
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96 ]
+  m = 1 : 1 output record(s)
+    id = [ 3, 1 ] | description = C3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_9", "M_10", 
+  "M_11", "M_13", "M_14", "M_15" ]
+  m = 2 : 2 output record(s)
+    id = [ 6, 1 ] | description = S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_10", "M_11", "M_13", 
+  "M_14", "M_15" ]
+    id = [ 6, 2 ] | description = C6 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_9", "M_11", 
+  "M_13", "M_14", "M_15" ]
+  m = 3 : 2 output record(s)
+    id = [ 9, 1 ] | description = C9 | sources = [ "M_1", "M_2" ]
+    id = [ 9, 2 ] | description = C3 x C3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_9", "M_10", 
+  "M_11", "M_15" ]
+  m = 4 : 2 output record(s)
+    id = [ 12, 1 ] | description = C3 : C4 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11" ]
+    id = [ 12, 2 ] | description = C12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_11" ]
+  m = 6 : 3 output record(s)
+    id = [ 18, 2 ] | description = C18 | sources = [ "M_1", "M_2" ]
+    id = [ 18, 3 ] | description = C3 x S3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11", "M_15" ]
+    id = [ 18, 5 ] | description = C6 x C3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_9" ]
+  m = 8 : 2 output record(s)
+    id = [ 24, 1 ] | description = C3 : C8 | sources = [ "M_3", "M_7" ]
+    id = [ 24, 2 ] | description = C24 | sources = [ "M_3", "M_5" ]
+  m = 12 : 3 output record(s)
+    id = [ 36, 2 ] | description = C36 | sources = [ "M_2" ]
+    id = [ 36, 6 ] | description = C3 x (C3 : C4) | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+    id = [ 36, 8 ] | description = C12 x C3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+  m = 16 : 1 output record(s)
+    id = [ 48, 2 ] | description = C48 | sources = [ "M_5" ]
+  m = 24 : 2 output record(s)
+    id = [ 72, 12 ] | description = C3 x (C3 : C8) | sources = [ "M_3" ]
+    id = [ 72, 14 ] | description = C24 x C3 | sources = [ "M_3" ]
+  m = 32 : 0 output record(s)
+    NONE
+  m = 48 : 0 output record(s)
+    NONE
+  m = 96 : 0 output record(s)
+    NONE
+
+[G_33] C2 | order 2
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 ]
+  m = 1 : 1 output record(s)
+    id = [ 2, 1 ] | description = C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", 
+  "M_10", "M_11", "M_12", "M_13", "M_14", "M_15" ]
+  m = 2 : 2 output record(s)
+    id = [ 4, 1 ] | description = C4 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_8", "M_10", "M_11", 
+  "M_12", "M_13", "M_14", "M_15" ]
+    id = [ 4, 2 ] | description = C2 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_10", "M_11", 
+  "M_12", "M_13", "M_14" ]
+  m = 3 : 1 output record(s)
+    id = [ 6, 2 ] | description = C6 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_9", "M_11", 
+  "M_13", "M_14", "M_15" ]
+  m = 4 : 2 output record(s)
+    id = [ 8, 1 ] | description = C8 | sources = [ "M_3", "M_5", "M_7", "M_8", "M_10", "M_12", "M_13", "M_14" ]
+    id = [ 8, 2 ] | description = C4 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7", "M_11", "M_12" ]
+  m = 6 : 2 output record(s)
+    id = [ 12, 2 ] | description = C12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_11" ]
+    id = [ 12, 5 ] | description = C6 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_6", "M_7", "M_11" ]
+  m = 8 : 2 output record(s)
+    id = [ 16, 1 ] | description = C16 | sources = [ "M_5", "M_8" ]
+    id = [ 16, 5 ] | description = C8 x C2 | sources = [ "M_3", "M_12" ]
+  m = 12 : 2 output record(s)
+    id = [ 24, 2 ] | description = C24 | sources = [ "M_3", "M_5" ]
+    id = [ 24, 9 ] | description = C12 x C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_7" ]
+  m = 16 : 1 output record(s)
+    id = [ 32, 1 ] | description = C32 | sources = [ "M_8" ]
+  m = 24 : 2 output record(s)
+    id = [ 48, 2 ] | description = C48 | sources = [ "M_5" ]
+    id = [ 48, 23 ] | description = C24 x C2 | sources = [ "M_3" ]
+  m = 48 : 0 output record(s)
+    NONE
+
+[G_34] 1 | order 1
+order-admissible indices: [ 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96 ]
+  m = 1 : 1 output record(s)
+    id = [ 1, 1 ] | description = 1 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", 
+  "M_10", "M_11", "M_12", "M_13", "M_14", "M_15" ]
+  m = 2 : 1 output record(s)
+    id = [ 2, 1 ] | description = C2 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", 
+  "M_10", "M_11", "M_12", "M_13", "M_14", "M_15" ]
+  m = 3 : 1 output record(s)
+    id = [ 3, 1 ] | description = C3 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_9", "M_10", 
+  "M_11", "M_13", "M_14", "M_15" ]
+  m = 4 : 1 output record(s)
+    id = [ 4, 1 ] | description = C4 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_8", "M_10", "M_11", 
+  "M_12", "M_13", "M_14", "M_15" ]
+  m = 6 : 1 output record(s)
+    id = [ 6, 2 ] | description = C6 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_9", "M_11", 
+  "M_13", "M_14", "M_15" ]
+  m = 8 : 1 output record(s)
+    id = [ 8, 1 ] | description = C8 | sources = [ "M_3", "M_5", "M_7", "M_8", "M_10", "M_12", "M_13", "M_14" ]
+  m = 12 : 1 output record(s)
+    id = [ 12, 2 ] | description = C12 | sources = [ "M_1", "M_2", "M_3", "M_4", "M_5", "M_7", "M_11" ]
+  m = 16 : 1 output record(s)
+    id = [ 16, 1 ] | description = C16 | sources = [ "M_5", "M_8" ]
+  m = 24 : 1 output record(s)
+    id = [ 24, 2 ] | description = C24 | sources = [ "M_3", "M_5" ]
+  m = 32 : 1 output record(s)
+    id = [ 32, 1 ] | description = C32 | sources = [ "M_8" ]
+  m = 48 : 1 output record(s)
+    id = [ 48, 2 ] | description = C48 | sources = [ "M_5" ]
+  m = 96 : 0 output record(s)
+    NONE
+
+LOW-RANK POINTER
+----------------
+The small symplectic groups relevant for the later low-rank analysis are:
+  G_29 = C4, G_30 = S3, G_31 = C2^2, G_32 = C3.
+Their complete index/candidate rows appear above; zero rows are explicit.
+
+SPECIAL CONVENTION FOR G_14
+---------------------------
+For G_14 = 3^(1+4):2, full groups are deliberately not identified.
+Occurrences are merged only by index and source.  Thus one G_14 row
+may stand for more than one non-isomorphic full group.
+
+MACHINE-READABLE GAP OBJECT
+---------------------------
+YYZResults := [ [ "G_1", 1, fail, "(C3 x C3 x C3 x C3) : A6", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ]
+    , [ "G_1", 2, fail, "(C3 x C3 x C3 x C3) : S6", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_1", 3, fail, "((C3 x C3 x C3 x C3) : A6) : C3", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_1", 6, fail, "((C3 x C3 x C3 x C3) : A6) : C6", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_2", 1, fail, "A7", [ [ "M_11", fail, "S7" ] ] ], [ "G_2", 2, fail, "S7", [ [ "M_11", fail, "S7" ] ] ], 
+  [ "G_3", 1, [ 1944, 3559 ], "((C3 x ((C3 x C3) : C3)) : C3) : Q8", 
+      [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_3", 2, fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C2) : C2)", 
+      [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_3", 4, fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)", 
+      [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_4", 1, [ 720, 765 ], "A6 . C2", [ [ "M_10", [ 720, 765 ], "A6 . C2" ] ] ], 
+  [ "G_5", 1, [ 660, 13 ], "PSL(2,11)", [ [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ] ] ], 
+  [ "G_5", 3, [ 1980, 57 ], "C3 x PSL(2,11)", [ [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ] ] ], 
+  [ "G_6", 1, [ 360, 120 ], "A5 : S3", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_6", 2, [ 720, 767 ], "S5 x S3", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_6", 3, [ 1080, 489 ], "C3 x (A5 : S3)", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_6", 6, fail, "C3 x S3 x S5", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_7", 1, [ 972, 776 ], "((C3 x ((C3 x C3) : C3)) : C3) : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_7", 2, [ 1944, 3498 ], "((C3 x ((C3 x C3) : C3)) : C3) : (C4 x C2)", 
+      [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_7", 2, [ 1944, 3536 ], "((C3 x ((C3 x C3) : C3)) : C3) : D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_7", 2, [ 1944, 3559 ], "((C3 x ((C3 x C3) : C3)) : C3) : Q8", 
+      [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_7", 3, fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : C4", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] 
+         ] ], 
+  [ "G_7", 6, fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : D8", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] 
+         ] ], 
+  [ "G_8", 1, [ 360, 118 ], "A6", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ] ] ], 
+  [ "G_8", 2, [ 720, 763 ], "S6", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_8", 2, [ 720, 765 ], "A6 . C2", [ [ "M_10", [ 720, 765 ], "A6 . C2" ] ] ], 
+  [ "G_9", 1, [ 168, 42 ], "PSL(3,2)", [ [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_9", 2, [ 336, 208 ], "PSL(3,2) : C2", [ [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_10", 1, [ 120, 34 ], "S5", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], [ "G_10", 2, [ 240, 189 ], "C2 x S5", [ [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_10", 3, [ 360, 119 ], "C3 x S5", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_10", 6, [ 720, 769 ], "C6 x S5", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_11", 1, [ 72, 41 ], "(C3 x C3) : Q8", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_11", 3, [ 216, 153 ], "((C3 x C3) : Q8) : C3", [ [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_12", 1, [ 72, 40 ], "(S3 x S3) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_12", 2, [ 144, 186 ], "C2 x ((S3 x S3) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_12", 3, [ 216, 157 ], "C3 x ((S3 x S3) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_12", 6, [ 432, 754 ], "C6 x ((S3 x S3) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_13", 1, [ 48, 29 ], "GL(2,3)", [ [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_14", 1, fail, fail, 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_14", 2, fail, fail, 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_14", 3, fail, fail, 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_14", 4, fail, fail, [ [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_14", 6, fail, fail, 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_14", 12, fail, fail, [ [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_15", 1, [ 72, 43 ], "(C3 x A4) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_15", 2, [ 144, 183 ], "S3 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], [ "G_15", 2, [ 144, 189 ], "C2 x ((C3 x A4) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_15", 3, [ 216, 92 ], "((C3 x A4) : C2) : C3", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_15", 3, [ 216, 164 ], "C3 x ((C3 x A4) : C2)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_15", 6, [ 432, 535 ], "C2 x (((C3 x A4) : C2) : C3)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ],
+  [ "G_15", 6, [ 432, 745 ], "C3 x S3 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_16", 1, [ 60, 5 ], "A5", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ],
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_16", 2, [ 120, 34 ], "S5", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], [ "G_16", 2, [ 120, 35 ], "C2 x A5", [ [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_16", 3, [ 180, 19 ], "GL(2,4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ] ] ], 
+  [ "G_16", 6, [ 360, 119 ], "C3 x S5", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_16", 6, [ 360, 122 ], "C6 x A5", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_17", 1, [ 36, 9 ], "(C3 x C3) : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_17", 2, [ 72, 40 ], "(S3 x S3) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_17", 2, [ 72, 41 ], "(C3 x C3) : Q8", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_17", 2, [ 72, 45 ], "C2 x ((C3 x C3) : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_17", 3, [ 108, 36 ], "C3 x ((C3 x C3) : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_17", 6, [ 216, 157 ], "C3 x ((S3 x S3) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_17", 6, [ 216, 168 ], "C6 x ((C3 x C3) : C4)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_18", 1, [ 36, 10 ], "S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_18", 2, [ 72, 40 ], "(S3 x S3) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_18", 2, [ 72, 46 ], "C2 x S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_18", 3, [ 108, 38 ], "C3 x S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_18", 6, [ 216, 157 ], "C3 x ((S3 x S3) : C2)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_18", 6, [ 216, 170 ], "C6 x S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_19", 1, [ 21, 1 ], "C7 : C3", [ [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_19", 2, [ 42, 1 ], "C7 : C6", [ [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_19", 3, [ 63, 3 ], "C3 x (C7 : C3)", [ [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ] ] ], 
+  [ "G_19", 6, [ 126, 7 ], "C3 x (C7 : C6)", [ [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ] ] ], 
+  [ "G_20", 1, [ 20, 3 ], "C5 : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_20", 2, [ 40, 12 ], "C2 x (C5 : C4)", [ [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_20", 3, [ 60, 6 ], "C3 x (C5 : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_20", 6, [ 120, 40 ], "C6 x (C5 : C4)", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_21", 1, [ 16, 8 ], "QD16", [ [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_21", 2, [ 32, 42 ], "(C8 x C2) : C2", [ [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_22", 1, [ 24, 12 ], "S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_22", 2, [ 48, 48 ], "C2 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_22", 3, [ 72, 42 ], "C3 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_22", 6, [ 144, 188 ], "C6 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_23", 1, [ 8, 4 ], "Q8", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_23", 2, [ 16, 8 ], "QD16", [ [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_23", 2, [ 16, 9 ], "Q16", [ [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_23", 2, [ 16, 13 ], "(C4 x C2) : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_23", 3, [ 24, 3 ], "SL(2,3)", 
+      [ [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_23", 4, [ 32, 11 ], "(C4 x C4) : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] 
+     ], 
+  [ "G_24", 1, [ 18, 4 ], "(C3 x C3) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_24", 2, [ 36, 9 ], "(C3 x C3) : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_24", 2, [ 36, 10 ], "S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_24", 2, [ 36, 13 ], "C2 x ((C3 x C3) : C2)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_24", 3, [ 54, 5 ], "(C3 x C3) : C6", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_24", 3, [ 54, 13 ], "C3 x ((C3 x C3) : C2)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_24", 4, [ 72, 45 ], "C2 x ((C3 x C3) : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_24", 6, [ 108, 25 ], "C2 x ((C3 x C3) : C6)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_24", 6, [ 108, 36 ], "C3 x ((C3 x C3) : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_24", 6, [ 108, 38 ], "C3 x S3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_24", 6, [ 108, 43 ], "C6 x ((C3 x C3) : C2)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_24", 12, [ 216, 168 ], "C6 x ((C3 x C3) : C4)", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ] ] ], 
+  [ "G_25", 1, [ 12, 4 ], "D12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_25", 2, [ 24, 5 ], "C4 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ] ] ], 
+  [ "G_25", 2, [ 24, 6 ], "D24", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_25", 2, [ 24, 8 ], "(C6 x C2) : C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_25", 2, [ 24, 14 ], "C2 x C2 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_25", 3, [ 36, 12 ], "C6 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_25", 4, [ 48, 4 ], "C8 x S3", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_25", 6, [ 72, 27 ], "C12 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_25", 6, [ 72, 28 ], "C3 x D24", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_25", 6, [ 72, 30 ], "C3 x ((C6 x C2) : C2)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_25", 6, [ 72, 48 ], "C2 x C6 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_25", 12, [ 144, 69 ], "C24 x S3", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_26", 1, [ 12, 3 ], "A4", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ],
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_26", 2, [ 24, 12 ], "S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_26", 2, [ 24, 13 ], "C2 x A4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_26", 3, [ 36, 11 ], "C3 x A4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_26", 6, [ 72, 42 ], "C3 x S4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_26", 6, [ 72, 47 ], "C6 x A4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_27", 1, [ 10, 1 ], "D10", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_27", 2, [ 20, 3 ], "C5 : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_27", 2, [ 20, 4 ], "D20", [ [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_27", 3, [ 30, 2 ], "C3 x D10", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ] ] ], 
+  [ "G_27", 4, [ 40, 12 ], "C2 x (C5 : C4)", [ [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_27", 6, [ 60, 6 ], "C3 x (C5 : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_27", 6, [ 60, 10 ], "C6 x D10", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_27", 12, [ 120, 40 ], "C6 x (C5 : C4)", [ [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_28", 1, [ 8, 3 ], "D8", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ],
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_28", 2, [ 16, 7 ], "D16", 
+      [ [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_28", 2, [ 16, 8 ], "QD16", [ [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_28", 2, [ 16, 11 ], "C2 x D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_28", 2, [ 16, 13 ], "(C4 x C2) : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_28", 3, [ 24, 10 ], "C3 x D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_28", 4, [ 32, 11 ], "(C4 x C4) : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] 
+     ], 
+  [ "G_28", 6, [ 48, 45 ], "C6 x D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_29", 1, [ 4, 1 ], "C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_29", 2, [ 8, 1 ], "C8", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_29", 2, [ 8, 2 ], "C4 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_29", 2, [ 8, 3 ], "D8", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ],
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_29", 2, [ 8, 4 ], "Q8", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_29", 3, [ 12, 2 ], "C12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_29", 4, [ 16, 1 ], "C16", [ [ "M_5", [ 48, 2 ], "C48" ], [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_29", 4, [ 16, 2 ], "C4 x C4", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_29", 4, [ 16, 5 ], "C8 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] 
+     ], [ "G_29", 4, [ 16, 6 ], "C8 : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ],
+  [ "G_29", 6, [ 24, 2 ], "C24", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_29", 6, [ 24, 9 ], "C12 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_29", 6, [ 24, 10 ], "C3 x D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], [ "G_29", 8, [ 32, 1 ], "C32", [ [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_29", 12, [ 48, 2 ], "C48", [ [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_29", 12, [ 48, 20 ], "C12 x C4", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_29", 12, [ 48, 23 ], "C24 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_30", 1, [ 6, 1 ], "S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_30", 2, [ 12, 4 ], "D12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_30", 3, [ 18, 3 ], "C3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_30", 4, [ 24, 5 ], "C4 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ] ] ], 
+  [ "G_30", 6, [ 36, 12 ], "C6 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_30", 8, [ 48, 4 ], "C8 x S3", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_30", 12, [ 72, 27 ], "C12 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_30", 24, [ 144, 69 ], "C24 x S3", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_31", 1, [ 4, 2 ], "C2 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ],
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_31", 2, [ 8, 2 ], "C4 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_31", 2, [ 8, 3 ], "D8", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ],
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_31", 2, [ 8, 5 ], "C2 x C2 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_31", 3, [ 12, 3 ], "A4", [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ],
+          [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ] ] ], 
+  [ "G_31", 3, [ 12, 5 ], "C6 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_31", 4, [ 16, 5 ], "C8 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] 
+     ], [ "G_31", 4, [ 16, 6 ], "C8 : C2", [ [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ],
+  [ "G_31", 6, [ 24, 9 ], "C12 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_31", 6, [ 24, 10 ], "C3 x D8", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_31", 6, [ 24, 13 ], "C2 x A4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ], [ "M_11", fail, "S7" ] ] 
+     ], 
+  [ "G_31", 6, [ 24, 15 ], "C6 x C2 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], [ "M_4", fail, "C3 x S3 x S5" ] ] ], 
+  [ "G_31", 12, [ 48, 23 ], "C24 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_32", 1, [ 3, 1 ], "C3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_32", 2, [ 6, 1 ], "S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_32", 2, [ 6, 2 ], "C6", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_32", 3, [ 9, 1 ], "C9", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_32", 3, [ 9, 2 ], "C3 x C3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_32", 4, [ 12, 1 ], "C3 : C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ] ] ], 
+  [ "G_32", 4, [ 12, 2 ], "C12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_32", 6, [ 18, 2 ], "C18", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_32", 6, [ 18, 3 ], "C3 x S3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_32", 6, [ 18, 5 ], "C6 x C3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ] ] ], 
+  [ "G_32", 8, [ 24, 1 ], "C3 : C8", 
+      [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_32", 8, [ 24, 2 ], "C24", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_32", 12, [ 36, 2 ], "C36", [ [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ] ] ], 
+  [ "G_32", 12, [ 36, 6 ], "C3 x (C3 : C4)", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_32", 12, [ 36, 8 ], "C12 x C3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_32", 16, [ 48, 2 ], "C48", [ [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_32", 24, [ 72, 12 ], "C3 x (C3 : C8)", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_32", 24, [ 72, 14 ], "C24 x C3", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_33", 1, [ 2, 1 ], "C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_33", 2, [ 4, 1 ], "C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_33", 2, [ 4, 2 ], "C2 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ],
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_33", 3, [ 6, 2 ], "C6", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_33", 4, [ 8, 1 ], "C8", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_33", 4, [ 8, 2 ], "C4 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] ], 
+  [ "G_33", 6, [ 12, 2 ], "C12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_33", 6, [ 12, 5 ], "C6 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_33", 8, [ 16, 1 ], "C16", [ [ "M_5", [ 48, 2 ], "C48" ], [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_33", 8, [ 16, 5 ], "C8 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ] ] 
+     ], [ "G_33", 12, [ 24, 2 ], "C24", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_33", 12, [ 24, 9 ], "C12 x C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ] ] ], 
+  [ "G_33", 16, [ 32, 1 ], "C32", [ [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_33", 24, [ 48, 2 ], "C48", [ [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_33", 24, [ 48, 23 ], "C24 x C2", [ [ "M_3", [ 144, 69 ], "C24 x S3" ] ] ], 
+  [ "G_34", 1, [ 1, 1 ], "1", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_34", 2, [ 2, 1 ], "C2", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_34", 3, [ 3, 1 ], "C3", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_34", 4, [ 4, 1 ], "C4", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_11", fail, "S7" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ], 
+          [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_34", 6, [ 6, 2 ], "C6", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], [ "M_6", [ 1980, 57 ], "C3 x PSL(2,11)" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], 
+          [ "M_9", [ 126, 7 ], "C3 x (C7 : C6)" ], [ "M_11", fail, "S7" ], [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], 
+          [ "M_14", [ 48, 29 ], "GL(2,3)" ], [ "M_15", [ 216, 153 ], "((C3 x C3) : Q8) : C3" ] ] ], 
+  [ "G_34", 8, [ 8, 1 ], "C8", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_8", [ 32, 1 ], "C32" ], 
+          [ "M_10", [ 720, 765 ], "A6 . C2" ], [ "M_12", [ 32, 42 ], "(C8 x C2) : C2" ], 
+          [ "M_13", [ 336, 208 ], "PSL(3,2) : C2" ], [ "M_14", [ 48, 29 ], "GL(2,3)" ] ] ], 
+  [ "G_34", 12, [ 12, 2 ], "C12", 
+      [ [ "M_1", fail, "((C3 x C3 x C3 x C3) : A6) : C6" ], 
+          [ "M_2", fail, "((C3 x ((C3 x C3 x C3) : C3)) : C3) : (C4 x C2)" ], [ "M_3", [ 144, 69 ], "C24 x S3" ], 
+          [ "M_4", fail, "C3 x S3 x S5" ], [ "M_5", [ 48, 2 ], "C48" ], 
+          [ "M_7", fail, "((C3 x ((C3 x C3) : C3)) : C3) : ((C4 x C4) : C2)" ], [ "M_11", fail, "S7" ] ] ], 
+  [ "G_34", 16, [ 16, 1 ], "C16", [ [ "M_5", [ 48, 2 ], "C48" ], [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_34", 24, [ 24, 2 ], "C24", [ [ "M_3", [ 144, 69 ], "C24 x S3" ], [ "M_5", [ 48, 2 ], "C48" ] ] ], 
+  [ "G_34", 32, [ 32, 1 ], "C32", [ [ "M_8", [ 32, 1 ], "C32" ] ] ], 
+  [ "G_34", 48, [ 48, 2 ], "C48", [ [ "M_5", [ 48, 2 ], "C48" ] ] ] ];

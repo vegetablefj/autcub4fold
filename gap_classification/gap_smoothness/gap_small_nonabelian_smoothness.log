@@ -1,0 +1,214 @@
+Small non-abelian smoothness screening log
+
+Run configuration
+Environment: WSL (Ubuntu)
+GAP version: 4.12.1
+Input file: ../gap_small_nonabelian/gap_small_nonabelian_data.g
+Retained candidates: 182
+Deterministic coefficient vectors per family: at most 32
+Good split primes per family: at most 3
+Exact characteristic-zero members per family: at most 6
+Bounded common-point checks per family: at most 8000
+Exact common Jacobian locus test: true; timeout 60 s
+Singular: /usr/bin/Singular
+GNU timeout: /usr/bin/timeout
+Enumeration input: raw 202, Gonzalez rejected 20, retained 182
+
+Progress
+1. Candidate 1 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 27 ms
+2. Candidate 2 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 12 ms
+3. Candidate 3 (C3, projective [ 18, 3 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 56 ms
+4. Candidate 4 (C3, projective [ 18, 3 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 57 ms
+5. Candidate 5 (C3, projective [ 18, 3 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 57 ms
+6. Candidate 6 (C3, projective [ 18, 3 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 57 ms
+7. Candidate 8 (C3, projective [ 6, 1 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 6 ms
+8. Candidate 9 (C3, projective [ 12, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 46 ms
+9. Candidate 10 (C3, projective [ 12, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 48 ms
+10. Candidate 11 (C3, projective [ 12, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 52 ms
+11. Candidate 12 (C3, projective [ 12, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 47 ms
+12. Candidate 13 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 48 ms
+13. Candidate 14 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 45 ms
+14. Candidate 15 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 53 ms
+15. Candidate 16 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 41 ms
+16. Candidate 17 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 55 ms
+17. Candidate 18 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 46 ms
+18. Candidate 19 (C3, projective [ 36, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 54 ms
+19. Candidate 21 (C3, projective [ 24, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 70 ms
+20. Candidate 22 (C3, projective [ 24, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 50 ms
+21. Candidate 23 (C3, projective [ 24, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 74 ms
+22. Candidate 24 (C3, projective [ 24, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 60 ms
+23. Candidate 25 (C3, projective [ 24, 1 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 33 ms
+24. Candidate 26 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 8 ms
+25. Candidate 27 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 3 ms
+26. Candidate 28 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 9 ms
+27. Candidate 29 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 15 ms
+28. Candidate 30 (C3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 15 ms
+29. Candidate 33 (C3, projective [ 6, 1 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 13 ms
+30. Candidate 34 (C2^2, projective [ 12, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+31. Candidate 36 (C2^2, projective [ 12, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 12 ms
+32. Candidate 37 (C2^2, projective [ 8, 3 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 54 ms
+33. Candidate 38 (C2^2, projective [ 8, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 14 ms
+34. Candidate 39 (C2^2, projective [ 8, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 11 ms
+35. Candidate 40 (C2^2, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 54 ms
+36. Candidate 41 (C2^2, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 39 ms
+37. Candidate 42 (C2^2, projective [ 16, 6 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 62 ms
+38. Candidate 43 (C2^2, projective [ 16, 6 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+39. Candidate 44 (C2^2, projective [ 16, 6 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+40. Candidate 45 (C2^2, projective [ 24, 13 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 61 ms
+41. Candidate 46 (C2^2, projective [ 24, 13 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 10 ms
+42. Candidate 47 (C2^2, projective [ 24, 13 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 40 ms
+43. Candidate 50 (C2^2, projective [ 24, 13 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 50 ms
+44. Candidate 51 (C2^2, projective [ 24, 13 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 8 ms
+45. Candidate 52 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+46. Candidate 53 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+47. Candidate 54 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+48. Candidate 55 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+49. Candidate 56 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+50. Candidate 57 (C2^2, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 63 ms
+51. Candidate 58 (C2^2, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 35 ms
+52. Candidate 59 (C2^2, projective [ 24, 10 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 43 ms
+53. Candidate 60 (C2^2, projective [ 24, 10 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+54. Candidate 61 (C2^2, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+55. Candidate 62 (C2^2, projective [ 24, 10 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 9 ms
+56. Candidate 63 (C2^2, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 45 ms
+57. Candidate 64 (C2^2, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 52 ms
+58. Candidate 65 (C2^2, projective [ 24, 10 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 14 ms
+59. Candidate 66 (C2^2, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 34 ms
+60. Candidate 71 (C4, projective [ 8, 4 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 45 ms
+61. Candidate 72 (C4, projective [ 8, 4 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 10 ms
+62. Candidate 73 (C4, projective [ 8, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 8 ms
+63. Candidate 74 (C4, projective [ 8, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 15 ms
+64. Candidate 75 (C4, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+65. Candidate 76 (C4, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+66. Candidate 77 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 47 ms
+67. Candidate 78 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 53 ms
+68. Candidate 79 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 38 ms
+69. Candidate 80 (C4, projective [ 24, 10 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 40 ms
+70. Candidate 81 (C4, projective [ 24, 10 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+71. Candidate 82 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 39 ms
+72. Candidate 83 (C4, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+73. Candidate 84 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 37 ms
+74. Candidate 85 (C4, projective [ 24, 10 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+75. Candidate 86 (C4, projective [ 24, 10 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 49 ms
+76. Candidate 89 (C4, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 43 ms
+77. Candidate 90 (C4, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 52 ms
+78. Candidate 91 (C4, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 45 ms
+79. Candidate 92 (C4, projective [ 16, 6 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 9 ms
+80. Candidate 93 (C4, projective [ 16, 6 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+81. Candidate 94 (C4, projective [ 16, 6 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 46 ms
+82. Candidate 95 (C4, projective [ 16, 6 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+83. Candidate 96 (C4, projective [ 16, 6 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+84. Candidate 97 (S3, projective [ 6, 1 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 17 ms
+85. Candidate 98 (S3, projective [ 12, 4 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 9 ms
+86. Candidate 99 (S3, projective [ 12, 4 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 19 ms
+87. Candidate 100 (S3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 16 ms
+88. Candidate 101 (S3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 10 ms
+89. Candidate 102 (S3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 20 ms
+90. Candidate 103 (S3, projective [ 18, 3 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 16 ms
+91. Candidate 106 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 56 ms
+92. Candidate 107 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 74 ms
+93. Candidate 108 (S3, projective [ 24, 5 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 89 ms
+94. Candidate 109 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 36 ms
+95. Candidate 110 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 50 ms
+96. Candidate 111 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 40 ms
+97. Candidate 112 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 31 ms
+98. Candidate 113 (S3, projective [ 36, 12 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 70 ms
+99. Candidate 114 (S3, projective [ 36, 12 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 43 ms
+100. Candidate 115 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 14 ms
+101. Candidate 116 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 13 ms
+102. Candidate 117 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 7 ms
+103. Candidate 118 (S3, projective [ 36, 12 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 81 ms
+104. Candidate 119 (S3, projective [ 36, 12 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 81 ms
+105. Candidate 120 (S3, projective [ 36, 12 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 91 ms
+106. Candidate 121 (S3, projective [ 36, 12 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 67 ms
+107. Candidate 122 (S3, projective [ 36, 12 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 63 ms
+108. Candidate 123 (S3, projective [ 36, 12 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 84 ms
+109. Candidate 124 (S3, projective [ 36, 12 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 161 ms
+110. Candidate 126 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 50 ms
+111. Candidate 127 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 47 ms
+112. Candidate 128 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 45 ms
+113. Candidate 129 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 47 ms
+114. Candidate 130 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 62 ms
+115. Candidate 131 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 30 ms
+116. Candidate 132 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 43 ms
+117. Candidate 133 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 12 ms
+118. Candidate 134 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 55 ms
+119. Candidate 135 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 33 ms
+120. Candidate 137 (S3, projective [ 12, 4 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 35 ms
+121. Candidate 138 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 51 ms
+122. Candidate 139 (S3, projective [ 24, 5 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 62 ms
+123. Candidate 140 (S3, projective [ 24, 5 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 49 ms
+124. Candidate 141 (S3, projective [ 24, 5 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 27 ms
+125. Candidate 142 (S3, projective [ 24, 5 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+126. Candidate 143 (S3, projective [ 24, 5 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+127. Candidate 144 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 4 ms
+128. Candidate 145 (S3, projective [ 36, 12 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+129. Candidate 146 (S3, projective [ 36, 12 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+130. Candidate 147 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 24 ms
+131. Candidate 148 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 28 ms
+132. Candidate 149 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 7 ms
+133. Candidate 150 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+134. Candidate 151 (S3, projective [ 36, 12 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+135. Candidate 152 (S3, projective [ 36, 12 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 30 ms
+136. Candidate 156 (S3, projective [ 48, 4 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 76 ms
+137. Candidate 157 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+138. Candidate 158 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 27 ms
+139. Candidate 159 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 46 ms
+140. Candidate 160 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 47 ms
+141. Candidate 161 (S3, projective [ 48, 4 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 13 ms
+142. Candidate 162 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+143. Candidate 163 (S3, projective [ 48, 4 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 40 ms
+144. Candidate 164 (S3, projective [ 48, 4 ]): singular; proof = the invariant basis has a nonempty exact common projective Jacobian locus; elapsed 51 ms
+145. Candidate 165 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+146. Candidate 166 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+147. Candidate 167 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+148. Candidate 168 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+149. Candidate 169 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+150. Candidate 170 (S3, projective [ 48, 4 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+151. Candidate 171 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+152. Candidate 172 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+153. Candidate 173 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+154. Candidate 174 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+155. Candidate 175 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+156. Candidate 176 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+157. Candidate 177 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+158. Candidate 178 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+159. Candidate 179 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+160. Candidate 180 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+161. Candidate 181 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 10 ms
+162. Candidate 182 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+163. Candidate 183 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+164. Candidate 184 (S3, projective [ 72, 27 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+165. Candidate 185 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+166. Candidate 186 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+167. Candidate 187 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+168. Candidate 188 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+169. Candidate 189 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+170. Candidate 190 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+171. Candidate 191 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+172. Candidate 192 (S3, projective [ 72, 27 ]): singular; proof = an exact common singular point was found for the invariant basis; elapsed 21 ms
+173. Candidate 193 (S3, projective [ 72, 27 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 5 ms
+174. Candidate 194 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+175. Candidate 195 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 1 ms
+176. Candidate 196 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+177. Candidate 197 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+178. Candidate 198 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+179. Candidate 199 (S3, projective [ 72, 27 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 8 ms
+180. Candidate 200 (S3, projective [ 72, 27 ]): unknown; proof = no smooth member or family-wide singularity certificate was found; elapsed 61 ms
+181. Candidate 201 (S3, projective [ 72, 27 ]): singular; proof = a variable has exponent at most one throughout the family; elapsed 0 ms
+182. Candidate 202 (S3, projective [ 144, 69 ]): smooth; proof = an explicit member of the invariant cubic family is smooth; elapsed 1 ms
+
+Summary
+candidates = 182
+smooth = 46
+singular = 129
+unknown = 7
+proof methods
+  1. an explicit member of the invariant cubic family is smooth = 46
+  2. the invariant basis has a nonempty exact common projective Jacobian locus = 48
+  3. no smooth member or family-wide singularity certificate was found = 7
+  4. a variable has exponent at most one throughout the family = 53
+  5. an exact common singular point was found for the invariant basis = 28
+manual follow-up = candidates [ 37, 42, 59, 71, 80, 139, 200 ] remain unknown in this screening and will be verified separately by hand to be singular
+runtime = 5094 ms
+output = gap_small_nonabelian_smoothness.out

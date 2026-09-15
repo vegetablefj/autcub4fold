@@ -1,0 +1,11 @@
+SPECIAL_7212_COMPLETED
+tested_weight_multisets=17550
+retained_weight_multisets=8
+weight_orbits=1
+smooth_families=1
+smoothness_status=exact_smooth
+saturation_status=embedded
+saturation_index=2
+saturation_witness_verified=true
+saturated_away=true
+runtime_ms=2359

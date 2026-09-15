@@ -1,0 +1,216 @@
+LARGE_TARGET_PREPARE layer=10 family=2
+LARGE_TARGET_PREPARED family=2 cpu_ms=328
+LARGE_TARGET_START layer=10 family=2 candidates=109 frontier=32
+LARGE_PAIR_START source=10 target=2 classified=0/109
+LARGE_PAIR_DONE source=10 target=2 status=embedded method=literal_matrix_subgroup reason=literal_matrix_subgroup cpu_ms=282
+LARGE_PAIR_START source=12 target=2 classified=14/109
+  subgroup classes: started
+  subgroup classes: completed; count=77; cpu_ms=1266
+  isomorphic subgroup classes=2; cpu_ms=1906
+  source automorphisms=672; cpu_ms=0
+LARGE_PAIR_DONE source=12 target=2 status=embedded method=subgroup_classes_full_aut reason=found cpu_ms=3875
+LARGE_PAIR_START source=15 target=2 classified=16/109
+  isomorphic subgroup classes=1; cpu_ms=781
+  source automorphisms=240; cpu_ms=0
+LARGE_PAIR_DONE source=15 target=2 status=embedded method=subgroup_classes_full_aut reason=found cpu_ms=1172
+LARGE_PAIR_START source=17 target=2 classified=19/109
+  isomorphic subgroup classes=0; cpu_ms=0
+LARGE_PAIR_DONE source=17 target=2 status=no_embedding method=subgroup_classes_full_aut reason=no_abstract_subgroup cpu_ms=531
+LARGE_PAIR_START source=25 target=2 classified=20/109
+LARGE_PAIR_DONE source=25 target=2 status=embedded method=literal_matrix_subgroup reason=literal_matrix_subgroup cpu_ms=250
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=5 classified=21/109
+LARGE_PAIR_START source=30 target=2 classified=21/109
+LARGE_PAIR_DONE source=30 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=468
+LARGE_PAIR_START source=32 target=2 classified=22/109
+LARGE_PAIR_DONE source=32 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=328
+LARGE_PAIR_START source=34 target=2 classified=23/109
+LARGE_PAIR_DONE source=34 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=35 target=2 classified=24/109
+LARGE_PAIR_DONE source=35 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=188
+LARGE_PAIR_START source=37 target=2 classified=25/109
+LARGE_PAIR_DONE source=37 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=218
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=10 classified=26/109
+LARGE_PAIR_START source=40 target=2 classified=26/109
+LARGE_PAIR_DONE source=40 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=30063
+LARGE_PAIR_START source=50 target=2 classified=27/109
+LARGE_PAIR_DONE source=50 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=344
+LARGE_PAIR_START source=53 target=2 classified=28/109
+LARGE_PAIR_DONE source=53 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=265
+LARGE_PAIR_START source=60 target=2 classified=29/109
+LARGE_PAIR_DONE source=60 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_PAIR_START source=62 target=2 classified=30/109
+LARGE_PAIR_DONE source=62 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=375
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=15 classified=31/109
+LARGE_PAIR_START source=64 target=2 classified=31/109
+LARGE_PAIR_DONE source=64 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=313
+LARGE_PAIR_START source=66 target=2 classified=32/109
+LARGE_PAIR_DONE source=66 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=157
+LARGE_PAIR_START source=71 target=2 classified=33/109
+LARGE_PAIR_DONE source=71 target=2 status=no_embedding method=filter reason=element_order_multiset cpu_ms=1578
+LARGE_PAIR_START source=79 target=2 classified=34/109
+LARGE_PAIR_DONE source=79 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=344
+LARGE_PAIR_START source=80 target=2 classified=35/109
+LARGE_PAIR_DONE source=80 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=313
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=20 classified=36/109
+LARGE_PAIR_START source=87 target=2 classified=36/109
+LARGE_PAIR_DONE source=87 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_PAIR_START source=92 target=2 classified=37/109
+LARGE_PAIR_DONE source=92 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=281
+LARGE_PAIR_START source=94 target=2 classified=38/109
+LARGE_PAIR_DONE source=94 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=469
+LARGE_PAIR_START source=95 target=2 classified=39/109
+LARGE_PAIR_DONE source=95 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=437
+LARGE_PAIR_START source=104 target=2 classified=40/109
+LARGE_PAIR_DONE source=104 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=188
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=25 classified=41/109
+LARGE_PAIR_START source=105 target=2 classified=41/109
+LARGE_PAIR_DONE source=105 target=2 status=no_embedding method=filter reason=exponent cpu_ms=1359
+LARGE_PAIR_START source=114 target=2 classified=42/109
+LARGE_PAIR_DONE source=114 target=2 status=no_embedding method=filter reason=exponent cpu_ms=1531
+LARGE_PAIR_START source=127 target=2 classified=43/109
+LARGE_PAIR_DONE source=127 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=500
+LARGE_PAIR_START source=131 target=2 classified=44/109
+LARGE_PAIR_DONE source=131 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=563
+LARGE_PAIR_START source=145 target=2 classified=45/109
+LARGE_PAIR_DONE source=145 target=2 status=no_embedding method=filter reason=exponent cpu_ms=2500
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=30 classified=46/109
+LARGE_PAIR_START source=153 target=2 classified=46/109
+LARGE_PAIR_DONE source=153 target=2 status=no_embedding method=filter reason=exponent cpu_ms=6328
+LARGE_PAIR_START source=154 target=2 classified=47/109
+LARGE_PAIR_DONE source=154 target=2 status=no_embedding method=filter reason=exponent cpu_ms=11985
+LARGE_PAIR_START source=48 target=2 classified=48/109
+  isomorphic subgroup classes=0; cpu_ms=0
+LARGE_PAIR_DONE source=48 target=2 status=no_embedding method=subgroup_classes_full_aut reason=no_abstract_subgroup cpu_ms=453
+LARGE_PAIR_START source=67 target=2 classified=49/109
+LARGE_PAIR_DONE source=67 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_PAIR_START source=72 target=2 classified=50/109
+LARGE_PAIR_DONE source=72 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=2703
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=35 classified=51/109
+LARGE_PAIR_START source=86 target=2 classified=51/109
+LARGE_PAIR_DONE source=86 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_PAIR_START source=101 target=2 classified=52/109
+LARGE_PAIR_DONE source=101 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=102 target=2 classified=53/109
+LARGE_PAIR_DONE source=102 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=188
+LARGE_PAIR_START source=110 target=2 classified=54/109
+LARGE_PAIR_DONE source=110 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=123 target=2 classified=55/109
+LARGE_PAIR_DONE source=123 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=40 classified=56/109
+LARGE_PAIR_START source=135 target=2 classified=56/109
+LARGE_PAIR_DONE source=135 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=136 target=2 classified=57/109
+LARGE_PAIR_DONE source=136 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=110
+LARGE_PAIR_START source=31 target=2 classified=58/109
+LARGE_PAIR_DONE source=31 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=313
+LARGE_PAIR_START source=68 target=2 classified=59/109
+LARGE_PAIR_DONE source=68 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=69 target=2 classified=60/109
+LARGE_PAIR_DONE source=69 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=250
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=45 classified=61/109
+LARGE_PAIR_START source=88 target=2 classified=61/109
+LARGE_PAIR_DONE source=88 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=91 target=2 classified=62/109
+LARGE_PAIR_DONE source=91 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=266
+LARGE_PAIR_START source=99 target=2 classified=63/109
+LARGE_PAIR_DONE source=99 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=103 target=2 classified=64/109
+LARGE_PAIR_DONE source=103 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=234
+LARGE_PAIR_START source=115 target=2 classified=65/109
+LARGE_PAIR_DONE source=115 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=94
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=50 classified=66/109
+LARGE_PAIR_START source=117 target=2 classified=66/109
+LARGE_PAIR_DONE source=117 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=203
+LARGE_PAIR_START source=120 target=2 classified=67/109
+LARGE_PAIR_DONE source=120 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=125
+LARGE_PAIR_START source=125 target=2 classified=68/109
+LARGE_PAIR_DONE source=125 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_PAIR_START source=133 target=2 classified=69/109
+LARGE_PAIR_DONE source=133 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=78
+LARGE_PAIR_START source=139 target=2 classified=70/109
+LARGE_PAIR_DONE source=139 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=55 classified=71/109
+LARGE_PAIR_START source=141 target=2 classified=71/109
+LARGE_PAIR_DONE source=141 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=265
+LARGE_PAIR_START source=55 target=2 classified=72/109
+LARGE_PAIR_DONE source=55 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=78 target=2 classified=73/109
+LARGE_PAIR_DONE source=78 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=313
+LARGE_PAIR_START source=84 target=2 classified=74/109
+LARGE_PAIR_DONE source=84 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=281
+LARGE_PAIR_START source=107 target=2 classified=75/109
+LARGE_PAIR_DONE source=107 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=60 classified=76/109
+LARGE_PAIR_START source=109 target=2 classified=76/109
+LARGE_PAIR_DONE source=109 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=93
+LARGE_PAIR_START source=122 target=2 classified=77/109
+LARGE_PAIR_DONE source=122 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=94
+LARGE_PAIR_START source=134 target=2 classified=78/109
+LARGE_PAIR_DONE source=134 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=109
+LARGE_PAIR_START source=63 target=2 classified=79/109
+LARGE_PAIR_DONE source=63 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=281
+LARGE_PAIR_START source=85 target=2 classified=80/109
+LARGE_PAIR_DONE source=85 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=65 classified=81/109
+LARGE_PAIR_START source=98 target=2 classified=81/109
+LARGE_PAIR_DONE source=98 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_PAIR_START source=108 target=2 classified=82/109
+LARGE_PAIR_DONE source=108 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=94
+LARGE_PAIR_START source=121 target=2 classified=83/109
+LARGE_PAIR_DONE source=121 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=141
+LARGE_PAIR_START source=126 target=2 classified=84/109
+LARGE_PAIR_DONE source=126 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=140
+LARGE_PAIR_START source=100 target=2 classified=85/109
+LARGE_PAIR_DONE source=100 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=125
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=70 classified=86/109
+LARGE_PAIR_START source=59 target=2 classified=86/109
+LARGE_PAIR_DONE source=59 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=328
+LARGE_PAIR_START source=61 target=2 classified=87/109
+LARGE_PAIR_DONE source=61 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=375
+LARGE_PAIR_START source=113 target=2 classified=88/109
+LARGE_PAIR_DONE source=113 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=128 target=2 classified=89/109
+LARGE_PAIR_DONE source=128 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=142 target=2 classified=90/109
+LARGE_PAIR_DONE source=142 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=172
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=75 classified=91/109
+LARGE_PAIR_START source=90 target=2 classified=91/109
+LARGE_PAIR_DONE source=90 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_PAIR_START source=116 target=2 classified=92/109
+LARGE_PAIR_DONE source=116 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=156
+LARGE_PAIR_START source=111 target=2 classified=93/109
+LARGE_PAIR_DONE source=111 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=109
+LARGE_PAIR_START source=118 target=2 classified=94/109
+LARGE_PAIR_DONE source=118 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_PAIR_START source=89 target=2 classified=95/109
+LARGE_PAIR_DONE source=89 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=422
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=80 classified=96/109
+LARGE_PAIR_START source=124 target=2 classified=96/109
+LARGE_PAIR_DONE source=124 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=359
+LARGE_PAIR_START source=137 target=2 classified=97/109
+LARGE_PAIR_DONE source=137 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=266
+LARGE_PAIR_START source=138 target=2 classified=98/109
+LARGE_PAIR_DONE source=138 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=219
+LARGE_PAIR_START source=147 target=2 classified=99/109
+LARGE_PAIR_DONE source=147 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=484
+LARGE_PAIR_START source=130 target=2 classified=100/109
+LARGE_PAIR_DONE source=130 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=390
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=85 classified=101/109
+LARGE_PAIR_START source=148 target=2 classified=101/109
+LARGE_PAIR_DONE source=148 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=406
+LARGE_PAIR_START source=149 target=2 classified=102/109
+LARGE_PAIR_DONE source=149 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=579
+LARGE_PAIR_START source=140 target=2 classified=103/109
+LARGE_PAIR_DONE source=140 target=2 status=no_embedding method=filter reason=exponent cpu_ms=843
+LARGE_PAIR_START source=143 target=2 classified=104/109
+LARGE_PAIR_DONE source=143 target=2 status=no_embedding method=filter reason=exponent cpu_ms=1563
+LARGE_PAIR_START source=112 target=2 classified=105/109
+LARGE_PAIR_DONE source=112 target=2 status=no_embedding method=filter reason=exponent cpu_ms=719
+LARGE_TARGET_PROGRESS layer=10 family=2 direct=90 classified=106/109
+LARGE_PAIR_START source=150 target=2 classified=106/109
+LARGE_PAIR_DONE source=150 target=2 status=no_embedding method=filter reason=weak_fingerprint cpu_ms=546
+LARGE_PAIR_START source=144 target=2 classified=107/109
+LARGE_PAIR_DONE source=144 target=2 status=no_embedding method=filter reason=exponent cpu_ms=2641
+LARGE_PAIR_START source=146 target=2 classified=108/109
+LARGE_PAIR_DONE source=146 target=2 status=no_embedding method=filter reason=exponent cpu_ms=2938
+LARGE_TARGET_DONE layer=10 family=2 candidates=109 direct=93 inferred=16 embedded=20 no_embedding=89 cpu_ms=92968 undecided=0 coverage=complete

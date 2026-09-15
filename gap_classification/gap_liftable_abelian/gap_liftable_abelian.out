@@ -1,0 +1,1044 @@
+LIFTABLE ABELIAN CANDIDATES FOR CUBIC FOURFOLDS
+=================================================
+
+GAP version: 4.15.1
+Computational core: gap_liftable_abelian_original.g
+Maximal classification: Peng--Zheng, Abelian automorphism groups of quartic surfaces and cubic fourfolds, Theorem 4.2
+Special examples: Yang--Yu--Zhu, Examples 6.1 (5), 6.1 (8), and 6.11
+
+The frozen computational core is used without modification.
+Its stage order is local reduction, order filtering, strong-key
+diagonal equivalence, and final geometric restrictions.
+
+RUN SUMMARY
+-----------
+Order-filtered pool: 1216
+After equivalence deduplication: 110
+After final restrictions: 51
+Special YYZ examples: 2
+Total candidates: 53
+Reference ordinary count 51 matched: true
+Reference total count 53 matched: true
+
+SOURCE SUMMARY
+--------------
+[1] T1+T1+T1+T1+T1+T1 | ambient order 729 | subgroups containing mu3 2664 | essential 818 | retained 607
+[2] T2+T1+T1+T1+T1 | ambient order 486 | subgroups containing mu3 424 | essential 182 | retained 161
+[3] T2+T2+T1+T1 | ambient order 324 | subgroups containing mu3 140 | essential 73 | retained 72
+[4] T2+T2+T2 | ambient order 216 | subgroups containing mu3 96 | essential 45 | retained 44
+[5] K3+T1+T1+T1 | ambient order 243 | subgroups containing mu3 50 | essential 20 | retained 17
+[6] T3+T1+T1+T1 | ambient order 324 | subgroups containing mu3 84 | essential 52 | retained 50
+[7] K3+T2+T1 | ambient order 162 | subgroups containing mu3 20 | essential 11 | retained 10
+[8] T3+T2+T1 | ambient order 216 | subgroups containing mu3 48 | essential 31 | retained 30
+[9] K3+K3 | ambient order 81 | subgroups containing mu3 10 | essential 8 | retained 7
+[10] K3+T3 | ambient order 108 | subgroups containing mu3 9 | essential 7 | retained 7
+[11] T3+T3 | ambient order 144 | subgroups containing mu3 30 | essential 18 | retained 17
+[12] K4+T1+T1 | ambient order 135 | subgroups containing mu3 12 | essential 9 | retained 5
+[13] T4+T1+T1 | ambient order 216 | subgroups containing mu3 24 | essential 20 | retained 19
+[14] Y11+T1+T1 | ambient order 108 | subgroups containing mu3 18 | essential 15 | retained 15
+[15] K4+T2 | ambient order 90 | subgroups containing mu3 8 | essential 6 | retained 3
+[16] T4+T2 | ambient order 144 | subgroups containing mu3 22 | essential 15 | retained 14
+[17] Y11+T2 | ambient order 72 | subgroups containing mu3 16 | essential 11 | retained 11
+[18] K5+T1 | ambient order 99 | subgroups containing mu3 4 | essential 3 | retained 2
+[19] T5+T1 | ambient order 144 | subgroups containing mu3 10 | essential 10 | retained 9
+[20] Y21+T1 | ambient order 72 | subgroups containing mu3 8 | essential 8 | retained 8
+[21] K6 | ambient order 63 | subgroups containing mu3 4 | essential 4 | retained 2
+[22] T6 | ambient order 96 | subgroups containing mu3 6 | essential 6 | retained 5
+[23] Y31 | ambient order 48 | subgroups containing mu3 5 | essential 5 | retained 5
+[24] Y22 | ambient order 48 | subgroups containing mu3 11 | essential 10 | retained 10
+[25] NonSimple-1 | ambient order 18 | subgroups containing mu3 4 | essential 4 | retained 4
+[26] NonSimple-2 | ambient order 24 | subgroups containing mu3 4 | essential 4 | retained 4
+[27] NonSimple-3 | ambient order 24 | subgroups containing mu3 8 | essential 8 | retained 8
+[28] NonSimple-4 | ambient order 24 | subgroups containing mu3 8 | essential 8 | retained 8
+[29] NonSimple-5 | ambient order 24 | subgroups containing mu3 8 | essential 8 | retained 8
+[30] NonSimple-6 | ambient order 24 | subgroups containing mu3 8 | essential 8 | retained 8
+[31] NonSimple-7 | ambient order 108 | subgroups containing mu3 30 | essential 25 | retained 25
+[32] NonSimple-8 | ambient order 72 | subgroups containing mu3 32 | essential 21 | retained 21
+
+CANDIDATES
+----------
+
+[LA-001] special YYZ example: true
+source: Yang--Yu--Zhu Examples 6.1 (5) and 6.11
+combination/source names: [ "YYZ-X5-prime-C48" ]
+references: [ "Yang--Yu--Zhu, Example 6.1 (5)", "Yang--Yu--Zhu, Example 6.11" ]
+GL order: 144 | GL ID: [ 144, 30 ] | GL structure: C48 x C3 | GL abelian invariants: [ 3, 3, 16 ]
+PGL order: 48 | PGL ID: [ 48, 2 ] | PGL structure: C48 | PGL abelian invariants: [ 3, 16 ]
+invariant cubic dimension: 6 | centralizer GL dimension: 6 | family dimension: 0
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(16), 0, 0, 0, 0, 0 ], [ 0, -E(8)^3, 0, 0, 0, 0 ], [ 0, 0, E(4), 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-002] special YYZ example: true
+source: Yang--Yu--Zhu Example 6.1 (8)
+combination/source names: [ "YYZ-X8-prime-C32" ]
+references: [ "Yang--Yu--Zhu, Example 6.1 (8)" ]
+GL order: 96 | GL ID: [ 96, 2 ] | GL structure: C96 | GL abelian invariants: [ 3, 32 ]
+PGL order: 32 | PGL ID: [ 32, 1 ] | PGL structure: C32 | PGL abelian invariants: [ 32 ]
+invariant cubic dimension: 6 | centralizer GL dimension: 6 | family dimension: 0
+determinant-one subgroup order: 3
+sources merged: 1
+generators: 
+[ [ [ E(32), 0, 0, 0, 0, 0 ], [ 0, -E(16)^7, 0, 0, 0, 0 ], [ 0, 0, E(8), 0, 0, 0 ], [ 0, 0, 0, -E(4), 0, 0 ], 
+      [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x4^2*x5", "x5^2*x6", "x6^3" ]
+
+[LA-003] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+K3", "K3+T1+T1+T1", "K3+T2+T1", "K3+T3", "K4+T1+T1", "K4+T2", "K5+T1", "K6", 
+  "NonSimple-1", "NonSimple-2", "NonSimple-3", "NonSimple-4", "NonSimple-5", "NonSimple-6", "NonSimple-7", 
+  "NonSimple-8", "T1+T1+T1+T1+T1+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T2+T2+T2", "T3+T1+T1+T1", "T3+T2+T1", 
+  "T3+T3", "T4+T1+T1", "T4+T2", "T5+T1", "T6", "Y11+T1+T1", "Y11+T2", "Y21+T1", "Y22", "Y31" ]
+references: [  ]
+GL order: 3 | GL ID: [ 3, 1 ] | GL structure: C3 | GL abelian invariants: [ 3 ]
+PGL order: 1 | PGL ID: [ 1, 1 ] | PGL structure: 1 | PGL abelian invariants: [  ]
+invariant cubic dimension: 56 | centralizer GL dimension: 36 | family dimension: 20
+determinant-one subgroup order: 3
+sources merged: 32
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ] ]
+invariant cubic basis: [ "x1^3", "x1^2*x2", "x1^2*x3", "x1^2*x4", "x1^2*x5", "x1^2*x6", "x1*x2^2", "x1*x2*x3", 
+  "x1*x2*x4", "x1*x2*x5", "x1*x2*x6", "x1*x3^2", "x1*x3*x4", "x1*x3*x5", "x1*x3*x6", "x1*x4^2", "x1*x4*x5", 
+  "x1*x4*x6", "x1*x5^2", "x1*x5*x6", "x1*x6^2", "x2^3", "x2^2*x3", "x2^2*x4", "x2^2*x5", "x2^2*x6", "x2*x3^2", 
+  "x2*x3*x4", "x2*x3*x5", "x2*x3*x6", "x2*x4^2", "x2*x4*x5", "x2*x4*x6", "x2*x5^2", "x2*x5*x6", "x2*x6^2", "x3^3", 
+  "x3^2*x4", "x3^2*x5", "x3^2*x6", "x3*x4^2", "x3*x4*x5", "x3*x4*x6", "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^3", 
+  "x4^2*x5", "x4^2*x6", "x4*x5^2", "x4*x5*x6", "x4*x6^2", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-004] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T2+T1", "K3+T3", "K4+T2", "NonSimple-3", "NonSimple-8", "T2+T1+T1+T1+T1", 
+  "T2+T2+T1+T1", "T2+T2+T2", "T3+T1+T1+T1", "T3+T2+T1", "T3+T3", "T4+T1+T1", "T4+T2", "T5+T1", "T6", "Y11+T2", 
+  "Y21+T1", "Y22", "Y31" ]
+references: [  ]
+GL order: 6 | GL ID: [ 6, 2 ] | GL structure: C6 | GL abelian invariants: [ 2, 3 ]
+PGL order: 2 | PGL ID: [ 2, 1 ] | PGL structure: C2 | PGL abelian invariants: [ 2 ]
+invariant cubic dimension: 40 | centralizer GL dimension: 26 | family dimension: 14
+determinant-one subgroup order: 3
+sources merged: 26
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^3", "x1^2*x2", "x1^2*x3", "x1^2*x5", "x1^2*x6", "x1*x2^2", "x1*x2*x3", "x1*x2*x5", 
+  "x1*x2*x6", "x1*x3^2", "x1*x3*x5", "x1*x3*x6", "x1*x4^2", "x1*x5^2", "x1*x5*x6", "x1*x6^2", "x2^3", "x2^2*x3", 
+  "x2^2*x5", "x2^2*x6", "x2*x3^2", "x2*x3*x5", "x2*x3*x6", "x2*x4^2", "x2*x5^2", "x2*x5*x6", "x2*x6^2", "x3^3", 
+  "x3^2*x5", "x3^2*x6", "x3*x4^2", "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^2*x5", "x4^2*x6", "x5^3", "x5^2*x6", 
+  "x5*x6^2", "x6^3" ]
+
+[LA-005] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-2", "NonSimple-3", "NonSimple-4", "NonSimple-5", "NonSimple-6", "NonSimple-7", 
+  "NonSimple-8", "T2+T2+T1+T1", "T2+T2+T2", "T3+T2+T1", "T3+T3", "T4+T2", "Y11+T1+T1", "Y11+T2", "Y22" ]
+references: [  ]
+GL order: 6 | GL ID: [ 6, 2 ] | GL structure: C6 | GL abelian invariants: [ 2, 3 ]
+PGL order: 2 | PGL ID: [ 2, 1 ] | PGL structure: C2 | PGL abelian invariants: [ 2 ]
+invariant cubic dimension: 32 | centralizer GL dimension: 20 | family dimension: 12
+determinant-one subgroup order: 6
+sources merged: 23
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x1^2*x5", "x1^2*x6", "x1*x2*x3", "x1*x3*x4", "x1*x3*x5", "x1*x3*x6", 
+  "x2^3", "x2^2*x4", "x2^2*x5", "x2^2*x6", "x2*x3^2", "x2*x4^2", "x2*x4*x5", "x2*x4*x6", "x2*x5^2", "x2*x5*x6", 
+  "x2*x6^2", "x3^2*x4", "x3^2*x5", "x3^2*x6", "x4^3", "x4^2*x5", "x4^2*x6", "x4*x5^2", "x4*x5*x6", "x4*x6^2", "x5^3", 
+  "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-006] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T1+T1", "T2+T2+T2", "T3+T2+T1", "T3+T3", "T4+T2", "Y22" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 5 ] | GL structure: C6 x C2 | GL abelian invariants: [ 2, 2, 3 ]
+PGL order: 4 | PGL ID: [ 4, 2 ] | PGL structure: C2 x C2 | PGL abelian invariants: [ 2, 2 ]
+invariant cubic dimension: 28 | centralizer GL dimension: 18 | family dimension: 10
+determinant-one subgroup order: 6
+sources merged: 8
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x1^2*x5", "x1^2*x6", "x2^3", "x2^2*x4", "x2^2*x5", "x2^2*x6", 
+  "x2*x3^2", "x2*x4^2", "x2*x4*x5", "x2*x4*x6", "x2*x5^2", "x2*x5*x6", "x2*x6^2", "x3^2*x4", "x3^2*x5", "x3^2*x6", 
+  "x4^3", "x4^2*x5", "x4^2*x6", "x4*x5^2", "x4*x5*x6", "x4*x6^2", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-007] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T1+T1+T1", "K3+T2+T1", "K4+T1+T1", "K5+T1", "NonSimple-7", "T1+T1+T1+T1+T1+T1", 
+  "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T3+T1+T1+T1", "T3+T2+T1", "T4+T1+T1", "T5+T1", "Y11+T1+T1", "Y21+T1" ]
+references: [  ]
+GL order: 9 | GL ID: [ 9, 2 ] | GL structure: C3 x C3 | GL abelian invariants: [ 3, 3 ]
+PGL order: 3 | PGL ID: [ 3, 1 ] | PGL structure: C3 | PGL abelian invariants: [ 3 ]
+invariant cubic dimension: 36 | centralizer GL dimension: 26 | family dimension: 10
+determinant-one subgroup order: 3
+sources merged: 31
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^3", "x1^2*x2", "x1^2*x3", "x1^2*x5", "x1^2*x6", "x1*x2^2", "x1*x2*x3", "x1*x2*x5", 
+  "x1*x2*x6", "x1*x3^2", "x1*x3*x5", "x1*x3*x6", "x1*x5^2", "x1*x5*x6", "x1*x6^2", "x2^3", "x2^2*x3", "x2^2*x5", 
+  "x2^2*x6", "x2*x3^2", "x2*x3*x5", "x2*x3*x6", "x2*x5^2", "x2*x5*x6", "x2*x6^2", "x3^3", "x3^2*x5", "x3^2*x6", 
+  "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^3", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-008] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-1", "NonSimple-3", "NonSimple-5", "NonSimple-6", "NonSimple-8", "T2+T2+T2", 
+  "Y11+T2" ]
+references: [  ]
+GL order: 6 | GL ID: [ 6, 2 ] | GL structure: C6 | GL abelian invariants: [ 2, 3 ]
+PGL order: 2 | PGL ID: [ 2, 1 ] | PGL structure: C2 | PGL abelian invariants: [ 2 ]
+invariant cubic dimension: 28 | centralizer GL dimension: 18 | family dimension: 10
+determinant-one subgroup order: 3
+sources merged: 11
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1^2*x6", "x1*x2*x4", "x1*x2*x5", "x1*x3*x4", "x1*x3*x5", "x1*x4*x6", 
+  "x1*x5*x6", "x2^3", "x2^2*x3", "x2^2*x6", "x2*x3^2", "x2*x3*x6", "x2*x4^2", "x2*x4*x5", "x2*x5^2", "x2*x6^2", 
+  "x3^3", "x3^2*x6", "x3*x4^2", "x3*x4*x5", "x3*x5^2", "x3*x6^2", "x4^2*x6", "x4*x5*x6", "x5^2*x6", "x6^3" ]
+
+[LA-009] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-3", "NonSimple-8", "T2+T2+T2", "Y11+T2" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 5 ] | GL structure: C6 x C2 | GL abelian invariants: [ 2, 2, 3 ]
+PGL order: 4 | PGL ID: [ 4, 2 ] | PGL structure: C2 x C2 | PGL abelian invariants: [ 2, 2 ]
+invariant cubic dimension: 22 | centralizer GL dimension: 14 | family dimension: 8
+determinant-one subgroup order: 6
+sources merged: 8
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1^2*x6", "x2^3", "x2^2*x3", "x2^2*x6", "x2*x3^2", "x2*x3*x6", 
+  "x2*x4^2", "x2*x4*x5", "x2*x5^2", "x2*x6^2", "x3^3", "x3^2*x6", "x3*x4^2", "x3*x4*x5", "x3*x5^2", "x3*x6^2", 
+  "x4^2*x6", "x4*x5*x6", "x5^2*x6", "x6^3" ]
+
+[LA-010] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-4", "NonSimple-7", "NonSimple-8", "T2+T2+T2" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 5 ] | GL structure: C6 x C2 | GL abelian invariants: [ 2, 2, 3 ]
+PGL order: 4 | PGL ID: [ 4, 2 ] | PGL structure: C2 x C2 | PGL abelian invariants: [ 2, 2 ]
+invariant cubic dimension: 20 | centralizer GL dimension: 12 | family dimension: 8
+determinant-one subgroup order: 12
+sources merged: 4
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1^2*x6", "x1*x4*x5", "x2^3", "x2^2*x3", "x2^2*x6", "x2*x3^2", 
+  "x2*x3*x6", "x2*x4^2", "x2*x5^2", "x2*x6^2", "x3^3", "x3^2*x6", "x3*x4^2", "x3*x5^2", "x3*x6^2", "x4^2*x6", 
+  "x5^2*x6", "x6^3" ]
+
+[LA-011] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T1+T1+T1+T1+T1+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T2+T2+T2" ]
+references: [  ]
+GL order: 9 | GL ID: [ 9, 2 ] | GL structure: C3 x C3 | GL abelian invariants: [ 3, 3 ]
+PGL order: 3 | PGL ID: [ 3, 1 ] | PGL structure: C3 | PGL abelian invariants: [ 3 ]
+invariant cubic dimension: 20 | centralizer GL dimension: 12 | family dimension: 8
+determinant-one subgroup order: 9
+sources merged: 20
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^3", "x1^2*x2", "x1*x2^2", "x1*x3*x4", "x1*x3*x6", "x1*x4*x5", "x1*x5*x6", "x2^3", 
+  "x2*x3*x4", "x2*x3*x6", "x2*x4*x5", "x2*x5*x6", "x3^3", "x3^2*x5", "x3*x5^2", "x4^3", "x4^2*x6", "x4*x6^2", "x5^3", 
+  "x6^3" ]
+
+[LA-012] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T2" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 15 ] | GL structure: C6 x C2 x C2 | GL abelian invariants: [ 2, 2, 2, 3 ]
+PGL order: 8 | PGL ID: [ 8, 5 ] | PGL structure: C2 x C2 x C2 | PGL abelian invariants: [ 2, 2, 2 ]
+invariant cubic dimension: 19 | centralizer GL dimension: 12 | family dimension: 7
+determinant-one subgroup order: 12
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x1^2*x6", "x2^3", "x2^2*x4", "x2^2*x6", "x2*x3^2", "x2*x4^2", 
+  "x2*x4*x6", "x2*x5^2", "x2*x6^2", "x3^2*x4", "x3^2*x6", "x4^3", "x4^2*x6", "x4*x5^2", "x4*x6^2", "x5^2*x6", "x6^3" ]
+
+[LA-013] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T2+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T3+T1+T1+T1", "T3+T2+T1", "T4+T1+T1", 
+  "T5+T1", "Y21+T1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 25 | centralizer GL dimension: 18 | family dimension: 7
+determinant-one subgroup order: 3
+sources merged: 18
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], [ 0, 0, 0, E(3)^2, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1^2*x4", "x1^2*x6", "x2^3", "x2^2*x3", "x2^2*x4", "x2^2*x6", 
+  "x2*x3^2", "x2*x3*x4", "x2*x3*x6", "x2*x4^2", "x2*x4*x6", "x2*x6^2", "x3^3", "x3^2*x4", "x3^2*x6", "x3*x4^2", 
+  "x3*x4*x6", "x3*x6^2", "x4^3", "x4^2*x6", "x4*x6^2", "x5^3", "x6^3" ]
+
+[LA-014] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T3", "T3+T1+T1+T1", "T3+T2+T1", "T3+T3", "T4+T1+T1", "T4+T2", "T5+T1", "T6", "Y31" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 2 ] | GL structure: C12 | GL abelian invariants: [ 3, 4 ]
+PGL order: 4 | PGL ID: [ 4, 1 ] | PGL structure: C4 | PGL abelian invariants: [ 4 ]
+invariant cubic dimension: 25 | centralizer GL dimension: 18 | family dimension: 7
+determinant-one subgroup order: 3
+sources merged: 10
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x4", "x2^2*x5", "x2^2*x6", "x3^3", "x3^2*x4", "x3^2*x5", 
+  "x3^2*x6", "x3*x4^2", "x3*x4*x5", "x3*x4*x6", "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^3", "x4^2*x5", "x4^2*x6", 
+  "x4*x5^2", "x4*x5*x6", "x4*x6^2", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-015] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-3", "T3+T2+T1", "T3+T3", "T4+T2", "Y21+T1" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 2 ] | GL structure: C12 | GL abelian invariants: [ 3, 4 ]
+PGL order: 4 | PGL ID: [ 4, 1 ] | PGL structure: C4 | PGL abelian invariants: [ 4 ]
+invariant cubic dimension: 21 | centralizer GL dimension: 14 | family dimension: 7
+determinant-one subgroup order: 3
+sources merged: 7
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x2^2*x3", "x2^2*x5", "x2^2*x6", "x2*x3*x4", "x2*x4*x5", "x2*x4*x6", 
+  "x3^3", "x3^2*x5", "x3^2*x6", "x3*x4^2", "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^2*x5", "x4^2*x6", "x5^3", "x5^2*x6", 
+  "x5*x6^2", "x6^3" ]
+
+[LA-016] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T1+T1+T1", "K3+T2+T1", "T1+T1+T1+T1+T1+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1", 
+  "T3+T1+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 9 | GL ID: [ 9, 2 ] | GL structure: C3 x C3 | GL abelian invariants: [ 3, 3 ]
+PGL order: 3 | PGL ID: [ 3, 1 ] | PGL structure: C3 | PGL abelian invariants: [ 3 ]
+invariant cubic dimension: 21 | centralizer GL dimension: 14 | family dimension: 7
+determinant-one subgroup order: 3
+sources merged: 88
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ] ]
+invariant cubic basis: [ "x1^3", "x1^2*x3", "x1^2*x5", "x1*x2*x4", "x1*x3^2", "x1*x3*x5", "x1*x4*x6", "x1*x5^2", 
+  "x2^3", "x2^2*x6", "x2*x3*x4", "x2*x4*x5", "x2*x6^2", "x3^3", "x3^2*x5", "x3*x4*x6", "x3*x5^2", "x4^3", "x4*x5*x6", 
+  "x5^3", "x6^3" ]
+
+[LA-017] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-7", "T2+T2+T1+T1", "T3+T2+T1", "Y11+T1+T1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 20 | centralizer GL dimension: 14 | family dimension: 6
+determinant-one subgroup order: 6
+sources merged: 11
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, E(3) ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x1^2*x5", "x1*x2*x3", "x1*x3*x4", "x1*x3*x5", "x2^3", "x2^2*x4", 
+  "x2^2*x5", "x2*x3^2", "x2*x4^2", "x2*x4*x5", "x2*x5^2", "x3^2*x4", "x3^2*x5", "x4^3", "x4^2*x5", "x4*x5^2", "x5^3", 
+  "x6^3" ]
+
+[LA-018] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-5", "NonSimple-6", "T3+T3", "Y11+T2", "Y22" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 2 ] | GL structure: C12 | GL abelian invariants: [ 3, 4 ]
+PGL order: 4 | PGL ID: [ 4, 1 ] | PGL structure: C4 | PGL abelian invariants: [ 4 ]
+invariant cubic dimension: 16 | centralizer GL dimension: 10 | family dimension: 6
+determinant-one subgroup order: 12
+sources merged: 5
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -E(4), 0, 0 ], 
+      [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x5", "x1*x3*x4", "x1*x4*x6", "x2^2*x3", "x2^2*x6", "x2*x3*x5", "x2*x4^2", 
+  "x2*x5*x6", "x3^3", "x3^2*x6", "x3*x5^2", "x3*x6^2", "x4^2*x5", "x5^2*x6", "x6^3" ]
+
+[LA-019] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-5", "NonSimple-6", "NonSimple-8" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 5 ] | GL structure: C6 x C2 | GL abelian invariants: [ 2, 2, 3 ]
+PGL order: 4 | PGL ID: [ 4, 2 ] | PGL structure: C2 x C2 | PGL abelian invariants: [ 2, 2 ]
+invariant cubic dimension: 16 | centralizer GL dimension: 10 | family dimension: 6
+determinant-one subgroup order: 6
+sources merged: 5
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, -1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1*x4*x5", "x1*x4*x6", "x2^3", "x2^2*x3", "x2*x3^2", "x2*x4^2", 
+  "x2*x5^2", "x2*x5*x6", "x2*x6^2", "x3^3", "x3*x4^2", "x3*x5^2", "x3*x5*x6", "x3*x6^2" ]
+
+[LA-020] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+K3", "K6", "NonSimple-1" ]
+references: [  ]
+GL order: 9 | GL ID: [ 9, 1 ] | GL structure: C9 | GL abelian invariants: [ 9 ]
+PGL order: 3 | PGL ID: [ 3, 1 ] | PGL structure: C3 | PGL abelian invariants: [ 3 ]
+invariant cubic dimension: 18 | centralizer GL dimension: 12 | family dimension: 6
+determinant-one subgroup order: 3
+sources merged: 5
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(9)^4, 0, 0, 0, 0, 0 ], [ 0, -E(9)^4-E(9)^7, 0, 0, 0, 0 ], [ 0, 0, E(9)^7, 0, 0, 0 ], 
+      [ 0, 0, 0, -E(9)^4-E(9)^7, 0, 0 ], [ 0, 0, 0, 0, E(9)^7, 0 ], [ 0, 0, 0, 0, 0, E(9)^4 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x1*x2*x6", "x1*x3^2", "x1*x3*x5", "x1*x4*x6", "x1*x5^2", "x2^2*x3", 
+  "x2^2*x5", "x2*x3*x4", "x2*x4*x5", "x2*x6^2", "x3^2*x6", "x3*x4^2", "x3*x5*x6", "x4^2*x5", "x4*x6^2", "x5^2*x6" ]
+
+[LA-021] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 14 ] | GL structure: C6 x C6 | GL abelian invariants: [ 2, 2, 3, 3 ]
+PGL order: 12 | PGL ID: [ 12, 5 ] | PGL structure: C6 x C2 | PGL abelian invariants: [ 2, 2, 3 ]
+invariant cubic dimension: 17 | centralizer GL dimension: 12 | family dimension: 5
+determinant-one subgroup order: 6
+sources merged: 3
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], 
+      [ 0, 0, 0, E(3), 0, 0 ], [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x1^2*x5", "x2^3", "x2^2*x3", "x2^2*x5", "x2*x3^2", "x2*x3*x5", 
+  "x2*x4^2", "x2*x5^2", "x3^3", "x3^2*x5", "x3*x4^2", "x3*x5^2", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-022] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T2+T1", "T3+T3", "T4+T2" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 9 ] | GL structure: C12 x C2 | GL abelian invariants: [ 2, 3, 4 ]
+PGL order: 8 | PGL ID: [ 8, 2 ] | PGL structure: C4 x C2 | PGL abelian invariants: [ 2, 4 ]
+invariant cubic dimension: 17 | centralizer GL dimension: 12 | family dimension: 5
+determinant-one subgroup order: 6
+sources merged: 4
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x5", "x2^2*x6", "x3^3", "x3^2*x5", "x3^2*x6", "x3*x4^2", 
+  "x3*x5^2", "x3*x5*x6", "x3*x6^2", "x4^2*x5", "x4^2*x6", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-023] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-8" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 15 ] | GL structure: C6 x C2 x C2 | GL abelian invariants: [ 2, 2, 2, 3 ]
+PGL order: 8 | PGL ID: [ 8, 5 ] | PGL structure: C2 x C2 x C2 | PGL abelian invariants: [ 2, 2, 2 ]
+invariant cubic dimension: 13 | centralizer GL dimension: 8 | family dimension: 5
+determinant-one subgroup order: 12
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x5", "x1^2*x6", "x1*x2*x3", "x2^2*x5", "x2^2*x6", "x3^2*x5", "x3^2*x6", "x4^2*x5", 
+  "x4^2*x6", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-024] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T3+T1+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 15 | centralizer GL dimension: 10 | family dimension: 5
+determinant-one subgroup order: 3
+sources merged: 20
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, E(3)^2, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x2^3", "x2^2*x3", "x2*x3^2", "x2*x4*x5", "x2*x4*x6", "x3^3", 
+  "x3*x4*x5", "x3*x4*x6", "x4^3", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-025] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-7" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 14 ] | GL structure: C6 x C6 | GL abelian invariants: [ 2, 2, 3, 3 ]
+PGL order: 12 | PGL ID: [ 12, 5 ] | PGL structure: C6 x C2 | PGL abelian invariants: [ 2, 2, 3 ]
+invariant cubic dimension: 12 | centralizer GL dimension: 8 | family dimension: 4
+determinant-one subgroup order: 12
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, E(3) ] ] ]
+invariant cubic basis: [ "x1^2*x4", "x1^2*x5", "x1*x2*x3", "x2^2*x4", "x2^2*x5", "x3^2*x4", "x3^2*x5", "x4^3", 
+  "x4^2*x5", "x4*x5^2", "x5^3", "x6^3" ]
+
+[LA-026] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T1+T1+T1+T1+T1+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1" ]
+references: [  ]
+GL order: 27 | GL ID: [ 27, 5 ] | GL structure: C3 x C3 x C3 | GL abelian invariants: [ 3, 3, 3 ]
+PGL order: 9 | PGL ID: [ 9, 2 ] | PGL structure: C3 x C3 | PGL abelian invariants: [ 3, 3 ]
+invariant cubic dimension: 14 | centralizer GL dimension: 10 | family dimension: 4
+determinant-one subgroup order: 9
+sources merged: 104
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3)^2, 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^3", "x2^3", "x2^2*x5", "x2*x3*x4", "x2*x3*x6", "x2*x5^2", "x3^3", "x3*x4*x5", 
+  "x3*x5*x6", "x4^3", "x4^2*x6", "x4*x6^2", "x5^3", "x6^3" ]
+
+[LA-027] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-3" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 9 ] | GL structure: C12 x C2 | GL abelian invariants: [ 2, 3, 4 ]
+PGL order: 8 | PGL ID: [ 8, 2 ] | PGL structure: C4 x C2 | PGL abelian invariants: [ 2, 4 ]
+invariant cubic dimension: 12 | centralizer GL dimension: 8 | family dimension: 4
+determinant-one subgroup order: 6
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x6", "x2*x4*x5", "x3^3", "x3^2*x6", "x3*x4^2", "x3*x5^2", 
+  "x3*x6^2", "x4^2*x6", "x5^2*x6", "x6^3" ]
+
+[LA-028] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T3", "Y22" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 9 ] | GL structure: C12 x C2 | GL abelian invariants: [ 2, 3, 4 ]
+PGL order: 8 | PGL ID: [ 8, 2 ] | PGL structure: C4 x C2 | PGL abelian invariants: [ 2, 4 ]
+invariant cubic dimension: 14 | centralizer GL dimension: 10 | family dimension: 4
+determinant-one subgroup order: 12
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -E(4), 0, 0 ], 
+      [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x5", "x2^2*x3", "x2^2*x6", "x2*x3*x5", "x2*x4^2", "x2*x5*x6", "x3^3", 
+  "x3^2*x6", "x3*x5^2", "x3*x6^2", "x4^2*x5", "x5^2*x6", "x6^3" ]
+
+[LA-029] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "K3+T2+T1", "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 16 | centralizer GL dimension: 12 | family dimension: 4
+determinant-one subgroup order: 3
+sources merged: 10
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], [ 0, 0, 0, E(3)^2, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^3", "x2*x3*x5", "x2*x4*x5", "x2*x5*x6", "x3^3", "x3^2*x4", "x3^2*x6", 
+  "x3*x4^2", "x3*x4*x6", "x3*x6^2", "x4^3", "x4^2*x6", "x4*x6^2", "x5^3", "x6^3" ]
+
+[LA-030] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T1+T1+T1+T1", "T2+T2+T1+T1", "T2+T2+T2" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 14 | centralizer GL dimension: 10 | family dimension: 4
+determinant-one subgroup order: 9
+sources merged: 8
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^3", "x2*x3*x4", "x2*x3*x5", "x2*x4*x6", "x2*x5*x6", "x3^3", "x3^2*x6", 
+  "x3*x6^2", "x4^3", "x4^2*x5", "x4*x5^2", "x5^3", "x6^3" ]
+
+[LA-031] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 12 | centralizer GL dimension: 8 | family dimension: 4
+determinant-one subgroup order: 6
+sources merged: 5
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x5", "x1*x3*x6", "x2^3", "x2^2*x5", "x2*x4*x6", "x2*x5^2", "x3^2*x4", 
+  "x4^3", "x4*x5*x6", "x5^3", "x6^3" ]
+
+[LA-032] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T2" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 5 ] | GL structure: C6 x C3 | GL abelian invariants: [ 2, 3, 3 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 6 | family dimension: 4
+determinant-one subgroup order: 9
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, E(3)^2, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1*x3*x6", "x1*x4*x5", "x2^3", "x2*x3*x5", "x2*x4*x6", "x3^2*x4", "x4^3", 
+  "x5^2*x6", "x6^3" ]
+
+[LA-033] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-2", "NonSimple-4", "NonSimple-5", "NonSimple-6" ]
+references: [  ]
+GL order: 12 | GL ID: [ 12, 2 ] | GL structure: C12 | GL abelian invariants: [ 3, 4 ]
+PGL order: 4 | PGL ID: [ 4, 1 ] | PGL structure: C4 | PGL abelian invariants: [ 4 ]
+invariant cubic dimension: 16 | centralizer GL dimension: 12 | family dimension: 4
+determinant-one subgroup order: 6
+sources merged: 4
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, E(4), 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x5", "x1*x2*x4", "x1*x4*x5", "x2^2*x3", "x2^2*x6", "x2*x3*x5", "x2*x4^2", 
+  "x2*x5*x6", "x3^3", "x3^2*x6", "x3*x5^2", "x3*x6^2", "x4^2*x5", "x5^2*x6", "x6^3" ]
+
+[LA-034] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T1+T1+T1", "T3+T2+T1", "T4+T1+T1", "T5+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 8 ] | GL structure: C12 x C3 | GL abelian invariants: [ 3, 3, 4 ]
+PGL order: 12 | PGL ID: [ 12, 2 ] | PGL structure: C12 | PGL abelian invariants: [ 3, 4 ]
+invariant cubic dimension: 15 | centralizer GL dimension: 12 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 7
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x4", "x2^2*x5", "x3^3", "x3^2*x4", "x3^2*x5", "x3*x4^2", 
+  "x3*x4*x5", "x3*x5^2", "x4^3", "x4^2*x5", "x4*x5^2", "x5^3", "x6^3" ]
+
+[LA-035] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T2+T1", "Y21+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 8 ] | GL structure: C12 x C3 | GL abelian invariants: [ 3, 3, 4 ]
+PGL order: 12 | PGL ID: [ 12, 2 ] | PGL structure: C12 | PGL abelian invariants: [ 3, 4 ]
+invariant cubic dimension: 13 | centralizer GL dimension: 10 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x4", "x2^2*x3", "x2^2*x5", "x2*x3*x4", "x2*x4*x5", "x3^3", "x3^2*x5", 
+  "x3*x4^2", "x3*x5^2", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-036] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T2+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 14 ] | GL structure: C6 x C6 | GL abelian invariants: [ 2, 2, 3, 3 ]
+PGL order: 12 | PGL ID: [ 12, 5 ] | PGL structure: C6 x C2 | PGL abelian invariants: [ 2, 2, 3 ]
+invariant cubic dimension: 11 | centralizer GL dimension: 8 | family dimension: 3
+determinant-one subgroup order: 6
+sources merged: 5
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], 
+      [ 0, 0, 0, E(3), 0, 0 ], [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1^2*x3", "x2^3", "x2^2*x3", "x2*x3^2", "x2*x5*x6", "x3^3", "x3*x5*x6", 
+  "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-037] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T1+T1+T1+T1+T1+T1" ]
+references: [  ]
+GL order: 27 | GL ID: [ 27, 5 ] | GL structure: C3 x C3 x C3 | GL abelian invariants: [ 3, 3, 3 ]
+PGL order: 9 | PGL ID: [ 9, 2 ] | PGL structure: C3 x C3 | PGL abelian invariants: [ 3, 3 ]
+invariant cubic dimension: 9 | centralizer GL dimension: 6 | family dimension: 3
+determinant-one subgroup order: 9
+sources merged: 120
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, E(3)^2, 0, 0 ], 
+      [ 0, 0, 0, 0, E(3)^2, 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^3", "x1*x2*x5", "x2^3", "x2*x3*x4", "x3^3", "x3*x5*x6", "x4^3", "x5^3", "x6^3" ]
+
+[LA-038] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T4+T1+T1", "T4+T2", "T5+T1", "T6" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 2 ] | GL structure: C24 | GL abelian invariants: [ 3, 8 ]
+PGL order: 8 | PGL ID: [ 8, 1 ] | PGL structure: C8 | PGL abelian invariants: [ 8 ]
+invariant cubic dimension: 15 | centralizer GL dimension: 12 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 4
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x3^2*x5", "x3^2*x6", "x4^3", "x4^2*x5", "x4^2*x6", 
+  "x4*x5^2", "x4*x5*x6", "x4*x6^2", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-039] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T4+T2", "Y31" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 2 ] | GL structure: C24 | GL abelian invariants: [ 3, 8 ]
+PGL order: 8 | PGL ID: [ 8, 1 ] | PGL structure: C8 | PGL abelian invariants: [ 8 ]
+invariant cubic dimension: 13 | centralizer GL dimension: 10 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(8), 0, 0, 0, 0, 0 ], [ 0, -E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x4", "x3^2*x5", "x3^2*x6", "x3*x4*x5", "x3*x4*x6", "x4^2*x5", 
+  "x4^2*x6", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-040] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "Y21+T1" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 2 ] | GL structure: C24 | GL abelian invariants: [ 3, 8 ]
+PGL order: 8 | PGL ID: [ 8, 1 ] | PGL structure: C8 | PGL abelian invariants: [ 8 ]
+invariant cubic dimension: 11 | centralizer GL dimension: 8 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -E(4), 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x4", "x2*x3*x5", "x2*x3*x6", "x3^2*x4", "x4^2*x5", "x4^2*x6", "x5^3", 
+  "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-041] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-1" ]
+references: [  ]
+GL order: 18 | GL ID: [ 18, 2 ] | GL structure: C18 | GL abelian invariants: [ 2, 9 ]
+PGL order: 6 | PGL ID: [ 6, 2 ] | PGL structure: C6 | PGL abelian invariants: [ 2, 3 ]
+invariant cubic dimension: 9 | centralizer GL dimension: 6 | family dimension: 3
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(9)^2, 0, 0, 0, 0, 0 ], [ 0, E(9)^5, 0, 0, 0, 0 ], [ 0, 0, -E(9)^2-E(9)^5, 0, 0, 0 ], 
+      [ 0, 0, 0, -E(9)^2-E(9)^5, 0, 0 ], [ 0, 0, 0, 0, E(9)^2, 0 ], [ 0, 0, 0, 0, 0, E(9)^5 ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, -1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1*x3^2", "x1*x4^2", "x1*x5*x6", "x2^2*x3", "x2*x4*x6", "x2*x5^2", "x3*x4*x5", 
+  "x3*x6^2" ]
+
+[LA-042] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T2+T1" ]
+references: [  ]
+GL order: 72 | GL ID: [ 72, 36 ] | GL structure: C12 x C6 | GL abelian invariants: [ 2, 3, 3, 4 ]
+PGL order: 24 | PGL ID: [ 24, 9 ] | PGL structure: C12 x C2 | PGL abelian invariants: [ 2, 3, 4 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 8 | family dimension: 2
+determinant-one subgroup order: 6
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], 
+      [ 0, 0, 0, E(3), 0, 0 ], [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x5", "x3^3", "x3^2*x5", "x3*x4^2", "x3*x5^2", "x4^2*x5", "x5^3", 
+  "x6^3" ]
+
+[LA-043] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T2+T1+T1+T1+T1", "T2+T2+T1+T1" ]
+references: [  ]
+GL order: 54 | GL ID: [ 54, 15 ] | GL structure: C6 x C3 x C3 | GL abelian invariants: [ 2, 3, 3, 3 ]
+PGL order: 18 | PGL ID: [ 18, 5 ] | PGL structure: C6 x C3 | PGL abelian invariants: [ 2, 3, 3 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 8 | family dimension: 2
+determinant-one subgroup order: 9
+sources merged: 16
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, E(3)^2 ] ], [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, E(3)^2, 0 ], [ 0, 0, 0, 0, 0, E(3)^2 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^3", "x2*x3*x5", "x2*x4*x5", "x3^3", "x3^2*x4", "x3*x4^2", "x4^3", "x5^3", 
+  "x6^3" ]
+
+[LA-044] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T3" ]
+references: [  ]
+GL order: 48 | GL ID: [ 48, 20 ] | GL structure: C12 x C4 | GL abelian invariants: [ 3, 4, 4 ]
+PGL order: 16 | PGL ID: [ 16, 2 ] | PGL structure: C4 x C4 | PGL abelian invariants: [ 4, 4 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 8 | family dimension: 2
+determinant-one subgroup order: 12
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -E(4), 0, 0 ], [ 0, 0, 0, 0, -1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2^2*x6", "x3^3", "x3^2*x6", "x3*x5^2", "x3*x6^2", "x4^2*x5", 
+  "x5^2*x6", "x6^3" ]
+
+[LA-045] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T4+T2" ]
+references: [  ]
+GL order: 48 | GL ID: [ 48, 23 ] | GL structure: C24 x C2 | GL abelian invariants: [ 2, 3, 8 ]
+PGL order: 16 | PGL ID: [ 16, 5 ] | PGL structure: C8 x C2 | PGL abelian invariants: [ 2, 8 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 8 | family dimension: 2
+determinant-one subgroup order: 6
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x3^2*x6", "x4^3", "x4^2*x6", "x4*x5^2", "x4*x6^2", 
+  "x5^2*x6", "x6^3" ]
+
+[LA-046] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T1+T1+T1", "T3+T2+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 8 ] | GL structure: C12 x C3 | GL abelian invariants: [ 3, 3, 4 ]
+PGL order: 12 | PGL ID: [ 12, 2 ] | PGL structure: C12 | PGL abelian invariants: [ 3, 4 ]
+invariant cubic dimension: 10 | centralizer GL dimension: 8 | family dimension: 2
+determinant-one subgroup order: 3
+sources merged: 4
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^3", "x3*x4*x5", "x3*x4*x6", "x4^3", "x5^3", "x5^2*x6", "x5*x6^2", 
+  "x6^3" ]
+
+[LA-047] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T2+T1" ]
+references: [  ]
+GL order: 36 | GL ID: [ 36, 8 ] | GL structure: C12 x C3 | GL abelian invariants: [ 3, 3, 4 ]
+PGL order: 12 | PGL ID: [ 12, 2 ] | PGL structure: C12 | PGL abelian invariants: [ 3, 4 ]
+invariant cubic dimension: 8 | centralizer GL dimension: 6 | family dimension: 2
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x2*x4*x6", "x3^3", "x3*x5*x6", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-048] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "NonSimple-5", "NonSimple-6" ]
+references: [  ]
+GL order: 24 | GL ID: [ 24, 9 ] | GL structure: C12 x C2 | GL abelian invariants: [ 2, 3, 4 ]
+PGL order: 8 | PGL ID: [ 8, 2 ] | PGL structure: C4 x C2 | PGL abelian invariants: [ 2, 4 ]
+invariant cubic dimension: 8 | centralizer GL dimension: 6 | family dimension: 2
+determinant-one subgroup order: 12
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, -1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, -E(4) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, -1, 0 ], 
+      [ 0, 0, 0, 0, 0, -1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x1*x5*x6", "x2^2*x3", "x2*x4*x5", "x2*x6^2", "x3^3", "x3*x4^2", "x3*x5^2" ]
+
+[LA-049] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T3+T2+T1" ]
+references: [  ]
+GL order: 72 | GL ID: [ 72, 36 ] | GL structure: C12 x C6 | GL abelian invariants: [ 2, 3, 3, 4 ]
+PGL order: 24 | PGL ID: [ 24, 9 ] | PGL structure: C12 x C2 | PGL abelian invariants: [ 2, 3, 4 ]
+invariant cubic dimension: 7 | centralizer GL dimension: 6 | family dimension: 1
+determinant-one subgroup order: 6
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ 1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(3)^2, 0, 0, 0, 0, 0 ], [ 0, E(3)^2, 0, 0, 0, 0 ], [ 0, 0, E(3)^2, 0, 0, 0 ], 
+      [ 0, 0, 0, E(3), 0, 0 ], [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^3", "x3*x5*x6", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-050] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T4+T1+T1", "T5+T1" ]
+references: [  ]
+GL order: 72 | GL ID: [ 72, 14 ] | GL structure: C24 x C3 | GL abelian invariants: [ 3, 3, 8 ]
+PGL order: 24 | PGL ID: [ 24, 2 ] | PGL structure: C24 | PGL abelian invariants: [ 3, 8 ]
+invariant cubic dimension: 9 | centralizer GL dimension: 8 | family dimension: 1
+determinant-one subgroup order: 3
+sources merged: 3
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x3^2*x5", "x4^3", "x4^2*x5", "x4*x5^2", "x5^3", "x6^3" ]
+
+[LA-051] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "Y21+T1" ]
+references: [  ]
+GL order: 72 | GL ID: [ 72, 14 ] | GL structure: C24 x C3 | GL abelian invariants: [ 3, 3, 8 ]
+PGL order: 24 | PGL ID: [ 24, 2 ] | PGL structure: C24 | PGL abelian invariants: [ 3, 8 ]
+invariant cubic dimension: 7 | centralizer GL dimension: 6 | family dimension: 1
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -E(4), 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x4", "x2*x3*x5", "x3^2*x4", "x4^2*x5", "x5^3", "x6^3" ]
+
+[LA-052] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "T5+T1", "T6" ]
+references: [  ]
+GL order: 48 | GL ID: [ 48, 2 ] | GL structure: C48 | GL abelian invariants: [ 3, 16 ]
+PGL order: 16 | PGL ID: [ 16, 1 ] | PGL structure: C16 | PGL abelian invariants: [ 16 ]
+invariant cubic dimension: 9 | centralizer GL dimension: 8 | family dimension: 1
+determinant-one subgroup order: 3
+sources merged: 2
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -E(16)^3, 0, 0, 0, 0, 0 ], [ 0, -E(8), 0, 0, 0, 0 ], [ 0, 0, -E(4), 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(8)^3, 0, 0, 0, 0, 0 ], [ 0, E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ -E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ],
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x4", "x4^2*x5", "x4^2*x6", "x5^3", "x5^2*x6", "x5*x6^2", "x6^3" ]
+
+[LA-053] special YYZ example: false
+source: Peng--Zheng Theorem 4.2 maximal types
+combination/source names: [ "Y31" ]
+references: [  ]
+GL order: 48 | GL ID: [ 48, 2 ] | GL structure: C48 | GL abelian invariants: [ 3, 16 ]
+PGL order: 16 | PGL ID: [ 16, 1 ] | PGL structure: C16 | PGL abelian invariants: [ 16 ]
+invariant cubic dimension: 7 | centralizer GL dimension: 6 | family dimension: 1
+determinant-one subgroup order: 3
+sources merged: 1
+generators: [ [ [ E(3), 0, 0, 0, 0, 0 ], [ 0, E(3), 0, 0, 0, 0 ], [ 0, 0, E(3), 0, 0, 0 ], [ 0, 0, 0, E(3), 0, 0 ], 
+      [ 0, 0, 0, 0, E(3), 0 ], [ 0, 0, 0, 0, 0, E(3) ] ], 
+  [ [ -1, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], 
+      [ 0, 0, 0, 0, 0, 1 ] ], [ [ E(4), 0, 0, 0, 0, 0 ], [ 0, -1, 0, 0, 0, 0 ], [ 0, 0, 1, 0, 0, 0 ], 
+      [ 0, 0, 0, 1, 0, 0 ], [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(8), 0, 0, 0, 0, 0 ], [ 0, -E(4), 0, 0, 0, 0 ], [ 0, 0, -1, 0, 0, 0 ], [ 0, 0, 0, -1, 0, 0 ], 
+      [ 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ], 
+  [ [ E(16), 0, 0, 0, 0, 0 ], [ 0, -E(8)^3, 0, 0, 0, 0 ], [ 0, 0, E(4), 0, 0, 0 ], [ 0, 0, 0, -E(4), 0, 0 ], 
+      [ 0, 0, 0, 0, -1, 0 ], [ 0, 0, 0, 0, 0, 1 ] ] ]
+invariant cubic basis: [ "x1^2*x2", "x2^2*x3", "x3^2*x5", "x3*x4*x6", "x4^2*x5", "x5^2*x6", "x6^3" ]

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  Please cite Jie Fu and Shihao Wang equally when using these computational
+  materials. Cite the DOI of the specific archived release when available.
+type: software
+title: Computational materials for automorphism groups of smooth cubic threefolds and fourfolds
+authors:
+  - family-names: Fu
+    given-names: Jie
+    affiliation: Qiuzhen College, Tsinghua University
+    orcid: https://orcid.org/0009-0004-8622-612X
+  - family-names: Wang
+    given-names: Shihao
+    affiliation: Qiuzhen College, Tsinghua University
+    orcid: https://orcid.org/0009-0007-1476-3104
+abstract: >-
+  Source programs, saved computations, and result catalogues for studies of
+  automorphism groups of smooth cubic threefolds and cubic fourfolds. The
+  materials include abstract group bounds, lattice computations,
+  representation classification, and fourfold and threefold family records.
+keywords:
+  - cubic threefolds
+  - cubic fourfolds
+  - automorphism groups
+  - GAP
+  - OSCAR
+repository-code: https://github.com/vegetablefj/autcub4fold

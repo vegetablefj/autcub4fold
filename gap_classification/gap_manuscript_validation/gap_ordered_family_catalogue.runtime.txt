@@ -1,0 +1,6 @@
+script = gap_ordered_family_catalogue.g
+started_utc = 2026-09-14T01:58:17.113035+00:00
+invocation = GAP 4.15.1 -r -q -b gap_classification/gap_manuscript_validation/gap_ordered_family_catalogue.g
+command = [historical local absolute paths redacted]
+exit_code = 0
+elapsed_seconds = 66.225

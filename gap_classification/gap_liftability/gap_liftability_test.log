@@ -1,0 +1,9 @@
+Small strict-extension tests
+GAP version: 4.15.1
+1. H-ID [ 9, 1 ]; |G| = 3; liftable = true; F-liftable = false
+2. H-ID [ 27, 3 ]; |G| = 9; liftable = false; F-liftable = false
+3. H-ID [ 27, 4 ]; |G| = 9; liftable = false; F-liftable = false
+4. H-ID [ 27, 2 ]; |G| = 9; liftable = true; F-liftable = false
+5. H-ID [ 27, 2 ]; |G| = 9; liftable = true; F-liftable = true
+6. H-ID [ 27, 1 ]; |G| = 9; liftable = true; F-liftable = false
+LIFTABILITY_TESTS_COMPLETED

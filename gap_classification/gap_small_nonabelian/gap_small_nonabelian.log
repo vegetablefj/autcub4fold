@@ -1,0 +1,99 @@
+Small non-abelian calculation log
+
+Run information
+GAP version: 4.15.1
+Engine file: gap_small_nonabelian_liftable_engine.g
+Projective candidate source: ../../gap_yyz_bounds/gap_yyz_bounds.md
+Excluded projective candidate: [ 72, 12 ]
+Generic-index divisibility filter: true
+Generic full linear containment filter: true
+Output file: gap_small_nonabelian.out
+Data file: gap_small_nonabelian_data.g
+Gonzalez restriction: true
+Smoothness test: false
+
+Progress
+1. Case C3: started; elapsed 0 ms
+2. C3, component 1, projective group [ 18, 3 ]: started; elapsed 532 ms
+3. C3, component 1, projective group [ 18, 3 ]: completed; families 7; elapsed 6016 ms
+4. C3, component 1, projective group [ 6, 1 ]: started; elapsed 6016 ms
+5. C3, component 1, projective group [ 6, 1 ]: completed; families 1; elapsed 6735 ms
+6. C3, component 1, projective group [ 12, 1 ]: started; elapsed 6735 ms
+7. C3, component 1, projective group [ 12, 1 ]: completed; families 4; elapsed 8219 ms
+8. C3, component 1, projective group [ 36, 6 ]: started; elapsed 8219 ms
+9. C3, component 1, projective group [ 36, 6 ]: completed; families 8; elapsed 138594 ms
+10. C3, component 1, projective group [ 24, 1 ]: started; elapsed 138594 ms
+11. C3, component 1, projective group [ 24, 1 ]: completed; families 5; elapsed 149938 ms
+12. C3, component 2, projective group [ 18, 3 ]: started; elapsed 149938 ms
+13. C3, component 2, projective group [ 18, 3 ]: completed; families 7; elapsed 221875 ms
+14. C3, component 2, projective group [ 6, 1 ]: started; elapsed 221891 ms
+15. C3, component 2, projective group [ 6, 1 ]: completed; families 1; elapsed 223375 ms
+16. C3, component 2, projective group [ 12, 1 ]: started; elapsed 223391 ms
+17. C3, component 2, projective group [ 12, 1 ]: completed; families 0; elapsed 234141 ms
+18. C3, component 2, projective group [ 36, 6 ]: started; elapsed 234157 ms
+19. C3, component 2, projective group [ 36, 6 ]: completed; families 0; elapsed 3460610 ms
+20. C3, component 2, projective group [ 24, 1 ]: started; elapsed 3460625 ms
+21. C3, component 2, projective group [ 24, 1 ]: completed; families 0; elapsed 3874860 ms
+22. Case C3: completed; cumulative candidates 33; elapsed 3874860 ms
+23. Case C2^2: started; elapsed 3874860 ms
+24. C2^2, component 1, projective group [ 12, 3 ]: started; elapsed 3874922 ms
+25. C2^2, component 1, projective group [ 12, 3 ]: completed; families 3; elapsed 3876360 ms
+26. C2^2, component 1, projective group [ 8, 3 ]: started; elapsed 3876360 ms
+27. C2^2, component 1, projective group [ 8, 3 ]: completed; families 3; elapsed 3877250 ms
+28. C2^2, component 1, projective group [ 16, 6 ]: started; elapsed 3877266 ms
+29. C2^2, component 1, projective group [ 16, 6 ]: completed; families 5; elapsed 3880469 ms
+30. C2^2, component 1, projective group [ 24, 13 ]: started; elapsed 3880469 ms
+31. C2^2, component 1, projective group [ 24, 13 ]: completed; families 7; elapsed 3884110 ms
+32. C2^2, component 1, projective group [ 24, 10 ]: started; elapsed 3884110 ms
+33. C2^2, component 1, projective group [ 24, 10 ]: completed; families 19; elapsed 3943078 ms
+34. Case C2^2: completed; cumulative candidates 70; elapsed 3943078 ms
+35. Case C4: started; elapsed 3943078 ms
+36. C4, component 1, projective group [ 8, 4 ]: started; elapsed 3943188 ms
+37. C4, component 1, projective group [ 8, 4 ]: completed; families 2; elapsed 3944063 ms
+38. C4, component 1, projective group [ 8, 3 ]: started; elapsed 3944063 ms
+39. C4, component 1, projective group [ 8, 3 ]: completed; families 2; elapsed 3944938 ms
+40. C4, component 1, projective group [ 24, 10 ]: started; elapsed 3944953 ms
+41. C4, component 1, projective group [ 24, 10 ]: completed; families 14; elapsed 3987047 ms
+42. C4, component 1, projective group [ 16, 6 ]: started; elapsed 3987047 ms
+43. C4, component 1, projective group [ 16, 6 ]: completed; families 8; elapsed 3991453 ms
+44. Case C4: completed; cumulative candidates 96; elapsed 3991469 ms
+45. Case S3: started; elapsed 3991469 ms
+46. S3, component 1, projective group [ 6, 1 ]: started; elapsed 3992016 ms
+47. S3, component 1, projective group [ 6, 1 ]: completed; families 1; elapsed 3992719 ms
+48. S3, component 1, projective group [ 12, 4 ]: started; elapsed 3992719 ms
+49. S3, component 1, projective group [ 12, 4 ]: completed; families 2; elapsed 3993672 ms
+50. S3, component 1, projective group [ 18, 3 ]: started; elapsed 3993672 ms
+51. S3, component 1, projective group [ 18, 3 ]: completed; families 6; elapsed 3996844 ms
+52. S3, component 1, projective group [ 24, 5 ]: started; elapsed 3996844 ms
+53. S3, component 1, projective group [ 24, 5 ]: completed; families 7; elapsed 4000938 ms
+54. S3, component 1, projective group [ 36, 12 ]: started; elapsed 4000938 ms
+55. S3, component 1, projective group [ 36, 12 ]: completed; families 13; elapsed 4027047 ms
+56. S3, component 1, projective group [ 48, 4 ]: started; elapsed 4027047 ms
+57. S3, component 1, projective group [ 48, 4 ]: completed; families 4; elapsed 4087703 ms
+58. S3, component 1, projective group [ 72, 27 ]: started; elapsed 4087719 ms
+59. S3, component 1, projective group [ 72, 27 ]: completed; families 7; elapsed 5292641 ms
+60. S3, component 2, projective group [ 12, 4 ]: started; elapsed 5292641 ms
+61. S3, component 2, projective group [ 12, 4 ]: completed; families 1; elapsed 5294422 ms
+62. S3, component 2, projective group [ 24, 5 ]: started; elapsed 5294438 ms
+63. S3, component 2, projective group [ 24, 5 ]: completed; families 6; elapsed 5324985 ms
+64. S3, component 2, projective group [ 36, 12 ]: started; elapsed 5325000 ms
+65. S3, component 2, projective group [ 36, 12 ]: completed; families 12; elapsed 5590047 ms
+66. S3, component 2, projective group [ 48, 4 ]: started; elapsed 5590047 ms
+67. S3, component 2, projective group [ 48, 4 ]: completed; families 15; elapsed 8184610 ms
+68. S3, component 2, projective group [ 72, 27 ]: started; elapsed 8184610 ms
+69. S3, component 2, projective group [ 72, 27 ]: completed; families 31; elapsed 8772875 ms
+70. Case S3: completed; cumulative candidates 202; elapsed 8779985 ms
+71. Gonzalez restriction started for 202 candidates; elapsed 8779985 ms
+72. Gonzalez restriction completed; retained 182; rejected 20; elapsed 8795594 ms
+73. Human-readable output written to gap_small_nonabelian.out; elapsed 8795750 ms
+74. Machine-readable data written to gap_small_nonabelian_data.g; elapsed 8795750 ms
+
+Summary
+Projective group inputs: 31
+Representations rejected by generic full-group containment: 2177
+Enumerated families: 201
+Direct known cases: 1
+Raw candidates: 202
+Retained candidates: 182
+Rejected candidates: 20
+Runtime: 8795610 ms

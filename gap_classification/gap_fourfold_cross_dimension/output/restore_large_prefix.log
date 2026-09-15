@@ -1,0 +1,7 @@
+Syntax warning: Unbound global variable in gap_restore_large_prefix.g:18
+        f.familyDimension > targetFamily.familyDimension
+                            ^^^^^^^^^^^^
+Syntax warning: Unbound global variable in gap_restore_large_prefix.g:19
+        and targetFamily.reportedOrder mod f.reportedOrder = 0), f -> f.number);
+            ^^^^^^^^^^^^
+LARGE_PREFIX_RESTORED layers=0

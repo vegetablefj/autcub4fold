@@ -186,7 +186,7 @@ end
 #   M is a lattice with isometry; N is a plain definite lattice.
 # Only N's full orthogonal group is computed.  This is essential because M may
 # be indefinite of rank greater than 2, where a full finite orthogonal-group
-# computation is not available in this workflow.
+# computation is not available in the present calculation.
 #
 # Version note:
 #   This method mirrors the PR #6004 fix by disabling the discriminant-
@@ -607,7 +607,7 @@ function discriminant_kernel_order(L::ZZLat)
     rank(L) == 0 && return ZZ(1)
 
     @req is_definite(L) || rank(L) <= 2 """
-    Expected O(L) to be finite. In this workflow L should be positive definite.
+    Expected O(L) to be finite. In the present calculation, L is positive definite.
     """
 
     G = orthogonal_group(L)
@@ -632,7 +632,7 @@ function cached_discriminant_kernel_order!(cache::Dict, L::ZZLat)
     end
 end
 
-# Compute the period-domain dimension used in the article:
+# Compute the period-domain dimension of the prescribed action:
 # rank(P)/phi(m)-2 for m=1,2 and rank(P)/phi(m)-1 for m>=3.
 # The caller must ensure that P is the relevant Phi_m-kernel and that rank(P) is
 # divisible by phi(m); div is intentionally used without an extra check.
@@ -700,7 +700,7 @@ function lattice_data_after_root_and_symplectic_tests(
         )
     end
 
-    # Equal rank triggers the workflow-specific automatic equality case.
+    # Equal rank triggers the automatic equality case used here.
     if rank(K) == rank(S)
         return (
             ok=true,
@@ -745,7 +745,7 @@ function passes_root_and_symplectic_test(
     )
 end
 
-# Compute the article's calL(S,T,f_T) data for one fixed conjugacy-class
+# Compute the calL(S, T, f_T) data for one fixed conjugacy-class
 # representative f_T.
 #
 # The expensive index-two refinement is deliberately delayed until the
@@ -846,7 +846,7 @@ function empty_proper_divisor(
 end
 
 # Run the search over the caller-supplied candidate orders.  Each output record
-# has the previous NamedTuple fields, followed by group_gap_id.
+# has the lattice-data fields returned above, followed by group_gap_id.
 #
 # The value of group_gap_id is:
 #   * a pair (order, id) when GAP's SmallGroups identification is available and
@@ -949,7 +949,7 @@ function cubic_fourfold_search(
     end
 
     # Preserve the order supplied by the caller.  Repeated entries in orders
-    # reproduce the corresponding output, matching the old loop semantics.
+    # reproduce the corresponding output, matching the original loop semantics.
     results = Any[]
     for m in orders
         append!(results, results_by_order[m])
@@ -1041,8 +1041,8 @@ function practical_group_gap_id(
     return result
 end
 
-# Backward-compatible name.  Unlike the earlier version, this now returns only
-# the practical identifier stored in cubic_fourfold_search.
+# Compatibility alias returning the practical identifier stored in
+# cubic_fourfold_search.
 
 function tilde_and_isometry_gap_ids(
     Sf::ZZLatWithIsom;

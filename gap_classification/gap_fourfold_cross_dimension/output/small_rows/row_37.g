@@ -1,0 +1,17 @@
+SmallRowResults := [ rec(
+P := fail,
+classification := "direct",
+direct := true,
+method := "SmallGroups",
+ok := false,
+reason := "exhaustive_abstract_subgroup_filter",
+sourceDimension := 1,
+sourceNumber := 51,
+sourceOrder := 96,
+sourcePosition := 37,
+status := "no_embedding",
+targetDimension := 0,
+targetNumber := 155,
+targetOrder := 96,
+targetPosition := 141,
+viaNumber := fail ) ];
