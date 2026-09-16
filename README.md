@@ -26,13 +26,14 @@ require rerunning the enumerations.
 
 The four directories listed above contain the current computational records.
 
-Jie Fu and Shihao Wang (both at Qiuzhen College, Tsinghua University) are
-equal contributors and joint copyright holders. Original source programs are
+Jie Fu and Shihao Wang (both at Qiuzhen College, Tsinghua University) and
+Zhiwei Zheng (Yau Mathematical Sciences Center, Tsinghua University) are equal
+contributors and joint copyright holders. Original source programs are
 available under the [MIT License](LICENSE-CODE); saved results and explanatory
-documents are available under [CC BY 4.0](LICENSE-RESULTS). The
-[license overview](LICENSE) explains the boundary between the two.
+documents are available under [CC BY 4.0](LICENSE-RESULTS). The [license
+overview](LICENSE) explains the boundary between the two.
 
-To cite these materials, credit both authors equally. The machine-readable
-[citation file](CITATION.cff) supplies their names and ORCID identifiers. Once
-a released archive has a DOI, cite that specific version rather than an
-unversioned repository state.
+To cite these materials, credit all three authors equally. The
+machine-readable [citation file](CITATION.cff) supplies their names and ORCID
+identifiers. Once a released archive has a DOI, cite that specific version
+rather than an unversioned repository state.

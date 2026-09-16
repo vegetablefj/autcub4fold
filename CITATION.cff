@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 message: >-
-  Please cite Jie Fu and Shihao Wang equally when using these computational
-  materials. Cite the DOI of the specific archived release when available.
+  Please cite Jie Fu, Shihao Wang, and Zhiwei Zheng equally when using these
+  computational materials. Cite the DOI of the specific archived release when
+  available.
 type: software
 title: Computational materials for automorphism groups of smooth cubic threefolds and fourfolds
 authors:
@@ -13,6 +14,10 @@ authors:
     given-names: Shihao
     affiliation: Qiuzhen College, Tsinghua University
     orcid: https://orcid.org/0009-0007-1476-3104
+  - family-names: Zheng
+    given-names: Zhiwei
+    affiliation: Yau Mathematical Sciences Center, Tsinghua University
+    orcid: https://orcid.org/0000-0001-8574-5789
 abstract: >-
   Source programs, saved computations, and result catalogues for studies of
   automorphism groups of smooth cubic threefolds and cubic fourfolds. The

@@ -1,7 +1,7 @@
 # Licenses for this repository
 
-Copyright (c) 2026 Jie Fu and Shihao Wang. Both authors hold the copyright
-jointly and contributed equally.
+Copyright (c) 2026 Jie Fu, Shihao Wang, and Zhiwei Zheng. All three authors
+hold the copyright jointly and contributed equally.
 
 This repository uses two licenses, according to the material's purpose:
 
@@ -17,8 +17,9 @@ extension is `.g`. Conversely, source code embedded in a program file remains
 under MIT. Third-party software and cited works are not relicensed here.
 
 Both licenses allow reuse and redistribution, including modification and
-commercial use. Retain the applicable license notice and credit Jie Fu and
-Shihao Wang. For CC BY 4.0 material, also identify changes when sharing an
-adaptation and link to the license. See [CITATION.cff](CITATION.cff) for the
-recommended repository citation. A version-specific DOI should be used once
-one has been assigned to a released archive.
+commercial use. Retain the applicable license notice and credit Jie Fu,
+Shihao Wang, and Zhiwei Zheng. For CC BY 4.0 material, also identify changes
+when sharing an adaptation and link to the license. See
+[CITATION.cff](CITATION.cff) for the recommended repository citation. A
+version-specific DOI should be used once one has been assigned to a released
+archive.
