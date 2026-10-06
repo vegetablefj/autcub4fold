@@ -1,0 +1,14 @@
+2026-10-05T01:56:02.671 | Julia 1.12.4; OSCAR 1.8.2; character Phi3 Phi12 Phi24^2 | elapsed 1.47 s
+2026-10-05T01:56:02.678 | Cgroup resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 1.48 s
+2026-10-05T02:00:47.278 | Enumerating exact order-24 actions on the rank-22 ambient lattice | elapsed 286.08 s
+2026-10-05T02:11:50.442 | Exact-character enumeration returned 8 action class(es) | elapsed 949.24 s
+2026-10-05T02:11:51.371 | Action 1/8: retained | elapsed 950.17 s
+2026-10-05T02:11:51.404 | Action 2/8: retained | elapsed 950.2 s
+2026-10-05T02:11:51.427 | Action 3/8: retained | elapsed 950.23 s
+2026-10-05T02:11:52.898 | Action 4/8: retained | elapsed 951.7 s
+2026-10-05T02:11:52.919 | Action 5/8: rejected, root in the positive complement | elapsed 951.72 s
+2026-10-05T02:11:52.937 | Action 6/8: rejected, root in the positive complement | elapsed 951.74 s
+2026-10-05T02:11:52.959 | Action 7/8: rejected, root in the positive complement | elapsed 951.76 s
+2026-10-05T02:11:52.979 | Action 8/8: rejected, root in the positive complement | elapsed 951.78 s
+2026-10-05T02:11:52.982 | Filter summary: stable=8, root-free=4, retained=4 | elapsed 951.78 s
+2026-10-05T02:12:12.811 | Completed; MRDI reload and post-checks passed | elapsed 971.61 s

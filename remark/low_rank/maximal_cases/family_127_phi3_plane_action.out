@@ -1,0 +1,62 @@
+Family No. 127: exact finite phi_3 plane-class action
+Convention: A sends each plane class to its geometric image (pushforward);
+for cohomological pullback of the displayed coordinate A, invert this matrix.
+Assumption: generic smooth invariant cubic with nonzero x2*x5*x6 coefficient,
+three transverse points C intersect {x2=0}, and six transverse
+points C intersect the conic.
+The A-orbits of nine discriminant points are 1+1+1+2+2+2.
+On three line fibers A swaps each pair of residual planes;
+on three conic-orbit pairs A forms a four-cycle of residual planes.
+Choice: F1,F2,F3 are line fibers; (F4,F5),(F6,F7),(F8,F9)
+are paired conic fibers; components are oriented so y is integral.
+det full rank-11 algebraic Gram = 1024
+det primitive P Gram = 3072
+Exact integral 10x10 Gram matrix of primitive P in basis x,alpha_1,...,alpha_9:
+6 2 -2 2 -2 2 -2 2 -2 0
+2 4 -2 0 0 0 0 0 0 0
+-2 -2 4 -2 0 0 0 0 0 0
+2 0 -2 4 -2 0 0 0 0 0
+-2 0 0 -2 4 -2 0 0 0 0
+2 0 0 0 -2 4 -2 0 0 0
+-2 0 0 0 0 -2 4 -2 0 0
+2 0 0 0 0 0 -2 4 -2 -2
+-2 0 0 0 0 0 0 -2 4 0
+0 0 0 0 0 0 0 -2 0 4
+A traces on P: tr(A)=-2, tr(A^2)=-2
+chi(A|P) = Phi1 * Phi2^3 * Phi4^3
+Exact integral 10x10 A matrix on primitive P in basis x,alpha_1,...,alpha_9:
+1 0 0 0 0 0 0 0 0 0
+-1 -1 0 0 0 0 0 0 0 0
+0 0 -1 0 0 0 0 0 0 0
+-1 0 0 -1 0 0 0 0 0 0
+-1 0 0 -1 1 -1 0 0 0 0
+-2 0 0 -2 2 -1 0 0 0 0
+-2 0 0 -2 2 -1 1 -1 0 0
+-3 0 0 -2 2 -2 2 -1 0 0
+-1 0 0 -1 1 -1 1 0 0 -1
+-2 0 0 -1 1 -1 1 -1 1 0
+D_P[2] = (1/2)P/P = (F2)^10; induced matrix is A|P modulo two.
+Induced 10x10 matrix on D_P[2] in basis x/2,alpha_1/2,...,alpha_9/2:
+1 0 0 0 0 0 0 0 0 0
+1 1 0 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0 0 0
+1 0 0 1 0 0 0 0 0 0
+1 0 0 1 1 1 0 0 0 0
+0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 1 1 1 0 0
+1 0 0 0 0 0 0 1 0 0
+1 0 0 1 1 1 1 0 0 1
+0 0 0 1 1 1 1 1 1 0
+rank_F2(A+I)=5, rank_F2((A+I)^2)=2, rank_F2((A+I)^3)=1
+F2 Jordan block sizes: 4+2+2+1+1.
+A-orbit counts on D_P[2] by (orbit length, 4*q mod 8):
+1 0: 8
+1 4: 24
+2 0: 60
+2 4: 52
+4 0: 36
+4 2: 64
+4 4: 28
+4 6: 64
+This gives the finite action on D_Q up to the noncanonical anti-isometry
+D_P[2] ~ D_Q. It does not lift A to Q or to full cubic cohomology.

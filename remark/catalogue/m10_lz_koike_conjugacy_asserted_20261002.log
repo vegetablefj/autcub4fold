@@ -1,0 +1,16 @@
+Read-only WSL GAP rerun from the workspace root.
+Command: gap -q autcub4fold/oscar_lattice_catalogue/verify_m10_lz_koike_conjugacy.g
+Exit code: 0; final PASS line present.
+
+linear groups: both order 2160, centres order 3; B conjugates them
+complex conjugation normalizes Koike 3.A6: true
+corrected f,g: invariant under 3.A6; printed-sign g: not invariant
+LZ (4.3) and its zeta_24 -> zeta_24^7 conjugate equal rows 5 and 6
+Koike r acts on F_+, F_- with eigenvalues +1, -1
+all 56 coefficients: F_+(B*y) = -54*(8+3*Sqrt(6))*LZ(4.3)
+all 56 coefficients: F_-(B*y) = -54*(8-3*Sqrt(6))*row 6
+PASS: both M10 equations match rows 5 and 6.
+
+The relative Read inside this script requires the workspace root as the
+working directory. GAP may return process status zero after an internal
+error, so the final PASS line is the success condition.

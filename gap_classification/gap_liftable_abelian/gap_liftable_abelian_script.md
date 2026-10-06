@@ -17,7 +17,7 @@ additional smoothness exclusion is needed here.
 
 The projective actions `C48` and `C32` are added separately, using `X'_5`
 and `X'_8` from
-[Yang--Yu--Zhu, Example 6.1](../../REFERENCES.md#symplectic-actions-and-maximal-groups).
+[Yang--Yu--Zhu, Example 6.1](../../REFERENCES.md#yang-yu-zhu).
 Their linear groups have orders 144 and 96. The entry point verifies the
 linear/projective orders, projective structures, and six expected invariant
 monomials for each action.

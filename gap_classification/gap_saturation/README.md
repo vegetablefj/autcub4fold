@@ -3,7 +3,8 @@
 This directory prepares the family data and the strict linear-conjugacy
 embedding tools used by the equal-dimensional saturation calculation.
 
-- `gap_large_koike_families.g` stores the 76 rank-at-least-15 families.
+- `gap_large_koike_families.g` stores the 76 rank-at-least-15 families as
+  fixed matrices and cubic bases; no external manuscript is read.
 - [`gap_large_group_enumeration/`](../gap_large_group_enumeration/README.md)
   records the representation calculation that produces 29 of its proper
   equation families and their correspondence with the catalogue.

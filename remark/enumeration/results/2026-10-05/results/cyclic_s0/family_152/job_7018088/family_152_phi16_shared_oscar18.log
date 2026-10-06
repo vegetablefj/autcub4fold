@@ -1,0 +1,30 @@
+2026-10-05T01:47:55.150 | Julia 1.12.4; OSCAR 1.8.2; character Phi1^2 Phi2^2 Phi4 Phi16^2 | elapsed 1.45 s
+2026-10-05T01:47:55.155 | Cgroup resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 1.45 s
+2026-10-05T01:52:31.949 | Enumerating exact order-16 actions on the rank-22 ambient lattice | elapsed 278.25 s
+2026-10-05T03:02:03.348 | Exact-character enumeration returned 24 action class(es) | elapsed 4449.65 s
+2026-10-05T03:02:03.573 | Action 1/24: retained | elapsed 4449.87 s
+2026-10-05T03:02:03.598 | Action 2/24: retained | elapsed 4449.9 s
+2026-10-05T03:02:03.617 | Action 3/24: rejected, non-stable ambient action | elapsed 4449.92 s
+2026-10-05T03:02:03.633 | Action 4/24: rejected, non-stable ambient action | elapsed 4449.93 s
+2026-10-05T03:02:03.655 | Action 5/24: retained | elapsed 4449.95 s
+2026-10-05T03:02:03.675 | Action 6/24: retained | elapsed 4449.97 s
+2026-10-05T03:02:03.696 | Action 7/24: rejected, non-stable ambient action | elapsed 4449.99 s
+2026-10-05T03:02:03.715 | Action 8/24: rejected, non-stable ambient action | elapsed 4450.01 s
+2026-10-05T03:02:03.733 | Action 9/24: rejected, root in the positive complement | elapsed 4450.03 s
+2026-10-05T03:02:03.750 | Action 10/24: rejected, root in the positive complement | elapsed 4450.05 s
+2026-10-05T03:02:03.768 | Action 11/24: rejected, non-stable ambient action | elapsed 4450.07 s
+2026-10-05T03:02:03.785 | Action 12/24: rejected, non-stable ambient action | elapsed 4450.08 s
+2026-10-05T03:02:03.804 | Action 13/24: rejected, root in the positive complement | elapsed 4450.1 s
+2026-10-05T03:02:03.824 | Action 14/24: rejected, root in the positive complement | elapsed 4450.12 s
+2026-10-05T03:02:03.843 | Action 15/24: rejected, non-stable ambient action | elapsed 4450.14 s
+2026-10-05T03:02:03.862 | Action 16/24: rejected, non-stable ambient action | elapsed 4450.16 s
+2026-10-05T03:02:03.879 | Action 17/24: rejected, root in the positive complement | elapsed 4450.18 s
+2026-10-05T03:02:03.895 | Action 18/24: rejected, root in the positive complement | elapsed 4450.19 s
+2026-10-05T03:02:03.913 | Action 19/24: rejected, non-stable ambient action | elapsed 4450.21 s
+2026-10-05T03:02:03.928 | Action 20/24: rejected, non-stable ambient action | elapsed 4450.23 s
+2026-10-05T03:02:03.947 | Action 21/24: rejected, root in the positive complement | elapsed 4450.25 s
+2026-10-05T03:02:03.965 | Action 22/24: rejected, root in the positive complement | elapsed 4450.26 s
+2026-10-05T03:02:03.984 | Action 23/24: rejected, non-stable ambient action | elapsed 4450.28 s
+2026-10-05T03:02:04.002 | Action 24/24: rejected, non-stable ambient action | elapsed 4450.3 s
+2026-10-05T03:02:04.004 | Filter summary: stable=12, root-free=4, retained=4 | elapsed 4450.3 s
+2026-10-05T03:02:20.598 | Completed; MRDI reload and post-checks passed | elapsed 4466.9 s

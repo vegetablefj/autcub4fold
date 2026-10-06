@@ -1,0 +1,15 @@
+No. 127: integral O(K,J) orbit on 16 eligible V
+K source=family_127_g13_q_graph_preflight.json sha256=3d7349ae2ba3ad6b689dd23c6236efef6b86356ebf02db7c81a9b8438de38c2d
+V source=family_127_g13_n_finite_full_v1-35.json sha256=e2cb89aebb5fe13953ec7d0c0ac2ac8d86fbcaec050512367c24e28b5029ee8a
+root 1=(0, 0, 0, 0, 0, 1, -1, 0, 0, -1); norm=4; permutation=(34, 31, 19, 13, 35, 30, 18, 12, 33, 29, 17, 11, 32, 28, 10, 16)
+orbit after root 1=2
+root 2=(0, 0, 0, 0, 0, 1, 0, 0, -1, 0); norm=4; permutation=(10, 16, 28, 32, 11, 17, 29, 33, 12, 18, 30, 35, 13, 19, 34, 31)
+orbit after root 2=2
+root 3=(0, 0, 0, 0, 0, 1, 0, 0, 0, -1); norm=4; permutation=(17, 11, 33, 29, 16, 10, 32, 28, 19, 13, 34, 31, 18, 12, 30, 35)
+orbit after root 3=4
+root 4=(0, 0, 0, 1, -1, 1, -1, 0, 0, 0); norm=4; permutation=(13, 12, 11, 10, 18, 19, 16, 17, 29, 28, 31, 30, 32, 33, 34, 35)
+orbit after root 4=16
+The 16 eligible image subspaces form one orbit under these four
+explicit integral K-isometries commuting with J. COMPLETED
+This does NOT identify the 384 maps within each V, prove all
+integral N/L actions equivalent, or exhaust other K actions.

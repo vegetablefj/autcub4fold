@@ -1,0 +1,129 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 7018186
+##  Job Name : remark-rerun
+##  Nodelist : node1829
+##      CPUs : 
+##  Mem/Node : 16384 MB
+## Directory : /oscar/home/jfu74/oscar-julia-test/remark_rerun_20261005
+##   Job Started : Mon Oct  5 01:49:48 AM EDT 2026
+###############################################################################
+array=7017743 task=10 kind=cyclic family=154
+family=154 job=7018186 host=node1829.oscar.ccv.brown.edu started=2026-10-05T05:49:49Z
+152: order=16, char=Phi1^2 Phi2^2 Phi4 Phi16^2, min=Phi1 Phi2 Phi4 Phi16, rks=[(1, 2), (2, 2), (4, 2), (16, 16)], pos=[(1, 2), (2, 2), (4, 2), (16, 14)], neg=[(1, 0), (2, 0), (4, 0), (16, 2)]: OK
+154: order=24, char=Phi3 Phi12 Phi24^2, min=Phi3 Phi12 Phi24, rks=[(3, 2), (12, 4), (24, 16)], pos=[(3, 2), (12, 4), (24, 14)], neg=[(3, 0), (12, 0), (24, 2)]: OK
+155: order=32, char=Phi1 Phi2 Phi8 Phi32, min=Phi1 Phi2 Phi8 Phi32, rks=[(1, 1), (2, 1), (8, 4), (32, 16)], pos=[(1, 1), (2, 1), (8, 4), (32, 14)], neg=[(1, 0), (2, 0), (8, 0), (32, 2)]: OK
+156: order=48, char=Phi3 Phi12 Phi48, min=Phi3 Phi12 Phi48, rks=[(3, 2), (12, 4), (48, 16)], pos=[(3, 2), (12, 4), (48, 14)], neg=[(3, 0), (12, 0), (48, 2)]: OK
+2026-10-05T01:56:02.671 | Julia 1.12.4; OSCAR 1.8.2; character Phi3 Phi12 Phi24^2 | elapsed 1.47 s
+2026-10-05T01:56:02.678 | Cgroup resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 1.48 s
+2026-10-05T02:00:47.278 | Enumerating exact order-24 actions on the rank-22 ambient lattice | elapsed 286.08 s
+Conditions computed
+Taking 3^1-th roots for isometry of order 24
+All possible hermitian genera Genus symbol: II_(20, 2) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 11
+Taking 2^3-th roots for isometry of order 24
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 - x^4 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-6 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6_0  x^8 - x^4 + 1: 8
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 - x^4 + 1: 4
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 - x^4 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 - x^4 + 1: 4
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 2^-2_4 3^-1  x^2 + x + 1: 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 - x^4 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 - x^4 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 - x^4 + 1: 4
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 - x^4 + 1: 4
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+2026-10-05T02:11:50.442 | Exact-character enumeration returned 8 action class(es) | elapsed 949.24 s
+2026-10-05T02:11:51.371 | Action 1/8: retained | elapsed 950.17 s
+2026-10-05T02:11:51.404 | Action 2/8: retained | elapsed 950.2 s
+2026-10-05T02:11:51.427 | Action 3/8: retained | elapsed 950.23 s
+2026-10-05T02:11:52.898 | Action 4/8: retained | elapsed 951.7 s
+2026-10-05T02:11:52.919 | Action 5/8: rejected, root in the positive complement | elapsed 951.72 s
+2026-10-05T02:11:52.937 | Action 6/8: rejected, root in the positive complement | elapsed 951.74 s
+2026-10-05T02:11:52.959 | Action 7/8: rejected, root in the positive complement | elapsed 951.76 s
+2026-10-05T02:11:52.979 | Action 8/8: rejected, root in the positive complement | elapsed 951.78 s
+2026-10-05T02:11:52.982 | Filter summary: stable=8, root-free=4, retained=4 | elapsed 951.78 s
+2026-10-05T02:12:12.811 | Completed; MRDI reload and post-checks passed | elapsed 971.61 s
+154: MRDI SHA256 51c32990518804f530fd5dccb98e1b83583d34724acb93506fe1daee7764bbea
+154 output 1 (raw action 1): negative pair +/-11; witness (4,)
+154 output 2 (raw action 2): negative pair +/-1; witness (1,)
+154 output 3 (raw action 3): negative pair +/-7; witness (4,)
+154 output 4 (raw action 4): negative pair +/-5; witness (1,)
+154: all 4 primitive root pairs occur exactly once
+family=154 verified=2026-10-05T06:12:19Z output=/oscar/home/jfu74/oscar-julia-test/remark_rerun_20261005/results/cyclic_s0/family_154/job_7018186

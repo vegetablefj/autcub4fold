@@ -1,0 +1,251 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 6727785
+##  Job Name : family156-phi48
+##  Nodelist : node1829
+##      CPUs : 
+##  Mem/Node : 16384 MB
+## Directory : /oscar/home/jfu74/oscar-julia-test/maximal_brown/autcub4fold/oscar_low_rank/maximal_cases
+##   Job Started : Sat Sep 26 05:47:09 PM EDT 2026
+###############################################################################
+host=node1829.oscar.ccv.brown.edu
+job=6727785
+started=2026-09-26T17:47:11-04:00
+workdir=/users/jfu74/oscar-julia-test/maximal_brown/autcub4fold/oscar_low_rank/maximal_cases
+slurm_mem_per_node_mib=16384
+2026-09-26T17:47:15.531 | Slurm resource guard passed: high=17179869184, max=17179869184 | elapsed 0.18 s
+2026-09-26T17:48:15.940 | Julia 1.12.4; OSCAR 1.8.2; S=0 direct ambient-lattice route | elapsed 60.59 s
+2026-09-26T17:48:15.961 | Checking the rank-22 lattice input | elapsed 60.61 s
+2026-09-26T17:48:16.305 | Lattice input checks passed; constructing the exact character | elapsed 60.96 s
+2026-09-26T17:48:16.308 | Enumerating all order-48 actions with the exact three-block character | elapsed 60.96 s
+Conditions computed
+Taking 3^1-th roots for isometry of order 48
+All possible hermitian genera Genus symbol: II_(20, 2) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 11
+Taking 2^4-th roots for isometry of order 48
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-6 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6_0  x^16 - x^8 + 1: 8
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-6 3^-1  x^2 + x + 1: 2
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(6, 0) 2^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 3
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 2^-2_4 3^-1  x^2 + x + 1: 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 2^-2_4 3^-1  x^2 + x + 1: 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2 4^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 4^-2 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^16 - x^8 + 1: 8
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(4, 0) 2^-2  x^4 - x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+All possible hermitian genera Genus symbol: II_(2, 0) 3^-1  x^2 + x + 1: 1
+Enumerate hermitian genus of rank 1
+2026-09-26T20:50:13.376 | Exact-character enumeration returned 16 action class(es) | elapsed 10978.03 s
+2026-09-26T20:50:19.838 | Action 1/16: retained; geometric checks all passed | elapsed 10984.49 s
+2026-09-26T20:50:20.339 | Action 2/16: retained; geometric checks all passed | elapsed 10984.99 s
+2026-09-26T20:50:20.835 | Action 3/16: retained; geometric checks all passed | elapsed 10985.49 s
+2026-09-26T20:50:21.331 | Action 4/16: retained; geometric checks all passed | elapsed 10985.98 s
+2026-09-26T20:50:21.829 | Action 5/16: retained; geometric checks all passed | elapsed 10986.48 s
+2026-09-26T20:50:22.334 | Action 6/16: retained; geometric checks all passed | elapsed 10986.99 s
+2026-09-26T20:50:22.831 | Action 7/16: retained; geometric checks all passed | elapsed 10987.48 s
+2026-09-26T20:50:23.326 | Action 8/16: retained; geometric checks all passed | elapsed 10987.98 s
+2026-09-26T20:50:23.735 | Action 9/16: rejected, short or long root in K | elapsed 10988.39 s
+2026-09-26T20:50:24.132 | Action 10/16: rejected, short or long root in K | elapsed 10988.78 s
+2026-09-26T20:50:24.539 | Action 11/16: rejected, short or long root in K | elapsed 10989.19 s
+2026-09-26T20:50:24.937 | Action 12/16: rejected, short or long root in K | elapsed 10989.59 s
+2026-09-26T20:50:25.339 | Action 13/16: rejected, short or long root in K | elapsed 10989.99 s
+2026-09-26T20:50:25.738 | Action 14/16: rejected, short or long root in K | elapsed 10990.39 s
+2026-09-26T20:50:26.140 | Action 15/16: rejected, short or long root in K | elapsed 10990.79 s
+2026-09-26T20:50:26.539 | Action 16/16: rejected, short or long root in K | elapsed 10991.19 s
+2026-09-26T20:50:26.541 | Filter summary: stable=16, root-free after stability=8, retained=8 | elapsed 10991.19 s
+2026-09-26T20:50:47.626 | Completed; MRDI reload and all post-checks passed | elapsed 11012.28 s
+finished=2026-09-26T20:50:51-04:00

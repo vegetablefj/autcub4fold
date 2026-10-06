@@ -1,0 +1,12 @@
+No. 127 genus-13 first N witness: independent exact-integer audit
+Input SHA256 matches the saved Q JSON: 3d7349ae2ba3ad6b689dd23c6236efef6b86356ebf02db7c81a9b8438de38c2d
+Both Q graphs have identical lower-right K Gram and J blocks.
+D6(2) M: rank 6, determinant 256, J^2=-I.
+K: rank 10, determinant 1024, J^2=-I.
+Graph map: rank_F2(phi)=6; all 64 graph elements are J-equivariant and q-isotropic.
+Overlattice index [N:M+K]=64; N Gram even integral, determinant 64.
+Saved N Gram, g and s match independently reconstructed matrices exactly.
+g^2=-I=h; s^2=I; gs=sg; both are integral N-isometries.
+Embedded M and K are orthogonal, primitive, and are exactly the -/+ s eigensublattices.
+A_N has order 64, exponent 2, delta 0 (2*G_N^-1 integral; diagonal G_N^-1 integral).
+No abstract N isometry, full E+N gluing, or cubic geometry is claimed here.

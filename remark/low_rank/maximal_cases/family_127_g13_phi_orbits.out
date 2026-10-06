@@ -1,0 +1,12 @@
+No. 127: 384 finite V10 graph-map orbits
+K source sha256=3d7349ae2ba3ad6b689dd23c6236efef6b86356ebf02db7c81a9b8438de38c2d
+V source sha256=e2cb89aebb5fe13953ec7d0c0ac2ac8d86fbcaec050512367c24e28b5029ee8a
+quadratic J-equivariant graph maps=384
+O(M,J) generating matrices=5; mod-2 image order=192
+O(M,J)-only orbit sizes=[192, 192]
+explicit K V10-stabilizer generators=15
+combined orbit sizes=[384]
+Together with the certified 16-V K orbit, all 6144 graph
+gluings are integrally equivalent as N-actions for this fixed K,J.
+This concerns the first fixed K,J only; no other Hermitian classes.
+COMPLETED

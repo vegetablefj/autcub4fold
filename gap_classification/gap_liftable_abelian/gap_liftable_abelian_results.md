@@ -1,6 +1,6 @@
 # Liftable abelian results
 
-This file records 53 liftable abelian candidates for cubic fourfolds. The 51 ordinary records come from the 32 maximal liftable diagonal types in [Peng--Zheng, Theorem 4.2](../../REFERENCES.md#abelian-actions). The projective actions `C48` and `C32` are added from the special [Yang--Yu--Zhu examples](../../REFERENCES.md#symplectic-actions-and-maximal-groups). This is a candidate list, not a list of 53 certified saturated families.
+This file records 53 liftable abelian candidates for cubic fourfolds. The 51 ordinary records come from the 32 maximal liftable diagonal types in [Peng--Zheng, Theorem 4.2](../../REFERENCES.md#abelian-actions). The projective actions `C48` and `C32` are added from the special [Yang--Yu--Zhu examples](../../REFERENCES.md#yang-yu-zhu). This is a candidate list, not a list of 53 certified saturated families.
 
 The ordinary computation retains the order and logic of `gap_liftable_abelian_original.g`: local reduction, order filtering, diagonal-equivalence testing, and the abelian-full-group restrictions. The tables preserve the saved candidate order. See [gap_liftable_abelian_script.md](gap_liftable_abelian_script.md) for the mathematical scope and output fields.
 

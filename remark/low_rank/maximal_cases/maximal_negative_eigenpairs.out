@@ -1,0 +1,46 @@
+Exact saved-MRDI negative primitive-root pair audit
+Checker: check_maximal_negative_eigenpairs.py
+Conventions: +/-a denotes {zeta_n^a, zeta_n^(-a)}; output indices are 1-based.
+Structural assertions passed for every output: saved checks, f G f^T = G,
+signature(P) = (14,2), and Phi_n(f) annihilates the stored P basis.
+Signs were certified by rational projectors and exact root isolation.
+
+152: MRDI brown_results/family_152_phi16_brown_oscar18.mrdi
+152: MRDI SHA256 e13626aaa31afb2bf9e2d65776b6f1c859bd9704d529289c36ec679ded092535
+152 output 1 (raw action 1): negative pair +/-7; witness (1,)
+152 output 2 (raw action 2): negative pair +/-1; witness (1,)
+152 output 3 (raw action 5): negative pair +/-5; witness (1,)
+152 output 4 (raw action 6): negative pair +/-3; witness (3,)
+152: all 4 primitive root pairs occur exactly once
+
+154: MRDI brown_results/family_154_phi24_brown_oscar18.mrdi
+154: MRDI SHA256 cd9337120a857a531cc96daf7950c89ab205da1cf79d9fefb346372ee6fe8106
+154 output 1 (raw action 1): negative pair +/-11; witness (1,)
+154 output 2 (raw action 2): negative pair +/-1; witness (1,)
+154 output 3 (raw action 3): negative pair +/-7; witness (1,)
+154 output 4 (raw action 4): negative pair +/-5; witness (1,)
+154: all 4 primitive root pairs occur exactly once
+
+155: MRDI family_155_phi32_oscar18.mrdi
+155: MRDI SHA256 9cad77eb7a7bd389ce8cafab13e11d0f4361d094cce83319a67cdfb16afad0db
+155 output 1 (raw action 1): negative pair +/-15; witness (1,)
+155 output 2 (raw action 2): negative pair +/-1; witness (1,)
+155 output 3 (raw action 5): negative pair +/-9; witness (1,)
+155 output 4 (raw action 6): negative pair +/-7; witness (1,)
+155 output 5 (raw action 9): negative pair +/-13; witness (1,)
+155 output 6 (raw action 10): negative pair +/-3; witness (1,)
+155 output 7 (raw action 13): negative pair +/-11; witness (1,)
+155 output 8 (raw action 14): negative pair +/-5; witness (1,)
+155: all 8 primitive root pairs occur exactly once
+
+156: MRDI brown_results/family_156_phi48_brown_oscar18.mrdi
+156: MRDI SHA256 38b59223132a3429a0c063e29c3401ffdd77e841c5f317f90efee6bae9747654
+156 output 1 (raw action 1): negative pair +/-23; witness (1,)
+156 output 2 (raw action 2): negative pair +/-1; witness (1,)
+156 output 3 (raw action 3): negative pair +/-13; witness (1,)
+156 output 4 (raw action 4): negative pair +/-11; witness (1,)
+156 output 5 (raw action 5): negative pair +/-19; witness (1,)
+156 output 6 (raw action 6): negative pair +/-5; witness (1,)
+156 output 7 (raw action 7): negative pair +/-17; witness (1,)
+156 output 8 (raw action 8): negative pair +/-7; witness (1,)
+156: all 8 primitive root pairs occur exactly once

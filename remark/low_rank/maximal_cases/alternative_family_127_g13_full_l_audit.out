@@ -1,0 +1,9 @@
+source_sha256=43f385e222bda664e485d88ea3a8c83981793e4f2fbda2be8df184c29d886567
+n_source_sha256=3549ff234a0e81c62b46a2b44827f14eaf6c4fe528573c18ee2cdaf344523b69
+search_complete=false; existence witness only
+E6(2) and N primitive, orthogonal; joint index=64
+L even rank=22 signature=(20,2) determinant=3
+g^4=I, g^2|E=+I, g^2|N=-I, s^2=I, gs=sg; both integral isometries
+g and s trivial on A_L=Z/3
+plane primitive, g/s-fixed, norm=24, divisibility=3
+RESULT=PASS

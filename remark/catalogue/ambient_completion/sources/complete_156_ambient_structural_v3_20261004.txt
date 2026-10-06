@@ -1,0 +1,161 @@
+Structural audit only: primitive ambient lattices, compatible stable extra actions, cyclotomic periods and dimension formulas.
+No new family-identification, root, saturation, O(S), T-action or gluing enumeration checks.
+Catalogue: /mnt/c/Users/85806/Desktop/automorphism group of cubic threefolds and fourfolds/autcub4fold/oscar_lattice_catalogue/ambient_completion/lattice_156_standard_ambient_20261004.mrdi
+SHA-256: cedff30f2c8478c433ff8783aabece13e9e1929a6ef06a7ed267b1274a8de8e7
+PASS No.1: S=20 T=2 P=2 K=20 index=6 dim=0 lift_order=12
+PASS No.2: S=20 T=2 P=2 K=20 index=1 dim=0 lift_order=1
+PASS No.3: S=20 T=2 P=2 K=20 index=2 dim=0 lift_order=6
+PASS No.4: S=20 T=2 P=2 K=20 index=4 dim=0 lift_order=8
+PASS No.5: S=20 T=2 P=2 K=20 index=1 dim=0 lift_order=1
+PASS No.6: S=20 T=2 P=2 K=20 index=1 dim=0 lift_order=1
+PASS No.7: S=20 T=2 P=2 K=20 index=3 dim=0 lift_order=3
+PASS No.8: S=20 T=2 P=2 K=20 index=6 dim=0 lift_order=6
+PASS No.9: S=19 T=3 P=3 K=19 index=2 dim=1 lift_order=6
+PASS No.10: S=19 T=3 P=3 K=19 index=1 dim=1 lift_order=1
+PASS No.11: S=19 T=3 P=3 K=19 index=2 dim=1 lift_order=6
+PASS No.12: S=19 T=3 P=3 K=19 index=1 dim=1 lift_order=1; input Gram differs (recorded)
+PASS No.13: S=19 T=3 P=2 K=20 index=2 dim=0 lift_order=8; input Gram differs (recorded)
+PASS No.14: S=19 T=3 P=2 K=20 index=2 dim=0 lift_order=8; input Gram differs (recorded)
+PASS No.15: S=19 T=3 P=3 K=19 index=1 dim=1 lift_order=1
+PASS No.16: S=19 T=3 P=3 K=19 index=2 dim=1 lift_order=6
+PASS No.17: S=19 T=3 P=3 K=19 index=1 dim=1 lift_order=1; input Gram differs (recorded)
+PASS No.18: S=19 T=3 P=2 K=20 index=3 dim=0 lift_order=3; input Gram differs (recorded)
+PASS No.19: S=19 T=3 P=3 K=19 index=2 dim=1 lift_order=6
+PASS No.20: S=19 T=3 P=3 K=19 index=1 dim=1 lift_order=1
+PASS No.21: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.22: S=18 T=4 P=4 K=18 index=4 dim=1 lift_order=12; input Gram differs (recorded)
+PASS No.23: S=18 T=4 P=4 K=18 index=6 dim=1 lift_order=6; input Gram differs (recorded)
+PASS No.24: S=18 T=4 P=4 K=18 index=12 dim=0 lift_order=36; input Gram differs (recorded)
+PASS No.25: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1; input Gram differs (recorded)
+PASS No.26: S=18 T=4 P=3 K=19 index=2 dim=1 lift_order=2; input Gram differs (recorded)
+PASS No.27: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=2; input Gram differs (recorded)
+PASS No.28: S=18 T=4 P=4 K=18 index=6 dim=1 lift_order=6; input Gram differs (recorded)
+PASS No.29: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1; input Gram differs (recorded)
+PASS No.30: S=18 T=4 P=4 K=18 index=3 dim=1 lift_order=3; input Gram differs (recorded)
+PASS No.31: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=4; input Gram differs (recorded)
+PASS No.32: S=18 T=4 P=4 K=18 index=6 dim=1 lift_order=12; input Gram differs (recorded)
+PASS No.33: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1; input Gram differs (recorded)
+PASS No.34: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=2
+PASS No.35: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=2; input Gram differs (recorded)
+PASS No.36: S=18 T=4 P=4 K=18 index=6 dim=1 lift_order=6; input Gram differs (recorded)
+PASS No.37: S=18 T=4 P=4 K=18 index=2 dim=2 lift_order=4; input Gram differs (recorded)
+PASS No.38: S=18 T=4 P=4 K=18 index=6 dim=1 lift_order=12; input Gram differs (recorded)
+PASS No.39: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1; input Gram differs (recorded)
+PASS No.40: S=18 T=4 P=3 K=19 index=2 dim=1 lift_order=2; input Gram differs (recorded)
+PASS No.41: S=18 T=4 P=2 K=20 index=6 dim=0 lift_order=6; input Gram differs (recorded)
+PASS No.42: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1
+PASS No.43: S=18 T=4 P=4 K=18 index=1 dim=2 lift_order=1; input Gram differs (recorded)
+PASS No.44: S=18 T=4 P=3 K=19 index=2 dim=1 lift_order=2; input Gram differs (recorded)
+PASS No.45: S=17 T=5 P=5 K=17 index=1 dim=3 lift_order=1; input Gram differs (recorded)
+PASS No.46: S=17 T=5 P=4 K=18 index=2 dim=2 lift_order=2; input Gram differs (recorded)
+PASS No.47: S=17 T=5 P=5 K=17 index=2 dim=3 lift_order=2; input Gram differs (recorded)
+PASS No.48: S=17 T=5 P=5 K=17 index=1 dim=3 lift_order=1; input Gram differs (recorded)
+PASS No.49: S=17 T=5 P=4 K=18 index=2 dim=2 lift_order=4; input Gram differs (recorded)
+PASS No.50: S=17 T=5 P=4 K=18 index=3 dim=1 lift_order=3; input Gram differs (recorded)
+PASS No.51: S=17 T=5 P=4 K=18 index=4 dim=1 lift_order=8; input Gram differs (recorded)
+PASS No.52: S=16 T=6 P=6 K=16 index=1 dim=4 lift_order=1; input Gram differs (recorded)
+PASS No.53: S=16 T=6 P=4 K=18 index=2 dim=2 lift_order=2; input Gram differs (recorded)
+PASS No.54: S=16 T=6 P=4 K=18 index=3 dim=1 lift_order=6; input Gram differs (recorded)
+PASS No.55: S=16 T=6 P=6 K=16 index=2 dim=4 lift_order=2; input Gram differs (recorded)
+PASS No.56: S=16 T=6 P=6 K=16 index=6 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.57: S=16 T=6 P=6 K=16 index=6 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.58: S=16 T=6 P=6 K=16 index=1 dim=4 lift_order=1; input Gram differs (recorded)
+PASS No.59: S=16 T=6 P=4 K=18 index=2 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.60: S=16 T=6 P=4 K=18 index=2 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.61: S=16 T=6 P=6 K=16 index=3 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.62: S=16 T=6 P=4 K=18 index=6 dim=1 lift_order=6; input Gram differs (recorded)
+PASS No.63: S=16 T=6 P=6 K=16 index=2 dim=4 lift_order=2; input Gram differs (recorded)
+PASS No.64: S=16 T=6 P=6 K=16 index=6 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.65: S=16 T=6 P=6 K=16 index=1 dim=4 lift_order=1; input Gram differs (recorded)
+PASS No.66: S=16 T=6 P=5 K=17 index=2 dim=3 lift_order=6; input Gram differs (recorded)
+PASS No.67: S=16 T=6 P=6 K=16 index=3 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.68: S=16 T=6 P=6 K=16 index=2 dim=4 lift_order=4; input Gram differs (recorded)
+PASS No.69: S=16 T=6 P=6 K=16 index=6 dim=2 lift_order=12; input Gram differs (recorded)
+PASS No.70: S=16 T=6 P=6 K=16 index=1 dim=4 lift_order=1; input Gram differs (recorded)
+PASS No.71: S=16 T=6 P=4 K=18 index=2 dim=2 lift_order=10; input Gram differs (recorded)
+PASS No.72: S=16 T=6 P=6 K=16 index=3 dim=2 lift_order=6; input Gram differs (recorded)
+PASS No.73: S=15 T=7 P=7 K=15 index=1 dim=5 lift_order=1; input Gram differs (recorded)
+PASS No.74: S=15 T=7 P=6 K=16 index=2 dim=4 lift_order=2; input Gram differs (recorded)
+PASS No.75: S=15 T=7 P=5 K=17 index=2 dim=3 lift_order=2; input Gram differs (recorded)
+PASS No.76: S=15 T=7 P=4 K=18 index=2 dim=2 lift_order=8; input Gram differs (recorded)
+PASS No.77: S=14 T=8 P=8 K=14 index=1 dim=6 lift_order=1
+PASS No.78: S=14 T=8 P=7 K=15 index=2 dim=5 lift_order=2
+PASS No.79: S=14 T=8 P=6 K=16 index=2 dim=4 lift_order=2
+PASS No.80: S=14 T=8 P=5 K=17 index=2 dim=3 lift_order=2
+PASS No.81: S=14 T=8 P=6 K=16 index=4 dim=2 lift_order=4
+PASS No.82: S=14 T=8 P=6 K=16 index=4 dim=2 lift_order=8
+PASS No.83: S=14 T=8 P=8 K=14 index=1 dim=6 lift_order=1
+PASS No.84: S=14 T=8 P=5 K=17 index=2 dim=3 lift_order=2
+PASS No.85: S=14 T=8 P=5 K=17 index=2 dim=3 lift_order=6
+PASS No.86: S=14 T=8 P=8 K=14 index=3 dim=3 lift_order=3
+PASS No.87: S=14 T=8 P=6 K=16 index=3 dim=2 lift_order=6
+PASS No.88: S=14 T=8 P=8 K=14 index=2 dim=6 lift_order=2
+PASS No.89: S=14 T=8 P=8 K=14 index=4 dim=3 lift_order=4
+PASS No.90: S=14 T=8 P=8 K=14 index=6 dim=3 lift_order=6
+PASS No.91: S=14 T=8 P=8 K=14 index=6 dim=3 lift_order=6
+PASS No.92: S=14 T=8 P=6 K=16 index=6 dim=2 lift_order=6
+PASS No.93: S=14 T=8 P=8 K=14 index=8 dim=1 lift_order=8
+PASS No.94: S=14 T=8 P=8 K=14 index=12 dim=1 lift_order=12
+PASS No.95: S=14 T=8 P=8 K=14 index=12 dim=1 lift_order=12
+PASS No.96: S=14 T=8 P=8 K=14 index=24 dim=0 lift_order=24; input Gram differs (recorded)
+PASS No.97: S=12 T=10 P=10 K=12 index=1 dim=8 lift_order=1
+PASS No.98: S=12 T=10 P=9 K=13 index=2 dim=7 lift_order=2
+PASS No.99: S=12 T=10 P=8 K=14 index=2 dim=6 lift_order=4
+PASS No.100: S=12 T=10 P=7 K=15 index=2 dim=5 lift_order=2
+PASS No.101: S=12 T=10 P=10 K=12 index=3 dim=4 lift_order=6
+PASS No.102: S=12 T=10 P=8 K=14 index=3 dim=3 lift_order=3
+PASS No.103: S=12 T=10 P=8 K=14 index=6 dim=3 lift_order=12
+PASS No.104: S=12 T=10 P=6 K=16 index=6 dim=2 lift_order=6
+PASS No.105: S=12 T=10 P=6 K=16 index=6 dim=2 lift_order=6
+PASS No.106: S=12 T=10 P=10 K=12 index=1 dim=8 lift_order=1
+PASS No.107: S=12 T=10 P=6 K=16 index=2 dim=4 lift_order=2
+PASS No.108: S=12 T=10 P=6 K=16 index=2 dim=4 lift_order=2
+PASS No.109: S=12 T=10 P=6 K=16 index=2 dim=4 lift_order=2
+PASS No.110: S=12 T=10 P=10 K=12 index=3 dim=4 lift_order=3
+PASS No.111: S=12 T=10 P=8 K=14 index=3 dim=3 lift_order=3
+PASS No.112: S=12 T=10 P=6 K=16 index=3 dim=2 lift_order=3
+PASS No.113: S=12 T=10 P=6 K=16 index=6 dim=2 lift_order=6
+PASS No.114: S=12 T=10 P=4 K=18 index=6 dim=1 lift_order=6
+PASS No.115: S=12 T=10 P=10 K=12 index=2 dim=8 lift_order=2
+PASS No.116: S=12 T=10 P=10 K=12 index=6 dim=4 lift_order=6
+PASS No.117: S=12 T=10 P=10 K=12 index=6 dim=4 lift_order=6
+PASS No.118: S=12 T=10 P=8 K=14 index=6 dim=3 lift_order=6
+PASS No.119: S=8 T=14 P=14 K=8 index=1 dim=12 lift_order=1
+PASS No.120: S=8 T=14 P=12 K=10 index=2 dim=10 lift_order=2
+PASS No.121: S=8 T=14 P=10 K=12 index=2 dim=8 lift_order=2
+PASS No.122: S=8 T=14 P=8 K=14 index=2 dim=6 lift_order=2
+PASS No.123: S=8 T=14 P=14 K=8 index=3 dim=6 lift_order=6
+PASS No.124: S=8 T=14 P=12 K=10 index=4 dim=5 lift_order=4
+PASS No.125: S=8 T=14 P=12 K=10 index=6 dim=5 lift_order=6
+PASS No.126: S=8 T=14 P=10 K=12 index=3 dim=4 lift_order=6
+PASS No.127: S=8 T=14 P=10 K=12 index=4 dim=4 lift_order=4
+PASS No.128: S=8 T=14 P=8 K=14 index=6 dim=3 lift_order=6
+PASS No.129: S=8 T=14 P=12 K=10 index=8 dim=2 lift_order=8
+PASS No.130: S=8 T=14 P=12 K=10 index=12 dim=2 lift_order=12
+PASS No.131: S=8 T=14 P=8 K=14 index=12 dim=1 lift_order=12
+PASS No.132: S=0 T=22 P=22 K=0 index=1 dim=20 lift_order=1
+PASS No.133: S=0 T=22 P=16 K=6 index=2 dim=14 lift_order=2
+PASS No.134: S=0 T=22 P=12 K=10 index=2 dim=10 lift_order=2
+PASS No.135: S=0 T=22 P=22 K=0 index=3 dim=10 lift_order=3
+PASS No.136: S=0 T=22 P=16 K=6 index=3 dim=7 lift_order=3
+PASS No.137: S=0 T=22 P=16 K=6 index=4 dim=7 lift_order=4
+PASS No.138: S=0 T=22 P=16 K=6 index=4 dim=7 lift_order=4
+PASS No.139: S=0 T=22 P=16 K=6 index=6 dim=7 lift_order=6
+PASS No.140: S=0 T=22 P=14 K=8 index=3 dim=6 lift_order=3
+PASS No.141: S=0 T=22 P=12 K=10 index=6 dim=5 lift_order=6
+PASS No.142: S=0 T=22 P=10 K=12 index=6 dim=4 lift_order=6
+PASS No.143: S=0 T=22 P=8 K=14 index=6 dim=3 lift_order=6
+PASS No.144: S=0 T=22 P=16 K=6 index=8 dim=3 lift_order=8
+PASS No.145: S=0 T=22 P=16 K=6 index=8 dim=3 lift_order=8
+PASS No.146: S=0 T=22 P=16 K=6 index=8 dim=3 lift_order=8
+PASS No.147: S=0 T=22 P=16 K=6 index=12 dim=3 lift_order=12
+PASS No.148: S=0 T=22 P=16 K=6 index=12 dim=3 lift_order=12
+PASS No.149: S=0 T=22 P=12 K=10 index=12 dim=2 lift_order=12
+PASS No.150: S=0 T=22 P=12 K=10 index=12 dim=2 lift_order=12
+PASS No.151: S=0 T=22 P=16 K=6 index=16 dim=1 lift_order=16
+PASS No.152: S=0 T=22 P=16 K=6 index=16 dim=1 lift_order=16
+PASS No.153: S=0 T=22 P=16 K=6 index=24 dim=1 lift_order=24
+PASS No.154: S=0 T=22 P=16 K=6 index=24 dim=1 lift_order=24
+PASS No.155: S=0 T=22 P=16 K=6 index=32 dim=0 lift_order=32
+PASS No.156: S=0 T=22 P=16 K=6 index=48 dim=0 lift_order=48
+PASS: 156/156 rows structurally checked; input unchanged=true

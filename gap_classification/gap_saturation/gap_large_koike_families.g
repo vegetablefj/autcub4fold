@@ -18,10 +18,10 @@ LargeKoikeA43CoordinateChange := (1/7) * [
   [ -1, -1, -1, -1, 6, -1 ], [ -1, -1, -1, -1, -1, 6 ] ];
 
 LargeKoikeFamilySourceRecord := rec(
-  sourceCatalogue := "unarchived docs/04_survivors_stripped (2)/04_survivors_stripped.md",
-  sourceData := "graph_data.js from the unarchived website working directory",
-  coordinateAudit := "unarchived docs/cubic_three_reports_FINAL_RECOMPILED (1)/report3_FINAL_RECOMPILED.tex",
-  rankSource := "tex/draft2_20260618.tex, main table",
+  sourceCatalogue := "manually curated survivor list",
+  sourceData := "frozen matrices and cubic bases below",
+  coordinateAudit := "manual coordinate check",
+  rankSource := "second paper, main table",
   rankCondition := "rank(S) >= 15",
   recordCount := 76,
   changedCoordinateRecordCount := 7,

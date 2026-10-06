@@ -1,0 +1,11 @@
+2026-09-29T02:15:13.268 | START Julia=1.10.11 OSCAR=1.8.2 threads=1 | elapsed=0.1 s
+2026-09-29T02:15:14.015 | TARGET_KCOMP_READY rank=10 det=1024 | elapsed=0.9 s
+2026-09-29T02:15:16.644 | TARGET_2ADIC_GENUS_DIFFERS_FROM_K0=true | elapsed=3.5 s
+2026-09-29T02:16:04.981 | GENERA_READY count=19; taking only local representatives #13/#14 | elapsed=51.9 s
+2026-09-29T02:16:05.091 | LOCAL_REP_STARTED genus=13 blocks=((-1, 2, 0, 1), (0, 2, 1, -1), (2, 1, 1, 1)) | elapsed=52.0 s
+2026-09-29T02:16:19.548 | LOCAL_REP_RETURNED genus=13 trace_even=true det=1024 target_2adic=true K0_2adic=false | elapsed=66.4 s
+2026-09-29T02:16:22.076 | LOCAL_ACTION_VERIFIED genus=13 order=4 | elapsed=68.9 s
+2026-09-29T02:16:22.080 | LOCAL_REP_STARTED genus=14 blocks=((-1, 2, 0, -1), (0, 2, 1, -1), (2, 1, 1, -1)) | elapsed=69.0 s
+2026-09-29T02:16:22.107 | LOCAL_REP_RETURNED genus=14 trace_even=true det=1024 target_2adic=false K0_2adic=true | elapsed=69.0 s
+2026-09-29T02:16:22.112 | LOCAL_ACTION_VERIFIED genus=14 order=4 | elapsed=69.0 s
+2026-09-29T02:16:22.115 | COMPLETED local comparison only; no global representative or equivariant Q glue | elapsed=69.0 s

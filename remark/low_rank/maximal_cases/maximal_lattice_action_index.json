@@ -1,0 +1,80 @@
+{
+  "schema": "maximal-lattice-action-index-v1",
+  "scope": "Pointers to saved results, not a replacement for their integral matrices or certificates",
+  "families": [
+    {
+      "number": 96,
+      "group": "S3 x C24",
+      "search": "complete exact-character T-action and extension search",
+      "mrdi": "family_096_phi24_oscar18.mrdi",
+      "mrdi_sha256": "9238c20340e189b38f1fdee7c4a8b1a33fb86e7e1f9b5572b1133484876bd053",
+      "retained_outputs": 1,
+      "selected_output": 1,
+      "geometric_comparison": "rational character and lattice checks; see maximal_lattice_actions.md"
+    },
+    {
+      "number": 127,
+      "group": "C4 x C2",
+      "search": "constructed and verified witness, not exhaustive direct integral-action enumeration",
+      "witness": "family_127_g13_full_finite_glue_preflight.json",
+      "selected_output": null,
+      "geometric_comparison": "theorem-dependent family identification; direct full-H4 conjugacy to the displayed equation remains open"
+    },
+    {
+      "number": 152,
+      "group": "C16",
+      "search": "complete exact-character integral-action search",
+      "mrdi": "brown_results/family_152_phi16_brown_oscar18.mrdi",
+      "mrdi_sha256": "e13626aaa31afb2bf9e2d65776b6f1c859bd9704d529289c36ec679ded092535",
+      "retained_outputs": 4,
+      "coprime_power_orbits": 1,
+      "selected_output": 1,
+      "selected_source_action": 1,
+      "selected_negative_pair_exponent_up_to_sign": 7,
+      "displayed_hodge_exponent": 7,
+      "geometric_comparison": "negative primitive pair matches; Hodge-line orientation not fixed"
+    },
+    {
+      "number": 154,
+      "group": "C24",
+      "search": "complete exact-character integral-action search",
+      "mrdi": "brown_results/family_154_phi24_brown_oscar18.mrdi",
+      "mrdi_sha256": "cd9337120a857a531cc96daf7950c89ab205da1cf79d9fefb346372ee6fe8106",
+      "retained_outputs": 4,
+      "coprime_power_orbits": 1,
+      "selected_output": 4,
+      "selected_source_action": 4,
+      "selected_negative_pair_exponent_up_to_sign": 5,
+      "displayed_hodge_exponent": 19,
+      "geometric_comparison": "negative primitive pair matches; Hodge-line orientation not fixed"
+    },
+    {
+      "number": 155,
+      "group": "C32",
+      "search": "complete exact-character integral-action search",
+      "mrdi": "family_155_phi32_oscar18.mrdi",
+      "mrdi_sha256": "9cad77eb7a7bd389ce8cafab13e11d0f4361d094cce83319a67cdfb16afad0db",
+      "retained_outputs": 8,
+      "coprime_power_orbits": 1,
+      "selected_output": 7,
+      "selected_source_action": 13,
+      "selected_negative_pair_exponent_up_to_sign": 11,
+      "displayed_hodge_exponent": 11,
+      "geometric_comparison": "negative primitive pair matches; Hodge-line orientation not fixed"
+    },
+    {
+      "number": 156,
+      "group": "C48",
+      "search": "complete exact-character integral-action search",
+      "mrdi": "brown_results/family_156_phi48_brown_oscar18.mrdi",
+      "mrdi_sha256": "38b59223132a3429a0c063e29c3401ffdd77e841c5f317f90efee6bae9747654",
+      "retained_outputs": 8,
+      "coprime_power_orbits": 1,
+      "selected_output": 2,
+      "selected_source_action": 2,
+      "selected_negative_pair_exponent_up_to_sign": 1,
+      "displayed_hodge_exponent": 1,
+      "geometric_comparison": "negative primitive pair matches; Hodge-line orientation not fixed"
+    }
+  ]
+}

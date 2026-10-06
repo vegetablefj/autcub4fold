@@ -1,0 +1,55 @@
+Brown OSCAR reruns (Julia 1.12.4, OSCAR 1.8.2)
+
+Copy the repository tree to Brown with its relative paths intact, and submit
+from the repository root. The recorded upload archive was a transport file
+and is not part of this repository. The separate Julia project
+~/oscar-julia-test/ must contain Project.toml and Manifest.toml with OSCAR
+1.8.2. Both launchers use this project by default. Set OSCAR_JULIA_PROJECT
+to an existing project directory to use another location.
+Each job requests one CPU, 16 GiB and 24 hours. The scripts first check
+their inputs, never overwrite a result, and write to job-specific directories.
+
+For a new run, first enter the copied repository root:
+
+    cd /path/to/copied/repository
+
+For one cyclic S=0 case, set FAMILY to 152, 154, 155 or 156:
+
+    sbatch --export=ALL,FAMILY=152 remark/enumeration/maximal/cyclic_s0_brown.sbatch
+
+For one prescribed high-rank case, set HIGH_NUMBER to 1, 3, 4, 7, 8,
+9, 11, 16, 19 or 34:
+
+    sbatch --export=ALL,HIGH_NUMBER=9 remark/enumeration/highrank/highrank_brown.sbatch
+
+After running high-rank No. 9 and cyclic No. 155 separately, all other
+12 cases can be submitted in one Slurm array. Its maximum concurrency is
+two independent one-node tasks. It reuses the same two launchers above:
+
+    sbatch remark/enumeration/remaining_brown_array.sbatch
+
+The array omits No. 9 and No. 155. Its console files are named
+remark-rerun-ARRAYID_TASKID.out/.err. Each task still writes its own
+job-specific MRDI, log, status and postcheck files under results/.
+
+Check the returned job ID with:
+
+    squeue -j JOBID
+    sacct -j JOBID --format=JobID,State,ExitCode,Elapsed,MaxRSS
+    tail -n 40 cyclic-s0-JOBID.out
+    tail -n 40 highrank-JOBID.out
+
+For a completed job, require Slurm COMPLETED with exit code 0 and the
+job-specific postcheck.status.txt containing PASSED. The Julia status file
+alone means only that the search finished; the separate postcheck validates
+the saved result. A nonzero Slurm exit or PENDING postcheck needs review.
+The exact-character outputs count generator actions, not automatically
+geometric family classes.
+
+The completed 2026-10-05 batch is preserved under
+remark/enumeration/results/2026-10-05/ in this repository. Its results
+remain separate from the earlier MRDI files. The imported bundle contains saved
+Julia statuses and independent postchecks, but not a Slurm sacct export.
+
+No. 42 has a different gluing calculation and is not in the high-rank batch.
+No. 105 has a separate calculation and is not in this batch.

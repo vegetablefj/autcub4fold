@@ -1,0 +1,2 @@
+# Preserve the new calculation materials byte for byte across platforms.
+/remark/** -text

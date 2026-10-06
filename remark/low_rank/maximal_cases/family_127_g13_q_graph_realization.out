@@ -1,0 +1,9 @@
+Family No. 127: exact full-L Q graph realization
+Q=L^-(g^2s) is saturated of rank 12 and absolute determinant 1024.
+Its coordinates in the common E^-s⊕K ambient lattice form an index-four overlattice.
+Matched saved graph: swap=False.
+The actual Q basis lies in that graph, and both lattices have absolute basis determinant 1/4.
+The reconstructed graph basis equals the saved HNF basis exactly.
+An explicit unimodular 12x12 change from actual Q to that saved basis is recorded in JSON.
+Gram and g/h/s-action intertwining hold exactly over Z.
+This identifies the graph for the saved first full-L witness only; it is not a complete finite graph search.

@@ -1,0 +1,12 @@
+Family No. 127: independently verified decorated P isometry
+Input: saturated q=g^2*s fixed lattice from saved full-L witness
+Target: geometric Marquand plane-class P
+Convention: row-action geometric pushforward; inverse not needed
+det(T) = -1
+T*G_geo*T^T = G_witness: true
+A_witness*T = T*A_geo_pushforward: true
+projected_plane_witness*T = projected_plane_geo: true
+Source SHA256 = f8b7c083d47280d58ec0a9b31a9aaad478b9aea3721006efc5d6e5d6a4748042
+Original certificate SHA256 = a6bc02b8e85984ac6e6777d062bc30963a2b8f6962a32033572c0bacbceb5caf
+Original certificate metadata SHA was SHA256(empty) due to a consumed Julia byte buffer; matrix is valid.
+This establishes an exact integral decorated-P isometry for this saved first full-L witness; it is not a complete search of all full-L glues.

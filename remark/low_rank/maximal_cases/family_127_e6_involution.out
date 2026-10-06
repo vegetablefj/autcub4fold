@@ -1,0 +1,27 @@
+Family 127: finite E6(2)-side involution audit
+E6 roots = 72; folded centralizer = 1152; plane stabilizer = 384
+Candidates = 4; orthogonal-root-pair presentations = 16
+Plane vector = [1 2 0 -2 -1 0]; norm in E6(2) = 24
+
+Candidate 1 (chosen seed)
+s_E = [-1 0 0 0 0 0; 1 1 0 0 0 0; 0 0 1 0 0 0; 0 0 0 1 1 0; 0 0 0 0 -1 0; 0 0 0 0 0 1]
+orthogonal roots = [1 0 0 0 0 0] and [0 0 0 0 1 0]
+plane-stabilizer conjugator from seed = [1 0 0 0 0 0; 0 1 0 0 0 0; 0 0 1 0 0 0; 0 0 0 1 0 0; 0 0 0 0 1 0; 0 0 0 0 0 1]
+
+Candidate 2
+s_E = [0 0 0 0 1 0; 0 0 -1 -1 -1 -1; 1 2 3 2 1 2; -1 -1 -1 0 0 -1; 1 0 0 0 0 0; -1 -2 -2 -2 -1 -1]
+orthogonal roots = [1 1 1 1 0 1] and [0 1 1 1 1 1]
+plane-stabilizer conjugator from seed = [1 1 1 1 0 0; 0 0 -1 -1 0 0; 0 1 2 1 0 1; 0 -1 -1 0 0 0; 0 1 1 1 1 0; 0 -1 -1 -1 0 -1]
+
+Candidate 3
+s_E = [0 0 0 0 1 0; 0 0 -1 -1 -1 0; 0 0 1 0 0 0; -1 -1 -1 0 0 0; 1 0 0 0 0 0; 1 2 2 2 1 1]
+orthogonal roots = [1 1 1 1 0 0] and [0 1 1 1 1 0]
+plane-stabilizer conjugator from seed = [1 1 1 1 0 0; 0 0 -1 -1 0 0; 0 0 1 0 0 0; 0 -1 -1 0 0 0; 0 1 1 1 1 0; 0 1 1 1 0 1]
+
+Candidate 4
+s_E = [0 0 0 0 1 0; 1 2 2 1 0 1; -1 -2 -3 -2 -1 -2; 0 1 2 2 1 1; 1 0 0 0 0 0; 0 0 0 0 0 1]
+orthogonal roots = [1 1 2 1 0 1] and [0 1 2 1 1 1]
+plane-stabilizer conjugator from seed = [1 1 1 1 0 0; 0 1 1 0 0 1; 0 -1 -2 -1 0 -1; 0 0 1 1 0 1; 0 1 1 1 1 0; 0 0 1 0 0 0]
+
+All four candidates form one orbit under the plane stabilizer: true
+This does not construct the N-side involution or test the ambient glue.

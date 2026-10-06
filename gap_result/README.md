@@ -1,6 +1,6 @@
 # Cubic-fourfold and threefold results
 
-This directory displays 156 cubic-fourfold and 40 cubic-threefold families. The fourfold rows use the stored order 1–156; the threefold rows use increasing source-fourfold number. The computation programs do not read these exports.
+This directory displays 156 cubic-fourfold and 40 cubic-threefold families. The fourfold rows use the stored order 1–156; the threefold rows use increasing source-fourfold number. The classification programs do not read these display exports. The separate numbering and generator files below supply fixed inputs to the later lattice calculations.
 
 ## Files
 
@@ -12,6 +12,8 @@ This directory displays 156 cubic-fourfold and 40 cubic-threefold families. The 
 | [threefold_families.g](threefold_families.g) | Final five-dimensional presentations, complete cubic bases, and metadata |
 | [threefold_relations.g](threefold_relations.g) | Complete positive relation, eligible decisions, covers, and extremal rows |
 | [threefold_result.md](threefold_result.md) | Threefold tables and statistics |
+| [family_numbering.md](../remark/input/family_numbering.md) | Fixed fourfold numbering, rank, index, and dimension used by the lattice scripts. |
+| [family_generators.g](../remark/input/family_generators.g) | Display-coordinate fourfold generators used for character and geometric identification checks. |
 
 ## Data conventions
 
@@ -25,4 +27,4 @@ All threefold liftability flags follow from coprimality of 3 and 5. Fourfold fla
 
 The full [fourfold catalogue and coordinate correspondence](../gap_classification/gap_manuscript_validation/README.md), [fourfold relation](../gap_classification/gap_fourfold_cross_dimension/README.md), and [threefold extraction and direct relation](../gap_classification/gap_threefold/README.md) remain in their computation modules with the proof certificates. The separately extracted threefold representatives remain in that module; they are not a second final result list here.
 
-For mechanical regeneration, run GAP from the repository root and read [`gap_classification/export_results.g`](../gap_classification/export_results.g). Projective group labels are saved in [`result_display_labels.g`](../gap_classification/result_display_labels.g). The export checks saved metadata and coverage, then replaces these seven display files. It performs no classification, invariant-space, liftability, or embedding calculation.
+For mechanical regeneration, run GAP from the repository root and read [`gap_classification/export_results.g`](../gap_classification/export_results.g). Projective group labels are saved in [`result_display_labels.g`](../gap_classification/result_display_labels.g). The export checks saved metadata and coverage, then replaces the six display files above and this README. It does not rewrite the two fixed lattice-input files or perform classification, invariant-space, liftability, or embedding calculations.

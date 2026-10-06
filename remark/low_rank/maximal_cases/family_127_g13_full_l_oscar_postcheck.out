@@ -1,0 +1,22 @@
+2026-09-29T02:55:06.327 | START Julia=1.10.11 OSCAR=1.8.2 threads=1 | elapsed=4.9 s
+2026-09-29T02:55:06.474 | L_LOADED sha256=43f385e222bda664e485d88ea3a8c83981793e4f2fbda2be8df184c29d886567 rank22_sig(20,2)_det3=true | elapsed=5.1 s
+2026-09-29T02:55:06.851 | CHARACTER side=T factor=Phi1 rank=1 signature=(1, 0, 0) | elapsed=5.4 s
+2026-09-29T02:55:06.854 | CHARACTER side=T factor=Phi2 rank=3 signature=(3, 0, 0) | elapsed=5.4 s
+2026-09-29T02:55:06.857 | CHARACTER side=T factor=Phi4 rank=10 signature=(8, 0, 2) | elapsed=5.4 s
+2026-09-29T02:55:06.859 | CHARACTER side=S factor=Phi1 rank=1 signature=(1, 0, 0) | elapsed=5.4 s
+2026-09-29T02:55:06.874 | CHARACTER side=S factor=Phi2 rank=1 signature=(1, 0, 0) | elapsed=5.5 s
+2026-09-29T02:55:06.878 | CHARACTER side=S factor=Phi4 rank=6 signature=(6, 0, 0) | elapsed=5.5 s
+2026-09-29T02:55:06.880 | NO127_FULL_CHARACTER Phi1^2_Phi2^4_Phi4^8=true; S/T characters and signatures=true | elapsed=5.5 s
+2026-09-29T02:55:06.955 | S_T_EIGENLATTICES_STARTED | elapsed=5.5 s
+2026-09-29T02:55:06.959 | S_T_EIGENLATTICES_RETURNED S_rank8_det256 T_rank14_det768 | elapsed=5.5 s
+2026-09-29T02:55:07.549 | STANDARD_TARGETS_READY | elapsed=6.1 s
+2026-09-29T02:55:10.287 | S_E8_2_GENUS_EQUAL=true | elapsed=8.9 s
+2026-09-29T02:55:10.293 | T_ORIGINAL_GENUS_EQUAL=true | elapsed=8.9 s
+2026-09-29T02:55:10.301 | L_CUBIC_PRIMITIVE_GENUS_EQUAL=true | elapsed=8.9 s
+2026-09-29T02:55:10.303 | T_ORIGINAL_ISOMETRIC_BY_INDEFINITE_GENUS_UNIQUENESS=true | elapsed=8.9 s
+2026-09-29T02:55:10.305 | L_CUBIC_PRIMITIVE_ISOMETRIC_BY_INDEFINITE_GENUS_UNIQUENESS=true | elapsed=8.9 s
+2026-09-29T02:55:10.308 | S_E8_2_ISOMETRY_STARTED | elapsed=8.9 s
+2026-09-29T02:56:31.904 | S_E8_2_ISOMETRIC=true | elapsed=90.5 s
+2026-09-29T02:56:31.906 | L_CUBIC_PRIMITIVE_ISOMETRY_STARTED | elapsed=90.5 s
+2026-09-29T02:56:34.397 | L_CUBIC_PRIMITIVE_ISOMETRIC=true | elapsed=93.0 s
+2026-09-29T02:56:34.399 | COMPLETED one saved witness only; no finite-glue uniqueness or geometric conjugacy | elapsed=93.0 s

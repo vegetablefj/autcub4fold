@@ -1,0 +1,17 @@
+Mechanical S=0 standard-field normalization; no new enumeration or mathematical family identification.
+Input: /mnt/c/Users/85806/Desktop/automorphism group of cubic threefolds and fourfolds/autcub4fold_github/oscar_lattice_catalogue/assembly/lattice_156_from_sources_raw.mrdi
+Input SHA-256: abe1873537e640827768ec64cec5bdafa25fa18d53356113b1bf1c209fb05905
+Output: /mnt/c/Users/85806/Desktop/automorphism group of cubic threefolds and fourfolds/autcub4fold_github/oscar_lattice_catalogue/assembly/lattice_156_from_sources_standard.mrdi
+PASS No.134: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.136: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.140: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.141: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.142: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.143: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.149: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.150: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.152: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.154: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.155: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS No.156: old T/P actions and embedded P/K compatible; standard nine fields filled; exponent=1
+PASS: 12 normalized rows; 144 unrelated rows unchanged; legacy metadata retained; stage/final reload passed.

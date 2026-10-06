@@ -1,0 +1,12 @@
+Family 127: fixed E6(2) and first saved N witness
+N source sha256=3549ff234a0e81c62b46a2b44827f14eaf6c4fe528573c18ee2cdaf344523b69
+simultaneous g/s intertwiner dimension=12
+linear maps tested=4096
+invertible maps=768
+quadratic anti-isometries=96
+first anti-isometry one-based index=1282 rows=[1, 16, 60, 4, 2, 55]
+last anti-isometry one-based index=3932 rows=[2, 13, 55, 26, 1, 8]
+All quadratic anti-isometries form one orbit under the finite
+centralizer O(q_E,g_E,s_E), by composition with the inverse of
+any fixed anti-isometry; this does not classify integral glues.
+COMPLETED: all 4096 finite maps counted; no rank-22 Gram built

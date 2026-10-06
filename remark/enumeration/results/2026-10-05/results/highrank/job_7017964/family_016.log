@@ -1,0 +1,24 @@
+2026-10-05T01:32:20.330 | Loading shared OSCAR search functions; Julia 1.12.4 | elapsed=0.18 s
+2026-10-05T01:33:45.290 | START selected original inputs | elapsed=85.14 s
+2026-10-05T01:33:46.111 | DONE selected original inputs; step=0.81 s | elapsed=85.97 s
+2026-10-05T01:33:46.113 | No. 16: prescribed T action of order 2; gluing index 100; preparing O(S) | elapsed=85.97 s
+2026-10-05T01:34:55.460 | START discriminant_group(S) | elapsed=155.31 s
+2026-10-05T01:34:55.469 | DONE discriminant_group(S); step=0.002 s | elapsed=155.32 s
+2026-10-05T01:34:55.471 | START orthogonal_group(S) | elapsed=155.33 s
+2026-10-05T01:35:03.337 | DONE orthogonal_group(S); step=7.865 s | elapsed=163.19 s
+2026-10-05T01:35:03.342 | START discriminant_representation(S,O(S)) | elapsed=163.2 s
+2026-10-05T01:35:32.033 | DONE discriminant_representation(S,O(S)); step=28.69 s | elapsed=191.89 s
+2026-10-05T01:35:32.040 | START discriminant image | elapsed=191.89 s
+2026-10-05T01:35:32.536 | DONE discriminant image; step=0.495 s | elapsed=192.39 s
+2026-10-05T01:35:32.538 | START stable kernel order | elapsed=192.39 s
+2026-10-05T01:35:32.542 | DONE stable kernel order; step=0.003 s | elapsed=192.4 s
+2026-10-05T01:35:32.716 | START cache O(S) and stable-kernel matrices | elapsed=192.57 s
+2026-10-05T01:35:33.260 | DONE cache O(S) and stable-kernel matrices; step=0.541 s | elapsed=193.11 s
+2026-10-05T01:36:56.453 | START lattice_data_for_T_action | elapsed=276.31 s
+2026-10-05T01:37:20.666 | DONE lattice_data_for_T_action; step=24.208 s | elapsed=300.52 s
+2026-10-05T01:37:20.671 | Prescribed-action search returned 1 ambient witnesses | elapsed=300.52 s
+2026-10-05T01:37:21.646 | START output 1 cached full-group check | elapsed=301.5 s
+2026-10-05T01:37:22.475 | DONE output 1 cached full-group check; step=0.827 s | elapsed=302.33 s
+2026-10-05T01:37:24.095 | START save and reload sidecar | elapsed=303.95 s
+2026-10-05T01:37:58.156 | DONE save and reload sidecar; step=34.058 s | elapsed=338.01 s
+2026-10-05T01:37:58.161 | PASS No. 16: saved 1 ambient witnesses; full group order 240 | elapsed=338.01 s

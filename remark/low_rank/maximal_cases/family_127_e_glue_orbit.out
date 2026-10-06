@@ -1,0 +1,14 @@
+Family 127: E6(2) plane/g/s stabilizer orbit on fixed V10 N glue
+N source sha256=3549ff234a0e81c62b46a2b44827f14eaf6c4fe528573c18ee2cdaf344523b69
+full first-glue sha256=43f385e222bda664e485d88ea3a8c83981793e4f2fbda2be8df184c29d886567
+folded Weyl centralizer order=1152
+plane stabilizer order=384
+plane and s_E stabilizer order=96
+distinct mod-2 reductions of that stabilizer=96 (faithful)
+all simultaneous g/s quadratic anti-isometries=96
+orbit of first anti-isometry under integral E stabilizer=96
+orbit equals complete finite anti-isometry set=true
+For this fixed E,N action and plane, all 96 graph overlattices
+are conjugate by w+I_N with w in the integral E6 Weyl stabilizer.
+No claim about other N witnesses, K actions, or geometric No. 127.
+COMPLETED: exact finite enumeration; no rank-22 Gram rebuilt

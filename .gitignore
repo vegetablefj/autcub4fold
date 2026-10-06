@@ -1,0 +1,20 @@
+# Local writing and build files.
+/remark/main.tex
+/remark/reference.bib
+/remark/anc/
+/remark/table_formatting/
+/remark/main.aux
+/remark/main.bbl
+/remark/main.blg
+/remark/main.fdb_latexmk
+/remark/main.fls
+/remark/main.log
+/remark/main.out
+/remark/main.toc
+/remark/main.synctex.gz
+/remark/main.pdf
+/output/
+
+# Python bytecode is local cache, not a saved computation.
+__pycache__/
+*.pyc

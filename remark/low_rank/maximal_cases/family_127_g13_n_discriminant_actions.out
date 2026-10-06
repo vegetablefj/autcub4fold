@@ -1,0 +1,28 @@
+No. 127: finite discriminant (g,s)-action comparison
+source=family_127_g13_n_finite_full_v1-35.json
+source_sha256=e2cb89aebb5fe13953ec7d0c0ac2ac8d86fbcaec050512367c24e28b5029ee8a
+reference=V10; each A_N has order 64 and exponent two
+V  equivariant_dimension  equivariant_maps  invertible  q_isometries
+10                    12              4096         768            96
+11                    12              4096         768            96
+12                    12              4096         768            96
+13                    12              4096         768            96
+16                    12              4096         768            96
+17                    12              4096         768            96
+18                    12              4096         768            96
+19                    12              4096         768            96
+28                    12              4096         768            96
+29                    12              4096         768            96
+30                    12              4096         768            96
+31                    12              4096         768            96
+32                    12              4096         768            96
+33                    12              4096         768            96
+34                    12              4096         768            96
+35                    12              4096         768            96
+All 16 finite quadratic discriminant modules with g,s action
+are isomorphic to the V10 one.
+The V10 E-side anti-isometric graph therefore transports to
+each saved N witness at the finite discriminant-module level.
+This does NOT prove integral equivalence of the 16 N-actions
+or L-actions, root/saturation conditions, or completeness across
+other global Hermitian classes. COMPLETED

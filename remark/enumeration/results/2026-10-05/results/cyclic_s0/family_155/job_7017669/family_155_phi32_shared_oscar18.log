@@ -1,0 +1,54 @@
+2026-10-05T00:59:21.019 | Julia 1.12.4; OSCAR 1.8.2; character Phi1 Phi2 Phi8 Phi32 | elapsed 1.51 s
+2026-10-05T00:59:21.028 | Cgroup resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 1.52 s
+2026-10-05T01:03:59.189 | Enumerating exact order-32 actions on the rank-22 ambient lattice | elapsed 279.68 s
+2026-10-05T01:18:09.580 | Exact-character enumeration returned 48 action class(es) | elapsed 1130.07 s
+2026-10-05T01:18:09.817 | Action 1/48: retained | elapsed 1130.31 s
+2026-10-05T01:18:09.849 | Action 2/48: retained | elapsed 1130.34 s
+2026-10-05T01:18:09.869 | Action 3/48: rejected, non-stable ambient action | elapsed 1130.36 s
+2026-10-05T01:18:09.890 | Action 4/48: rejected, non-stable ambient action | elapsed 1130.38 s
+2026-10-05T01:18:09.911 | Action 5/48: retained | elapsed 1130.4 s
+2026-10-05T01:18:09.931 | Action 6/48: retained | elapsed 1130.42 s
+2026-10-05T01:18:09.950 | Action 7/48: rejected, non-stable ambient action | elapsed 1130.44 s
+2026-10-05T01:18:09.969 | Action 8/48: rejected, non-stable ambient action | elapsed 1130.46 s
+2026-10-05T01:18:09.989 | Action 9/48: retained | elapsed 1130.48 s
+2026-10-05T01:18:10.011 | Action 10/48: retained | elapsed 1130.5 s
+2026-10-05T01:18:10.031 | Action 11/48: rejected, non-stable ambient action | elapsed 1130.52 s
+2026-10-05T01:18:10.050 | Action 12/48: rejected, non-stable ambient action | elapsed 1130.54 s
+2026-10-05T01:18:10.071 | Action 13/48: retained | elapsed 1130.56 s
+2026-10-05T01:18:10.092 | Action 14/48: retained | elapsed 1130.58 s
+2026-10-05T01:18:10.111 | Action 15/48: rejected, non-stable ambient action | elapsed 1130.6 s
+2026-10-05T01:18:10.130 | Action 16/48: rejected, non-stable ambient action | elapsed 1130.62 s
+2026-10-05T01:18:10.150 | Action 17/48: rejected, root in the positive complement | elapsed 1130.64 s
+2026-10-05T01:18:10.169 | Action 18/48: rejected, root in the positive complement | elapsed 1130.66 s
+2026-10-05T01:18:10.188 | Action 19/48: rejected, non-stable ambient action | elapsed 1130.68 s
+2026-10-05T01:18:10.208 | Action 20/48: rejected, non-stable ambient action | elapsed 1130.7 s
+2026-10-05T01:18:10.230 | Action 21/48: rejected, root in the positive complement | elapsed 1130.72 s
+2026-10-05T01:18:10.250 | Action 22/48: rejected, root in the positive complement | elapsed 1130.74 s
+2026-10-05T01:18:10.269 | Action 23/48: rejected, non-stable ambient action | elapsed 1130.76 s
+2026-10-05T01:18:10.315 | Action 24/48: rejected, non-stable ambient action | elapsed 1130.81 s
+2026-10-05T01:18:10.341 | Action 25/48: rejected, root in the positive complement | elapsed 1130.83 s
+2026-10-05T01:18:10.362 | Action 26/48: rejected, root in the positive complement | elapsed 1130.86 s
+2026-10-05T01:18:10.382 | Action 27/48: rejected, non-stable ambient action | elapsed 1130.87 s
+2026-10-05T01:18:10.402 | Action 28/48: rejected, non-stable ambient action | elapsed 1130.89 s
+2026-10-05T01:18:10.422 | Action 29/48: rejected, root in the positive complement | elapsed 1130.91 s
+2026-10-05T01:18:10.442 | Action 30/48: rejected, root in the positive complement | elapsed 1130.93 s
+2026-10-05T01:18:10.462 | Action 31/48: rejected, non-stable ambient action | elapsed 1130.95 s
+2026-10-05T01:18:10.482 | Action 32/48: rejected, non-stable ambient action | elapsed 1130.97 s
+2026-10-05T01:18:10.502 | Action 33/48: rejected, root in the positive complement | elapsed 1130.99 s
+2026-10-05T01:18:10.523 | Action 34/48: rejected, root in the positive complement | elapsed 1131.02 s
+2026-10-05T01:18:10.544 | Action 35/48: rejected, non-stable ambient action | elapsed 1131.04 s
+2026-10-05T01:18:10.565 | Action 36/48: rejected, non-stable ambient action | elapsed 1131.06 s
+2026-10-05T01:18:10.586 | Action 37/48: rejected, root in the positive complement | elapsed 1131.08 s
+2026-10-05T01:18:10.606 | Action 38/48: rejected, root in the positive complement | elapsed 1131.1 s
+2026-10-05T01:18:10.626 | Action 39/48: rejected, non-stable ambient action | elapsed 1131.12 s
+2026-10-05T01:18:10.647 | Action 40/48: rejected, non-stable ambient action | elapsed 1131.14 s
+2026-10-05T01:18:10.668 | Action 41/48: rejected, root in the positive complement | elapsed 1131.16 s
+2026-10-05T01:18:10.688 | Action 42/48: rejected, root in the positive complement | elapsed 1131.18 s
+2026-10-05T01:18:10.708 | Action 43/48: rejected, non-stable ambient action | elapsed 1131.2 s
+2026-10-05T01:18:10.729 | Action 44/48: rejected, non-stable ambient action | elapsed 1131.22 s
+2026-10-05T01:18:10.748 | Action 45/48: rejected, root in the positive complement | elapsed 1131.24 s
+2026-10-05T01:18:10.769 | Action 46/48: rejected, root in the positive complement | elapsed 1131.26 s
+2026-10-05T01:18:10.788 | Action 47/48: rejected, non-stable ambient action | elapsed 1131.28 s
+2026-10-05T01:18:10.808 | Action 48/48: rejected, non-stable ambient action | elapsed 1131.3 s
+2026-10-05T01:18:10.810 | Filter summary: stable=24, root-free=8, retained=8 | elapsed 1131.3 s
+2026-10-05T01:18:35.542 | Completed; MRDI reload and post-checks passed | elapsed 1156.03 s

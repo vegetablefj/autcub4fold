@@ -1,0 +1,26 @@
+Running as unit: run-r89cf0ac4f2f1474eaaadf0338cbf924e.scope; invocation ID: bc8d75a32cd84de5b60a2fc99f7873d3
+┌ Warning: /usr/bin/wslview not found, to use native viewers for
+│          visualization on Windows (with WSL) please install wslview
+│          and run `Polymake.configure_wslview()` afterwards.
+└ @ Polymake ~/.julia/packages/Polymake/oOZ7J/src/visual.jl:154
+No. 102 parent 67, class 1
+T determinant = 3072
+T characteristic polynomial = x^10 + 2*x^9 + 3*x^8 - 3*x^6 - 6*x^5 - 3*x^4 + 3*x^2 + 2*x + 1
+fixed Gram = [12 6; 6 4]
+P determinant = 2304
+K determinant = 768
+No. 102 parent 67, class 2
+T determinant = 3072
+T characteristic polynomial = x^10 + 2*x^9 + 3*x^8 - 3*x^6 - 6*x^5 - 3*x^4 + 3*x^2 + 2*x + 1
+fixed Gram = [4 -6; -6 12]
+P determinant = 2304
+K determinant = 768
+No. 102 parent 69, class 1
+T determinant = 3072
+T characteristic polynomial = x^10 + 2*x^9 + 3*x^8 - 3*x^6 - 6*x^5 - 3*x^4 + 3*x^2 + 2*x + 1
+fixed Gram = [4 -2; -2 4]
+P determinant = 2304
+K determinant = 768
+No. 69 class versus No. 67 class 1: same OSCAR type = true
+No. 69 class versus No. 67 class 2: same OSCAR type = true
+Same type is necessary, not sufficient, for integral conjugacy.

@@ -1,0 +1,8 @@
+2026-10-02T09:37:53Z | Recomputing short/long root obstruction
+2026-10-02T09:38:04Z | Root check passed; recomputing discriminant-kernel orders
+2026-10-02T09:40:44Z | Kernel orders S/K = 4/4; recomputing projective group ID
+2026-10-02T09:41:11Z | RECOMPUTE_AUDIT_PASS: no roots; S/K kernel orders 4/4; group ID (24,13)
+┌ Warning: /usr/bin/wslview not found, to use native viewers for
+│          visualization on Windows (with WSL) please install wslview
+│          and run `Polymake.configure_wslview()` afterwards.
+└ @ Polymake ~/.julia/packages/Polymake/oOZ7J/src/visual.jl:154

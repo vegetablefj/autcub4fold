@@ -1,0 +1,11 @@
+2026-09-29T02:11:47.008 | START Julia=1.10.11 OSCAR=1.8.2 threads=1 | elapsed=0.2 s
+2026-09-29T02:11:48.063 | A_EMBEDDING_VERIFIED Gram=4I2 primitive=true E8_t_index=2 E8_t_sign=-1 | elapsed=1.2 s
+2026-09-29T02:11:48.068 | ORTHOGONAL_COMPLEMENT_STARTED | elapsed=1.2 s
+2026-09-29T02:11:48.439 | ORTHOGONAL_COMPLEMENT_RETURNED rank=10 signature=(8,2) det=1024 A_K=(Z4)^2(Z2)^6 delta_K=0 | elapsed=1.6 s
+2026-09-29T02:11:48.608 | K0_J_VERIFIED K0=U+U(2)+D6(2), J0 integral and J0^2=-I | elapsed=1.8 s
+2026-09-29T02:11:48.614 | ISOMETRY_STARTED Kcomp vs K0 | elapsed=1.8 s
+2026-09-29T02:11:51.723 | ISOMETRY_GENUS_EQUAL=false | elapsed=4.9 s
+2026-09-29T02:11:51.729 | ISOMETRY_RETURNED Kcomp_isometric_K0=false | elapsed=4.9 s
+2026-09-29T02:11:54.717 | HERMITIAN_STRUCTURE_STARTED for explicit J0 on K0 | elapsed=7.9 s
+2026-09-29T02:12:50.658 | HERMITIAN_GENUS_MATCH indices=[14] among_19; zero_based=false | elapsed=63.8 s
+2026-09-29T02:12:50.664 | COMPLETED; abstract K isometry does not assert J0 extends to Q | elapsed=63.8 s

@@ -1,0 +1,14 @@
+Family 96 exact-Phi24 search started 2026-09-21T15:25:31.600
+2026-09-21T15:25:31.849 | Resource guard passed: high=4294967296, max=6442450944, swap=0 | elapsed 0.18 s
+2026-09-21T15:26:02.300 | Julia 1.10.11; OSCAR 1.8.2; public 1.8 primitive-extension route | elapsed 30.63 s
+2026-09-21T15:26:02.337 | Enumerating rank-eight pure-Phi24 T-actions | elapsed 30.66 s
+2026-09-21T15:26:02.840 | FAILED: MethodError: no method matching cyclotomic_polynomial(::QQPolyRing, ::Int64) | elapsed 31.17 s
+Family 96 exact-Phi24 search started 2026-09-21T15:30:13.606
+2026-09-21T15:30:13.965 | Resource guard passed: high=4294967296, max=6442450944, swap=0 | elapsed 0.26 s
+2026-09-21T15:30:58.960 | Julia 1.10.11; OSCAR 1.8.2; public 1.8 primitive-extension route | elapsed 45.25 s
+2026-09-21T15:36:20.472 | Enumerating rank-eight pure-Phi24 T-actions | elapsed 366.76 s
+2026-09-21T15:38:03.350 | Exact-character enumeration returned 1 T-action class(es) | elapsed 469.64 s
+2026-09-21T15:38:11.310 | Running public primitive extensions for T-action 1/1 | elapsed 477.6 s
+2026-09-21T15:38:23.669 | T-action 1 retained 1 extension datum(a) | elapsed 489.96 s
+2026-09-21T15:38:37.402 | Retained group=(144, 69); expected=true; checks=true | elapsed 503.69 s
+2026-09-21T15:38:56.519 | Completed; MRDI reload and all post-checks passed | elapsed 522.81 s

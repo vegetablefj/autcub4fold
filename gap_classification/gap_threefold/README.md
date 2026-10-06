@@ -46,7 +46,7 @@ the coordinate audit verifies their equality up to linear conjugacy,
 including their polynomial spaces and dimensions. The saved 63-source
 extraction audit includes the 23 negative Fermat decisions; it is not a
 third independently maintained list of 40 families. The saved formula input
-records the displayed matrices and bases in GAP form.
+records the displayed matrices and bases in GAP form; no TeX is read.
 
 The final GAP-readable catalogue is
 [gap_threefold_families.g](result/gap_threefold_families.g), with variable

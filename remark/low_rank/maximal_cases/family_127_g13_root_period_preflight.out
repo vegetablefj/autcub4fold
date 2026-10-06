@@ -1,0 +1,7 @@
+2026-09-29T03:05:01.946 | START Julia=1.10.11 OSCAR=1.8.2 threads=1 | elapsed=0.1 s
+2026-09-29T03:05:02.835 | FULL_WITNESS_LOADED sha256=43f385e222bda664e485d88ea3a8c83981793e4f2fbda2be8df184c29d886567 | elapsed=1.0 s
+2026-09-29T03:05:05.612 | T_WITH_RESTRICTED_G_READY rank14 | elapsed=3.8 s
+2026-09-29T03:05:05.648 | PERIOD_P_RANK10_SIG8_2_DIM4=true; K_ORTHOGONAL_RANK12_POSITIVE=true | elapsed=3.8 s
+2026-09-29T03:05:05.650 | HAS_ROOT_STARTED | elapsed=3.8 s
+2026-09-29T03:05:06.512 | HAS_ROOT=false; ROOT_FREE=true | elapsed=4.7 s
+2026-09-29T03:05:06.515 | COMPLETED root/period necessary check only; saturation not tested | elapsed=4.7 s

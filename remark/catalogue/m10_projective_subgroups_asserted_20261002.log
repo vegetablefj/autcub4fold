@@ -1,0 +1,32 @@
+M10/A6 pencil: asserted projective-subgroup check, 2026-10-02
+
+Command (from repository root under WSL):
+  gap -q autcub4fold/oscar_lattice_catalogue/m10_projective_subgroups.g
+Exit code: 0
+
+size G = 1080; size Z = 3; size Q = 360; IdGroup(Q) = [360,118]
+all subgroup conjugacy classes = 22
+cubic invariant dimension = 2
+exact f,g invariance under s,t = true
+printed-sign g invariant under s,t = false
+corrected f,g span all invariant cubics = true
+r0 pullback on (f,g_correct) = [[-378,-270],[-54,378]]
+r0 preserves pencil = true
+eigenslope polynomial coefficients = [-54,756,270]
+
+For each subgroup class of index at most 32:
+  index 30, order 12: eigenspace dimensions [1,1,1]; slopes [1/4,7,1/4]
+  index 30, order 12: eigenspace dimensions [1,1,1]; slopes [-1,-1,infinity only]
+  index 20, order 18: eigenspace dimensions []
+  index 15, order 24: eigenspace dimensions [1]; slope [7]
+  index 15, order 24: eigenspace dimensions [1]; slope [infinity only]
+  index 10, order 36: eigenspace dimensions []
+  index 6, order 60: eigenspace dimensions [1]; slope [1/4]
+  index 6, order 60: eigenspace dimensions [1]; slope [-1]
+  index 1, order 360: eigenspace dimensions []
+
+PASS: 9 subgroup classes and 10 common eigenlines checked;
+finite singular parameters = [-1,1/4,7].
+
+The script now raises an error if a relevant common eigenspace has dimension
+above one or if a finite singular parameter falls outside this exact set.

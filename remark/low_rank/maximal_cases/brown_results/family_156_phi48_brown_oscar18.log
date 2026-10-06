@@ -1,0 +1,38 @@
+Family 156 exact-character search started 2026-09-26T16:50:23.435
+2026-09-26T16:50:23.570 | FAILED: MethodError: no method matching mapreduce(::typeof(identity), ::typeof(min), ::Vector{Tuple{BigInt, String}}; by::typeof(first))
+This method does not support all of the given keyword arguments (and may not support any).
+
+Closest candidates are:
+  mapreduce(::Any, ::Any, ::Union{Base.AbstractBroadcasted, AbstractArray}; dims, init) got unsupported keyword argument "by"
+   @ Base reducedim.jl:326
+  mapreduce(::Any, ::Any, ::Union{Base.AbstractBroadcasted, AbstractArray}, Union{Base.AbstractBroadcasted, AbstractArray}...; kw...)
+   @ Base reducedim.jl:328
+  mapreduce(::Any, ::Any, ::Any; kw...)
+   @ Base reduce.jl:299
+  ...
+ | elapsed 0.12 s
+Family 156 exact-character search started 2026-09-26T17:47:15.217
+2026-09-26T17:47:15.531 | Slurm resource guard passed: high=17179869184, max=17179869184 | elapsed 0.18 s
+2026-09-26T17:48:15.940 | Julia 1.12.4; OSCAR 1.8.2; S=0 direct ambient-lattice route | elapsed 60.59 s
+2026-09-26T17:48:15.961 | Checking the rank-22 lattice input | elapsed 60.61 s
+2026-09-26T17:48:16.305 | Lattice input checks passed; constructing the exact character | elapsed 60.96 s
+2026-09-26T17:48:16.308 | Enumerating all order-48 actions with the exact three-block character | elapsed 60.96 s
+2026-09-26T20:50:13.376 | Exact-character enumeration returned 16 action class(es) | elapsed 10978.03 s
+2026-09-26T20:50:19.838 | Action 1/16: retained; geometric checks all passed | elapsed 10984.49 s
+2026-09-26T20:50:20.339 | Action 2/16: retained; geometric checks all passed | elapsed 10984.99 s
+2026-09-26T20:50:20.835 | Action 3/16: retained; geometric checks all passed | elapsed 10985.49 s
+2026-09-26T20:50:21.331 | Action 4/16: retained; geometric checks all passed | elapsed 10985.98 s
+2026-09-26T20:50:21.829 | Action 5/16: retained; geometric checks all passed | elapsed 10986.48 s
+2026-09-26T20:50:22.334 | Action 6/16: retained; geometric checks all passed | elapsed 10986.99 s
+2026-09-26T20:50:22.831 | Action 7/16: retained; geometric checks all passed | elapsed 10987.48 s
+2026-09-26T20:50:23.326 | Action 8/16: retained; geometric checks all passed | elapsed 10987.98 s
+2026-09-26T20:50:23.735 | Action 9/16: rejected, short or long root in K | elapsed 10988.39 s
+2026-09-26T20:50:24.132 | Action 10/16: rejected, short or long root in K | elapsed 10988.78 s
+2026-09-26T20:50:24.539 | Action 11/16: rejected, short or long root in K | elapsed 10989.19 s
+2026-09-26T20:50:24.937 | Action 12/16: rejected, short or long root in K | elapsed 10989.59 s
+2026-09-26T20:50:25.339 | Action 13/16: rejected, short or long root in K | elapsed 10989.99 s
+2026-09-26T20:50:25.738 | Action 14/16: rejected, short or long root in K | elapsed 10990.39 s
+2026-09-26T20:50:26.140 | Action 15/16: rejected, short or long root in K | elapsed 10990.79 s
+2026-09-26T20:50:26.539 | Action 16/16: rejected, short or long root in K | elapsed 10991.19 s
+2026-09-26T20:50:26.541 | Filter summary: stable=16, root-free after stability=8, retained=8 | elapsed 10991.19 s
+2026-09-26T20:50:47.626 | Completed; MRDI reload and all post-checks passed | elapsed 11012.28 s

@@ -187,7 +187,7 @@ All six partial derivatives of `a*B1+b*B2` vanish at `p(r)` identically. Every p
 
 ## Output recovery
 
-Five initial nonliftable jobs reached the end of S4 but their summary driver expected different result fields. Complete S4 logs and saved S3 data were used to normalize those outputs, checking every family status. Liftable S4 files written after Singular changed the working directory were recovered byte-for-byte, with recorded hashes. The initial error logs are preserved; the successful normalizations supersede their incomplete labels.
+Five initial nonliftable jobs reached the end of S4 but their summary driver expected different result fields. Complete S4 logs and saved S3 data were used to normalize those outputs, checking every family status. Liftable S4 files written after Singular changed the working directory were recovered unchanged. The initial error logs are preserved; the successful normalizations supersede their incomplete labels.
 
 ## Detailed smooth candidates
 

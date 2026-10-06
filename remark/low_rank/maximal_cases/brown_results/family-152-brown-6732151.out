@@ -1,0 +1,430 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 6732151
+##  Job Name : family152-phi16
+##  Nodelist : node1833
+##      CPUs : 
+##  Mem/Node : 16384 MB
+## Directory : /oscar/home/jfu74/oscar-julia-test/maximal_brown/autcub4fold/oscar_low_rank/maximal_cases
+##   Job Started : Sat Sep 26 10:48:48 PM EDT 2026
+###############################################################################
+host=node1833.oscar.ccv.brown.edu
+job=6732151
+started=2026-09-26T22:48:49-04:00
+workdir=/users/jfu74/oscar-julia-test/maximal_brown/autcub4fold/oscar_low_rank/maximal_cases
+slurm_mem_per_node_mib=16384
+2026-09-26T22:48:50.450 | Slurm resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 0.08 s
+2026-09-26T22:49:54.025 | Julia 1.12.4; OSCAR 1.8.2; S=0 direct ambient-lattice route | elapsed 63.66 s
+2026-09-26T22:49:54.048 | Checking the rank-22 lattice input | elapsed 63.68 s
+2026-09-26T22:49:54.486 | Lattice input passed; enumerating exact order-16 actions | elapsed 64.12 s
+Conditions computed
+Taking 2^4-th roots for isometry of order 16
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 + 1: 16
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-6 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6_0  x^8 + 1: 16
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4  x^8 + 1: 12
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-4 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4_0  x^8 + 1: 12
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-2 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 + 1: 16
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-6 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4  x^8 + 1: 12
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-4 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate Z-genus Genus symbol: II_(6, 0) 2^-2 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 + 1: 16
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 4^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(4, 0) 2^2 4^-2_2 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4  x^8 + 1: 12
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 4^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(4, 0) 4^-2_2 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(4, 0) 2^-4_6 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(4, 0) 2^-4_6 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(4, 0) 2^-2_6 3^-1
+Definite genus of rank bigger than 2
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 + 1: 16
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 4^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-1_3 8^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^1_7 8^-1_5 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^1_7 8^-1_5 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-1_3 8^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-2 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-2 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-6  x^8 + 1: 16
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 4^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-1_3 8^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^1_7 8^-1_5 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^1_7 8^-1_5 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-1_3 8^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-2 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^-2 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 4^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4  x^8 + 1: 12
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-4  x^8 + 1: 12
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+All possible hermitian genera Genus symbol: II_(14, 2) 2^-2  x^8 + 1: 8
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+Enumerate hermitian genus of rank 2
+All possible hermitian genera Genus symbol: II_(2, 0) 2^2_2  x^2 + 1: 1
+Enumerate hermitian genus of rank 1
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_5 4^1_7 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-1_3 4^-1_3
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^-2_4 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 3^-1
+Indefinite genus or of small rank
+1 representative(s)
+Enumerate Z-genus Genus symbol: II_(2, 0) 2^2_2
+Indefinite genus or of small rank
+1 representative(s)
+2026-09-27T08:33:32.111 | Exact-character enumeration returned 24 action class(es) | elapsed 35081.75 s
+2026-09-27T08:33:38.351 | Action 1/24: retained; geometric checks all passed | elapsed 35087.98 s
+2026-09-27T08:33:38.918 | Action 2/24: retained; geometric checks all passed | elapsed 35088.55 s
+2026-09-27T08:33:39.333 | Action 3/24: rejected, non-stable ambient action | elapsed 35088.97 s
+2026-09-27T08:33:39.733 | Action 4/24: rejected, non-stable ambient action | elapsed 35089.37 s
+2026-09-27T08:33:40.313 | Action 5/24: retained; geometric checks all passed | elapsed 35089.95 s
+2026-09-27T08:33:40.889 | Action 6/24: retained; geometric checks all passed | elapsed 35090.52 s
+2026-09-27T08:33:41.308 | Action 7/24: rejected, non-stable ambient action | elapsed 35090.94 s
+2026-09-27T08:33:41.726 | Action 8/24: rejected, non-stable ambient action | elapsed 35091.36 s
+2026-09-27T08:33:42.196 | Action 9/24: rejected, short or long root in K | elapsed 35091.83 s
+2026-09-27T08:33:42.662 | Action 10/24: rejected, short or long root in K | elapsed 35092.3 s
+2026-09-27T08:33:43.080 | Action 11/24: rejected, non-stable ambient action | elapsed 35092.71 s
+2026-09-27T08:33:43.486 | Action 12/24: rejected, non-stable ambient action | elapsed 35093.12 s
+2026-09-27T08:33:43.949 | Action 13/24: rejected, short or long root in K | elapsed 35093.58 s
+2026-09-27T08:33:44.405 | Action 14/24: rejected, short or long root in K | elapsed 35094.04 s
+2026-09-27T08:33:44.825 | Action 15/24: rejected, non-stable ambient action | elapsed 35094.46 s
+2026-09-27T08:33:45.252 | Action 16/24: rejected, non-stable ambient action | elapsed 35094.89 s
+2026-09-27T08:33:45.723 | Action 17/24: rejected, short or long root in K | elapsed 35095.36 s
+2026-09-27T08:33:46.184 | Action 18/24: rejected, short or long root in K | elapsed 35095.82 s
+2026-09-27T08:33:46.602 | Action 19/24: rejected, non-stable ambient action | elapsed 35096.24 s
+2026-09-27T08:33:47.021 | Action 20/24: rejected, non-stable ambient action | elapsed 35096.66 s
+2026-09-27T08:33:47.492 | Action 21/24: rejected, short or long root in K | elapsed 35097.13 s
+2026-09-27T08:33:47.956 | Action 22/24: rejected, short or long root in K | elapsed 35097.59 s
+2026-09-27T08:33:48.367 | Action 23/24: rejected, non-stable ambient action | elapsed 35098.0 s
+2026-09-27T08:33:48.789 | Action 24/24: rejected, non-stable ambient action | elapsed 35098.42 s
+2026-09-27T08:33:48.792 | Filter summary: stable=12, root-free after stability=4, retained=4 | elapsed 35098.43 s
+2026-09-27T08:34:03.924 | Completed; MRDI reload and all post-checks passed | elapsed 35113.56 s
+finished=2026-09-27T08:34:07-04:00

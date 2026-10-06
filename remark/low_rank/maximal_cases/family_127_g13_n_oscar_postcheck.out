@@ -1,0 +1,11 @@
+2026-09-29T02:44:10.906 | START Julia=1.10.11 OSCAR=1.8.2 threads=1 | elapsed=0.2 s
+2026-09-29T02:44:12.196 | WITNESS_LOADED source_sha256=3549ff234a0e81c62b46a2b44827f14eaf6c4fe528573c18ee2cdaf344523b69 N_rank16_sig(14,2)_det64=true | elapsed=1.5 s
+2026-09-29T02:44:12.473 | TARGET_READY U^2+D4^3 | elapsed=1.7 s
+2026-09-29T02:44:15.749 | N_TARGET_GENUS_EQUAL=true | elapsed=5.0 s
+2026-09-29T02:44:15.753 | N_TARGET_ISOMETRY_STARTED | elapsed=5.0 s
+2026-09-29T02:45:46.247 | N_TARGET_ISOMETRIC=true | elapsed=95.5 s
+2026-09-29T02:45:46.747 | S_EIGENLATTICES_STARTED | elapsed=96.0 s
+2026-09-29T02:45:46.959 | S_EIGENLATTICES_RETURNED anti_rank6_det256 fixed_rank10_det1024 | elapsed=96.2 s
+2026-09-29T02:45:46.963 | S_ANTI_D6_2_GENUS_EQUAL=true | elapsed=96.2 s
+2026-09-29T02:45:48.157 | S_ANTI_D6_2_ISOMETRIC=true | elapsed=97.4 s
+2026-09-29T02:45:48.160 | COMPLETED postcheck only; no full cubic-lattice extension or geometric action conjugacy | elapsed=97.4 s

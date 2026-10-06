@@ -1,0 +1,6 @@
+source_sha256=43f385e222bda664e485d88ea3a8c83981793e4f2fbda2be8df184c29d886567
+H4=Z.Pi+L, index[H4:<h2>+L]=3; Gram rank23 determinant1 signature(21,2) odd
+h2=3Pi-p primitive characteristic, norm3, h2 perp L
+Pi=(h2+p)/3 fixed by g,s; norm3 and degree h2.Pi=1
+g,s extend as integral commuting isometries of H4 fixing h2 and Pi
+RESULT=PASS; one saved witness only, no monodromy/geometric sufficiency claim

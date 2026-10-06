@@ -1,0 +1,40 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 7017916
+##  Job Name : remark-rerun
+##  Nodelist : node1805
+##      CPUs : 
+##  Mem/Node : 16384 MB
+## Directory : /oscar/home/jfu74/oscar-julia-test/remark_rerun_20261005
+##   Job Started : Mon Oct  5 01:21:34 AM EDT 2026
+###############################################################################
+array=7017743 task=4 kind=highrank family=8
+family=8 job=7017916 host=node1805.oscar.ccv.brown.edu started=2026-10-05T05:21:35Z
+PASS No. 8 input: rank(S)=20, rank(T)=2, quotient=6, gluing index=75
+2026-10-05T01:23:05.567 | Loading shared OSCAR search functions; Julia 1.12.4 | elapsed=0.18 s
+2026-10-05T01:26:26.529 | START selected original inputs | elapsed=201.14 s
+2026-10-05T01:26:26.817 | DONE selected original inputs; step=0.284 s | elapsed=201.43 s
+2026-10-05T01:26:26.822 | No. 8: prescribed T action of order 6; gluing index 75; preparing O(S) | elapsed=201.44 s
+2026-10-05T01:26:26.824 | START discriminant_group(S) | elapsed=201.44 s
+2026-10-05T01:26:26.828 | DONE discriminant_group(S); step=0.002 s | elapsed=201.44 s
+2026-10-05T01:26:26.830 | START orthogonal_group(S) | elapsed=201.44 s
+2026-10-05T01:26:33.002 | DONE orthogonal_group(S); step=6.171 s | elapsed=207.62 s
+2026-10-05T01:26:33.012 | START discriminant_representation(S,O(S)) | elapsed=207.63 s
+2026-10-05T01:26:50.883 | DONE discriminant_representation(S,O(S)); step=17.87 s | elapsed=225.5 s
+2026-10-05T01:26:50.887 | START discriminant image | elapsed=225.5 s
+2026-10-05T01:26:53.586 | DONE discriminant image; step=2.696 s | elapsed=228.2 s
+2026-10-05T01:26:53.588 | START stable kernel order | elapsed=228.2 s
+2026-10-05T01:26:53.592 | DONE stable kernel order; step=0.003 s | elapsed=228.21 s
+2026-10-05T01:26:53.594 | START cache O(S) and stable-kernel matrices | elapsed=228.21 s
+2026-10-05T01:26:54.361 | DONE cache O(S) and stable-kernel matrices; step=0.765 s | elapsed=228.98 s
+2026-10-05T01:26:54.363 | START lattice_data_for_T_action | elapsed=228.98 s
+2026-10-05T01:27:55.351 | DONE lattice_data_for_T_action; step=60.986 s | elapsed=289.97 s
+2026-10-05T01:27:55.357 | Prescribed-action search returned 1 ambient witnesses | elapsed=289.97 s
+2026-10-05T01:27:56.445 | START output 1 cached full-group check | elapsed=291.06 s
+2026-10-05T01:27:57.037 | DONE output 1 cached full-group check; step=0.59 s | elapsed=291.65 s
+2026-10-05T01:27:58.406 | START save and reload sidecar | elapsed=293.02 s
+2026-10-05T01:28:30.691 | DONE save and reload sidecar; step=32.283 s | elapsed=325.31 s
+2026-10-05T01:28:30.695 | PASS No. 8: saved 1 ambient witnesses; full group order 2160 | elapsed=325.31 s
+No. 8 output 1: checking embedded action and roots
+PASS No. 8 output 1: kernel 360, full group 2160, gluing 75, dimension 0
+PASS No. 8: 1 saved outputs; current source hashes matched; sidecar_sha256=6f34a6168d0bfa5aa8453095ec0ac849eb70e0a2d2b0835e17236f6c342c9613
+family=8 verified=2026-10-05T05:30:24Z output=/oscar/home/jfu74/oscar-julia-test/remark_rerun_20261005/results/highrank/job_7017916/family_008.mrdi

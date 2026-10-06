@@ -1,0 +1,22 @@
+2026-10-05T02:17:50.310 | Julia 1.12.4; OSCAR 1.8.2; character Phi3 Phi12 Phi48 | elapsed 1.31 s
+2026-10-05T02:17:50.318 | Cgroup resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 1.32 s
+2026-10-05T02:22:20.311 | Enumerating exact order-48 actions on the rank-22 ambient lattice | elapsed 271.31 s
+2026-10-05T03:06:13.968 | Exact-character enumeration returned 16 action class(es) | elapsed 2904.97 s
+2026-10-05T03:06:14.851 | Action 1/16: retained | elapsed 2905.85 s
+2026-10-05T03:06:14.887 | Action 2/16: retained | elapsed 2905.89 s
+2026-10-05T03:06:14.913 | Action 3/16: retained | elapsed 2905.91 s
+2026-10-05T03:06:14.938 | Action 4/16: retained | elapsed 2905.94 s
+2026-10-05T03:06:14.963 | Action 5/16: retained | elapsed 2905.97 s
+2026-10-05T03:06:14.990 | Action 6/16: retained | elapsed 2905.99 s
+2026-10-05T03:06:15.016 | Action 7/16: retained | elapsed 2906.02 s
+2026-10-05T03:06:15.039 | Action 8/16: retained | elapsed 2906.04 s
+2026-10-05T03:06:15.063 | Action 9/16: rejected, root in the positive complement | elapsed 2906.06 s
+2026-10-05T03:06:15.086 | Action 10/16: rejected, root in the positive complement | elapsed 2906.09 s
+2026-10-05T03:06:15.109 | Action 11/16: rejected, root in the positive complement | elapsed 2906.11 s
+2026-10-05T03:06:15.132 | Action 12/16: rejected, root in the positive complement | elapsed 2906.13 s
+2026-10-05T03:06:15.154 | Action 13/16: rejected, root in the positive complement | elapsed 2906.16 s
+2026-10-05T03:06:15.178 | Action 14/16: rejected, root in the positive complement | elapsed 2906.18 s
+2026-10-05T03:06:15.200 | Action 15/16: rejected, root in the positive complement | elapsed 2906.2 s
+2026-10-05T03:06:15.223 | Action 16/16: rejected, root in the positive complement | elapsed 2906.22 s
+2026-10-05T03:06:15.226 | Filter summary: stable=16, root-free=8, retained=8 | elapsed 2906.23 s
+2026-10-05T03:06:39.105 | Completed; MRDI reload and post-checks passed | elapsed 2930.11 s

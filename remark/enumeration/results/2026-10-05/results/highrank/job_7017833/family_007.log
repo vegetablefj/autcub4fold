@@ -1,0 +1,24 @@
+2026-10-05T01:14:14.630 | Loading shared OSCAR search functions; Julia 1.12.4 | elapsed=0.18 s
+2026-10-05T01:17:38.019 | START selected original inputs | elapsed=203.57 s
+2026-10-05T01:17:38.320 | DONE selected original inputs; step=0.297 s | elapsed=203.87 s
+2026-10-05T01:17:38.322 | No. 7: prescribed T action of order 3; gluing index 121; preparing O(S) | elapsed=203.87 s
+2026-10-05T01:17:38.324 | START discriminant_group(S) | elapsed=203.88 s
+2026-10-05T01:17:38.327 | DONE discriminant_group(S); step=0.002 s | elapsed=203.88 s
+2026-10-05T01:17:38.328 | START orthogonal_group(S) | elapsed=203.88 s
+2026-10-05T01:17:46.714 | DONE orthogonal_group(S); step=8.384 s | elapsed=212.27 s
+2026-10-05T01:17:46.716 | START discriminant_representation(S,O(S)) | elapsed=212.27 s
+2026-10-05T01:18:05.928 | DONE discriminant_representation(S,O(S)); step=19.209 s | elapsed=231.48 s
+2026-10-05T01:18:05.935 | START discriminant image | elapsed=231.49 s
+2026-10-05T01:18:07.130 | DONE discriminant image; step=1.193 s | elapsed=232.68 s
+2026-10-05T01:18:07.132 | START stable kernel order | elapsed=232.68 s
+2026-10-05T01:18:07.138 | DONE stable kernel order; step=0.003 s | elapsed=232.69 s
+2026-10-05T01:18:07.140 | START cache O(S) and stable-kernel matrices | elapsed=232.69 s
+2026-10-05T01:18:08.120 | DONE cache O(S) and stable-kernel matrices; step=0.978 s | elapsed=233.67 s
+2026-10-05T01:18:08.123 | START lattice_data_for_T_action | elapsed=233.68 s
+2026-10-05T01:19:09.809 | DONE lattice_data_for_T_action; step=61.685 s | elapsed=295.36 s
+2026-10-05T01:19:09.816 | Prescribed-action search returned 1 ambient witnesses | elapsed=295.37 s
+2026-10-05T01:19:10.862 | START output 1 cached full-group check | elapsed=296.41 s
+2026-10-05T01:19:11.772 | DONE output 1 cached full-group check; step=0.909 s | elapsed=297.33 s
+2026-10-05T01:19:13.273 | START save and reload sidecar | elapsed=298.83 s
+2026-10-05T01:19:49.185 | DONE save and reload sidecar; step=35.909 s | elapsed=334.74 s
+2026-10-05T01:19:49.187 | PASS No. 7: saved 1 ambient witnesses; full group order 1980 | elapsed=334.74 s

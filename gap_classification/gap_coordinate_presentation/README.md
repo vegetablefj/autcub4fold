@@ -42,4 +42,4 @@ Read("gap_classification/gap_coordinate_presentation/gap_coordinate_presentation
 
 A deliberate rerun replaces this audit's outputs and repeats its block
 comparisons. For ordinary final-coordinate verification, use
-`gap_manuscript_validation/gap_ordered_family_catalogue.g` instead.
+`gap_classification/gap_manuscript_validation/gap_ordered_family_catalogue.g` instead.

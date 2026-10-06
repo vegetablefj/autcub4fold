@@ -1,0 +1,38 @@
+M10/A6 pencil: asserted Singular hyperplane-section check, 2026-10-02
+
+Command (from repository root under WSL):
+  Singular -q autcub4fold/oscar_lattice_catalogue/m10_surface_slope_exact.sing
+Singular version: 4.3.2
+Exit code: 0
+
+affine Jacobian cone dimension at f (must be zero):
+0
+characteristic-zero one-hyperplane section: all six projective charts
+chart index, dimension, elimination ideal:
+1
+1
+E[1]=8*t^2+5*t+5
+chart index, dimension, elimination ideal:
+2
+1
+E[1]=8*t^2+5*t+5
+chart index, dimension, elimination ideal:
+3
+1
+E[1]=8*t^2+5*t+5
+chart index, dimension, elimination ideal:
+4
+1
+E[1]=8*t^2+5*t+5
+chart index, dimension, elimination ideal:
+5
+1
+E[1]=8*t^2+5*t+5
+chart index, dimension, elimination ideal:
+6
+1
+E[1]=8*t^2+5*t+5
+PASS: f is smooth and all six charts have the expected elimination ideal.
+
+The script stops with an error before PASS if the initial dimension or any
+chart dimension, generator count, or elimination polynomial differs.

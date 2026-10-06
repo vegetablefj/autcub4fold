@@ -26,6 +26,9 @@ The result-presentation directory `gap_result/` is not used as input.
 | `gap_stored_coordinate_witnesses.g`, `manuscript_component_coordinates.g`, `special_coordinate_audit.*` | Explicit coordinate certificates and retained symplectic/generic group models; the special audit contains its own transcribed display snapshot |
 | `run_validation.py`, `*.raw.log`, `*.runtime.txt` | Windows GAP launcher, raw transcripts, and runtime information |
 
+The display input is a fixed transcription: these checks do not read TeX.
+Its source-line numbers refer only to the version transcribed.
+
 The saved `*.runtime.txt` files retain the script, process status, and timing.
 Historical local absolute paths in their command fields are explicitly redacted;
 the displayed invocation is a summary, not the literal historical shell command.

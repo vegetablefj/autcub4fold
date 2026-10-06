@@ -1,0 +1,16 @@
+Family 154 exact-character search started 2026-09-26T22:48:52.747
+2026-09-26T22:48:53.297 | Slurm resource guard passed: cgroup2, high=17179869184, max=17179869184 | elapsed 0.12 s
+2026-09-26T22:49:56.283 | Julia 1.12.4; OSCAR 1.8.2; S=0 direct ambient-lattice route | elapsed 63.1 s
+2026-09-26T22:49:56.304 | Checking the rank-22 primitive lattice input | elapsed 63.13 s
+2026-09-26T22:49:56.710 | Enumerating all exact-character order-24 actions | elapsed 63.53 s
+2026-09-27T00:49:10.098 | Exact-character enumeration returned 8 action class(es) | elapsed 7216.92 s
+2026-09-27T00:49:16.825 | Action 1/8: retained; geometric checks passed | elapsed 7223.65 s
+2026-09-27T00:49:17.437 | Action 2/8: retained; geometric checks passed | elapsed 7224.26 s
+2026-09-27T00:49:18.048 | Action 3/8: retained; geometric checks passed | elapsed 7224.87 s
+2026-09-27T00:49:18.655 | Action 4/8: retained; geometric checks passed | elapsed 7225.48 s
+2026-09-27T00:49:19.155 | Action 5/8: rejected, root in the positive complement | elapsed 7225.98 s
+2026-09-27T00:49:19.651 | Action 6/8: rejected, root in the positive complement | elapsed 7226.47 s
+2026-09-27T00:49:20.145 | Action 7/8: rejected, root in the positive complement | elapsed 7226.97 s
+2026-09-27T00:49:21.362 | Action 8/8: rejected, root in the positive complement | elapsed 7228.18 s
+2026-09-27T00:49:21.364 | Filter summary: stable=8, root-free after stability=4, retained=4 | elapsed 7228.18 s
+2026-09-27T00:49:35.746 | Completed; MRDI reload and post-checks passed | elapsed 7242.57 s
